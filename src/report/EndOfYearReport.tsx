@@ -415,6 +415,11 @@ const FAN_TONES = ['volt', 'cream', 'dark', 'cream', 'dark'] as const;
 const FAN_ROT = [-10, -5, 0, 4, 8];
 const FAN_LIFT = [26, 6, 0, 6, 22];
 
+/** "https://www.drinkspyre.com" -> "drinkspyre.com" for the visible link. */
+function siteLabel(url: string): string {
+  return url.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '');
+}
+
 function BrandFanCard({ b, i }: { b: Brand; i: number }) {
   const name = b.name.replace(/\n/g, ' ');
   const tone = FAN_TONES[i % FAN_TONES.length];
@@ -423,8 +428,8 @@ function BrandFanCard({ b, i }: { b: Brand; i: number }) {
     '--lift': `${FAN_LIFT[i % FAN_LIFT.length]}px`,
     zIndex: i + 1,
   } as React.CSSProperties;
-  const card = (
-    <>
+  return (
+    <div className={`eoy-fancard eoy-fancard-${tone}`} style={style}>
       <div className="eoy-fancard-img">
         {b.image ? (
           <img className="eoy-fancard-photo" src={b.image} alt={name} loading="lazy" />
@@ -435,41 +440,26 @@ function BrandFanCard({ b, i }: { b: Brand; i: number }) {
       <div className="eoy-fancard-num">{String(i + 1).padStart(2, '0')}.</div>
       <div className="eoy-fancard-name">{name}</div>
       <div className="eoy-fancard-tag">{b.why}</div>
-      {b.contactEmail && (
-        <div className="eoy-fancard-reveal">
-          <div className="eoy-fancard-reveal-in">
-            <div className="eoy-fancard-contact">
-              {b.contactTeam && <span className="eoy-fancard-team">{b.contactTeam}</span>}
-              <span
-                className="eoy-fancard-email"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  window.location.href = `mailto:${b.contactEmail}`;
-                }}
-              >
-                {b.contactEmail}
-              </span>
-            </div>
-          </div>
+      {(b.contactEmail || b.site) && (
+        <div className="eoy-fancard-contact">
+          {b.contactTeam && <span className="eoy-fancard-team">{b.contactTeam}</span>}
+          {b.contactEmail && (
+            <a className="eoy-fancard-email" href={`mailto:${b.contactEmail}`}>
+              {b.contactEmail}
+            </a>
+          )}
+          {b.site && (
+            <a
+              className="eoy-fancard-site"
+              href={b.site}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {siteLabel(b.site)} <span aria-hidden>↗</span>
+            </a>
+          )}
         </div>
       )}
-    </>
-  );
-  const href = b.site || (b.contactEmail ? `mailto:${b.contactEmail}` : null);
-  return href ? (
-    <a
-      className={`eoy-fancard eoy-fancard-${tone}`}
-      style={style}
-      href={href}
-      target={b.site ? '_blank' : undefined}
-      rel={b.site ? 'noopener noreferrer' : undefined}
-    >
-      {card}
-    </a>
-  ) : (
-    <div className={`eoy-fancard eoy-fancard-${tone}`} style={style}>
-      {card}
     </div>
   );
 }
@@ -560,7 +550,8 @@ function FooterBanner() {
 export function EndOfYearReport({ data }: { data: ReportData }) {
   return (
     <div className="eoy-root">
-      <style>{CSS}</style>
+      {/* dangerouslySetInnerHTML keeps ">" selectors intact under renderToStaticMarkup (email export) */}
+      <style dangerouslySetInnerHTML={{ __html: CSS }} />
       <Hero data={data} />
       <div className="eoy-period">
         <span className="eoy-period-label">Reporting Period</span>
@@ -590,7 +581,7 @@ const CSS = `
   line-height:1.55; -webkit-font-smoothing:antialiased; min-height:100vh;
 }
 .eoy-root *{box-sizing:border-box;}
-.eoy-period{display:flex;align-items:center;justify-content:center;gap:16px;padding:15px 28px;background:#0f0d15;border-bottom:1px solid var(--line);}
+.eoy-period{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 16px;padding:15px 28px;background:#0f0d15;border-bottom:1px solid var(--line);}
 .eoy-period-label{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.24em;font-size:11.5px;color:var(--t3);}
 .eoy-period-sep{width:5px;height:5px;border-radius:999px;background:var(--volt);flex:none;}
 .eoy-period-range{font-family:var(--cond);font-weight:800;text-transform:uppercase;letter-spacing:.09em;font-size:14.5px;color:var(--volt);}
@@ -731,16 +722,14 @@ const CSS = `
 .eoy-fancard-num{font-size:1.05rem;margin-top:16px;opacity:.85;}
 .eoy-fancard-name{font-size:1.62rem;line-height:1.04;margin-top:2px;letter-spacing:-.01em;}
 .eoy-fancard-tag{font-size:12.5px;line-height:1.45;margin-top:8px;opacity:.72;font-family:var(--body);}
-/* contact collapses to zero height (no dead space); card expands to fit it on hover */
-.eoy-fancard-reveal{max-height:0;overflow:hidden;transition:max-height .34s cubic-bezier(.2,.8,.25,1);}
-.eoy-fancard:hover .eoy-fancard-reveal{max-height:140px;}
-.eoy-fancard-reveal-in{min-height:0;}
-.eoy-fancard-contact{display:flex;flex-direction:column;gap:1px;margin-top:13px;padding-top:11px;border-top:1px solid rgba(128,128,128,.28);
-  font-family:var(--body);opacity:0;transition:opacity .25s ease .06s;}
-.eoy-fancard:hover .eoy-fancard-contact{opacity:1;}
+/* contact block — always visible (reports ship as static HTML in email, no hover) */
+.eoy-fancard-contact{display:flex;flex-direction:column;gap:2px;margin-top:13px;padding-top:11px;border-top:1px solid rgba(128,128,128,.28);
+  font-family:var(--body);}
 .eoy-fancard-team{font-size:10.5px;font-weight:600;opacity:.6;text-transform:uppercase;letter-spacing:.04em;}
-.eoy-fancard-email{font-size:12.5px;font-weight:700;word-break:break-word;cursor:pointer;}
+.eoy-fancard-email{font-size:12.5px;font-weight:700;word-break:break-word;color:inherit;text-decoration:none;}
 .eoy-fancard-email:hover{text-decoration:underline;}
+.eoy-fancard-site{font-size:11.5px;font-weight:600;margin-top:4px;color:inherit;text-decoration:none;opacity:.72;}
+.eoy-fancard-site:hover{text-decoration:underline;opacity:1;}
 
 /* top content — poster cards */
 .eoy-posters{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
@@ -790,6 +779,8 @@ const CSS = `
   .eoy-fancard:hover{transform:translateY(-8px) scale(1.03);}
 }
 @media(max-width:620px){
+  .eoy-hero{flex-direction:column;}
+  .eoy-hero-badge{position:relative;top:auto;left:auto;align-self:flex-start;margin:16px 0 4px 16px;max-width:calc(100vw - 32px);}
   .eoy-posters{grid-template-columns:1fr;}
   .eoy-mini{grid-template-columns:96px 1fr;}
   .eoy-footer-main{flex-direction:column;align-items:flex-start;gap:24px;}

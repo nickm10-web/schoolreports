@@ -118,6 +118,99 @@ const missouri: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "2,286",
+    likes: "1.5M",
+    views: "9.5M",
+    athletes: "375",
+    bestDay: "Saturday"
+  },
+  growth: [
+    {
+      athlete: "Jayden Stone",
+      sport: "Men's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765378501271-Jayden_Stone_68ad45fc7d210c8fa770bd19_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "909",
+      end: "20.2K",
+      gain: "+19.3K",
+      pct: "+2121%",
+      spark: [
+        909,
+        972,
+        1094,
+        1140,
+        1138,
+        1145,
+        1153,
+        1152,
+        16899,
+        17002,
+        17214,
+        14968,
+        16006,
+        15071,
+        17169,
+        20187
+      ]
+    },
+    {
+      athlete: "Zion Young",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765378589115-Zion_Young_68e9d507b83b7def978910a9_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "5.2K",
+      end: "15.9K",
+      gain: "+10.7K",
+      pct: "+207%",
+      spark: [
+        5199,
+        6499,
+        6545,
+        6812,
+        6820,
+        6933,
+        7007,
+        7218,
+        7497,
+        7729,
+        7906,
+        7950,
+        7955,
+        8012,
+        8041,
+        15939
+      ]
+    },
+    {
+      athlete: "Kobi Walker",
+      sport: "Womens Cross Country",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765378340725-Kobi_Walker_68e9d503b83b7def97891080_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "20.7K",
+      end: "26.6K",
+      gain: "+5.8K",
+      pct: "+28%",
+      spark: [
+        20735,
+        20934,
+        21314,
+        21467,
+        21515,
+        22946,
+        23174,
+        23325,
+        23490,
+        23622,
+        23813,
+        23910,
+        24121,
+        25095,
+        25867,
+        26575
+      ]
+    }
+  ],
   partner: {
     brand: "Nike",
     posts: "359",
@@ -248,6 +341,44 @@ const missouri: ReportData = {
       third: "N/A",
       thirdLabel: "Shares",
       handle: "beauprib",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Josiah Trotter",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18263494525288061",
+      platform: "Instagram Reels",
+      likes: "179.5K",
+      comments: "911",
+      third: "4.2M",
+      thirdLabel: "Views",
+      handle: "nfl",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Ahmad Hardy",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17952250842010314",
+      platform: "Instagram Post",
+      likes: "42.4K",
+      comments: "326",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "cbssports",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Zion Young",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18091557602185205",
+      platform: "Instagram Post",
+      likes: "42.2K",
+      comments: "1K",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "ravens",
       verified: false
     }
   ]

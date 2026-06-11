@@ -118,6 +118,99 @@ const ohio_state: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "4,284",
+    likes: "7.6M",
+    views: "33.1M",
+    athletes: "639",
+    bestDay: "Monday"
+  },
+  growth: [
+    {
+      athlete: "Jeremiah Smith",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761388500294-Jeremiah_Smith_68fca493b06066e3308741b3.png",
+      platform: "Instagram",
+      start: "661.9K",
+      end: "791.8K",
+      gain: "+129.9K",
+      pct: "+20%",
+      spark: [
+        661872,
+        682844,
+        684255,
+        715223,
+        758702,
+        759016,
+        759021,
+        758465,
+        758456,
+        757936,
+        757833,
+        757397,
+        760090,
+        768993,
+        787705,
+        791786
+      ]
+    },
+    {
+      athlete: "Julian Sayin",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761388494249-Julian_Sayin_68fca493b06066e3308741bf.png",
+      platform: "Instagram",
+      start: "116.5K",
+      end: "204.9K",
+      gain: "+88.4K",
+      pct: "+76%",
+      spark: [
+        116523,
+        136358,
+        136482,
+        136719,
+        169905,
+        193133,
+        198853,
+        199301,
+        199150,
+        198930,
+        198785,
+        198470,
+        198525,
+        198768,
+        204292,
+        204940
+      ]
+    },
+    {
+      athlete: "Seini Henry",
+      sport: "Women's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761388477289-Seini_Henry_68fca493b06066e330874294.png",
+      platform: "Instagram",
+      start: "11.8K",
+      end: "20.5K",
+      gain: "+8.7K",
+      pct: "+74%",
+      spark: [
+        11820,
+        12972,
+        13178,
+        13209,
+        13214,
+        13232,
+        13243,
+        13247,
+        13262,
+        13520,
+        16501,
+        16698,
+        17830,
+        17962,
+        17950,
+        20513
+      ]
+    }
+  ],
   partner: {
     brand: "Nike",
     posts: "173",
@@ -248,6 +341,44 @@ const ohio_state: ReportData = {
       third: "N/A",
       thirdLabel: "Shares",
       handle: "primetimejj_.4",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Sonny Styles",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18087890899923704",
+      platform: "Instagram Post",
+      likes: "240.5K",
+      comments: "1.5K",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "bleacherreport",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Carson Hinzman",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18131153239463410",
+      platform: "Instagram Reels",
+      likes: "205.6K",
+      comments: "337",
+      third: "1.8M",
+      thirdLabel: "Views",
+      handle: "accessthewalk",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Jeremiah Smith",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18019059608604025",
+      platform: "Instagram Reels",
+      likes: "172.6K",
+      comments: "633",
+      third: "4M",
+      thirdLabel: "Views",
+      handle: "redbullusa",
       verified: false
     }
   ]

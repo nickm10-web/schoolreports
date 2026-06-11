@@ -118,6 +118,99 @@ const lsu: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "2,790",
+    likes: "8.3M",
+    views: "102.2M",
+    athletes: "294",
+    bestDay: "Tuesday"
+  },
+  growth: [
+    {
+      athlete: "Whit Weeks",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1756249667252-Whit_Weeks_68ae3dcbc46ee67ea74fc983_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "54K",
+      end: "103.4K",
+      gain: "+49.4K",
+      pct: "+91%",
+      spark: [
+        53998,
+        83385,
+        83950,
+        84043,
+        84178,
+        84281,
+        84338,
+        88854,
+        91731,
+        91983,
+        93284,
+        94801,
+        96816,
+        99909,
+        100087,
+        103387
+      ]
+    },
+    {
+      athlete: "Flau'Jae Johnson",
+      sport: "Women's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760520709488-Flau'Jae_Johnson_68ef667a66de6124cd10cc90.png",
+      platform: "Instagram",
+      start: "2.1M",
+      end: "2.1M",
+      gain: "+29.8K",
+      pct: "+1%",
+      spark: [
+        2054098,
+        2079237,
+        2079643,
+        2079653,
+        2079982,
+        2080979,
+        2082016,
+        2086404,
+        2088277,
+        2088726,
+        2091558,
+        2090744,
+        2088096,
+        2085800,
+        2084633,
+        2083859
+      ]
+    },
+    {
+      athlete: "West Weeks",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1756249655335-West_Weeks_68ae3dcbc46ee67ea74fc97c_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "22.8K",
+      end: "49.3K",
+      gain: "+26.6K",
+      pct: "+117%",
+      spark: [
+        22776,
+        24158,
+        30081,
+        36887,
+        37452,
+        37634,
+        37741,
+        39565,
+        46281,
+        46682,
+        47444,
+        48572,
+        48828,
+        48889,
+        48943,
+        49346
+      ]
+    }
+  ],
   partner: {
     brand: "Nike",
     posts: "276",
@@ -248,6 +341,44 @@ const lsu: ReportData = {
       third: "5.4M",
       thirdLabel: "Views",
       handle: "princemalbrue",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Flau'Jae Johnson",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17961051408047138",
+      platform: "Instagram Reels",
+      likes: "146.7K",
+      comments: "1.4K",
+      third: "1.9M",
+      thirdLabel: "Views",
+      handle: "lethalshooter",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Kylee Edwards",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17875608150564126",
+      platform: "Instagram Post",
+      likes: "90.2K",
+      comments: "173",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "secnetwork",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Jalia Lassiter",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18359725921225519",
+      platform: "Instagram Post",
+      likes: "84.9K",
+      comments: "94",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "overtimewbb",
       verified: false
     }
   ]

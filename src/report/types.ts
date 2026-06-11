@@ -63,6 +63,40 @@ export interface ApparelPartner {
   topCarriers: RunnerUp[];
 }
 
+/** "Year in Numbers" band: program-wide totals for the reporting window. */
+export interface YearNumbers {
+  /** Athlete posts tracked, e.g. "3,315". */
+  posts: string;
+  /** Total likes across those posts, e.g. "4.7M". */
+  likes: string;
+  /** Total video views. "" → hidden. */
+  views: string;
+  /** Distinct athletes who posted, e.g. "445". */
+  athletes: string;
+  /** Highest-avg-likes weekday, e.g. "Tuesday". "" → hidden. */
+  bestDay: string;
+}
+
+/** One "Who Blew Up" follower-growth story. */
+export interface Grower {
+  athlete: string;
+  sport: string;
+  /** Headshot URL. "" → initials placeholder. */
+  photo: string;
+  /** Platform of the tracked account, e.g. "Instagram". */
+  platform: string;
+  /** Followers at the start of tracking, e.g. "13.6K". */
+  start: string;
+  /** Followers now, e.g. "38.4K". */
+  end: string;
+  /** Display gain, e.g. "+24.8K". */
+  gain: string;
+  /** Display percent, e.g. "+182%". */
+  pct: string;
+  /** Raw follower samples for the sparkline (rendered as inline SVG). */
+  spark: number[];
+}
+
 /** One "Top Brand to Reach Out To" card. */
 export interface Brand {
   /** Use "\n" to force a line break in the display name. */
@@ -120,10 +154,17 @@ export interface ReportData {
   heroLineB: string;
   /** Exactly 3 highlight cards. */
   highlights: Highlight[];
+  /** "Year in Numbers" band under the hero. Omitted → hidden. */
+  numbers?: YearNumbers;
+  /** "Who Blew Up" follower-growth stories (up to 3). Omitted → hidden. */
+  growth?: Grower[];
   /** Apparel partner value section. Omitted → section hidden. */
   partner?: ApparelPartner;
   /** Exactly 5 brand cards. */
   brands: Brand[];
   /** Exactly 5 top-content cards. */
   topContent: ContentPiece[];
+  /** "Earned Media" cards: big accounts posting ABOUT the school's athletes
+   *  (up to 3). title = who it was about, handle = who posted it. */
+  earned?: ContentPiece[];
 }

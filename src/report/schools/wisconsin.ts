@@ -118,6 +118,99 @@ const wisconsin: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "2,643",
+    likes: "2.7M",
+    views: "33.5M",
+    athletes: "427",
+    bestDay: "Tuesday"
+  },
+  growth: [
+    {
+      athlete: "Laila Edwards",
+      sport: "Womens Hockey",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1764860198603-Laila_Edwards_68fca9239c85e8dfe8f9c21a_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "11.8K",
+      end: "79.3K",
+      gain: "+67.6K",
+      pct: "+574%",
+      spark: [
+        11767,
+        12362,
+        12390,
+        12418,
+        12478,
+        15408,
+        16716,
+        18658,
+        19558,
+        20545,
+        48109,
+        50451,
+        68347,
+        71730,
+        73040,
+        79329
+      ]
+    },
+    {
+      athlete: "Mason Reiger",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1764860457755-Mason_Reiger_68fca9239c85e8dfe8f9c2aa_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "83.5K",
+      end: "110.5K",
+      gain: "+27K",
+      pct: "+32%",
+      spark: [
+        83520,
+        86428,
+        87575,
+        89802,
+        95959,
+        99520,
+        103374,
+        106162,
+        106468,
+        107018,
+        109065,
+        109384,
+        110947,
+        111075,
+        111342,
+        110519
+      ]
+    },
+    {
+      athlete: "John Blackwell",
+      sport: "Men's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1764860313797-John_Blackwell_68fca9239c85e8dfe8f9c25a_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "15.1K",
+      end: "29.9K",
+      gain: "+14.8K",
+      pct: "+98%",
+      spark: [
+        15129,
+        15331,
+        15375,
+        15397,
+        15394,
+        15394,
+        15516,
+        15522,
+        16206,
+        16947,
+        17416,
+        17429,
+        17947,
+        19068,
+        20389,
+        29946
+      ]
+    }
+  ],
   partner: {
     brand: "Under Armour",
     posts: "211",
@@ -248,6 +341,44 @@ const wisconsin: ReportData = {
       third: "1.2M",
       thirdLabel: "Views",
       handle: "mason_reiger",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Laila Edwards",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18115972621505953",
+      platform: "Instagram Reels",
+      likes: "1.6M",
+      comments: "3.3K",
+      third: "23.2M",
+      thirdLabel: "Views",
+      handle: "redbullusa",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Cade Yacamelli",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18095677549619446",
+      platform: "Instagram Reels",
+      likes: "83.6K",
+      comments: "220",
+      third: "1.9M",
+      thirdLabel: "Views",
+      handle: "evan_flood",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Laila Edwards",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17988797216865775",
+      platform: "Instagram Reels",
+      likes: "71.7K",
+      comments: "752",
+      third: "4.8M",
+      thirdLabel: "Views",
+      handle: "onherturf",
       verified: false
     }
   ]

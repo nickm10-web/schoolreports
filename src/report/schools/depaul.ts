@@ -118,6 +118,13 @@ const depaul: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "232",
+    likes: "62.1K",
+    views: "57.4K",
+    athletes: "53",
+    bestDay: "Wednesday"
+  },
   brands: [
     {
       name: "SPYRE",

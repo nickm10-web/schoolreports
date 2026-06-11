@@ -118,6 +118,99 @@ const notre_dame: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "1,224",
+    likes: "3.7M",
+    views: "43.4M",
+    athletes: "189",
+    bestDay: "Sunday"
+  },
+  growth: [
+    {
+      athlete: "Hannah Hidalgo",
+      sport: "Women's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761383770644-Hannah_Hidalgo_68fc94d55ecd65a8818e96f8.png",
+      platform: "Instagram",
+      start: "97.3K",
+      end: "133K",
+      gain: "+35.7K",
+      pct: "+37%",
+      spark: [
+        97317,
+        99364,
+        102427,
+        109017,
+        109399,
+        109633,
+        110276,
+        111158,
+        112094,
+        112178,
+        122090,
+        132679,
+        133276,
+        133160,
+        133063,
+        133006
+      ]
+    },
+    {
+      athlete: "Jadarian Price",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761383767866-Jadarian_Price_68fc94d55ecd65a8818e975b.png",
+      platform: "Instagram",
+      start: "26.5K",
+      end: "60.1K",
+      gain: "+33.7K",
+      pct: "+127%",
+      spark: [
+        26477,
+        26986,
+        27094,
+        27497,
+        27752,
+        35466,
+        35587,
+        35774,
+        35743,
+        35724,
+        35734,
+        36392,
+        36431,
+        36517,
+        36525,
+        60128
+      ]
+    },
+    {
+      athlete: "Jerome Bettis Jr.",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761383771227-Jerome_Bettis Jr._68fc94d55ecd65a8818e978d.png",
+      platform: "Instagram",
+      start: "20.9K",
+      end: "40.9K",
+      gain: "+20K",
+      pct: "+95%",
+      spark: [
+        20935,
+        20920,
+        21029,
+        21036,
+        21018,
+        21163,
+        21157,
+        21151,
+        21142,
+        21124,
+        21059,
+        39122,
+        40109,
+        41608,
+        41139,
+        40922
+      ]
+    }
+  ],
   partner: {
     brand: "Under Armour",
     posts: "64",
@@ -248,6 +341,44 @@ const notre_dame: ReportData = {
       third: "N/A",
       thirdLabel: "Shares",
       handle: "jeremiyahlove",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Clark Gilmore",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18111330718645878",
+      platform: "Instagram Reels",
+      likes: "614.5K",
+      comments: "4.1K",
+      third: "14.7M",
+      thirdLabel: "Views",
+      handle: "bananaball",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Jeremiyah Love",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18059598053349585",
+      platform: "Instagram Reels",
+      likes: "94.2K",
+      comments: "839",
+      third: "1.8M",
+      thirdLabel: "Views",
+      handle: "nfl",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Malachi Fields",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17982600401826016",
+      platform: "Instagram Reels",
+      likes: "48.2K",
+      comments: "610",
+      third: "675K",
+      thirdLabel: "Views",
+      handle: "nygiants",
       verified: false
     }
   ]

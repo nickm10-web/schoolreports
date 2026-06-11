@@ -118,6 +118,99 @@ const ucla: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "4,445",
+    likes: "8.8M",
+    views: "140.1M",
+    athletes: "465",
+    bestDay: "Tuesday"
+  },
+  growth: [
+    {
+      athlete: "Gabriela Jaquez",
+      sport: "Women's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765897162248-Gabriela_Jaquez_68f878d77fcc92b86eee7ee7_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "45.1K",
+      end: "178.2K",
+      gain: "+133.1K",
+      pct: "+295%",
+      spark: [
+        45113,
+        46114,
+        46114,
+        46508,
+        46570,
+        46613,
+        46613,
+        46663,
+        47825,
+        48077,
+        48077,
+        48599,
+        52428,
+        104884,
+        104884,
+        178226
+      ]
+    },
+    {
+      athlete: "Lauren Betts",
+      sport: "Women's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765897171516-Lauren_Betts_68f878d77fcc92b86eee7eec_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "52.6K",
+      end: "147K",
+      gain: "+94.4K",
+      pct: "+179%",
+      spark: [
+        52635,
+        54237,
+        54237,
+        57414,
+        58003,
+        58235,
+        58235,
+        58649,
+        59706,
+        60765,
+        60765,
+        61977,
+        66814,
+        99586,
+        99586,
+        146994
+      ]
+    },
+    {
+      athlete: "Roch Cholowsky",
+      sport: "Baseball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765896553837-Roch_Cholowsky_68f878d77fcc92b86eee7d6c_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "17.5K",
+      end: "48.3K",
+      gain: "+30.9K",
+      pct: "+176%",
+      spark: [
+        17481,
+        17679,
+        17681,
+        17702,
+        17706,
+        17717,
+        18399,
+        21086,
+        21228,
+        24663,
+        26985,
+        32498,
+        34648,
+        36578,
+        40387,
+        48333
+      ]
+    }
+  ],
   partner: {
     brand: "Nike / Jordan",
     posts: "213",
@@ -248,6 +341,44 @@ const ucla: ReportData = {
       third: "3.8M",
       thirdLabel: "Views",
       handle: "paige_anastasi",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Kiki Rice",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17986974818987393",
+      platform: "Instagram Reels",
+      likes: "298.9K",
+      comments: "126",
+      third: "5.9M",
+      thirdLabel: "Views",
+      handle: "raisingcanes",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Jordan Chiles",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18247950673289204",
+      platform: "Instagram Reels",
+      likes: "182.5K",
+      comments: "2.8K",
+      third: "3.5M",
+      thirdLabel: "Views",
+      handle: "dancingwiththestars",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Jordan Chiles",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17941837856981233",
+      platform: "Instagram Reels",
+      likes: "92.8K",
+      comments: "1K",
+      third: "1.3M",
+      thirdLabel: "Views",
+      handle: "b1ggymnastics",
       verified: false
     }
   ]

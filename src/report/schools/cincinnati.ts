@@ -118,6 +118,99 @@ const cincinnati: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "2,195",
+    likes: "1M",
+    views: "8.2M",
+    athletes: "309",
+    bestDay: "Wednesday"
+  },
+  growth: [
+    {
+      athlete: "Omolola Kuponiyi",
+      sport: "Women's Track & Field",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761114205178-Omolola_Kuponiyi_68f8774766c6eed501f52ffb.png",
+      platform: "Instagram",
+      start: "1.8K",
+      end: "23.7K",
+      gain: "+21.9K",
+      pct: "+1188%",
+      spark: [
+        1839,
+        15583,
+        22925,
+        22961,
+        23015,
+        23044,
+        23091,
+        23121,
+        23171,
+        23174,
+        23174,
+        23174,
+        22876,
+        23111,
+        23777,
+        23689
+      ]
+    },
+    {
+      athlete: "Cam Roetherford",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761114189855-Cam_Roetherford_68f8774766c6eed501f52f68.png",
+      platform: "Instagram",
+      start: "1.3K",
+      end: "5.9K",
+      gain: "+4.7K",
+      pct: "+368%",
+      spark: [
+        1267,
+        1274,
+        1304,
+        1307,
+        1309,
+        1320,
+        1318,
+        1318,
+        1321,
+        1320,
+        1324,
+        1324,
+        1320,
+        1323,
+        7012,
+        5925
+      ]
+    },
+    {
+      athlete: "Devyn Zahursky",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761114197900-Devyn_Zahursky_68f8774766c6eed501f52f94.png",
+      platform: "Instagram",
+      start: "2.5K",
+      end: "4.9K",
+      gain: "+2.4K",
+      pct: "+96%",
+      spark: [
+        2516,
+        2535,
+        2535,
+        2546,
+        2546,
+        2543,
+        2543,
+        2543,
+        2536,
+        2534,
+        2535,
+        2535,
+        2536,
+        2536,
+        2552,
+        4930
+      ]
+    }
+  ],
   partner: {
     brand: "Nike",
     posts: "107",
@@ -248,6 +341,44 @@ const cincinnati: ReportData = {
       third: "N/A",
       thirdLabel: "Shares",
       handle: "brendansorsby2",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Cyrus Allen",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17912633253101946",
+      platform: "Instagram Reels",
+      likes: "141.3K",
+      comments: "455",
+      third: "2.1M",
+      thirdLabel: "Views",
+      handle: "big12studios",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Shon Abaev",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18192888877318718",
+      platform: "Instagram Post",
+      likes: "41.3K",
+      comments: "340",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "tiptonedits",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Moustapha Thiam",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18133591333480856",
+      platform: "Instagram Post",
+      likes: "15.9K",
+      comments: "223",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "recruitsnews",
       verified: false
     }
   ]

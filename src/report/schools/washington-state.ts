@@ -113,6 +113,71 @@ const washington_state: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "378",
+    likes: "124.8K",
+    views: "805.5K",
+    athletes: "70",
+    bestDay: "Monday"
+  },
+  growth: [
+    {
+      athlete: "Jerone Morton",
+      sport: "Men's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760735172682-Jerone_Morton_68f2ac424988214a6156fa0d.png",
+      platform: "Instagram",
+      start: "3.2K",
+      end: "6K",
+      gain: "+2.8K",
+      pct: "+87%",
+      spark: [
+        3183,
+        3181,
+        3183,
+        3183,
+        3182,
+        3178,
+        3172,
+        3172,
+        3171,
+        3174,
+        3174,
+        3173,
+        3163,
+        3190,
+        3238,
+        5965
+      ]
+    },
+    {
+      athlete: "Zevi Eckhaus",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760735173415-Zevi_Eckhaus_68f2ac424988214a6156fa4e.png",
+      platform: "Instagram",
+      start: "3.2K",
+      end: "5.9K",
+      gain: "+2.7K",
+      pct: "+85%",
+      spark: [
+        3216,
+        3336,
+        3455,
+        3455,
+        3456,
+        3459,
+        3493,
+        3493,
+        3616,
+        3616,
+        3618,
+        3618,
+        3618,
+        3618,
+        3650,
+        5938
+      ]
+    }
+  ],
   partner: {
     brand: "Nike",
     posts: "26",
@@ -243,6 +308,44 @@ const washington_state: ReportData = {
       third: "102.7K",
       thirdLabel: "Views",
       handle: "wsucougarfb",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Ace Glass",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18099706849817568",
+      platform: "Instagram Post",
+      likes: "27.7K",
+      comments: "131",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "thehoopspill",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Jerone Morton",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17979512279842261",
+      platform: "Instagram Post",
+      likes: "13.1K",
+      comments: "357",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "tiptonedits",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Jerone Morton",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18095218205327738",
+      platform: "Instagram Post",
+      likes: "6K",
+      comments: "110",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "uk_sportsnetwork",
       verified: false
     }
   ]

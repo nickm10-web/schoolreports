@@ -118,6 +118,99 @@ const purdue: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "2,369",
+    likes: "6M",
+    views: "65.5M",
+    athletes: "383",
+    bestDay: "Wednesday"
+  },
+  growth: [
+    {
+      athlete: "Braden Smith",
+      sport: "Men's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1764957902296-Braden_Smith_68f6c2b98f845316214c4132_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "47.1K",
+      end: "63.7K",
+      gain: "+16.6K",
+      pct: "+35%",
+      spark: [
+        47117,
+        48531,
+        49780,
+        50247,
+        50684,
+        51485,
+        55690,
+        55949,
+        56154,
+        56372,
+        57405,
+        59125,
+        61435,
+        63592,
+        63782,
+        63684
+      ]
+    },
+    {
+      athlete: "Omer Mayer",
+      sport: "Men's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1764957905461-Omer_Mayer_68f6c2ba8f845316214c413a_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "23.1K",
+      end: "33.4K",
+      gain: "+10.4K",
+      pct: "+45%",
+      spark: [
+        23061,
+        23828,
+        24589,
+        25600,
+        25866,
+        26193,
+        30426,
+        30433,
+        30862,
+        30905,
+        31183,
+        31577,
+        33262,
+        33501,
+        33458,
+        33438
+      ]
+    },
+    {
+      athlete: "Nya Smith",
+      sport: "Women's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1764957895436-Nya_Smith_68f6c2cd8f845316214c41e4_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "1.3K",
+      end: "3.7K",
+      gain: "+2.4K",
+      pct: "+190%",
+      spark: [
+        1287,
+        1300,
+        1303,
+        1309,
+        1312,
+        1316,
+        1335,
+        1336,
+        1357,
+        1357,
+        1364,
+        1366,
+        1367,
+        1397,
+        3845,
+        3731
+      ]
+    }
+  ],
   partner: {
     brand: "Nike",
     posts: "323",
@@ -248,6 +341,44 @@ const purdue: ReportData = {
       third: "N/A",
       thirdLabel: "Shares",
       handle: "sm1thb",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Braden Smith",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18145485997482211",
+      platform: "Instagram Post",
+      likes: "47K",
+      comments: "80",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "bigtennetwork",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Braden Smith",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18444240700119931",
+      platform: "Instagram Post",
+      likes: "40.7K",
+      comments: "370",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "br_hoops",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Braden Smith",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17868055419592788",
+      platform: "Instagram Post",
+      likes: "33.2K",
+      comments: "217",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "marchmadnessmbb",
       verified: false
     }
   ]

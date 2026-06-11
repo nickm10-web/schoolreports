@@ -118,6 +118,13 @@ const washington: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "1,076",
+    likes: "9.5M",
+    views: "90.7M",
+    athletes: "172",
+    bestDay: "Friday"
+  },
   partner: {
     brand: "Adidas",
     posts: "47",
@@ -248,6 +255,44 @@ const washington: ReportData = {
       third: "5.8M",
       thirdLabel: "Views",
       handle: "millyrockjr",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Hannes Steinbach",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18081404891137585",
+      platform: "Instagram Post",
+      likes: "13.7K",
+      comments: "90",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "br_hoops",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Christian Nitu",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17924353074270935",
+      platform: "Instagram Post",
+      likes: "12.8K",
+      comments: "79",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "bootkrewemedia",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Raiden Vines-Bright",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18079729621976697",
+      platform: "Instagram Post",
+      likes: "12.4K",
+      comments: "120",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "hayesfawcett3",
       verified: false
     }
   ]

@@ -118,6 +118,13 @@ const iowa: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "702",
+    likes: "750.4K",
+    views: "1.9M",
+    athletes: "178",
+    bestDay: "Thursday"
+  },
   brands: [
     {
       name: "SPYRE",
@@ -224,6 +231,44 @@ const iowa: ReportData = {
       third: "N/A",
       thirdLabel: "Shares",
       handle: "mgronowski11",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Mark Gronowski",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18104846572811189",
+      platform: "Instagram Post",
+      likes: "17.8K",
+      comments: "86",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "shrinebowl",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Mark Gronowski",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17897847978305397",
+      platform: "Instagram Post",
+      likes: "16.3K",
+      comments: "129",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "b1gfootball",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Chazadi 'Chit-Chat' Wright",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17851850856584301",
+      platform: "Instagram Reels",
+      likes: "13.4K",
+      comments: "172",
+      third: "215.1K",
+      thirdLabel: "Views",
+      handle: "bigtennetwork",
       verified: false
     }
   ]

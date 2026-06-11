@@ -118,6 +118,13 @@ const smu: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "621",
+    likes: "584.7K",
+    views: "635.1K",
+    athletes: "135",
+    bestDay: "Saturday"
+  },
   brands: [
     {
       name: "SPYRE",
@@ -224,6 +231,44 @@ const smu: ReportData = {
       third: "N/A",
       thirdLabel: "Shares",
       handle: "byeduce",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Ahmaad Moses",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18108991789645566",
+      platform: "Instagram Reels",
+      likes: "20K",
+      comments: "110",
+      third: "N/A",
+      thirdLabel: "Views",
+      handle: "cfbonfox",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Chris Johnson Jr.",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17973212693825761",
+      platform: "Instagram Post",
+      likes: "13.8K",
+      comments: "334",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "hayesfawcett3",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "B.J. Edwards",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18111585025608360",
+      platform: "Instagram Post",
+      likes: "12.2K",
+      comments: "72",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "br_hoops",
       verified: false
     }
   ]

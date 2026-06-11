@@ -118,6 +118,99 @@ const arkansas: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "3,135",
+    likes: "4.1M",
+    views: "35.1M",
+    athletes: "366",
+    bestDay: "Wednesday"
+  },
+  growth: [
+    {
+      athlete: "Darius Acuff Jr.",
+      sport: "Men's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1767975763452-Darius_Acuff Jr._68e9b008a0cca3ee1d3e97c3_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "56.9K",
+      end: "149K",
+      gain: "+92.1K",
+      pct: "+162%",
+      spark: [
+        56881,
+        57829,
+        58319,
+        58318,
+        58503,
+        58657,
+        58870,
+        62511,
+        65503,
+        69530,
+        73380,
+        96207,
+        138219,
+        144351,
+        148843,
+        149020
+      ]
+    },
+    {
+      athlete: "Jordan Anthony",
+      sport: "Men's Track & Field",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1767975239079-Jordan_Anthony_68e9b017a0cca3ee1d3e9855_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "40.8K",
+      end: "101K",
+      gain: "+60.1K",
+      pct: "+147%",
+      spark: [
+        40832,
+        40439,
+        40391,
+        40392,
+        40393,
+        40346,
+        40322,
+        40266,
+        40626,
+        40700,
+        41984,
+        48527,
+        56091,
+        60107,
+        101544,
+        100951
+      ]
+    },
+    {
+      athlete: "Natalie Wagner",
+      sport: "Women's Soccer",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1767975737656-Natalie_Wagner_68e9b022a0cca3ee1d3e98be_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "10.8K",
+      end: "52.6K",
+      gain: "+41.8K",
+      pct: "+386%",
+      spark: [
+        10819,
+        10809,
+        10808,
+        10782,
+        10780,
+        10690,
+        42740,
+        46930,
+        47031,
+        46273,
+        45871,
+        45501,
+        45433,
+        45242,
+        50954,
+        52587
+      ]
+    }
+  ],
   partner: {
     brand: "Nike",
     posts: "337",
@@ -248,6 +341,44 @@ const arkansas: ReportData = {
       third: "N/A",
       thirdLabel: "Shares",
       handle: "johndalyll",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Darius Acuff Jr.",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18196435684360556",
+      platform: "Instagram Post",
+      likes: "82.7K",
+      comments: "816",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "sportscenternext",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Meleek Thomas",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17924321988067555",
+      platform: "Instagram Post",
+      likes: "44.5K",
+      comments: "357",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "br_hoops",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Jordan Anthony",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18073730657407702",
+      platform: "Instagram Reels",
+      likes: "43.7K",
+      comments: "400",
+      third: "914.3K",
+      thirdLabel: "Views",
+      handle: "nbcolympics",
       verified: false
     }
   ]

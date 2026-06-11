@@ -118,6 +118,99 @@ const texas: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "3,384",
+    likes: "6.3M",
+    views: "58.3M",
+    athletes: "406",
+    bestDay: "Saturday"
+  },
+  growth: [
+    {
+      athlete: "Arch Manning",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759795203711-Arch_Manning_689644765ca13f6f45fa5a17_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "492.4K",
+      end: "620.1K",
+      gain: "+127.7K",
+      pct: "+26%",
+      spark: [
+        492357,
+        531872,
+        545820,
+        565990,
+        566989,
+        568196,
+        590975,
+        593671,
+        595240,
+        596166,
+        596184,
+        621999,
+        624789,
+        622969,
+        620019,
+        620094
+      ]
+    },
+    {
+      athlete: "Michael Taaffe",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759795205404-Michael_Taaffe_689644765ca13f6f45fa5a18_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "54.2K",
+      end: "80.6K",
+      gain: "+26.3K",
+      pct: "+49%",
+      spark: [
+        54233,
+        63144,
+        63295,
+        63331,
+        63379,
+        63429,
+        63509,
+        67026,
+        69158,
+        69408,
+        70936,
+        72172,
+        72624,
+        72897,
+        74000,
+        80581
+      ]
+    },
+    {
+      athlete: "Parker Livingstone",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759795194490-Parker_Livingstone_689644765ca13f6f45fa5a11_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "13.7K",
+      end: "34.5K",
+      gain: "+20.8K",
+      pct: "+151%",
+      spark: [
+        13738,
+        19879,
+        28619,
+        28800,
+        29214,
+        33495,
+        34152,
+        34154,
+        34188,
+        34189,
+        34216,
+        34361,
+        34079,
+        33868,
+        34151,
+        34538
+      ]
+    }
+  ],
   partner: {
     brand: "Nike",
     posts: "199",
@@ -248,6 +341,44 @@ const texas: ReportData = {
       third: "2.5M",
       thirdLabel: "Views",
       handle: "co1insimmons",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Arch Manning",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18089734309780802",
+      platform: "Instagram Reels",
+      likes: "80.6K",
+      comments: "771",
+      third: "3.4M",
+      thirdLabel: "Views",
+      handle: "redbullusa",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Michael Taaffe",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18111687238699074",
+      platform: "Instagram Post",
+      likes: "64.1K",
+      comments: "216",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "nfl",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Madison Booker",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18083203502365152",
+      platform: "Instagram Post",
+      likes: "51.6K",
+      comments: "581",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "boardroom",
       verified: false
     }
   ]

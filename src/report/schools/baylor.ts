@@ -118,6 +118,99 @@ const baylor: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "3,315",
+    likes: "2M",
+    views: "12.4M",
+    athletes: "396",
+    bestDay: "Saturday"
+  },
+  growth: [
+    {
+      athlete: "Gigi Lindsey",
+      sport: "Softball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765467561556-Gigi_Lindsey_68c0ae2aa73ae6dabf3cc52b_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "13.6K",
+      end: "38.4K",
+      gain: "+24.8K",
+      pct: "+182%",
+      spark: [
+        13612,
+        13479,
+        13615,
+        13810,
+        13813,
+        13773,
+        13725,
+        13694,
+        13616,
+        14157,
+        14561,
+        14576,
+        14540,
+        14520,
+        38657,
+        38411
+      ]
+    },
+    {
+      athlete: "Bella Copeland",
+      sport: "Women's Track & Field",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765467478214-Bella_Copeland_68c11aa65278f5f29c92ce5c_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "17.1K",
+      end: "37.3K",
+      gain: "+20.2K",
+      pct: "+118%",
+      spark: [
+        17147,
+        17159,
+        17294,
+        18264,
+        19922,
+        20347,
+        26271,
+        27891,
+        28319,
+        28646,
+        29074,
+        29280,
+        29493,
+        31154,
+        36209,
+        37340
+      ]
+    },
+    {
+      athlete: "Mason Dossett",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765467800880-Mason_Dossett_68e01dad2da2f41b03487202_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "5.9K",
+      end: "19.8K",
+      gain: "+13.9K",
+      pct: "+234%",
+      spark: [
+        5949,
+        5917,
+        9835,
+        9662,
+        9295,
+        9283,
+        9260,
+        9257,
+        9195,
+        9157,
+        9138,
+        9160,
+        9147,
+        9122,
+        20918,
+        19846
+      ]
+    }
+  ],
   partner: {
     brand: "Nike",
     posts: "294",
@@ -248,6 +341,44 @@ const baylor: ReportData = {
       third: "N/A",
       thirdLabel: "Shares",
       handle: "andre.iggyy",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Taliah Scott",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18120291091591725",
+      platform: "Instagram Reels",
+      likes: "186.8K",
+      comments: "6.1K",
+      third: "2.8M",
+      thirdLabel: "Views",
+      handle: "espnw",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Cameron Carr",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18088848569355276",
+      platform: "Instagram Post",
+      likes: "55.8K",
+      comments: "535",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "br_hoops",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Connor Hawkins",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18052853501411428",
+      platform: "Instagram Post",
+      likes: "50.5K",
+      comments: "873",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "hayesfawcett3",
       verified: false
     }
   ]

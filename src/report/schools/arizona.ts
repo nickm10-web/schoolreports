@@ -118,6 +118,99 @@ const arizona: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "2,409",
+    likes: "1.8M",
+    views: "16.4M",
+    athletes: "296",
+    bestDay: "Sunday"
+  },
+  growth: [
+    {
+      athlete: "Koa Peat",
+      sport: "Men's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760465135837-Koa_Peat_68ee6de1b740909987547677.png",
+      platform: "Instagram",
+      start: "58.2K",
+      end: "93.7K",
+      gain: "+35.5K",
+      pct: "+61%",
+      spark: [
+        58194,
+        64558,
+        66144,
+        67034,
+        67609,
+        68596,
+        71931,
+        72468,
+        72473,
+        77485,
+        81592,
+        83866,
+        92533,
+        94148,
+        93965,
+        93668
+      ]
+    },
+    {
+      athlete: "Brayden Burries",
+      sport: "Men's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760465123937-Brayden_Burries_68ee6de1b74090998754767b.png",
+      platform: "Instagram",
+      start: "32.7K",
+      end: "59.2K",
+      gain: "+26.6K",
+      pct: "+81%",
+      spark: [
+        32664,
+        32903,
+        32980,
+        33036,
+        32976,
+        33406,
+        35037,
+        36909,
+        37400,
+        38280,
+        42181,
+        47247,
+        54905,
+        58344,
+        59193,
+        59235
+      ]
+    },
+    {
+      athlete: "Jordan Wilson",
+      sport: "Women's Volleyball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760465140114-Jordan_Wilson_68ee6de1b740909987547682.png",
+      platform: "Instagram",
+      start: "11.6K",
+      end: "24.3K",
+      gain: "+12.7K",
+      pct: "+110%",
+      spark: [
+        11611,
+        11754,
+        11716,
+        15389,
+        16036,
+        16223,
+        16153,
+        16180,
+        16176,
+        16142,
+        16068,
+        16041,
+        15981,
+        21666,
+        24360,
+        24345
+      ]
+    }
+  ],
   partner: {
     brand: "Nike",
     posts: "265",
@@ -248,6 +341,44 @@ const arizona: ReportData = {
       third: "N/A",
       thirdLabel: "Shares",
       handle: "_justbryce",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Jaden Bradley",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18079534825828252",
+      platform: "Instagram Reels",
+      likes: "61.1K",
+      comments: "541",
+      third: "1.1M",
+      thirdLabel: "Views",
+      handle: "br_hoops",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Michael Dansby",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18102320293771293",
+      platform: "Instagram Reels",
+      likes: "32.1K",
+      comments: "168",
+      third: "518.5K",
+      thirdLabel: "Views",
+      handle: "seahawks",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Grace Jenkins",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17868636096584033",
+      platform: "Instagram Post",
+      likes: "31.3K",
+      comments: "190",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "ncaasoftball",
       verified: false
     }
   ]

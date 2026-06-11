@@ -18,11 +18,13 @@ import type {
   ApparelPartner,
   Brand,
   ContentPiece,
+  Grower,
   Highlight,
   HighlightIcon,
   RunnerUp,
   Platform,
   ReportData,
+  YearNumbers,
 } from './types';
 
 // ── helpers ──────────────────────────────────────────────────────────────
@@ -406,16 +408,142 @@ function YearInReview({ data }: { data: ReportData }) {
   );
 }
 
+/** "The Year in Numbers" band: program totals right under the period strip. */
+function NumbersBand({ n }: { n: YearNumbers }) {
+  const items = [
+    { v: n.posts, l: 'Posts tracked' },
+    { v: n.athletes, l: 'Athletes posting' },
+    { v: n.likes, l: 'Total likes' },
+    ...(n.views ? [{ v: n.views, l: 'Video views' }] : []),
+    ...(n.bestDay ? [{ v: n.bestDay, l: 'Best day to post' }] : []),
+  ];
+  return (
+    <div className="eoy-numbers">
+      <div className="eoy-wrap eoy-numbers-row">
+        <span className="eoy-numbers-kicker">The year<br />in numbers</span>
+        {items.map((it) => (
+          <span key={it.l} className="eoy-numbers-item">
+            <span className="eoy-numbers-val">{it.v}</span>
+            <span className="eoy-numbers-lbl">{it.l}</span>
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/** Inline-SVG sparkline (no JS, survives the static email export). */
+function Sparkline({ values }: { values: number[] }) {
+  if (values.length < 2) return null;
+  const w = 220;
+  const h = 54;
+  const pad = 4;
+  const min = Math.min(...values);
+  const span = Math.max(...values) - min || 1;
+  const pts = values.map((v, i) => [
+    pad + (i / (values.length - 1)) * (w - pad * 2),
+    h - pad - ((v - min) / span) * (h - pad * 2),
+  ]);
+  const d = pts.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(' ');
+  const [ex, ey] = pts[pts.length - 1];
+  return (
+    <svg className="eoy-spark" viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none" aria-hidden>
+      <polyline points={d} fill="none" stroke="#E2F500" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" />
+      <circle cx={ex} cy={ey} r="3.5" fill="#E2F500" />
+    </svg>
+  );
+}
+
+/** "Who Blew Up": ranked follower-growth rows with real before/after curves. */
+function GrowerRow({ g, i }: { g: Grower; i: number }) {
+  return (
+    <Reveal delay={i * 90} className="eoy-grow-row">
+      <span className="eoy-grow-rank" aria-hidden>{String(i + 1).padStart(2, '0')}</span>
+      <div className="eoy-grow-photo">
+        <Img src={g.photo} alt={g.athlete} className="eoy-grow-img" label={initials(g.athlete)} />
+      </div>
+      <div className="eoy-grow-id">
+        <div className="eoy-grow-name">{g.athlete}</div>
+        <div className="eoy-grow-sport">{g.sport} · {g.platform}</div>
+      </div>
+      <div className="eoy-grow-curve"><Sparkline values={g.spark} /></div>
+      <div className="eoy-grow-nums">
+        <span className="eoy-grow-path">
+          {g.start} <span aria-hidden>→</span> {g.end}
+        </span>
+        <span className="eoy-grow-pct">{g.pct}</span>
+      </div>
+    </Reveal>
+  );
+}
+
+function WhoBlewUp({ data, index }: { data: ReportData; index: string }) {
+  return (
+    <section className="eoy-section">
+      <div className="eoy-wrap">
+        <SecHead index={index} kicker="Follower growth" title="Who Blew Up" />
+        <div className="eoy-grow">
+          {(data.growth as Grower[]).map((g, i) => (
+            <GrowerRow key={g.athlete} g={g} i={i} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/** "Earned Media": big accounts posting ABOUT the school's athletes. */
+function EarnedCard({ c, i }: { c: ContentPiece; i: number }) {
+  return (
+    <Reveal delay={i * 70} className="eoy-poster eoy-poster-earned">
+      <Img src={c.thumb} alt={c.title} className="eoy-poster-img" label="THUMBNAIL" />
+      <div className="eoy-poster-scrim" />
+      <span className="eoy-poster-rank" aria-hidden>{c.rank}</span>
+      <span className="eoy-poster-platform" title={c.platform}>
+        <PlatformIcon platform={c.platform} />
+      </span>
+      <div className="eoy-poster-bottom">
+        <div className="eoy-poster-title">{c.title}</div>
+        <div className="eoy-poster-by">posted by @{c.handle}</div>
+        <div className="eoy-poster-metrics">
+          <span className="eoy-poster-likes">{c.likes}</span>
+          <span className="eoy-poster-likes-lbl">likes</span>
+          <span className="eoy-poster-rest">{c.comments} comments</span>
+        </div>
+      </div>
+    </Reveal>
+  );
+}
+
+function EarnedMedia({ data, index }: { data: ReportData; index: string }) {
+  return (
+    <section className="eoy-section">
+      <div className="eoy-wrap">
+        <SecHead index={index} kicker="The internet noticed" title="Earned Media" />
+        <p className="eoy-earned-lede">
+          Coverage your athletes did not have to post themselves: major accounts
+          putting {data.program.name} names in their feeds.
+        </p>
+        <div className="eoy-posters eoy-earned">
+          {(data.earned as ContentPiece[]).map((c, i) => (
+            <EarnedCard key={c.rank} c={c} i={i} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /** Apparel Partner Value: receipts the school can hand its gear sponsor.
  *  Poster band, not a stat grid: lede copy + one volt plate + dotted rows,
  *  ghost brand wordmark behind. */
-function PartnerValue({ data }: { data: ReportData }) {
+function PartnerValue({ data, index }: { data: ReportData; index: string }) {
   const p = data.partner as ApparelPartner;
   const school = data.program.name;
   return (
     <section className="eoy-section">
       <div className="eoy-wrap">
-        <SecHead index="02" kicker="Apparel partner value" title={`What ${p.brand} Got`} />
+        <SecHead index={index} kicker="Apparel partner value" title={`What ${p.brand} Got`} />
         <Reveal>
           <div className="eoy-partner" data-brand={p.brand}>
             <div className="eoy-partner-main">
@@ -525,11 +653,11 @@ function BrandFanCard({ b, i }: { b: Brand; i: number }) {
   );
 }
 
-function TopBrands({ data }: { data: ReportData }) {
+function TopBrands({ data, index }: { data: ReportData; index: string }) {
   return (
     <section className="eoy-section">
       <div className="eoy-wrap">
-        <SecHead index={data.partner ? '03' : '02'} kicker="Summer pitch list" title="Brands to Reach Out To" />
+        <SecHead index={index} kicker="Summer pitch list" title="Brands to Reach Out To" />
         <Reveal>
           <div className="eoy-fan">
             {data.brands.map((b, i) => (
@@ -563,11 +691,11 @@ function PosterCard({ c, i }: { c: ContentPiece; i: number }) {
   );
 }
 
-function TopContent({ data }: { data: ReportData }) {
+function TopContent({ data, index }: { data: ReportData; index: string }) {
   return (
     <section className="eoy-section">
       <div className="eoy-wrap">
-        <SecHead index={data.partner ? '04' : '03'} kicker="Best Posts" title="Top Performing Content" />
+        <SecHead index={index} kicker="Best Posts" title="Top Performing Content" />
         <div className="eoy-posters">
           {data.topContent.map((c, i) => (
             <PosterCard key={c.rank} c={c} i={i} />
@@ -609,6 +737,16 @@ function FooterBanner() {
 // ── root ─────────────────────────────────────────────────────────────────
 
 export function EndOfYearReport({ data }: { data: ReportData }) {
+  // Sections renumber around the optional ones (growth/partner/earned).
+  const present = [
+    'review',
+    data.growth?.length ? 'growth' : '',
+    data.partner ? 'partner' : '',
+    'brands',
+    'content',
+    data.earned?.length ? 'earned' : '',
+  ].filter(Boolean);
+  const idx = (k: string) => String(present.indexOf(k) + 1).padStart(2, '0');
   return (
     <div className="eoy-root">
       {/* dangerouslySetInnerHTML keeps ">" selectors intact under renderToStaticMarkup (email export) */}
@@ -619,10 +757,13 @@ export function EndOfYearReport({ data }: { data: ReportData }) {
         <span className="eoy-period-sep" />
         <span className="eoy-period-range">August 2025 – May 2026</span>
       </div>
+      {data.numbers && <NumbersBand n={data.numbers} />}
       <YearInReview data={data} />
-      {data.partner && <PartnerValue data={data} />}
-      <TopBrands data={data} />
-      <TopContent data={data} />
+      {data.growth?.length ? <WhoBlewUp data={data} index={idx('growth')} /> : null}
+      {data.partner && <PartnerValue data={data} index={idx('partner')} />}
+      <TopBrands data={data} index={idx('brands')} />
+      <TopContent data={data} index={idx('content')} />
+      {data.earned?.length ? <EarnedMedia data={data} index={idx('earned')} /> : null}
       <FooterBanner />
     </div>
   );
@@ -830,6 +971,34 @@ const CSS = `
 .eoy-footer-base{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 28px;border-top:1px solid var(--line);font-family:var(--cond);font-weight:600;text-transform:uppercase;letter-spacing:.13em;font-size:11.5px;color:var(--t3);}
 .eoy-footer-base-mid{color:var(--volt);}
 
+/* the year in numbers — slim full-width tally band */
+.eoy-numbers{background:#0f0d15;border-bottom:1px solid var(--line);}
+.eoy-numbers-row{display:flex;flex-wrap:wrap;align-items:center;gap:18px 44px;padding-top:22px;padding-bottom:22px;}
+.eoy-numbers-kicker{font-family:var(--cond);font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:12.5px;line-height:1.35;color:var(--volt);border-right:1px solid var(--line);padding-right:34px;}
+.eoy-numbers-item{display:flex;flex-direction:column;gap:3px;}
+.eoy-numbers-val{font-family:var(--display);font-size:1.9rem;line-height:1;color:var(--ink-on-dark,#fff);}
+.eoy-numbers-lbl{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.09em;font-size:11.5px;color:var(--t3);}
+
+/* who blew up — ranked growth rows with sparklines */
+.eoy-grow{display:flex;flex-direction:column;}
+.eoy-grow-row{display:grid;grid-template-columns:54px 72px minmax(150px,1.1fr) minmax(170px,1.5fr) auto;align-items:center;gap:22px;padding:20px 4px;border-top:1px solid var(--line);}
+.eoy-grow-row:last-child{border-bottom:1px solid var(--line);}
+.eoy-grow-rank{font-family:var(--display);font-style:italic;font-size:2.4rem;line-height:1;color:rgba(255,255,255,.16);}
+.eoy-grow-photo{width:72px;height:72px;border-radius:14px;overflow:hidden;background:#1a1822;}
+.eoy-grow-img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;display:block;}
+.eoy-grow-name{font-family:var(--display);font-style:italic;font-size:1.45rem;line-height:1.05;letter-spacing:.01em;}
+.eoy-grow-sport{margin-top:5px;font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.09em;font-size:12px;color:var(--volt);}
+.eoy-grow-curve{min-width:0;}
+.eoy-spark{display:block;width:100%;height:54px;filter:drop-shadow(0 0 6px rgba(226,245,0,.35));}
+.eoy-grow-nums{display:flex;flex-direction:column;align-items:flex-end;gap:7px;}
+.eoy-grow-path{font-family:var(--cond);font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:1.05rem;color:var(--t2);white-space:nowrap;}
+.eoy-grow-pct{font-family:var(--display);font-size:1.5rem;line-height:1;background:var(--volt);color:var(--ink);transform:skewX(-11deg);padding:5px 12px;border-radius:3px;}
+
+/* earned media — poster trio with author line */
+.eoy-earned{grid-template-columns:repeat(3,1fr);}
+.eoy-earned-lede{margin:-14px 0 26px;font-size:1rem;line-height:1.6;color:var(--t2);max-width:60ch;}
+.eoy-poster-by{margin-top:2px;font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:12px;color:var(--volt);}
+
 /* apparel partner value — poster band with ghost wordmark */
 .eoy-partner{position:relative;display:grid;grid-template-columns:1.5fr 1fr;gap:44px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:40px 44px 44px;overflow:hidden;}
 .eoy-partner::after{content:attr(data-brand);position:absolute;right:-10px;bottom:-36px;font-family:var(--display);font-size:11rem;line-height:1;text-transform:uppercase;letter-spacing:.01em;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.055);pointer-events:none;white-space:nowrap;}
@@ -857,6 +1026,13 @@ const CSS = `
   .eoy-posters{grid-template-columns:repeat(2,1fr);}
   .eoy-partner{grid-template-columns:1fr;gap:26px;padding:30px 26px 34px;}
   .eoy-partner::after{font-size:7rem;bottom:-24px;}
+  .eoy-grow-row{grid-template-columns:54px 72px 1fr;grid-template-areas:"rank photo id" "curve curve curve" "nums nums nums";gap:14px 18px;}
+  .eoy-grow-rank{grid-area:rank;}
+  .eoy-grow-photo{grid-area:photo;}
+  .eoy-grow-id{grid-area:id;}
+  .eoy-grow-curve{grid-area:curve;}
+  .eoy-grow-nums{grid-area:nums;flex-direction:row;align-items:center;justify-content:space-between;}
+  .eoy-earned{grid-template-columns:1fr;}
   .eoy-fan{flex-wrap:wrap;gap:18px;}
   .eoy-fancard{margin-left:0;transform:none;}
   .eoy-fancard:hover{transform:translateY(-8px) scale(1.03);}

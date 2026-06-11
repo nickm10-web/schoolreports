@@ -118,6 +118,13 @@ const nc_state: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "930",
+    likes: "592.4K",
+    views: "1.7M",
+    athletes: "193",
+    bestDay: "Monday"
+  },
   partner: {
     brand: "Adidas",
     posts: "67",
@@ -248,6 +255,44 @@ const nc_state: ReportData = {
       third: "N/A",
       thirdLabel: "Shares",
       handle: "gunslangin.cj",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Maia Townsend",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18299578390302814",
+      platform: "Instagram Post",
+      likes: "24.7K",
+      comments: "97",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "ncaasoftball",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "CJ Bailey",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17940203876983747",
+      platform: "Instagram Post",
+      likes: "20.2K",
+      comments: "315",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "hayesfawcett3",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Quadir Copeland",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18381974131144309",
+      platform: "Instagram Post",
+      likes: "17.4K",
+      comments: "384",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "pdtmedia_",
       verified: false
     }
   ]

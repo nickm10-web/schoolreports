@@ -118,6 +118,99 @@ const unc: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "1,454",
+    likes: "2.3M",
+    views: "50.2M",
+    athletes: "207",
+    bestDay: "Saturday"
+  },
+  growth: [
+    {
+      athlete: "Caleb Wilson",
+      sport: "Men's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761202580033-Caleb_Wilson_68f9d10bf54231af438356d6.png",
+      platform: "Instagram",
+      start: "42.2K",
+      end: "152.5K",
+      gain: "+110.2K",
+      pct: "+261%",
+      spark: [
+        42230,
+        57893,
+        59517,
+        61446,
+        61626,
+        78259,
+        79558,
+        100196,
+        113235,
+        114897,
+        119752,
+        122365,
+        126755,
+        128262,
+        146404,
+        152467
+      ]
+    },
+    {
+      athlete: "Evan Bennett",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761202571749-Evan_Bennett_68f9d10bf54231af4383576a.png",
+      platform: "Instagram",
+      start: "26.1K",
+      end: "127K",
+      gain: "+100.9K",
+      pct: "+387%",
+      spark: [
+        26064,
+        26162,
+        26157,
+        26145,
+        26142,
+        25960,
+        25929,
+        25666,
+        48806,
+        48805,
+        46892,
+        46086,
+        151792,
+        141761,
+        128436,
+        126975
+      ]
+    },
+    {
+      athlete: "Jackie Taylor",
+      sport: "Women's Volleyball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761202579367-Jackie_Taylor_68f9d10bf54231af4383573d.png",
+      platform: "Instagram",
+      start: "24.8K",
+      end: "29.7K",
+      gain: "+4.9K",
+      pct: "+20%",
+      spark: [
+        24808,
+        26865,
+        26958,
+        26981,
+        26989,
+        26994,
+        27159,
+        27819,
+        27908,
+        27872,
+        27873,
+        28904,
+        29447,
+        29443,
+        29684,
+        29679
+      ]
+    }
+  ],
   partner: {
     brand: "Nike / Jordan",
     posts: "144",
@@ -248,6 +341,44 @@ const unc: ReportData = {
       third: "873.8K",
       thirdLabel: "Views",
       handle: "c.dubbb",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Caleb Wilson",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18064588067589473",
+      platform: "Instagram Reels",
+      likes: "329.4K",
+      comments: "2K",
+      third: "6M",
+      thirdLabel: "Views",
+      handle: "lethalshooter",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Chelsea Thorpe",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18138035251437367",
+      platform: "Instagram Reels",
+      likes: "167.8K",
+      comments: "204",
+      third: "3.1M",
+      thirdLabel: "Views",
+      handle: "ncaavolleyball",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Jackie Taylor",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18107425384534643",
+      platform: "Instagram Post",
+      likes: "60.6K",
+      comments: "413",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "espnw",
       verified: false
     }
   ]

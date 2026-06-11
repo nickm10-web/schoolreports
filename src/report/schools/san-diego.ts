@@ -118,6 +118,99 @@ const san_diego: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "1,253",
+    likes: "1.3M",
+    views: "17.4M",
+    athletes: "135",
+    bestDay: "Monday"
+  },
+  growth: [
+    {
+      athlete: "Reese Bates",
+      sport: "Women's Volleyball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1758153250960-Reese_Bates_68cb4a197af3c0bde6379a55_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "65.7K",
+      end: "82.3K",
+      gain: "+16.7K",
+      pct: "+25%",
+      spark: [
+        65678,
+        66267,
+        66369,
+        66395,
+        66531,
+        66665,
+        67490,
+        67647,
+        68066,
+        68629,
+        69134,
+        69517,
+        69953,
+        73297,
+        81003,
+        82347
+      ]
+    },
+    {
+      athlete: "James Scott",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760732616256-James_Scott_68d720f1e466ef0928899ece_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "2.3K",
+      end: "7K",
+      gain: "+4.7K",
+      pct: "+204%",
+      spark: [
+        2289,
+        2287,
+        2298,
+        2373,
+        3548,
+        4300,
+        4518,
+        4893,
+        5159,
+        5515,
+        5649,
+        5776,
+        6060,
+        6776,
+        6845,
+        6950
+      ]
+    },
+    {
+      athlete: "Tim Moore Jr.",
+      sport: "Men's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760647612112-Tim_Moore Jr._68cb57938e6de13568340fb8_ProfilePicture.jpg",
+      platform: "TikTok",
+      start: "1.1K",
+      end: "4.4K",
+      gain: "+3.3K",
+      pct: "+296%",
+      spark: [
+        1114,
+        1121,
+        1190,
+        1192,
+        1196,
+        1191,
+        1188,
+        1257,
+        4416,
+        4383,
+        4364,
+        4349,
+        4338,
+        4326,
+        4320,
+        4415
+      ]
+    }
+  ],
   partner: {
     brand: "Nike",
     posts: "77",

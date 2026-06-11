@@ -118,6 +118,99 @@ const clemson: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "1,379",
+    likes: "2.4M",
+    views: "25.2M",
+    athletes: "213",
+    bestDay: "Saturday"
+  },
+  growth: [
+    {
+      athlete: "Avieon Terrell",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761201591058-Avieon_Terrell_68f9ccc3e3da270d8f2601b4.png",
+      platform: "Instagram",
+      start: "28.2K",
+      end: "57.3K",
+      gain: "+29.1K",
+      pct: "+103%",
+      spark: [
+        28206,
+        28748,
+        28948,
+        34049,
+        34413,
+        34649,
+        37226,
+        37269,
+        38436,
+        38512,
+        38840,
+        39005,
+        39326,
+        39547,
+        57168,
+        57287
+      ]
+    },
+    {
+      athlete: "Peter Woods",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761201583420-Peter_Woods_68f9ccc3e3da270d8f260207.png",
+      platform: "Instagram",
+      start: "28.7K",
+      end: "44.2K",
+      gain: "+15.4K",
+      pct: "+54%",
+      spark: [
+        28745,
+        28747,
+        28776,
+        28774,
+        30073,
+        30154,
+        30155,
+        30319,
+        30319,
+        30365,
+        30464,
+        30642,
+        30653,
+        30696,
+        30679,
+        44170
+      ]
+    },
+    {
+      athlete: "Trinity Webb",
+      sport: "Women's Gymnastics",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761201595389-Trinity_Webb_68f9ccc3e3da270d8f26023b.png",
+      platform: "Instagram",
+      start: "10.7K",
+      end: "15.6K",
+      gain: "+4.9K",
+      pct: "+46%",
+      spark: [
+        10683,
+        11890,
+        12131,
+        12135,
+        12167,
+        12204,
+        12553,
+        12791,
+        13193,
+        13229,
+        14359,
+        14514,
+        14570,
+        14671,
+        14959,
+        15628
+      ]
+    }
+  ],
   partner: {
     brand: "Nike",
     posts: "110",
@@ -248,6 +341,44 @@ const clemson: ReportData = {
       third: "N/A",
       thirdLabel: "Shares",
       handle: "cadeklubnik",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "RJ Godfrey",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18537499066060237",
+      platform: "Instagram Reels",
+      likes: "475K",
+      comments: "6.9K",
+      third: "5.1M",
+      thirdLabel: "Views",
+      handle: "foxcarolinanews",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Avieon Terrell",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18089207975145215",
+      platform: "Instagram Reels",
+      likes: "48.3K",
+      comments: "565",
+      third: "1.3M",
+      thirdLabel: "Views",
+      handle: "nfl",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Wade Woodaz",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18078924479400531",
+      platform: "Instagram Post",
+      likes: "41.3K",
+      comments: "100",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "houstontexans",
       verified: false
     }
   ]

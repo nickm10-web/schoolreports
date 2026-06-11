@@ -118,6 +118,99 @@ const arizona_state: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "3,644",
+    likes: "3.8M",
+    views: "56.2M",
+    athletes: "436",
+    bestDay: "Sunday"
+  },
+  growth: [
+    {
+      athlete: "Jordyn Tyson",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768413609542-Jordyn_Tyson_68b6f8e1d37bda451b1cd466_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "19.6K",
+      end: "105.8K",
+      gain: "+86.2K",
+      pct: "+439%",
+      spark: [
+        19611,
+        29464,
+        30503,
+        30727,
+        30742,
+        31129,
+        31451,
+        32090,
+        33288,
+        34323,
+        34613,
+        35494,
+        36755,
+        41012,
+        45364,
+        105774
+      ]
+    },
+    {
+      athlete: "Santiago Trouet",
+      sport: "Men's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768413750837-Santiago_Trouet_68e963eaaadc702bdcaa46b5_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "12.7K",
+      end: "90.7K",
+      gain: "+78K",
+      pct: "+617%",
+      spark: [
+        12651,
+        13391,
+        13994,
+        46524,
+        49462,
+        51865,
+        54616,
+        53754,
+        52719,
+        61681,
+        97506,
+        103067,
+        101066,
+        97614,
+        93584,
+        90666
+      ]
+    },
+    {
+      athlete: "Ines Lopez Arias",
+      sport: "Women's Track & Field",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768413931825-Ines_Lopez Arias_68e963f4aadc702bdcaa471b_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "27.8K",
+      end: "47.1K",
+      gain: "+19.2K",
+      pct: "+69%",
+      spark: [
+        27849,
+        27720,
+        27862,
+        27870,
+        27864,
+        27861,
+        27826,
+        27754,
+        30028,
+        32925,
+        34000,
+        34957,
+        42004,
+        43072,
+        46823,
+        47063
+      ]
+    }
+  ],
   partner: {
     brand: "Adidas",
     posts: "320",
@@ -248,6 +341,44 @@ const arizona_state: ReportData = {
       third: "1.6M",
       thirdLabel: "Views",
       handle: "filip_ss1",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Marley Washenitz",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18074676803249685",
+      platform: "Instagram Reels",
+      likes: "104.4K",
+      comments: "603",
+      third: "2M",
+      thirdLabel: "Views",
+      handle: "overtime",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Jordyn Tyson",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17872637535540346",
+      platform: "Instagram Post",
+      likes: "63.5K",
+      comments: "438",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "nfl",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Jordyn Tyson",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18206685424327221",
+      platform: "Instagram Post",
+      likes: "52.3K",
+      comments: "1.7K",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "saints",
       verified: false
     }
   ]

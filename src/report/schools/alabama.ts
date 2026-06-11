@@ -118,6 +118,99 @@ const alabama: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "3,170",
+    likes: "7.8M",
+    views: "91.1M",
+    athletes: "357",
+    bestDay: "Tuesday"
+  },
+  growth: [
+    {
+      athlete: "Ty Simpson",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1756828129440-Ty_Simpson_68b711996310d2d95fd52e6a_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "62.9K",
+      end: "142.9K",
+      gain: "+80K",
+      pct: "+127%",
+      spark: [
+        62862,
+        92502,
+        111451,
+        113684,
+        114614,
+        114743,
+        120832,
+        123136,
+        129023,
+        132184,
+        133693,
+        136080,
+        137550,
+        137275,
+        141463,
+        142864
+      ]
+    },
+    {
+      athlete: "Labaron Philon Jr.",
+      sport: "Men's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1756828501699-Labaron_Philon Jr._68b71352217c594b26890185_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "62K",
+      end: "122.2K",
+      gain: "+60.3K",
+      pct: "+97%",
+      spark: [
+        61980,
+        62251,
+        70650,
+        73936,
+        74869,
+        75753,
+        76626,
+        77522,
+        77979,
+        78083,
+        78992,
+        81191,
+        91032,
+        98878,
+        116597,
+        122234
+      ]
+    },
+    {
+      athlete: "Lauren Johnson",
+      sport: "Softball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761918752219-Lauren_Johnson_68dd5b13d8e85318063b7cb0_ProfilePicture.jpg",
+      platform: "Instagram",
+      start: "9.5K",
+      end: "23.5K",
+      gain: "+14K",
+      pct: "+147%",
+      spark: [
+        9537,
+        9797,
+        10619,
+        10700,
+        11467,
+        11467,
+        11553,
+        13778,
+        15889,
+        16021,
+        16254,
+        18182,
+        18957,
+        19947,
+        22575,
+        23518
+      ]
+    }
+  ],
   partner: {
     brand: "Nike",
     posts: "427",
@@ -248,6 +341,44 @@ const alabama: ReportData = {
       third: "N/A",
       thirdLabel: "Shares",
       handle: "ryanwms1",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Justin Jefferson",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18433932166185681",
+      platform: "Instagram Post",
+      likes: "150.9K",
+      comments: "712",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "nfl",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Cam Calhoun",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18169180318348818",
+      platform: "Instagram Post",
+      likes: "57.6K",
+      comments: "728",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "hayesfawcett3",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Qua Russaw",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18116134984598289",
+      platform: "Instagram Post",
+      likes: "46K",
+      comments: "536",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "cbssportscfb",
       verified: false
     }
   ]

@@ -118,6 +118,13 @@ const michigan_state: ReportData = {
       ]
     }
   ],
+  numbers: {
+    posts: "1,104",
+    likes: "803.8K",
+    views: "2.3M",
+    athletes: "160",
+    bestDay: "Thursday"
+  },
   partner: {
     brand: "Nike",
     posts: "51",
@@ -248,6 +255,44 @@ const michigan_state: ReportData = {
       third: "N/A",
       thirdLabel: "Shares",
       handle: "nickmarsh_11",
+      verified: false
+    }
+  ],
+  earned: [
+    {
+      rank: "01",
+      title: "Jaxon Kohler",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18133299508518996",
+      platform: "Instagram Reels",
+      likes: "46.7K",
+      comments: "148",
+      third: "942.6K",
+      thirdLabel: "Views",
+      handle: "cbbonfox",
+      verified: false
+    },
+    {
+      rank: "02",
+      title: "Cam Ward",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17984907995917088",
+      platform: "Instagram Post",
+      likes: "33.8K",
+      comments: "279",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "br_hoops",
+      verified: false
+    },
+    {
+      rank: "03",
+      title: "Nick Marsh",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18007989860822246",
+      platform: "Instagram Post",
+      likes: "25.8K",
+      comments: "235",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "cbssportscfb",
       verified: false
     }
   ]

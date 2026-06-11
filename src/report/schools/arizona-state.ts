@@ -58,29 +58,30 @@ const arizona_state: ReportData = {
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768413572945-Sam_Leavitt_68b6f8e1d37bda451b1cd479_ProfilePicture.jpg",
       statValue: "1.3M",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "20.7×",
       subValue: "61.3K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Jordyn Tyson",
-          stat: "159.1K"
+          stat: "159.1K · 1.5×"
         },
         {
           rank: "03",
           athlete: "Maurice Odum",
-          stat: "157.1K"
+          stat: "157.1K · 24.7×"
         },
         {
           rank: "04",
           athlete: "Aliyah Adams",
-          stat: "38K"
+          stat: "38K · 1.7×"
         },
         {
           rank: "05",
           athlete: "Faith Frame",
-          stat: "15.1K"
+          stat: "15.1K · 1.2×"
         }
       ]
     },

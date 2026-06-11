@@ -58,29 +58,30 @@ const nc_state: ReportData = {
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1762551544688-CJ_Bailey_690e66255b615b70780c02d4_ProfilePicture.jpg",
       statValue: "424.8K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "8.9×",
       subValue: "47.8K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Terrell Anderson",
-          stat: "155.5K"
+          stat: "155.5K · 2.5×"
         },
         {
           rank: "03",
           athlete: "Tre Holloman",
-          stat: "123.9K"
+          stat: "123.9K · 4.3×"
         },
         {
           rank: "04",
           athlete: "Qadence Samuels",
-          stat: "20.8K"
+          stat: "20.8K · 1.1×"
         },
         {
           rank: "05",
           athlete: "Adelaide Jernigan",
-          stat: "15.8K"
+          stat: "15.8K · 3.4×"
         }
       ]
     },

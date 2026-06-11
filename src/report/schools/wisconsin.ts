@@ -58,29 +58,30 @@ const wisconsin: ReportData = {
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1764860457755-Mason_Reiger_68fca9239c85e8dfe8f9c2aa_ProfilePicture.jpg",
       statValue: "129.4K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "1.2×",
       subValue: "110.5K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Laila Edwards",
-          stat: "119.6K"
+          stat: "119.6K · 1.5×"
         },
         {
           rank: "03",
           athlete: "Caroline Harvey",
-          stat: "115.4K"
+          stat: "115.4K · 1.4×"
         },
         {
           rank: "04",
           athlete: "Grace Bickett",
-          stat: "59.2K"
+          stat: "59.2K · 21.9×"
         },
         {
           rank: "05",
           athlete: "Omillio Agard",
-          stat: "56K"
+          stat: "56K · 3.6×"
         }
       ]
     },

@@ -58,29 +58,30 @@ const ucla: ReportData = {
       sport: "Women's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765897162248-Gabriela_Jaquez_68f878d77fcc92b86eee7ee7_ProfilePicture.jpg",
       statValue: "546.8K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "3.1×",
       subValue: "178.2K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Roch Cholowsky",
-          stat: "216.1K"
+          stat: "216.1K · 4.5×"
         },
         {
           rank: "03",
           athlete: "Hazel Alevok",
-          stat: "150K"
+          stat: "150K · 3.2×"
         },
         {
           rank: "04",
           athlete: "Kwazi Gilmer",
-          stat: "133.4K"
+          stat: "133.4K · 3.9×"
         },
         {
           rank: "05",
           athlete: "Jewelous \"JuJu\" Walls",
-          stat: "60.7K"
+          stat: "60.7K · 16.4×"
         }
       ]
     },

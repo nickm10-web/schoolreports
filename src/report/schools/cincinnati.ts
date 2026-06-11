@@ -58,29 +58,30 @@ const cincinnati: ReportData = {
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761114189815-Brendan_Sorsby_68f8774766c6eed501f52f3d.png",
       statValue: "173.2K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "7.6×",
       subValue: "22.7K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Shon Abaev",
-          stat: "144.7K"
+          stat: "144.7K · 3.0×"
         },
         {
           rank: "03",
           athlete: "Keyshuan Tillery",
-          stat: "66.6K"
+          stat: "66.6K · 9.5×"
         },
         {
           rank: "04",
           athlete: "Carly Glendinning",
-          stat: "11.1K"
+          stat: "11.1K · 3.8×"
         },
         {
           rank: "05",
           athlete: "Lily DiBernardo",
-          stat: "10.8K"
+          stat: "10.8K · 2.5×"
         }
       ]
     },

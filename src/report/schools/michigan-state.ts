@@ -58,29 +58,30 @@ const michigan_state: ReportData = {
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761382107200-Nick_Marsh_68fc8e14aaa755171a3e5e9e.png",
       statValue: "264.1K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "9.1×",
       subValue: "29.2K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Divine Ugochukwu",
-          stat: "180.1K"
+          stat: "180.1K · 17.8×"
         },
         {
           rank: "03",
           athlete: "Aydan West",
-          stat: "107K"
+          stat: "107K · 9.9×"
         },
         {
           rank: "04",
           athlete: "Evie Doezema",
-          stat: "11.2K"
+          stat: "11.2K · 3.2×"
         },
         {
           rank: "05",
           athlete: "Jordan Ode",
-          stat: "8.2K"
+          stat: "8.2K · 2.5×"
         }
       ]
     },

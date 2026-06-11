@@ -58,29 +58,30 @@ const missouri: ReportData = {
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765378732744-Beau_Pribula_68e9d506b83b7def978910a8_ProfilePicture.jpg",
       statValue: "865.8K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "17.0×",
       subValue: "50.9K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Mark Mitchell",
-          stat: "95.1K"
+          stat: "95.1K · 2.7×"
         },
         {
           rank: "03",
           athlete: "Matt Zollers",
-          stat: "73.2K"
+          stat: "73.2K · 4.5×"
         },
         {
           rank: "04",
           athlete: "Kimarra Echols",
-          stat: "14.7K"
+          stat: "14.7K · 4.7×"
         },
         {
           rank: "05",
           athlete: "Marina Crownover",
-          stat: "13.5K"
+          stat: "13.5K · 2.8×"
         }
       ]
     },

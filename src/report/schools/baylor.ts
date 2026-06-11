@@ -58,29 +58,30 @@ const baylor: ReportData = {
       sport: "Men's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765467390892-Tounde_Yessoufou_68a78830f8a45dd3fd302172_ProfilePicture.jpg",
       statValue: "140.5K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "3.9×",
       subValue: "36.4K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Keaton Thomas",
-          stat: "137.7K"
+          stat: "137.7K · 3.8×"
         },
         {
           rank: "03",
           athlete: "Isaac Williams IV",
-          stat: "131.9K"
+          stat: "131.9K · 1.5×"
         },
         {
           rank: "04",
           athlete: "Sima Lucero",
-          stat: "52.8K"
+          stat: "52.8K · 6.8×"
         },
         {
           rank: "05",
           athlete: "Gabby Kaminski",
-          stat: "27K"
+          stat: "27K · 3.6×"
         }
       ]
     },

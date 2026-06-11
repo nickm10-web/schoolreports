@@ -355,10 +355,27 @@ function FeatureCard({ h }: { h: Highlight }) {
               <span className="eoy-statline-arrow" aria-hidden>→</span>
             </>
           )}
-          <div className="eoy-plate eoy-plate-xl">
-            <span className="eoy-plate-num">{h.statValue}</span>
-            <span className="eoy-plate-unit">{h.statLabel}</span>
-          </div>
+          {h.mult ? (
+            /* overperformer: spell the story out. actual -> performs like N followers, xN */
+            <>
+              <div className="eoy-plate eoy-plate-xl eoy-plate-stack">
+                <span className="eoy-plate-kicker">Performs like</span>
+                <span className="eoy-plate-row">
+                  <span className="eoy-plate-num">{h.statValue}</span>
+                  <span className="eoy-plate-unit">Followers</span>
+                </span>
+              </div>
+              <span className="eoy-mult">
+                <span className="eoy-mult-num">{h.mult}</span>
+                <span className="eoy-mult-lbl">Multiplier</span>
+              </span>
+            </>
+          ) : (
+            <div className="eoy-plate eoy-plate-xl">
+              <span className="eoy-plate-num">{h.statValue}</span>
+              <span className="eoy-plate-unit">{h.statLabel}</span>
+            </div>
+          )}
         </div>
         {h.runnersUp && <RankList rows={h.runnersUp} />}
       </div>
@@ -904,6 +921,13 @@ const CSS = `
 
 /* volt stat plates */
 .eoy-statline{display:flex;align-items:center;flex-wrap:wrap;gap:12px 14px;margin-top:20px;max-width:100%;}
+/* overperformer plate: "PERFORMS LIKE / 140.5K FOLLOWERS" + multiplier stat */
+.eoy-plate-stack{flex-direction:column;align-items:flex-start;gap:1px;padding:8px 20px 9px;}
+.eoy-plate-kicker{font-family:var(--cond);font-weight:800;text-transform:uppercase;letter-spacing:.13em;font-size:11px;}
+.eoy-plate-row{display:flex;align-items:baseline;gap:8px;}
+.eoy-mult{display:flex;flex-direction:column;gap:3px;}
+.eoy-mult-num{font-family:var(--display);font-size:2rem;line-height:.85;color:var(--volt);}
+.eoy-mult-lbl{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--t2);}
 .eoy-substat{display:flex;flex-direction:column;gap:3px;}
 .eoy-substat-num{font-family:var(--display);font-size:2rem;line-height:.85;color:var(--t1);}
 .eoy-substat-lbl{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--t2);}

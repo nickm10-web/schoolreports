@@ -58,29 +58,30 @@ const clemson: ReportData = {
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761201591058-Avieon_Terrell_68f9ccc3e3da270d8f2601b4.png",
       statValue: "1M",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "17.6×",
       subValue: "57.3K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Chris Denson",
-          stat: "188.7K"
+          stat: "188.7K · 13.9×"
         },
         {
           rank: "03",
           athlete: "Tristan Smith",
-          stat: "171.6K"
+          stat: "171.6K · 6.6×"
         },
         {
           rank: "04",
           athlete: "Ella Cesario",
-          stat: "8.6K"
+          stat: "8.6K · 1.1×"
         },
         {
           rank: "05",
           athlete: "Bianca Martinez",
-          stat: "8K"
+          stat: "8K · 3.7×"
         }
       ]
     },

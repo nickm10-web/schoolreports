@@ -58,29 +58,30 @@ const arkansas: ReportData = {
       sport: "Men's Track & Field",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1767975239079-Jordan_Anthony_68e9b017a0cca3ee1d3e9855_ProfilePicture.jpg",
       statValue: "399.6K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "4.0×",
       subValue: "101K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Darius Acuff Jr.",
-          stat: "257.9K"
+          stat: "257.9K · 1.7×"
         },
         {
           rank: "03",
           athlete: "Billy Richmond III",
-          stat: "191.1K"
+          stat: "191.1K · 5.9×"
         },
         {
           rank: "04",
           athlete: "Natalie Wagner",
-          stat: "119.3K"
+          stat: "119.3K · 2.3×"
         },
         {
           rank: "05",
           athlete: "Analisse Batista",
-          stat: "88.9K"
+          stat: "88.9K · 12.9×"
         }
       ]
     },

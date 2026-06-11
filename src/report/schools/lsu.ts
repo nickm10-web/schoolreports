@@ -58,29 +58,30 @@ const lsu: ReportData = {
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1756249595399-Trey'Dez_Green_68ae3dcbc46ee67ea74fc95e_ProfilePicture.jpg",
       statValue: "491.4K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "8.5×",
       subValue: "58K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Tamarcus Cooley",
-          stat: "441.8K"
+          stat: "441.8K · 18.1×"
         },
         {
           rank: "03",
           athlete: "West Weeks",
-          stat: "356.4K"
+          stat: "356.4K · 7.2×"
         },
         {
           rank: "04",
           athlete: "MiLaysia Fulwiley",
-          stat: "258K"
+          stat: "258K · 1.1×"
         },
         {
           rank: "05",
           athlete: "Bella Hines",
-          stat: "173.1K"
+          stat: "173.1K · 4.1×"
         }
       ]
     },

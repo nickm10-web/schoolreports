@@ -58,29 +58,30 @@ const unc: ReportData = {
       sport: "Men's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761202580033-Caleb_Wilson_68f9d10bf54231af438356d6.png",
       statValue: "1.1M",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "7.1×",
       subValue: "152.5K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Derek Dixon",
-          stat: "379.9K"
+          stat: "379.9K · 19.3×"
         },
         {
           rank: "03",
           athlete: "Jarin Stevenson",
-          stat: "331.5K"
+          stat: "331.5K · 21.7×"
         },
         {
           rank: "04",
           athlete: "Zoe Behrendt",
-          stat: "16.2K"
+          stat: "16.2K · 2.2×"
         },
         {
           rank: "05",
           athlete: "Indya Nivar",
-          stat: "12.3K"
+          stat: "12.3K · 1.2×"
         }
       ]
     },

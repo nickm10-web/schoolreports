@@ -58,29 +58,30 @@ const smu: ReportData = {
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761381843929-Zadian_Gentry_68fc8bd377927c1df356cd8e.png",
       statValue: "71.2K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "8.5×",
       subValue: "8.4K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Ty Hawkins",
-          stat: "50.9K"
+          stat: "50.9K · 3.4×"
         },
         {
           rank: "03",
           athlete: "Ahmaad Moses",
-          stat: "43.3K"
+          stat: "43.3K · 12.1×"
         },
         {
           rank: "04",
           athlete: "Malaya Jones",
-          stat: "12.5K"
+          stat: "12.5K · 1.7×"
         },
         {
           rank: "05",
           athlete: "Maggie Croft",
-          stat: "9.7K"
+          stat: "9.7K · 2.4×"
         }
       ]
     },

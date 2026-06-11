@@ -58,29 +58,30 @@ const alabama: ReportData = {
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768594888890-Ryan Williams.png",
       statValue: "1.6M",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "2.1×",
       subValue: "739.8K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Kadyn Proctor",
-          stat: "928.7K"
+          stat: "928.7K · 8.8×"
         },
         {
           rank: "03",
           athlete: "Jalil Bethea",
-          stat: "912.5K"
+          stat: "912.5K · 4.2×"
         },
         {
           rank: "04",
           athlete: "Ana Roman",
-          stat: "25.7K"
+          stat: "25.7K · 7.6×"
         },
         {
           rank: "05",
           athlete: "Joy Egbuna",
-          stat: "14.3K"
+          stat: "14.3K · 5.8×"
         }
       ]
     },

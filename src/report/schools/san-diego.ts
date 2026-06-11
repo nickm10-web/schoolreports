@@ -58,29 +58,30 @@ const san_diego: ReportData = {
       sport: "Women's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760992059954-Ysabella_Von Seipler_68cb5362783089f8529cf756_ProfilePicture.jpg",
       statValue: "15K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "5.3×",
       subValue: "2.8K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Lauren Lynch",
-          stat: "8.6K"
+          stat: "8.6K · 2.3×"
         },
         {
           rank: "03",
           athlete: "Cade Martinez",
-          stat: "6.7K"
+          stat: "6.7K · 3.2×"
         },
         {
           rank: "04",
           athlete: "Sophia Pinedo",
-          stat: "5.9K"
+          stat: "5.9K · 2.8×"
         },
         {
           rank: "05",
           athlete: "Blake Chase",
-          stat: "5.3K"
+          stat: "5.3K · 3.3×"
         }
       ]
     },

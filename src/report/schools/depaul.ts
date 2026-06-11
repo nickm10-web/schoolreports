@@ -58,29 +58,30 @@ const depaul: ReportData = {
       sport: "Women's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761382522330-Alayna_West_68fc902d39f09904c5a95b3c.png",
       statValue: "14.9K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "8.4×",
       subValue: "1.8K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Shakara McCline",
-          stat: "13.2K"
+          stat: "13.2K · 2.5×"
         },
         {
           rank: "03",
           athlete: "Gina Davorija",
-          stat: "12.7K"
+          stat: "12.7K · 7.0×"
         },
         {
           rank: "04",
           athlete: "Kruz McClure",
-          stat: "8.9K"
+          stat: "8.9K · 3.2×"
         },
         {
           rank: "05",
           athlete: "Jeremy Lorenz",
-          stat: "2.8K"
+          stat: "2.8K · 1.6×"
         }
       ]
     },

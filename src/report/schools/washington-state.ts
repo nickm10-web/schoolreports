@@ -53,29 +53,30 @@ const washington_state: ReportData = {
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760735190834-Kenny_Worthy III_68f2ac424988214a6156fa55.png",
       statValue: "39.9K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "15.1×",
       subValue: "2.6K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Kayo Patu",
-          stat: "25.4K"
+          stat: "25.4K · 3.4×"
         },
         {
           rank: "03",
           athlete: "Sullivan Schlimgen",
-          stat: "14.1K"
+          stat: "14.1K · 7.2×"
         },
         {
           rank: "04",
           athlete: "Bela Alvarado",
-          stat: "2.6K"
+          stat: "2.6K · 1.7×"
         },
         {
           rank: "05",
           athlete: "Brooke Lyons",
-          stat: "1.9K"
+          stat: "1.9K · 1.4×"
         }
       ]
     },

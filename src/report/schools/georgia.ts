@@ -58,29 +58,30 @@ const georgia: ReportData = {
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759782213484-Zachariah_Branch_689647b6289e7803603e0ce7_ProfilePicture.jpg",
       statValue: "2M",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "8.7×",
       subValue: "228K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Colbie Young",
-          stat: "605K"
+          stat: "605K · 22.8×"
         },
         {
           rank: "03",
           athlete: "Dillon Bell",
-          stat: "461.2K"
+          stat: "461.2K · 15.9×"
         },
         {
           rank: "04",
           athlete: "Victoria Saah",
-          stat: "34.2K"
+          stat: "34.2K · 18.2×"
         },
         {
           rank: "05",
           athlete: "Summer Denigan",
-          stat: "23.5K"
+          stat: "23.5K · 6.2×"
         }
       ]
     },

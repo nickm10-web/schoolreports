@@ -58,29 +58,30 @@ const iowa: ReportData = {
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761852549276-Aaron_Graves_6903bbdb66d702c4eb17297b.png",
       statValue: "84K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "10.4×",
       subValue: "8.1K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Addie Deal",
-          stat: "63.3K"
+          stat: "63.3K · 3.5×"
         },
         {
           rank: "03",
           athlete: "Taylor McCabe",
-          stat: "52.7K"
+          stat: "52.7K · 1.9×"
         },
         {
           rank: "04",
           athlete: "Kaden Wetjen",
-          stat: "40.4K"
+          stat: "40.4K · 4.7×"
         },
         {
           rank: "05",
           athlete: "Taylor Stremlow",
-          stat: "23.9K"
+          stat: "23.9K · 1.7×"
         }
       ]
     },

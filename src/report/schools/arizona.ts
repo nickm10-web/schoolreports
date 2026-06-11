@@ -58,29 +58,30 @@ const arizona: ReportData = {
       sport: "Men's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760465123937-Brayden_Burries_68ee6de1b74090998754767b.png",
       statValue: "367.6K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "6.2×",
       subValue: "59.2K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Koa Peat",
-          stat: "268.2K"
+          stat: "268.2K · 2.9×"
         },
         {
           rank: "03",
           athlete: "Jordan Wilson",
-          stat: "108.7K"
+          stat: "108.7K · 4.5×"
         },
         {
           rank: "04",
           athlete: "Tobe Awaka",
-          stat: "104.9K"
+          stat: "104.9K · 8.4×"
         },
         {
           rank: "05",
           athlete: "Shea Davis",
-          stat: "33.1K"
+          stat: "33.1K · 2.5×"
         }
       ]
     },

@@ -58,29 +58,30 @@ const robert_morris: ReportData = {
       sport: "Men's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761111586559-DeSean_Goode_68f86c2ae1c43ab456ffa99f.png",
       statValue: "11K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "4.3×",
       subValue: "2.5K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Mofe Adewole",
-          stat: "9.8K"
+          stat: "9.8K · 5.2×"
         },
         {
           rank: "03",
           athlete: "Noel Roach",
-          stat: "9.2K"
+          stat: "9.2K · 2.3×"
         },
         {
           rank: "04",
           athlete: "Molly Dunn",
-          stat: "4.6K"
+          stat: "4.6K · 2.6×"
         },
         {
           rank: "05",
           athlete: "Morgan Giannone",
-          stat: "4.6K"
+          stat: "4.6K · 2.5×"
         }
       ]
     },

@@ -58,29 +58,30 @@ const texas: ReportData = {
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759795203711-Arch_Manning_689644765ca13f6f45fa5a17_ProfilePicture.jpg",
       statValue: "1.4M",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "2.2×",
       subValue: "620.1K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Jaime Ffrench",
-          stat: "467.9K"
+          stat: "467.9K · 11.1×"
         },
         {
           rank: "03",
           athlete: "Parker Livingstone",
-          stat: "279.5K"
+          stat: "279.5K · 8.1×"
         },
         {
           rank: "04",
           athlete: "MaTaia Lawson",
-          stat: "268.7K"
+          stat: "268.7K · 6.9×"
         },
         {
           rank: "05",
           athlete: "Sarah Graves",
-          stat: "228.3K"
+          stat: "228.3K · 7.4×"
         }
       ]
     },

@@ -58,29 +58,30 @@ const notre_dame: ReportData = {
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761383771831-Jeremiyah_Love_68fc94d55ecd65a8818e9757.png",
       statValue: "2M",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "8.1×",
       subValue: "244.7K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Jadarian Price",
-          stat: "336.3K"
+          stat: "336.3K · 5.6×"
         },
         {
           rank: "03",
           athlete: "Hannah Hidalgo",
-          stat: "273.8K"
+          stat: "273.8K · 2.1×"
         },
         {
           rank: "04",
           athlete: "CJ Carr",
-          stat: "206.2K"
+          stat: "206.2K · 4.1×"
         },
         {
           rank: "05",
           athlete: "Vanessa de Jesus",
-          stat: "96.8K"
+          stat: "96.8K · 6.2×"
         }
       ]
     },

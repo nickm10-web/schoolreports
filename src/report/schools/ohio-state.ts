@@ -58,29 +58,30 @@ const ohio_state: ReportData = {
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761388494249-Julian_Sayin_68fca493b06066e3308741bf.png",
       statValue: "2M",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "9.7×",
       subValue: "204.9K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Jeremiah Smith",
-          stat: "2M"
+          stat: "2M · 2.5×"
         },
         {
           rank: "03",
           athlete: "Caleb Downs",
-          stat: "804.3K"
+          stat: "804.3K · 2.3×"
         },
         {
           rank: "04",
           athlete: "Maxine Cimoroni",
-          stat: "40.5K"
+          stat: "40.5K · 11.5×"
         },
         {
           rank: "05",
           athlete: "Ava Watson",
-          stat: "14.7K"
+          stat: "14.7K · 1.3×"
         }
       ]
     },

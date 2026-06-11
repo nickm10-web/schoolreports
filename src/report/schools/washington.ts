@@ -58,29 +58,30 @@ const washington: ReportData = {
       sport: "Men's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761640369127-Quimari_Peterson_69007d3d19d5cdb1049300d5.png",
       statValue: "88.1K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "21.6×",
       subValue: "4.1K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Demond Williams Jr.",
-          stat: "75.1K"
+          stat: "75.1K · 2.5×"
         },
         {
           rank: "03",
           athlete: "Bryson Tucker",
-          stat: "60.2K"
+          stat: "60.2K · 2.6×"
         },
         {
           rank: "04",
           athlete: "Charlotte Gray",
-          stat: "7.4K"
+          stat: "7.4K · 3.3×"
         },
         {
           rank: "05",
           athlete: "Chelsea Hallinan",
-          stat: "5.9K"
+          stat: "5.9K · 2.4×"
         }
       ]
     },

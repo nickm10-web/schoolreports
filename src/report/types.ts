@@ -44,6 +44,9 @@ export interface Highlight {
    *  for the overperformer ("25.6K followers → performs like 241.6K"). */
   subValue?: string;
   subLabel?: string;
+  /** Overperformer multiplier, e.g. "3.9×". Triggers the explicit
+   *  actual → performs-like → multiplier layout on the feature card. */
+  mult?: string;
 }
 
 /** Apparel Partner Value section: what the school's gear sponsor got from

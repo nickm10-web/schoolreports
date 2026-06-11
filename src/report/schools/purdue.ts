@@ -58,29 +58,30 @@ const purdue: ReportData = {
       sport: "Men's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1764957905461-Omer_Mayer_68f6c2ba8f845316214c413a_ProfilePicture.jpg",
       statValue: "566.9K",
-      statLabel: "Performs Like",
+      statLabel: "Followers",
+      mult: "17.0×",
       subValue: "33.4K",
-      subLabel: "Followers",
+      subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Fletcher Loyer",
-          stat: "115K"
+          stat: "115K · 3.0×"
         },
         {
           rank: "03",
           athlete: "Braden Smith",
-          stat: "91.9K"
+          stat: "91.9K · 1.4×"
         },
         {
           rank: "04",
           athlete: "Bianca Hanisch",
-          stat: "37.5K"
+          stat: "37.5K · 25.0×"
         },
         {
           rank: "05",
           athlete: "Akasha Anderson",
-          stat: "15K"
+          stat: "15K · 3.0×"
         }
       ]
     },

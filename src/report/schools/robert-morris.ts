@@ -118,6 +118,30 @@ const robert_morris: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Under Armour",
+    posts: "62",
+    athletes: "49",
+    likes: "13.8K",
+    views: "1.8K",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Bryan Robertson",
+        stat: "8 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Emma Cameron",
+        stat: "2 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Alaina Giampietro",
+        stat: "2 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

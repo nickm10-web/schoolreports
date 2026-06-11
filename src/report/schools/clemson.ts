@@ -118,6 +118,30 @@ const clemson: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike",
+    posts: "110",
+    athletes: "52",
+    likes: "238.1K",
+    views: "4.5M",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Trinity Webb",
+        stat: "21 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Emma Malewski",
+        stat: "12 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Molly Arnold",
+        stat: "6 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

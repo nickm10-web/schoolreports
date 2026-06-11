@@ -118,6 +118,30 @@ const georgia: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike",
+    posts: "392",
+    athletes: "200",
+    likes: "688.7K",
+    views: "5.1M",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Adaejah Hodge",
+        stat: "14 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Keirstin Roose",
+        stat: "14 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Nate Frazier",
+        stat: "7 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

@@ -118,6 +118,30 @@ const washington: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Adidas",
+    posts: "47",
+    athletes: "33",
+    likes: "43.7K",
+    views: "47.3K",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Dezmen Roebuck",
+        stat: "5 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Sophi Mazzola",
+        stat: "3 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Sayvia Sellers",
+        stat: "3 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

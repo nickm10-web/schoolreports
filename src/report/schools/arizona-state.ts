@@ -118,6 +118,30 @@ const arizona_state: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Adidas",
+    posts: "320",
+    athletes: "196",
+    likes: "185.2K",
+    views: "516.3K",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Bor Artnak",
+        stat: "8 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Taiwo Mary Kudoro",
+        stat: "6 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Raleek Brown",
+        stat: "5 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

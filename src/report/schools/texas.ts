@@ -118,6 +118,30 @@ const texas: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike",
+    posts: "199",
+    athletes: "129",
+    likes: "469.6K",
+    views: "2.3M",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Shylien Brister",
+        stat: "6 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Michael Pinones",
+        stat: "5 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Karle \"KJ\" Lacey Jr.",
+        stat: "4 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

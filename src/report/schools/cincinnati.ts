@@ -118,6 +118,30 @@ const cincinnati: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike",
+    posts: "107",
+    athletes: "63",
+    likes: "56.7K",
+    views: "547.7K",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Quinton Coats",
+        stat: "13 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Abby Sewell",
+        stat: "8 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Derrick Pitts",
+        stat: "7 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

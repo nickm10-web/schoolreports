@@ -15,6 +15,7 @@ import type { ReactNode } from 'react';
 // eslint-disable-next-line import/no-unresolved -- repo-root asset, same one the other reports use
 const jabaHead = '/jaba-head.png';
 import type {
+  ApparelPartner,
   Brand,
   ContentPiece,
   Highlight,
@@ -405,6 +406,63 @@ function YearInReview({ data }: { data: ReportData }) {
   );
 }
 
+/** Apparel Partner Value: receipts the school can hand its gear sponsor.
+ *  Poster band, not a stat grid: lede copy + one volt plate + dotted rows,
+ *  ghost brand wordmark behind. */
+function PartnerValue({ data }: { data: ReportData }) {
+  const p = data.partner as ApparelPartner;
+  const school = data.program.name;
+  return (
+    <section className="eoy-section">
+      <div className="eoy-wrap">
+        <SecHead index="02" kicker="Apparel partner value" title={`What ${p.brand} Got`} />
+        <Reveal>
+          <div className="eoy-partner" data-brand={p.brand}>
+            <div className="eoy-partner-main">
+              <p className="eoy-partner-lede">
+                Every time a {school} athlete posts in gear, the brand on the jersey gets
+                seen. JABA&apos;s vision AI scanned this year&apos;s posts and counted every
+                appearance, numbers to bring to your next {p.brand} conversation.
+              </p>
+              <div className="eoy-plate eoy-plate-xl">
+                <span className="eoy-plate-num">{p.posts}</span>
+                <span className="eoy-plate-unit">Posts with {p.brand} on screen</span>
+              </div>
+              <ul className="eoy-partner-rows">
+                <li className="eoy-partner-row">
+                  <span className="eoy-partner-row-lbl">Athletes wearing the brand</span>
+                  <span className="eoy-ranklist-dots" aria-hidden />
+                  <span className="eoy-partner-row-stat">{p.athletes}</span>
+                </li>
+                <li className="eoy-partner-row">
+                  <span className="eoy-partner-row-lbl">Likes on those posts</span>
+                  <span className="eoy-ranklist-dots" aria-hidden />
+                  <span className="eoy-partner-row-stat">{p.likes}</span>
+                </li>
+                {p.views && (
+                  <li className="eoy-partner-row">
+                    <span className="eoy-partner-row-lbl">Video views</span>
+                    <span className="eoy-ranklist-dots" aria-hidden />
+                    <span className="eoy-partner-row-stat">{p.views}</span>
+                  </li>
+                )}
+              </ul>
+            </div>
+            <div className="eoy-partner-side">
+              <div className="eoy-partner-side-kicker">Top carriers</div>
+              <RankList rows={p.topCarriers} />
+              <p className="eoy-partner-note">
+                Counted on the share of posts already analyzed by vision AI (70%+
+                detection confidence), August 2025 - May 2026. Real totals run higher.
+              </p>
+            </div>
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 function BrandLogo({ src, name }: { src?: string; name: string }) {
   const [ok, setOk] = useState(!!src);
   if (!src || !ok) return <span className="eoy-fancard-mono">{initials(name)}</span>;
@@ -471,7 +529,7 @@ function TopBrands({ data }: { data: ReportData }) {
   return (
     <section className="eoy-section">
       <div className="eoy-wrap">
-        <SecHead index="02" kicker="Summer pitch list" title="Brands to Reach Out To" />
+        <SecHead index={data.partner ? '03' : '02'} kicker="Summer pitch list" title="Brands to Reach Out To" />
         <Reveal>
           <div className="eoy-fan">
             {data.brands.map((b, i) => (
@@ -509,7 +567,7 @@ function TopContent({ data }: { data: ReportData }) {
   return (
     <section className="eoy-section">
       <div className="eoy-wrap">
-        <SecHead index="03" kicker="Best Posts" title="Top Performing Content" />
+        <SecHead index={data.partner ? '04' : '03'} kicker="Best Posts" title="Top Performing Content" />
         <div className="eoy-posters">
           {data.topContent.map((c, i) => (
             <PosterCard key={c.rank} c={c} i={i} />
@@ -562,6 +620,7 @@ export function EndOfYearReport({ data }: { data: ReportData }) {
         <span className="eoy-period-range">August 2025 – May 2026</span>
       </div>
       <YearInReview data={data} />
+      {data.partner && <PartnerValue data={data} />}
       <TopBrands data={data} />
       <TopContent data={data} />
       <FooterBanner />
@@ -771,6 +830,22 @@ const CSS = `
 .eoy-footer-base{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 28px;border-top:1px solid var(--line);font-family:var(--cond);font-weight:600;text-transform:uppercase;letter-spacing:.13em;font-size:11.5px;color:var(--t3);}
 .eoy-footer-base-mid{color:var(--volt);}
 
+/* apparel partner value — poster band with ghost wordmark */
+.eoy-partner{position:relative;display:grid;grid-template-columns:1.5fr 1fr;gap:44px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:40px 44px 44px;overflow:hidden;}
+.eoy-partner::after{content:attr(data-brand);position:absolute;right:-10px;bottom:-36px;font-family:var(--display);font-size:11rem;line-height:1;text-transform:uppercase;letter-spacing:.01em;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.055);pointer-events:none;white-space:nowrap;}
+.eoy-partner-main,.eoy-partner-side{min-width:0;}
+.eoy-partner-main{position:relative;z-index:1;display:flex;flex-direction:column;}
+.eoy-partner-lede{margin:0 0 22px;font-size:1.02rem;line-height:1.65;color:var(--t2);max-width:52ch;}
+.eoy-partner-main .eoy-plate-unit{display:inline-block;max-width:200px;line-height:1.15;}
+.eoy-partner-rows{list-style:none;margin:26px 0 0;padding:16px 0 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:11px;max-width:430px;}
+.eoy-partner-row{display:flex;align-items:baseline;gap:10px;}
+.eoy-partner-row-lbl{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:1.02rem;line-height:1;white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis;color:var(--t2);}
+.eoy-partner-row-stat{font-family:var(--display);font-size:1.35rem;line-height:1;color:var(--volt);flex:none;}
+.eoy-partner-side{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:flex-end;}
+.eoy-partner-side-kicker{font-family:var(--cond);font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:12.5px;color:var(--volt);}
+.eoy-partner-side .eoy-ranklist{margin-top:12px;}
+.eoy-partner-note{margin:22px 0 0;font-size:.8rem;line-height:1.55;color:var(--t3);}
+
 /* responsive */
 @media(max-width:1000px){
   .eoy-podium{grid-template-columns:1fr;}
@@ -780,6 +855,8 @@ const CSS = `
   .eoy-feat-photo{clip-path:none;min-height:380px;}
   .eoy-feat-img{object-position:50% 32%;}
   .eoy-posters{grid-template-columns:repeat(2,1fr);}
+  .eoy-partner{grid-template-columns:1fr;gap:26px;padding:30px 26px 34px;}
+  .eoy-partner::after{font-size:7rem;bottom:-24px;}
   .eoy-fan{flex-wrap:wrap;gap:18px;}
   .eoy-fancard{margin-left:0;transform:none;}
   .eoy-fancard:hover{transform:translateY(-8px) scale(1.03);}
@@ -792,6 +869,11 @@ const CSS = `
   .eoy-mini{grid-template-columns:1fr;}
   .eoy-mini-photo{clip-path:none;min-height:0;height:280px;}
   .eoy-mini-img{object-position:50% 10%;}
+  /* keep the partner plate and stat rows inside a narrow card */
+  .eoy-partner-main .eoy-plate-num{font-size:2rem;}
+  .eoy-partner-main .eoy-plate-unit{max-width:150px;font-size:12px;}
+  .eoy-partner-row-lbl{font-size:.88rem;}
+  .eoy-partner-row-stat{font-size:1.15rem;}
   .eoy-footer-main{flex-direction:column;align-items:flex-start;gap:24px;}
   .eoy-footer-actions{align-items:flex-start;width:100%;}
   .eoy-footer-base{flex-direction:column;align-items:flex-start;gap:6px;}

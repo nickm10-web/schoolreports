@@ -118,6 +118,30 @@ const ucla: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike / Jordan",
+    posts: "213",
+    athletes: "111",
+    likes: "407.6K",
+    views: "33.2M",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Kiki Rice",
+        stat: "13 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Cole Martin",
+        stat: "8 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Carissa Clay",
+        stat: "8 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

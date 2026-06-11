@@ -118,6 +118,30 @@ const missouri: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike",
+    posts: "359",
+    athletes: "206",
+    likes: "316.7K",
+    views: "1.1M",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Kobi Walker",
+        stat: "11 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Brianna Lee",
+        stat: "7 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Javion Hilson",
+        stat: "6 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

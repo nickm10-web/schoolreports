@@ -118,6 +118,30 @@ const arkansas: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike",
+    posts: "337",
+    athletes: "188",
+    likes: "603.9K",
+    views: "2.5M",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Romani Thurman",
+        stat: "8 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Mike Washington Jr.",
+        stat: "6 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Jordan Young",
+        stat: "6 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

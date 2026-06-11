@@ -118,6 +118,30 @@ const notre_dame: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Under Armour",
+    posts: "64",
+    athletes: "45",
+    likes: "290.4K",
+    views: "361.8K",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Hannah Hidalgo",
+        stat: "6 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Clark Gilmore",
+        stat: "6 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Christian Gray",
+        stat: "2 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

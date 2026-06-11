@@ -118,6 +118,30 @@ const san_diego: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike",
+    posts: "77",
+    athletes: "57",
+    likes: "99.9K",
+    views: "2.7M",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Elijah Johnson",
+        stat: "6 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Matt Colombo",
+        stat: "6 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Ezekiel Swayne",
+        stat: "3 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

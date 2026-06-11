@@ -118,6 +118,30 @@ const nc_state: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Adidas",
+    posts: "67",
+    athletes: "51",
+    likes: "46.5K",
+    views: "65.1K",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Devyn Quigley",
+        stat: "4 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Isaiah Crowell",
+        stat: "3 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Maia Townsend",
+        stat: "3 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

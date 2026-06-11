@@ -46,6 +46,23 @@ export interface Highlight {
   subLabel?: string;
 }
 
+/** Apparel Partner Value section: what the school's gear sponsor got from
+ *  athlete posts this year, counted by vision AI on athletes' OWN posts. */
+export interface ApparelPartner {
+  /** Display name, e.g. "Nike" · "Under Armour" · "Nike / Jordan". */
+  brand: string;
+  /** Posts where the brand was visibly on screen, e.g. "501". */
+  posts: string;
+  /** Distinct athletes wearing the brand on screen, e.g. "199". */
+  athletes: string;
+  /** Total likes on those posts, e.g. "538K". */
+  likes: string;
+  /** Total video views on those posts. "" → row hidden. */
+  views: string;
+  /** Top athletes by on-screen appearances (rank/athlete/stat rows). */
+  topCarriers: RunnerUp[];
+}
+
 /** One "Top Brand to Reach Out To" card. */
 export interface Brand {
   /** Use "\n" to force a line break in the display name. */
@@ -103,6 +120,8 @@ export interface ReportData {
   heroLineB: string;
   /** Exactly 3 highlight cards. */
   highlights: Highlight[];
+  /** Apparel partner value section. Omitted → section hidden. */
+  partner?: ApparelPartner;
   /** Exactly 5 brand cards. */
   brands: Brand[];
   /** Exactly 5 top-content cards. */

@@ -118,6 +118,30 @@ const michigan_state: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike",
+    posts: "51",
+    athletes: "38",
+    likes: "66.8K",
+    views: "46.8K",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Jalyn Brown",
+        stat: "5 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Zion Gist",
+        stat: "4 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Carsyn Cassady",
+        stat: "3 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

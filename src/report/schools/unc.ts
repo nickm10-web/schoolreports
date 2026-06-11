@@ -118,6 +118,30 @@ const unc: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike / Jordan",
+    posts: "144",
+    athletes: "75",
+    likes: "449.7K",
+    views: "2.7M",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Jordan Zubich",
+        stat: "14 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Pryce Yates",
+        stat: "14 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Leroy Jackson",
+        stat: "5 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

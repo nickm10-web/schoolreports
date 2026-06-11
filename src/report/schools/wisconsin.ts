@@ -118,6 +118,30 @@ const wisconsin: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Under Armour",
+    posts: "211",
+    athletes: "137",
+    likes: "186K",
+    views: "1.2M",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Shay  Bollin",
+        stat: "9 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Mason Reiger",
+        stat: "5 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Jay'Viar Suggs",
+        stat: "4 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

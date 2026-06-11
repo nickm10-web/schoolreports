@@ -118,6 +118,30 @@ const lsu: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike",
+    posts: "276",
+    athletes: "145",
+    likes: "998.4K",
+    views: "4.8M",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Jelani Watkins",
+        stat: "11 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Aaron Anderson",
+        stat: "6 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Bernard Gooden",
+        stat: "6 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

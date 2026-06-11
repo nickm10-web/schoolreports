@@ -113,6 +113,30 @@ const washington_state: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike",
+    posts: "26",
+    athletes: "19",
+    likes: "8.1K",
+    views: "149.4K",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Micaela De Mello",
+        stat: "3 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Lily Herman",
+        stat: "3 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Rihards Vavers",
+        stat: "2 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

@@ -118,6 +118,30 @@ const alabama: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike",
+    posts: "427",
+    athletes: "218",
+    likes: "1.5M",
+    views: "2.4M",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Mari Hubbard",
+        stat: "12 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Audrey Vandagriff",
+        stat: "8 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Brooke Wells",
+        stat: "8 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

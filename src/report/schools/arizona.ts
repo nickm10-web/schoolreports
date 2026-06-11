@@ -118,6 +118,30 @@ const arizona: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike",
+    posts: "265",
+    athletes: "157",
+    likes: "330.8K",
+    views: "977.6K",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Malachi Bailey",
+        stat: "7 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Koa Peat",
+        stat: "6 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Regan Shockey",
+        stat: "6 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

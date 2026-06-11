@@ -118,6 +118,30 @@ const baylor: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike",
+    posts: "294",
+    athletes: "169",
+    likes: "260.4K",
+    views: "1.5M",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Azul Alvarez",
+        stat: "8 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Leavy McDonald",
+        stat: "7 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Isaac Williams IV",
+        stat: "6 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

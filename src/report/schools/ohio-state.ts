@@ -118,6 +118,30 @@ const ohio_state: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike",
+    posts: "173",
+    athletes: "133",
+    likes: "1.4M",
+    views: "2.8M",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Jeremiah Smith",
+        stat: "10 posts"
+      },
+      {
+        rank: "02",
+        athlete: "DJ Fillmore",
+        stat: "4 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Mason Louis",
+        stat: "4 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

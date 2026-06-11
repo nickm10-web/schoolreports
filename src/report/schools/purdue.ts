@@ -118,6 +118,30 @@ const purdue: ReportData = {
       ]
     }
   ],
+  partner: {
+    brand: "Nike",
+    posts: "323",
+    athletes: "194",
+    likes: "298.2K",
+    views: "847.8K",
+    topCarriers: [
+      {
+        rank: "01",
+        athlete: "Braden Smith",
+        stat: "7 posts"
+      },
+      {
+        rank: "02",
+        athlete: "Blessing Gideon",
+        stat: "6 posts"
+      },
+      {
+        rank: "03",
+        athlete: "Tara Daye",
+        stat: "6 posts"
+      }
+    ]
+  },
   brands: [
     {
       name: "SPYRE",

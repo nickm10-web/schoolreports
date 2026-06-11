@@ -426,6 +426,8 @@ function NumbersBand({ n }: { n: YearNumbers }) {
           <span key={it.l} className="eoy-numbers-item">
             <span className={`eoy-numbers-val${it.volt ? ' eoy-numbers-val-volt' : ''}`}>{it.v}</span>
             <span className="eoy-numbers-lbl">{it.l}</span>
+            {/* dotted leader, only visible in the stacked phone layout */}
+            <span className="eoy-numbers-dots" aria-hidden />
           </span>
         ))}
       </div>
@@ -981,6 +983,7 @@ const CSS = `
 .eoy-numbers-val{font-family:var(--display);font-size:2.6rem;line-height:1;color:#fff;}
 .eoy-numbers-val-volt{color:var(--volt);}
 .eoy-numbers-lbl{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.09em;font-size:11.5px;color:var(--t3);}
+.eoy-numbers-dots{display:none;}
 
 /* who blew up — ranked growth rows with sparklines */
 .eoy-grow{display:flex;flex-direction:column;}
@@ -1048,9 +1051,15 @@ const CSS = `
   .eoy-mini{grid-template-columns:1fr;}
   .eoy-mini-photo{clip-path:none;min-height:0;height:280px;}
   .eoy-mini-img{object-position:50% 10%;}
-  /* numbers band: items wrap on phones, so dividers turn into stray edges */
+  /* numbers band on phones: dotted-leader rows (same language as ranklists),
+     not a ragged wrap of stacked stats */
+  .eoy-numbers-row{gap:13px;}
+  .eoy-numbers-kicker{margin-bottom:8px;}
+  .eoy-numbers-item{flex-direction:row;align-items:baseline;gap:10px;width:100%;}
   .eoy-numbers-item+.eoy-numbers-item{border-left:none;padding-left:0;}
-  .eoy-numbers-val{font-size:2.2rem;}
+  .eoy-numbers-lbl{order:1;font-size:12.5px;white-space:nowrap;}
+  .eoy-numbers-dots{display:block;order:2;flex:1;border-bottom:1px dotted rgba(255,255,255,.2);transform:translateY(-3px);}
+  .eoy-numbers-val{order:3;font-size:1.6rem;}
   /* keep the partner plate and stat rows inside a narrow card */
   .eoy-partner-main .eoy-plate-num{font-size:2rem;}
   .eoy-partner-main .eoy-plate-unit{max-width:150px;font-size:12px;}

@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// DePaul — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs depaul
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// DePaul — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs depaul
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const depaul: ReportData = {
   program: {
@@ -20,30 +21,30 @@ const depaul: ReportData = {
       icon: "ribbon",
       title: "Most Sponsored Posts",
       description: "The athlete with the most brand partnerships and sponsored content this year.",
-      athlete: "Katelynn Oxley",
-      sport: "Women's Volleyball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761382523778-Katelynn_Oxley_68fc902d39f09904c5a95b6d.png",
-      statValue: "3",
+      athlete: "Faith Okorie",
+      sport: "Women's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761382521548-Faith_Okorie_68fc902d39f09904c5a95b42.png",
+      statValue: "4",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "CJ Gunn",
-          stat: "2"
+          athlete: "Katelynn Oxley",
+          stat: "4"
         },
         {
           rank: "03",
-          athlete: "Amanda Saeger",
-          stat: "2"
+          athlete: "Layden Blocker",
+          stat: "1"
         },
         {
           rank: "04",
-          athlete: "Sumer Lee",
+          athlete: "CJ Gunn",
           stat: "1"
         },
         {
           rank: "05",
-          athlete: "Brandon Maclin",
+          athlete: "Alayna West",
           stat: "1"
         }
       ]
@@ -52,34 +53,34 @@ const depaul: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 4.8× the size of their actual following.",
-      athlete: "Faith Okorie",
+      description: "Based on likes and comments, this athlete engages like an account 8.4× the size of their actual following.",
+      athlete: "Alayna West",
       sport: "Women's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761382521548-Faith_Okorie_68fc902d39f09904c5a95b42.png",
-      statValue: "17.3K",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761382522330-Alayna_West_68fc902d39f09904c5a95b3c.png",
+      statValue: "14.9K",
       statLabel: "Performs Like",
-      subValue: "3.6K",
+      subValue: "1.8K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Shakara McCline",
-          stat: "16.8K"
+          stat: "13.2K"
         },
         {
           rank: "03",
-          athlete: "Jonas Johnson",
-          stat: "13.7K"
+          athlete: "Gina Davorija",
+          stat: "12.7K"
         },
         {
           rank: "04",
-          athlete: "Gina Davorija",
-          stat: "10.2K"
+          athlete: "Kruz McClure",
+          stat: "8.9K"
         },
         {
           rank: "05",
-          athlete: "Khaman Maker",
-          stat: "8.8K"
+          athlete: "Jeremy Lorenz",
+          stat: "2.8K"
         }
       ]
     },
@@ -167,62 +168,62 @@ const depaul: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "Faith Okorie",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17996301566817026",
+      title: "Shakara McCline",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18089131298304862",
       platform: "Instagram Post",
-      likes: "622",
-      comments: "86",
+      likes: "2.4K",
+      comments: "54",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "faith.okorie",
+      handle: "bandaid_lyve",
       verified: false
     },
     {
       rank: "02",
-      title: "Justis Odom",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17926269804136563",
+      title: "Meghan Scholz",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17903431329325965",
       platform: "Instagram Post",
-      likes: "283",
-      comments: "34",
+      likes: "1.7K",
+      comments: "98",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "justis.odom",
+      handle: "meghanscholz619",
       verified: false
     },
     {
       rank: "03",
-      title: "Layden Blocker",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17888589456286887",
+      title: "Shakara McCline",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17909820327250535",
       platform: "Instagram Post",
-      likes: "233",
-      comments: "6",
+      likes: "1.6K",
+      comments: "77",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "layden.blocker",
+      handle: "bandaid_lyve",
       verified: false
     },
     {
       rank: "04",
-      title: "CJ Gunn",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18050585321446751",
+      title: "Alayna West",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17959157975938466",
       platform: "Instagram Post",
-      likes: "208",
-      comments: "3",
+      likes: "1.3K",
+      comments: "407",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "cj.gunn",
+      handle: "alaynarwest",
       verified: false
     },
     {
       rank: "05",
-      title: "Katelynn Oxley",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17860136607491322",
+      title: "Layden Blocker",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18079271042155727",
       platform: "Instagram Post",
-      likes: "117",
-      comments: "15",
+      likes: "982",
+      comments: "27",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "katelynn.oxley",
+      handle: "laygogetit",
       verified: false
     }
   ]

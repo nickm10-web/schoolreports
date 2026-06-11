@@ -12,6 +12,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
+// eslint-disable-next-line import/no-unresolved -- repo-root asset, same one the other reports use
 const jabaHead = '/jaba-head.png';
 import type {
   Brand,
@@ -558,7 +559,7 @@ export function EndOfYearReport({ data }: { data: ReportData }) {
       <div className="eoy-period">
         <span className="eoy-period-label">Reporting Period</span>
         <span className="eoy-period-sep" />
-        <span className="eoy-period-range">August 2025 – January 2026</span>
+        <span className="eoy-period-range">August 2025 – May 2026</span>
       </div>
       <YearInReview data={data} />
       <TopBrands data={data} />
@@ -774,7 +775,10 @@ const CSS = `
 @media(max-width:1000px){
   .eoy-podium{grid-template-columns:1fr;}
   .eoy-feat{grid-template-columns:1fr;}
-  .eoy-feat-photo{clip-path:none;min-height:260px;}
+  /* wide banner + square headshots with faces center-frame: a short banner at
+     18% shows only hair. Taller banner, lower focal point. */
+  .eoy-feat-photo{clip-path:none;min-height:380px;}
+  .eoy-feat-img{object-position:50% 32%;}
   .eoy-posters{grid-template-columns:repeat(2,1fr);}
   .eoy-fan{flex-wrap:wrap;gap:18px;}
   .eoy-fancard{margin-left:0;transform:none;}

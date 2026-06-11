@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Washington — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs washington
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Washington — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs washington
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const washington: ReportData = {
   program: {
@@ -23,28 +24,28 @@ const washington: ReportData = {
       athlete: "Jonah Coleman",
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761640361676-Jonah_Coleman_69007d3d19d5cdb1049300a5.png",
-      statValue: "11",
+      statValue: "8",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
           athlete: "Ally Heztal",
-          stat: "11"
+          stat: "7"
         },
         {
           rank: "03",
-          athlete: "Lilly Tubbs",
-          stat: "5"
+          athlete: "Zoom Diallo",
+          stat: "6"
         },
         {
           rank: "04",
-          athlete: "Addy Azavedo",
-          stat: "5"
+          athlete: "Alexis DeBoer",
+          stat: "6"
         },
         {
           rank: "05",
-          athlete: "Demond Williams Jr.",
-          stat: "4"
+          athlete: "Sophi Mazzola",
+          stat: "6"
         }
       ]
     },
@@ -52,34 +53,34 @@ const washington: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 4.0× the size of their actual following.",
-      athlete: "Bryson Tucker",
+      description: "Based on likes and comments, this athlete engages like an account 21.6× the size of their actual following.",
+      athlete: "Quimari Peterson",
       sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761640366035-Bryson_Tucker_69007d3d19d5cdb1049300cb.png",
-      statValue: "94.1K",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761640369127-Quimari_Peterson_69007d3d19d5cdb1049300d5.png",
+      statValue: "88.1K",
       statLabel: "Performs Like",
-      subValue: "23.5K",
+      subValue: "4.1K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Jasir Rencher",
-          stat: "64.2K"
+          athlete: "Demond Williams Jr.",
+          stat: "75.1K"
         },
         {
           rank: "03",
-          athlete: "BJ Roy",
-          stat: "43.6K"
+          athlete: "Bryson Tucker",
+          stat: "60.2K"
         },
         {
           rank: "04",
-          athlete: "Sienna Harvey",
-          stat: "13.9K"
+          athlete: "Charlotte Gray",
+          stat: "7.4K"
         },
         {
           rank: "05",
-          athlete: "Brynn McGaughy",
-          stat: "6K"
+          athlete: "Chelsea Hallinan",
+          stat: "5.9K"
         }
       ]
     },
@@ -91,28 +92,28 @@ const washington: ReportData = {
       athlete: "Jasir Rencher",
       sport: "Men's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761640360019-Jasir_Rencher_69007d3d19d5cdb1049300cf.png",
-      statValue: "31.1K",
+      statValue: "30.5K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Bryson Tucker",
-          stat: "23.5K"
+          athlete: "Demond Williams Jr.",
+          stat: "29.7K"
         },
         {
           rank: "03",
-          athlete: "Avery Howell",
-          stat: "20.2K"
+          athlete: "Jonah Coleman",
+          stat: "25.2K"
         },
         {
           rank: "04",
-          athlete: "Wesley Yates III",
-          stat: "19.7K"
+          athlete: "Avery Howell",
+          stat: "21.6K"
         },
         {
           rank: "05",
           athlete: "Chloe Briggs",
-          stat: "17.6K"
+          stat: "17.3K"
         }
       ]
     }
@@ -167,62 +168,62 @@ const washington: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "Jade Sadeiko",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17845080309605570",
+      title: "Milton Hopkins Jr.",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17842964499547096",
       platform: "Instagram Reels",
-      likes: "283.2K",
-      comments: "1.2K",
-      third: "N/A",
+      likes: "2.3M",
+      comments: "16.1K",
+      third: "18.6M",
       thirdLabel: "Views",
-      handle: "jade.sadeiko",
+      handle: "millyrockjr",
       verified: false
     },
     {
       rank: "02",
-      title: "Demond Williams Jr.",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18096081685695383",
+      title: "Milton Hopkins Jr.",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18068328080457260",
       platform: "Instagram Reels",
-      likes: "30.9K",
-      comments: "187",
-      third: "N/A",
+      likes: "953.2K",
+      comments: "1.8K",
+      third: "9.8M",
       thirdLabel: "Views",
-      handle: "demond.williams.jr.",
+      handle: "millyrockjr",
       verified: false
     },
     {
       rank: "03",
-      title: "Jonah Coleman",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18082507805132444",
-      platform: "Instagram Post",
-      likes: "13.7K",
-      comments: "426",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "jonah.coleman",
+      title: "Milton Hopkins Jr.",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17997123848869138",
+      platform: "Instagram Reels",
+      likes: "889.5K",
+      comments: "672",
+      third: "9.4M",
+      thirdLabel: "Views",
+      handle: "millyrockjr",
       verified: false
     },
     {
       rank: "04",
-      title: "Bryson Tucker",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17948169675018563",
-      platform: "Instagram Post",
-      likes: "13.5K",
-      comments: "80",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "bryson.tucker",
+      title: "Milton Hopkins Jr.",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18102968164682556",
+      platform: "Instagram Reels",
+      likes: "804.7K",
+      comments: "1.4K",
+      third: "5.1M",
+      thirdLabel: "Views",
+      handle: "millyrockjr",
       verified: false
     },
     {
       rank: "05",
-      title: "Hannes Steinbach",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18081404891137585",
-      platform: "Instagram Post",
-      likes: "13.5K",
-      comments: "91",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "hannes.steinbach",
+      title: "Milton Hopkins Jr.",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18368373952083879",
+      platform: "Instagram Reels",
+      likes: "640.4K",
+      comments: "1.2K",
+      third: "5.8M",
+      thirdLabel: "Views",
+      handle: "millyrockjr",
       verified: false
     }
   ]

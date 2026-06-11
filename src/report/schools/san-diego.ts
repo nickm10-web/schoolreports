@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// San Diego — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs san-diego
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// San Diego — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs san-diego
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const san_diego: ReportData = {
   program: {
@@ -20,31 +21,31 @@ const san_diego: ReportData = {
       icon: "ribbon",
       title: "Most Sponsored Posts",
       description: "The athlete with the most brand partnerships and sponsored content this year.",
-      athlete: "Helen Holley",
-      sport: "Women's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760992065618-Helen_Holley_68cb5362783089f8529cf75c_ProfilePicture.jpg",
-      statValue: "9",
+      athlete: "Reese Bates",
+      sport: "Women's Volleyball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1758153250960-Reese_Bates_68cb4a197af3c0bde6379a55_ProfilePicture.jpg",
+      statValue: "29",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Reese Bates",
-          stat: "7"
+          athlete: "Helen Holley",
+          stat: "10"
         },
         {
           rank: "03",
-          athlete: "Matt Colombo",
-          stat: "6"
+          athlete: "Elijah Johnson",
+          stat: "8"
         },
         {
           rank: "04",
-          athlete: "James Scott",
-          stat: "4"
+          athlete: "Matt Colombo",
+          stat: "7"
         },
         {
           rank: "05",
-          athlete: "Kaitlyn Wynia",
-          stat: "3"
+          athlete: "Savanna Knaff",
+          stat: "6"
         }
       ]
     },
@@ -52,34 +53,34 @@ const san_diego: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 3.9× the size of their actual following.",
-      athlete: "Ty-Laur Johnson",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760992053208-Ty-Laur_Johnson_68cb57938e6de13568340fb5_ProfilePicture.jpg",
-      statValue: "20.4K",
+      description: "Based on likes and comments, this athlete engages like an account 5.3× the size of their actual following.",
+      athlete: "Ysabella Von Seipler",
+      sport: "Women's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760992059954-Ysabella_Von Seipler_68cb5362783089f8529cf756_ProfilePicture.jpg",
+      statValue: "15K",
       statLabel: "Performs Like",
-      subValue: "5.2K",
+      subValue: "2.8K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Vuk Boskovic",
-          stat: "7.5K"
+          athlete: "Lauren Lynch",
+          stat: "8.6K"
         },
         {
           rank: "03",
-          athlete: "Ysabella Von Seipler",
-          stat: "7.3K"
+          athlete: "Cade Martinez",
+          stat: "6.7K"
         },
         {
           rank: "04",
-          athlete: "Alejandro Aviles",
-          stat: "2.7K"
+          athlete: "Sophia Pinedo",
+          stat: "5.9K"
         },
         {
           rank: "05",
-          athlete: "Hallie Rhodes",
-          stat: "1.5K"
+          athlete: "Blake Chase",
+          stat: "5.3K"
         }
       ]
     },
@@ -88,31 +89,31 @@ const san_diego: ReportData = {
       icon: "eyes",
       title: "Largest Following at Year End",
       description: "The San Diego athlete with the most followers across platforms at the end of the year.",
-      athlete: "Helen Holley",
-      sport: "Women's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760992065618-Helen_Holley_68cb5362783089f8529cf75c_ProfilePicture.jpg",
-      statValue: "21.5K",
+      athlete: "Reese Bates",
+      sport: "Women's Volleyball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1758153250960-Reese_Bates_68cb4a197af3c0bde6379a55_ProfilePicture.jpg",
+      statValue: "82.3K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Vuk Boskovic",
-          stat: "6.7K"
+          athlete: "Elijah Johnson",
+          stat: "27.3K"
         },
         {
           rank: "03",
-          athlete: "Ty-Laur Johnson",
-          stat: "5.2K"
+          athlete: "Josh Heverly",
+          stat: "23.1K"
         },
         {
           rank: "04",
-          athlete: "Malia Tharpe",
-          stat: "5K"
+          athlete: "Helen Holley",
+          stat: "20.7K"
         },
         {
           rank: "05",
-          athlete: "Brandon Benjamin",
-          stat: "4.8K"
+          athlete: "Matt Colombo",
+          stat: "12.8K"
         }
       ]
     }
@@ -167,14 +168,14 @@ const san_diego: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "Dylan Tapley",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18482607301076057",
-      platform: "Instagram Post",
-      likes: "320.6K",
-      comments: "2.6K",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "dylan.tapley",
+      title: "James Scott",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18076944350250780",
+      platform: "Instagram Reels",
+      likes: "252.2K",
+      comments: "11.2K",
+      third: "1.7M",
+      thirdLabel: "Views",
+      handle: "noluv.james",
       verified: false
     },
     {
@@ -191,26 +192,26 @@ const san_diego: ReportData = {
     },
     {
       rank: "03",
-      title: "James Scott",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18076944350250780",
+      title: "Savanna Knaff",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18086948042200153",
       platform: "Instagram Reels",
-      likes: "161.4K",
-      comments: "8.5K",
-      third: "N/A",
+      likes: "94.3K",
+      comments: "24",
+      third: "1.4M",
       thirdLabel: "Views",
-      handle: "james.scott",
+      handle: "savanna.knaff",
       verified: false
     },
     {
       rank: "04",
       title: "Matt Colombo",
       thumb: "https://storage.googleapis.com/scraper-media-images/18055146821445900",
-      platform: "Instagram Post",
-      likes: "93.6K",
-      comments: "67",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "matt.colombo",
+      platform: "Instagram Reels",
+      likes: "92.9K",
+      comments: "65",
+      third: "1.1M",
+      thirdLabel: "Views",
+      handle: "mattcolombo_",
       verified: false
     },
     {
@@ -218,11 +219,11 @@ const san_diego: ReportData = {
       title: "Matt Colombo",
       thumb: "https://storage.googleapis.com/scraper-media-images/18086046619828070",
       platform: "Instagram Reels",
-      likes: "79.6K",
+      likes: "79.3K",
       comments: "103",
-      third: "N/A",
+      third: "2.6M",
       thirdLabel: "Views",
-      handle: "matt.colombo",
+      handle: "mattcolombo_",
       verified: false
     }
   ]

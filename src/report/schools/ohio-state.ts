@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Ohio State — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs ohio-state
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Ohio State — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs ohio-state
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const ohio_state: ReportData = {
   program: {
@@ -20,31 +21,31 @@ const ohio_state: ReportData = {
       icon: "ribbon",
       title: "Most Sponsored Posts",
       description: "The athlete with the most brand partnerships and sponsored content this year.",
-      athlete: "Caleb Downs",
-      sport: "Football",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761388493704-Caleb_Downs_68fca493b06066e3308741b0.png",
-      statValue: "9",
+      athlete: "Slane Glover",
+      sport: "Cheer",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761388456111-Slane_Glover_68fca493b06066e3308744f4.png",
+      statValue: "26",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Jeremiah Smith",
-          stat: "9"
+          athlete: "Caleb Downs",
+          stat: "18"
         },
         {
           rank: "03",
-          athlete: "James Peoples",
-          stat: "8"
+          athlete: "Gabe Cupps",
+          stat: "14"
         },
         {
           rank: "04",
           athlete: "Karleigh Reutzel",
-          stat: "6"
+          stat: "11"
         },
         {
           rank: "05",
-          athlete: "Bobbi Olive",
-          stat: "5"
+          athlete: "Olivia Hasbrook",
+          stat: "8"
         }
       ]
     },
@@ -52,34 +53,34 @@ const ohio_state: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 3.0× the size of their actual following.",
-      athlete: "Seini Henry",
-      sport: "Women's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761388477289-Seini_Henry_68fca493b06066e330874294.png",
-      statValue: "53.3K",
+      description: "Based on likes and comments, this athlete engages like an account 9.7× the size of their actual following.",
+      athlete: "Julian Sayin",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761388494249-Julian_Sayin_68fca493b06066e3308741bf.png",
+      statValue: "2M",
       statLabel: "Performs Like",
-      subValue: "17.9K",
+      subValue: "204.9K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "A'mare Bynum",
-          stat: "36.2K"
+          athlete: "Jeremiah Smith",
+          stat: "2M"
         },
         {
           rank: "03",
-          athlete: "Josh Ojianwuna",
-          stat: "11.2K"
+          athlete: "Caleb Downs",
+          stat: "804.3K"
         },
         {
           rank: "04",
-          athlete: "Christoph Tilly",
-          stat: "8.7K"
+          athlete: "Maxine Cimoroni",
+          stat: "40.5K"
         },
         {
           rank: "05",
-          athlete: "T'yana Todd",
-          stat: "5.7K"
+          athlete: "Ava Watson",
+          stat: "14.7K"
         }
       ]
     },
@@ -88,31 +89,31 @@ const ohio_state: ReportData = {
       icon: "eyes",
       title: "Largest Following at Year End",
       description: "The Ohio State athlete with the most followers across platforms at the end of the year.",
-      athlete: "Gabe Cupps",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761388499172-Gabe_Cupps_68fca493b06066e33087450f.png",
-      statValue: "271.6K",
+      athlete: "Jeremiah Smith",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761388500294-Jeremiah_Smith_68fca493b06066e3308741b3.png",
+      statValue: "791.8K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "John Mobley Jr.",
-          stat: "88.8K"
+          athlete: "Caleb Downs",
+          stat: "347.6K"
         },
         {
           rank: "03",
-          athlete: "Chance Gray",
-          stat: "74.1K"
+          athlete: "Gabe Cupps",
+          stat: "262.5K"
         },
         {
           rank: "04",
-          athlete: "Myles Herro",
-          stat: "57.1K"
+          athlete: "Magdalena Juric",
+          stat: "116.5K"
         },
         {
           rank: "05",
-          athlete: "Jaloni Cambridge",
-          stat: "30.8K"
+          athlete: "Chance Gray",
+          stat: "75K"
         }
       ]
     }
@@ -167,14 +168,14 @@ const ohio_state: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "Caleb Downs",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18077006659838695",
-      platform: "Instagram Reels",
-      likes: "244.7K",
-      comments: "1.7K",
+      title: "Jeremiah Smith",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17864170686555524",
+      platform: "Instagram Post",
+      likes: "292.9K",
+      comments: "3K",
       third: "N/A",
-      thirdLabel: "Views",
-      handle: "caleb.downs",
+      thirdLabel: "Shares",
+      handle: "primetimejj_.4",
       verified: false
     },
     {
@@ -182,11 +183,11 @@ const ohio_state: ReportData = {
       title: "Julian Sayin",
       thumb: "https://storage.googleapis.com/scraper-media-images/18035943647706211",
       platform: "Instagram Post",
-      likes: "236.1K",
+      likes: "236K",
       comments: "3.3K",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "julian.sayin",
+      handle: "juliansayin",
       verified: false
     },
     {
@@ -194,35 +195,35 @@ const ohio_state: ReportData = {
       title: "Jeremiah Smith",
       thumb: "https://storage.googleapis.com/scraper-media-images/18128047279502864",
       platform: "Instagram Post",
-      likes: "216.5K",
+      likes: "221.9K",
       comments: "2.6K",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "jeremiah.smith",
+      handle: "primetimejj_.4",
       verified: false
     },
     {
       rank: "04",
-      title: "Carson Hinzman",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18131153239463410",
-      platform: "Instagram Reels",
-      likes: "198.2K",
-      comments: "328",
+      title: "Jeremiah Smith",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18113253184670653",
+      platform: "Instagram Post",
+      likes: "177.4K",
+      comments: "1.6K",
       third: "N/A",
-      thirdLabel: "Views",
-      handle: "carson.hinzman",
+      thirdLabel: "Shares",
+      handle: "primetimejj_.4",
       verified: false
     },
     {
       rank: "05",
       title: "Jeremiah Smith",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18019059608604025",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17849642472589587",
       platform: "Instagram Post",
-      likes: "172K",
-      comments: "631",
+      likes: "172.2K",
+      comments: "1.4K",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "jeremiah.smith",
+      handle: "primetimejj_.4",
       verified: false
     }
   ]

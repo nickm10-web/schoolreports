@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// North Carolina — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs unc
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// North Carolina — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs unc
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const unc: ReportData = {
   program: {
@@ -23,28 +24,28 @@ const unc: ReportData = {
       athlete: "Seth Trimble",
       sport: "Men's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761202578838-Seth_Trimble_68f9d10bf54231af4383575a.png",
-      statValue: "6",
+      statValue: "15",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Caleb Wilson",
-          stat: "4"
+          athlete: "Blanca Thomas",
+          stat: "13"
         },
         {
           rank: "03",
-          athlete: "Francesco Capocci",
-          stat: "4"
+          athlete: "Nyla Harris",
+          stat: "13"
         },
         {
           rank: "04",
-          athlete: "Jackie Taylor",
-          stat: "4"
+          athlete: "Jordan Zubich",
+          stat: "11"
         },
         {
           rank: "05",
-          athlete: "Nyla Brooks",
-          stat: "4"
+          athlete: "Caleb Wilson",
+          stat: "7"
         }
       ]
     },
@@ -52,34 +53,34 @@ const unc: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 6.8× the size of their actual following.",
+      description: "Based on likes and comments, this athlete engages like an account 7.1× the size of their actual following.",
       athlete: "Caleb Wilson",
       sport: "Men's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761202580033-Caleb_Wilson_68f9d10bf54231af438356d6.png",
-      statValue: "831.1K",
+      statValue: "1.1M",
       statLabel: "Performs Like",
-      subValue: "122.4K",
+      subValue: "152.5K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Jaydon Young",
-          stat: "223.8K"
+          athlete: "Derek Dixon",
+          stat: "379.9K"
         },
         {
           rank: "03",
-          athlete: "Seth Trimble",
-          stat: "215.7K"
+          athlete: "Jarin Stevenson",
+          stat: "331.5K"
         },
         {
           rank: "04",
-          athlete: "Blanca Thomas",
-          stat: "10.5K"
+          athlete: "Zoe Behrendt",
+          stat: "16.2K"
         },
         {
           rank: "05",
-          athlete: "Sydney Barker",
-          stat: "9.2K"
+          athlete: "Indya Nivar",
+          stat: "12.3K"
         }
       ]
     },
@@ -88,31 +89,31 @@ const unc: ReportData = {
       icon: "eyes",
       title: "Largest Following at Year End",
       description: "The North Carolina athlete with the most followers across platforms at the end of the year.",
-      athlete: "Caleb Wilson",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761202580033-Caleb_Wilson_68f9d10bf54231af438356d6.png",
-      statValue: "122.4K",
+      athlete: "Jaylen McGill",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761202584705-Jaylen_McGill_68f9d10bf54231af438356f4.png",
+      statValue: "178.9K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Seth Trimble",
-          stat: "73.6K"
+          athlete: "Caleb Wilson",
+          stat: "152.5K"
         },
         {
           rank: "03",
-          athlete: "Jonathan Powell",
-          stat: "18.8K"
+          athlete: "Evan Bennett",
+          stat: "127K"
         },
         {
           rank: "04",
-          athlete: "Reniya Kelly",
-          stat: "12.6K"
+          athlete: "Jackie Taylor",
+          stat: "29.7K"
         },
         {
           rank: "05",
-          athlete: "Blanca Thomas",
-          stat: "9.7K"
+          athlete: "Anna Pearl Stanley",
+          stat: "18K"
         }
       ]
     }
@@ -168,61 +169,61 @@ const unc: ReportData = {
     {
       rank: "01",
       title: "Caleb Wilson",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18064588067589473",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18051720101703838",
       platform: "Instagram Post",
-      likes: "270.8K",
-      comments: "1.7K",
+      likes: "75.9K",
+      comments: "1.1K",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "caleb.wilson",
+      handle: "c.dubbb",
       verified: false
     },
     {
       rank: "02",
       title: "Caleb Wilson",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18306491998265067",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18056867993687233",
       platform: "Instagram Post",
-      likes: "235.9K",
-      comments: "720",
+      likes: "71.1K",
+      comments: "1.3K",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "caleb.wilson",
+      handle: "c.dubbb",
       verified: false
     },
     {
       rank: "03",
-      title: "Chelsea Thorpe",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18138035251437367",
+      title: "Caleb Wilson",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18001516763856728",
       platform: "Instagram Post",
-      likes: "131.9K",
-      comments: "171",
+      likes: "65.5K",
+      comments: "2.2K",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "chelsea.thorpe",
+      handle: "c.dubbb",
       verified: false
     },
     {
       rank: "04",
-      title: "Jackie Taylor",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18107425384534643",
-      platform: "Instagram Post",
-      likes: "59.7K",
-      comments: "391",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "jackie.taylor",
+      title: "Blanca Thomas",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18180094951374429",
+      platform: "Instagram Reels",
+      likes: "63.1K",
+      comments: "41",
+      third: "2M",
+      thirdLabel: "Views",
+      handle: "blancathomas_",
       verified: false
     },
     {
       rank: "05",
       title: "Caleb Wilson",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18085341290491963",
-      platform: "Instagram Post",
-      likes: "55.2K",
-      comments: "303",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "caleb.wilson",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18576473131008900",
+      platform: "Instagram Reels",
+      likes: "62.6K",
+      comments: "1.4K",
+      third: "873.8K",
+      thirdLabel: "Views",
+      handle: "c.dubbb",
       verified: false
     }
   ]

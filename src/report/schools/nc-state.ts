@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// NC State — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs nc-state
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// NC State — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs nc-state
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const nc_state: ReportData = {
   program: {
@@ -28,22 +29,22 @@ const nc_state: ReportData = {
       runnersUp: [
         {
           rank: "02",
-          athlete: "Hollywood Smothers",
-          stat: "5"
+          athlete: "Raina Gandhi",
+          stat: "8"
         },
         {
           rank: "03",
-          athlete: "Khamil Pierre",
-          stat: "5"
+          athlete: "Hollywood Smothers",
+          stat: "6"
         },
         {
           rank: "04",
-          athlete: "Zoe Brooks",
-          stat: "5"
+          athlete: "Rylee Wyman",
+          stat: "6"
         },
         {
           rank: "05",
-          athlete: "Ty Head",
+          athlete: "Paul McNeil",
           stat: "3"
         }
       ]
@@ -52,34 +53,34 @@ const nc_state: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 2.8× the size of their actual following.",
-      athlete: "Tre Holloman",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1762551619954-Tre_Holloman_690e662a5b615b70780c0307_ProfilePicture.jpg",
-      statValue: "81.2K",
+      description: "Based on likes and comments, this athlete engages like an account 8.9× the size of their actual following.",
+      athlete: "CJ Bailey",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1762551544688-CJ_Bailey_690e66255b615b70780c02d4_ProfilePicture.jpg",
+      statValue: "424.8K",
       statLabel: "Performs Like",
-      subValue: "29.1K",
+      subValue: "47.8K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Zymicah Wilkins",
-          stat: "76K"
+          athlete: "Terrell Anderson",
+          stat: "155.5K"
         },
         {
           rank: "03",
-          athlete: "Quadir Copeland",
-          stat: "63.7K"
+          athlete: "Tre Holloman",
+          stat: "123.9K"
         },
         {
           rank: "04",
           athlete: "Qadence Samuels",
-          stat: "46.6K"
+          stat: "20.8K"
         },
         {
           rank: "05",
           athlete: "Adelaide Jernigan",
-          stat: "43.7K"
+          stat: "15.8K"
         }
       ]
     },
@@ -88,26 +89,26 @@ const nc_state: ReportData = {
       icon: "eyes",
       title: "Largest Following at Year End",
       description: "The NC State athlete with the most followers across platforms at the end of the year.",
-      athlete: "Zamareya Jones",
-      sport: "Women's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1762551667608-Zamareya_Jones_690e662d5b615b70780c0325_ProfilePicture.jpg",
-      statValue: "58.8K",
+      athlete: "DJ Dillard",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1762551415012-DJ_Dillard_690e661d5b615b70780c0282_ProfilePicture.jpg",
+      statValue: "217.4K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Tre Holloman",
-          stat: "29.1K"
+          athlete: "Terrell Anderson",
+          stat: "61.1K"
         },
         {
           rank: "03",
-          athlete: "Quadir Copeland",
-          stat: "22.4K"
+          athlete: "Zamareya Jones",
+          stat: "58.8K"
         },
         {
           rank: "04",
-          athlete: "Alyn Breed",
-          stat: "19.2K"
+          athlete: "CJ Bailey",
+          stat: "47.8K"
         },
         {
           rank: "05",
@@ -167,62 +168,62 @@ const nc_state: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "DJ Dillard",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18181809367356763",
-      platform: "Instagram Reels",
-      likes: "34.7K",
-      comments: "376",
+      title: "Noah Rogers",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17865164553471407",
+      platform: "Instagram Post",
+      likes: "20.2K",
+      comments: "356",
       third: "N/A",
-      thirdLabel: "Views",
-      handle: "dj.dillard",
+      thirdLabel: "Shares",
+      handle: "transferportal",
       verified: false
     },
     {
       rank: "02",
-      title: "Quadir Copeland",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18089467436063572",
-      platform: "Instagram Reels",
-      likes: "30.3K",
-      comments: "273",
+      title: "CJ Bailey",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18061890461390438",
+      platform: "Instagram Post",
+      likes: "16.8K",
+      comments: "390",
       third: "N/A",
-      thirdLabel: "Views",
-      handle: "quadir.copeland",
+      thirdLabel: "Shares",
+      handle: "gunslangin.cj",
       verified: false
     },
     {
       rank: "03",
-      title: "Noah Rogers",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17865164553471407",
-      platform: "Instagram Post",
-      likes: "20K",
-      comments: "349",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "noah.rogers",
+      title: "Terrell Anderson",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18073917539200804",
+      platform: "Instagram Reels",
+      likes: "14.8K",
+      comments: "271",
+      third: "195.3K",
+      thirdLabel: "Views",
+      handle: "rell10k",
       verified: false
     },
     {
       rank: "04",
-      title: "Quadir Copeland",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18381974131144309",
+      title: "CJ Bailey",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18016100993589590",
       platform: "Instagram Post",
-      likes: "17.3K",
-      comments: "382",
+      likes: "14.1K",
+      comments: "272",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "quadir.copeland",
+      handle: "gunslangin.cj",
       verified: false
     },
     {
       rank: "05",
       title: "CJ Bailey",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18061890461390438",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17929026780037037",
       platform: "Instagram Post",
-      likes: "16.5K",
-      comments: "371",
+      likes: "11.4K",
+      comments: "412",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "cj.bailey",
+      handle: "gunslangin.cj",
       verified: false
     }
   ]

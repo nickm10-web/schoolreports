@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Notre Dame — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs notre-dame
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Notre Dame — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs notre-dame
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const notre_dame: ReportData = {
   program: {
@@ -20,31 +21,31 @@ const notre_dame: ReportData = {
       icon: "ribbon",
       title: "Most Sponsored Posts",
       description: "The athlete with the most brand partnerships and sponsored content this year.",
-      athlete: "Isaiah Dunn",
-      sport: "Football",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761383763845-Isaiah_Dunn_68fc94d55ecd65a8818e96c6.png",
-      statValue: "10",
+      athlete: "Cailey Dockery",
+      sport: "Women's Volleyball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761383773192-Cailey_Dockery_68fc94d55ecd65a8818e96cc.png",
+      statValue: "12",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Jordan Faison",
-          stat: "7"
+          athlete: "Jeremiyah Love",
+          stat: "10"
         },
         {
           rank: "03",
-          athlete: "Jeremiyah Love",
-          stat: "6"
+          athlete: "Logan Saldate",
+          stat: "10"
         },
         {
           rank: "04",
-          athlete: "Cailey Dockery",
-          stat: "5"
+          athlete: "Hannah Hidalgo",
+          stat: "9"
         },
         {
           rank: "05",
-          athlete: "KK Bransford",
-          stat: "4"
+          athlete: "Clark Gilmore",
+          stat: "9"
         }
       ]
     },
@@ -52,34 +53,34 @@ const notre_dame: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 1.6× the size of their actual following.",
-      athlete: "Hannah Hidalgo",
-      sport: "Women's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761383770644-Hannah_Hidalgo_68fc94d55ecd65a8818e96f8.png",
-      statValue: "182.1K",
+      description: "Based on likes and comments, this athlete engages like an account 8.1× the size of their actual following.",
+      athlete: "Jeremiyah Love",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761383771831-Jeremiyah_Love_68fc94d55ecd65a8818e9757.png",
+      statValue: "2M",
       statLabel: "Performs Like",
-      subValue: "113.5K",
+      subValue: "244.7K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Ryder Frost",
-          stat: "56.4K"
+          athlete: "Jadarian Price",
+          stat: "336.3K"
         },
         {
           rank: "03",
-          athlete: "Logan Imes",
-          stat: "10.5K"
+          athlete: "Hannah Hidalgo",
+          stat: "273.8K"
         },
         {
           rank: "04",
-          athlete: "Sir Mohammed",
-          stat: "7.1K"
+          athlete: "CJ Carr",
+          stat: "206.2K"
         },
         {
           rank: "05",
-          athlete: "Kelly Ratigan",
-          stat: "5K"
+          athlete: "Vanessa de Jesus",
+          stat: "96.8K"
         }
       ]
     },
@@ -88,31 +89,31 @@ const notre_dame: ReportData = {
       icon: "eyes",
       title: "Largest Following at Year End",
       description: "The Notre Dame athlete with the most followers across platforms at the end of the year.",
-      athlete: "Hannah Hidalgo",
-      sport: "Women's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761383770644-Hannah_Hidalgo_68fc94d55ecd65a8818e96f8.png",
-      statValue: "113.5K",
+      athlete: "Jeremiyah Love",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761383771831-Jeremiyah_Love_68fc94d55ecd65a8818e9757.png",
+      statValue: "244.7K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Carson Towt",
-          stat: "21.9K"
+          athlete: "Hannah Hidalgo",
+          stat: "133K"
         },
         {
           rank: "03",
-          athlete: "Jalen Haralson",
-          stat: "18.8K"
+          athlete: "Jadarian Price",
+          stat: "60.1K"
         },
         {
           rank: "04",
-          athlete: "Markus Burton",
-          stat: "18.3K"
+          athlete: "CJ Carr",
+          stat: "49.9K"
         },
         {
           rank: "05",
           athlete: "Vanessa de Jesus",
-          stat: "14.5K"
+          stat: "15.5K"
         }
       ]
     }
@@ -168,49 +169,49 @@ const notre_dame: ReportData = {
     {
       rank: "01",
       title: "Clark Gilmore",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18111330718645878",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17947478520042399",
       platform: "Instagram Reels",
-      likes: "408.9K",
-      comments: "3.5K",
-      third: "N/A",
+      likes: "383.5K",
+      comments: "1.2K",
+      third: "8.3M",
       thirdLabel: "Views",
-      handle: "clark.gilmore",
+      handle: "clark_gilmore",
       verified: false
     },
     {
       rank: "02",
       title: "Clark Gilmore",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17947478520042399",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18084002783049705",
       platform: "Instagram Reels",
-      likes: "383.5K",
-      comments: "1.2K",
-      third: "N/A",
+      likes: "245.8K",
+      comments: "438",
+      third: "3.8M",
       thirdLabel: "Views",
-      handle: "clark.gilmore",
+      handle: "clark_gilmore",
       verified: false
     },
     {
       rank: "03",
       title: "Clark Gilmore",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17891482638407503",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18070648169353941",
       platform: "Instagram Reels",
-      likes: "127.2K",
-      comments: "556",
-      third: "N/A",
+      likes: "186.3K",
+      comments: "471",
+      third: "4.9M",
       thirdLabel: "Views",
-      handle: "clark.gilmore",
+      handle: "clark_gilmore",
       verified: false
     },
     {
       rank: "04",
-      title: "Luke Talich",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18056959268546943",
+      title: "Clark Gilmore",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17891482638407503",
       platform: "Instagram Reels",
-      likes: "107.1K",
-      comments: "507",
-      third: "N/A",
+      likes: "136.4K",
+      comments: "569",
+      third: "5M",
       thirdLabel: "Views",
-      handle: "luke.talich",
+      handle: "clark_gilmore",
       verified: false
     },
     {
@@ -222,7 +223,7 @@ const notre_dame: ReportData = {
       comments: "2.3K",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "jeremiyah.love",
+      handle: "jeremiyahlove",
       verified: false
     }
   ]

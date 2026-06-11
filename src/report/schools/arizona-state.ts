@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Arizona State — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs arizona-state
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Arizona State — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs arizona-state
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const arizona_state: ReportData = {
   program: {
@@ -20,31 +21,31 @@ const arizona_state: ReportData = {
       icon: "ribbon",
       title: "Most Sponsored Posts",
       description: "The athlete with the most brand partnerships and sponsored content this year.",
-      athlete: "Britney Brown",
-      sport: "Triathlon",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768413937822-Britney_Brown_68e963f6aadc702bdcaa472f_ProfilePicture.jpg",
-      statValue: "10",
+      athlete: "Brianna Nunley",
+      sport: "Women's Soccer",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768413869430-Brianna_Nunley_68e963efaadc702bdcaa46eb_ProfilePicture.jpg",
+      statValue: "26",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Jordyn Tyson",
-          stat: "9"
+          athlete: "Britney Brown",
+          stat: "16"
         },
         {
           rank: "03",
-          athlete: "Myles \"Ghost\" Rowser",
-          stat: "8"
+          athlete: "Alexia Schofield",
+          stat: "10"
         },
         {
           rank: "04",
-          athlete: "Alexia Schofield",
+          athlete: "Jordyn Tyson",
           stat: "8"
         },
         {
           rank: "05",
-          athlete: "Karsyn Evans",
-          stat: "8"
+          athlete: "Kanye Udoh",
+          stat: "5"
         }
       ]
     },
@@ -52,29 +53,34 @@ const arizona_state: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 6.4× the size of their actual following.",
-      athlete: "Maurice Odum",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768413766155-Maurice_Odum_68e963eaaadc702bdcaa46b3_ProfilePicture.jpg",
-      statValue: "40.4K",
+      description: "Based on likes and comments, this athlete engages like an account 20.7× the size of their actual following.",
+      athlete: "Sam Leavitt",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768413572945-Sam_Leavitt_68b6f8e1d37bda451b1cd479_ProfilePicture.jpg",
+      statValue: "1.3M",
       statLabel: "Performs Like",
-      subValue: "6.3K",
+      subValue: "61.3K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Marley Washenitz",
-          stat: "31.5K"
+          athlete: "Jordyn Tyson",
+          stat: "159.1K"
         },
         {
           rank: "03",
-          athlete: "Heloisa Carrera",
-          stat: "2.4K"
+          athlete: "Maurice Odum",
+          stat: "157.1K"
         },
         {
           rank: "04",
-          athlete: "Vijay Wallace",
-          stat: "2.1K"
+          athlete: "Aliyah Adams",
+          stat: "38K"
+        },
+        {
+          rank: "05",
+          athlete: "Faith Frame",
+          stat: "15.1K"
         }
       ]
     },
@@ -86,28 +92,28 @@ const arizona_state: ReportData = {
       athlete: "Last-Tear Poa",
       sport: "Women's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768414031506-Last-Tear_Poa_68e963fcaadc702bdcaa476e_ProfilePicture.jpg",
-      statValue: "154K",
+      statValue: "151.5K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Santiago Trouet",
-          stat: "101.1K"
+          athlete: "Jordyn Tyson",
+          stat: "105.8K"
         },
         {
           rank: "03",
-          athlete: "Marcus Adams Jr.",
-          stat: "83.8K"
+          athlete: "Santiago Trouet",
+          stat: "90.7K"
         },
         {
           rank: "04",
-          athlete: "Marley Washenitz",
-          stat: "19.4K"
+          athlete: "Marcus Adams Jr.",
+          stat: "83.1K"
         },
         {
           rank: "05",
-          athlete: "Trevor Best",
-          stat: "15.9K"
+          athlete: "Ines Lopez Arias",
+          stat: "47.1K"
         }
       ]
     }
@@ -163,61 +169,61 @@ const arizona_state: ReportData = {
     {
       rank: "01",
       title: "Santiago Trouet",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18097244704701509",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18104584111848173",
       platform: "Instagram Post",
-      likes: "246.3K",
-      comments: "321",
+      likes: "618.1K",
+      comments: "536",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "santiago.trouet",
+      handle: "santitrouet",
       verified: false
     },
     {
       rank: "02",
-      title: "Lucien Vergnes",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18380596642195549",
-      platform: "Instagram Reels",
-      likes: "158.9K",
-      comments: "1.5K",
+      title: "Santiago Trouet",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18097244704701509",
+      platform: "Instagram Post",
+      likes: "251.6K",
+      comments: "333",
       third: "N/A",
-      thirdLabel: "Views",
-      handle: "lucien.vergnes",
+      thirdLabel: "Shares",
+      handle: "santitrouet",
       verified: false
     },
     {
       rank: "03",
-      title: "Marley Washenitz",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18074676803249685",
+      title: "Kyler Larkin",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18089590397470502",
       platform: "Instagram Reels",
-      likes: "104.5K",
-      comments: "605",
-      third: "N/A",
+      likes: "168.7K",
+      comments: "347",
+      third: "1.4M",
       thirdLabel: "Views",
-      handle: "marley.washenitz",
+      handle: "larkin.kyler",
       verified: false
     },
     {
       rank: "04",
-      title: "Jeff Sims",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18432602566111228",
-      platform: "Instagram Post",
-      likes: "71.5K",
-      comments: "355",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "jeff.sims",
+      title: "Lucien Vergnes",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18380596642195549",
+      platform: "Instagram Reels",
+      likes: "158.6K",
+      comments: "1.5K",
+      third: "5.7M",
+      thirdLabel: "Views",
+      handle: "lucienvergnes",
       verified: false
     },
     {
       rank: "05",
-      title: "Jude Randall",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18291624085263390",
+      title: "Filip Senc–Samardzic",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17859770037516924",
       platform: "Instagram Reels",
-      likes: "45.6K",
-      comments: "196",
-      third: "N/A",
+      likes: "69.4K",
+      comments: "178",
+      third: "1.6M",
       thirdLabel: "Views",
-      handle: "jude.randall",
+      handle: "filip_ss1",
       verified: false
     }
   ]

@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Robert Morris — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs robert-morris
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Robert Morris — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs robert-morris
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const robert_morris: ReportData = {
   program: {
@@ -20,30 +21,30 @@ const robert_morris: ReportData = {
       icon: "ribbon",
       title: "Most Sponsored Posts",
       description: "The athlete with the most brand partnerships and sponsored content this year.",
-      athlete: "Jayson Jenkins",
-      sport: "Football",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761111583442-Jayson_Jenkins_68f86c2ae1c43ab456ffa9fa.png",
+      athlete: "Greg Japchen",
+      sport: "Mens Hockey",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761111589900-Greg_Japchen_68f86c2ae1c43ab456ffa931.png",
       statValue: "4",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Zach Weber",
+          athlete: "Jayson Jenkins",
           stat: "4"
         },
         {
           rank: "03",
-          athlete: "Greg Japchen",
-          stat: "3"
+          athlete: "Zach Weber",
+          stat: "4"
         },
         {
           rank: "04",
-          athlete: "Madelyn Coleman",
-          stat: "1"
+          athlete: "Emma Cameron",
+          stat: "3"
         },
         {
           rank: "05",
-          athlete: "Eva Levingston",
+          athlete: "Bethany Rosato",
           stat: "1"
         }
       ]
@@ -52,34 +53,34 @@ const robert_morris: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 11.7× the size of their actual following.",
-      athlete: "Jennica Suggs",
-      sport: "Women's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761111590399-Jennica_Suggs_68f86c2ae1c43ab456ffa984.png",
-      statValue: "113.9K",
+      description: "Based on likes and comments, this athlete engages like an account 4.3× the size of their actual following.",
+      athlete: "DeSean Goode",
+      sport: "Men's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761111586559-DeSean_Goode_68f86c2ae1c43ab456ffa99f.png",
+      statValue: "11K",
       statLabel: "Performs Like",
-      subValue: "9.7K",
+      subValue: "2.5K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Tanner O'Grady",
-          stat: "7.5K"
+          athlete: "Mofe Adewole",
+          stat: "9.8K"
         },
         {
           rank: "03",
-          athlete: "Josh Hill",
-          stat: "7.3K"
+          athlete: "Noel Roach",
+          stat: "9.2K"
         },
         {
           rank: "04",
-          athlete: "Eddie Cooke III",
-          stat: "5K"
+          athlete: "Molly Dunn",
+          stat: "4.6K"
         },
         {
           rank: "05",
-          athlete: "Ava Leroux",
-          stat: "4.2K"
+          athlete: "Morgan Giannone",
+          stat: "4.6K"
         }
       ]
     },
@@ -91,7 +92,7 @@ const robert_morris: ReportData = {
       athlete: "Jennica Suggs",
       sport: "Women's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761111590399-Jennica_Suggs_68f86c2ae1c43ab456ffa984.png",
-      statValue: "9.7K",
+      statValue: "9.9K",
       statLabel: "Followers",
       runnersUp: [
         {
@@ -101,18 +102,18 @@ const robert_morris: ReportData = {
         },
         {
           rank: "03",
-          athlete: "Albert Vargas",
-          stat: "5.5K"
+          athlete: "Bryan Robertson",
+          stat: "6.3K"
         },
         {
           rank: "04",
-          athlete: "Kaleb Brown",
-          stat: "3.6K"
+          athlete: "Mackenzie Hoover",
+          stat: "5.9K"
         },
         {
           rank: "05",
-          athlete: "Aislin Malcolm",
-          stat: "2.9K"
+          athlete: "David  Johnson",
+          stat: "5.8K"
         }
       ]
     }
@@ -167,62 +168,62 @@ const robert_morris: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "Blake Allen",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18048411449462027",
+      title: "Ryan Prather Jr.",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18097600685051639",
       platform: "Instagram Post",
-      likes: "306",
-      comments: "41",
+      likes: "5.5K",
+      comments: "253",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "blake.allen",
+      handle: "ryanpratherjr",
       verified: false
     },
     {
       rank: "02",
-      title: "Ryan Prather Jr.",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18092340673748774",
+      title: "Xavier Styles",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18090729050480789",
       platform: "Instagram Post",
-      likes: "271",
-      comments: "15",
+      likes: "4.8K",
+      comments: "194",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "ryan.prather.jr.",
+      handle: "7x.styles",
       verified: false
     },
     {
       rank: "03",
-      title: "Patrick Johnson",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18131028754462597",
-      platform: "Instagram Reels",
-      likes: "138",
-      comments: "5",
+      title: "Rease Solomon",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17955641955046496",
+      platform: "Instagram Post",
+      likes: "3.7K",
+      comments: "147",
       third: "N/A",
-      thirdLabel: "Views",
-      handle: "patrick.johnson",
+      thirdLabel: "Shares",
+      handle: "rease_solomon",
       verified: false
     },
     {
       rank: "04",
-      title: "Morgan Alisesky",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17897876391224799",
+      title: "DeSean Goode",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18100963783976187",
       platform: "Instagram Post",
-      likes: "132",
-      comments: "0",
+      likes: "3.3K",
+      comments: "154",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "morgan.alisesky",
+      handle: "deseangoode",
       verified: false
     },
     {
       rank: "05",
-      title: "Patrick Johnson",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17899698822141903",
-      platform: "Instagram Reels",
-      likes: "130",
-      comments: "9",
+      title: "Josh Hill",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17934311133067512",
+      platform: "Instagram Post",
+      likes: "2.6K",
+      comments: "54",
       third: "N/A",
-      thirdLabel: "Views",
-      handle: "patrick.johnson",
+      thirdLabel: "Shares",
+      handle: "slimmworst",
       verified: false
     }
   ]

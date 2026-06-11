@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Arkansas — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs arkansas
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Arkansas — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs arkansas
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const arkansas: ReportData = {
   program: {
@@ -20,30 +21,30 @@ const arkansas: ReportData = {
       icon: "ribbon",
       title: "Most Sponsored Posts",
       description: "The athlete with the most brand partnerships and sponsored content this year.",
-      athlete: "Rachel Glenn",
-      sport: "Women's Track & Field",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1767975896501-Rachel_Glenn_68e9b02ba0cca3ee1d3e9919_ProfilePicture.jpg",
-      statValue: "22",
+      athlete: "Morgan McCarthy",
+      sport: "Womens Tennis",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760151337659-452.png",
+      statValue: "77",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Morgan McCarthy",
-          stat: "14"
+          athlete: "Rachel Glenn",
+          stat: "50"
         },
         {
           rank: "03",
-          athlete: "Taylen Green",
-          stat: "12"
+          athlete: "Simone Ballard",
+          stat: "22"
         },
         {
           rank: "04",
-          athlete: "Simone Ballard",
-          stat: "12"
+          athlete: "Taylen Green",
+          stat: "8"
         },
         {
           rank: "05",
-          athlete: "John Daly II",
+          athlete: "Julian Neal",
           stat: "7"
         }
       ]
@@ -52,34 +53,34 @@ const arkansas: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 3.4× the size of their actual following.",
-      athlete: "D.J. Wagner",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1767975773183-D.J._Wagner_68e9b009a0cca3ee1d3e97c9_ProfilePicture.jpg",
-      statValue: "474.8K",
+      description: "Based on likes and comments, this athlete engages like an account 4.0× the size of their actual following.",
+      athlete: "Jordan Anthony",
+      sport: "Men's Track & Field",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1767975239079-Jordan_Anthony_68e9b017a0cca3ee1d3e9855_ProfilePicture.jpg",
+      statValue: "399.6K",
       statLabel: "Performs Like",
-      subValue: "140K",
+      subValue: "101K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Meleek Thomas",
-          stat: "251K"
+          athlete: "Darius Acuff Jr.",
+          stat: "257.9K"
         },
         {
           rank: "03",
-          athlete: "Trevon Brazile",
-          stat: "214.8K"
+          athlete: "Billy Richmond III",
+          stat: "191.1K"
         },
         {
           rank: "04",
-          athlete: "Aisha Hassan",
-          stat: "38.3K"
+          athlete: "Natalie Wagner",
+          stat: "119.3K"
         },
         {
           rank: "05",
-          athlete: "Bonnie Deas",
-          stat: "15.3K"
+          athlete: "Analisse Batista",
+          stat: "88.9K"
         }
       ]
     },
@@ -88,31 +89,31 @@ const arkansas: ReportData = {
       icon: "eyes",
       title: "Largest Following at Year End",
       description: "The Arkansas athlete with the most followers across platforms at the end of the year.",
-      athlete: "Meleek Thomas",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1767975760377-Meleek_Thomas_68e9b008a0cca3ee1d3e97c1_ProfilePicture.jpg",
-      statValue: "160K",
+      athlete: "John Daly II",
+      sport: "Men's Golf",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1767975850545-John_Daly II_68e9b015a0cca3ee1d3e9843_ProfilePicture.jpg",
+      statValue: "275.7K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "D.J. Wagner",
-          stat: "140K"
+          athlete: "Joscelyn Roberson",
+          stat: "178.3K"
         },
         {
           rank: "03",
-          athlete: "Darius Acuff Jr.",
-          stat: "126K"
+          athlete: "Meleek Thomas",
+          stat: "171.9K"
         },
         {
           rank: "04",
-          athlete: "Bonnie Deas",
-          stat: "13.8K"
+          athlete: "Darius Acuff Jr.",
+          stat: "149K"
         },
         {
           rank: "05",
-          athlete: "Aisha Hassan",
-          stat: "5.2K"
+          athlete: "Rachel Glenn",
+          stat: "117K"
         }
       ]
     }
@@ -167,26 +168,26 @@ const arkansas: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "LJ Prudhomme",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18047892629411065",
-      platform: "Instagram Reels",
-      likes: "482.1K",
-      comments: "5.5K",
+      title: "Natalie Wagner",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18159332332403311",
+      platform: "Instagram Post",
+      likes: "241.2K",
+      comments: "960",
       third: "N/A",
-      thirdLabel: "Views",
-      handle: "lj.prudhomme",
+      thirdLabel: "Shares",
+      handle: "_natalie.wagner_",
       verified: false
     },
     {
       rank: "02",
-      title: "Natalie Wagner",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18159332332403311",
-      platform: "Instagram Post",
-      likes: "241.1K",
-      comments: "962",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "natalie.wagner",
+      title: "Scottie Vines",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18168663148380720",
+      platform: "Instagram Reels",
+      likes: "221.3K",
+      comments: "203",
+      third: "1.9M",
+      thirdLabel: "Views",
+      handle: "scottie_vines",
       verified: false
     },
     {
@@ -194,35 +195,35 @@ const arkansas: ReportData = {
       title: "Scottie Vines",
       thumb: "https://storage.googleapis.com/scraper-media-images/18143118523451289",
       platform: "Instagram Reels",
-      likes: "177.1K",
-      comments: "210",
-      third: "N/A",
+      likes: "214.9K",
+      comments: "240",
+      third: "3.3M",
       thirdLabel: "Views",
-      handle: "scottie.vines",
+      handle: "scottie_vines",
       verified: false
     },
     {
       rank: "04",
-      title: "Jordan Anthony",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17972415857993060",
-      platform: "Instagram Post",
-      likes: "72.9K",
-      comments: "99",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "jordan.anthony",
+      title: "Analisse Batista",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18074229500133206",
+      platform: "Instagram Reels",
+      likes: "157.4K",
+      comments: "517",
+      third: "2.4M",
+      thirdLabel: "Views",
+      handle: "analissebatistaa",
       verified: false
     },
     {
       rank: "05",
       title: "John Daly II",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18114909193531766",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18112921672845411",
       platform: "Instagram Post",
-      likes: "64.3K",
-      comments: "132",
+      likes: "96.6K",
+      comments: "295",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "john.daly.ii",
+      handle: "johndalyll",
       verified: false
     }
   ]

@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Baylor — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs baylor
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Baylor — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs baylor
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const baylor: ReportData = {
   program: {
@@ -20,31 +21,31 @@ const baylor: ReportData = {
       icon: "ribbon",
       title: "Most Sponsored Posts",
       description: "The athlete with the most brand partnerships and sponsored content this year.",
-      athlete: "Callie Conrad",
-      sport: "Women's Soccer",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765467026847-Callie_Conrad_68a7883af8a45dd3fd3021cd_ProfilePicture.jpg",
-      statValue: "7",
+      athlete: "Gigi Lindsey",
+      sport: "Softball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765467561556-Gigi_Lindsey_68c0ae2aa73ae6dabf3cc52b_ProfilePicture.jpg",
+      statValue: "25",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Josh Cameron",
-          stat: "7"
+          athlete: "Lauren Omholt",
+          stat: "11"
         },
         {
           rank: "03",
-          athlete: "Gigi Lindsey",
-          stat: "6"
+          athlete: "Callie Conrad",
+          stat: "9"
         },
         {
           rank: "04",
-          athlete: "Keidra Mills",
-          stat: "5"
+          athlete: "Taz Williams",
+          stat: "8"
         },
         {
           rank: "05",
-          athlete: "Taz Williams",
-          stat: "3"
+          athlete: "Josh Cameron",
+          stat: "6"
         }
       ]
     },
@@ -52,34 +53,34 @@ const baylor: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 9.5× the size of their actual following.",
-      athlete: "Andre Iguodala II",
+      description: "Based on likes and comments, this athlete engages like an account 3.9× the size of their actual following.",
+      athlete: "Tounde Yessoufou",
       sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765467403853-Andre_Iguodala II_68a7882ef8a45dd3fd302164_ProfilePicture.jpg",
-      statValue: "241.6K",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765467390892-Tounde_Yessoufou_68a78830f8a45dd3fd302172_ProfilePicture.jpg",
+      statValue: "140.5K",
       statLabel: "Performs Like",
-      subValue: "25.6K",
+      subValue: "36.4K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Isaac Williams IV",
-          stat: "220.6K"
+          athlete: "Keaton Thomas",
+          stat: "137.7K"
         },
         {
           rank: "03",
-          athlete: "Maikcol Perez",
-          stat: "52.6K"
+          athlete: "Isaac Williams IV",
+          stat: "131.9K"
         },
         {
           rank: "04",
-          athlete: "Darianna Littlepage-Buggs",
-          stat: "16.8K"
+          athlete: "Sima Lucero",
+          stat: "52.8K"
         },
         {
           rank: "05",
-          athlete: "Ines Goryanova",
-          stat: "8K"
+          athlete: "Gabby Kaminski",
+          stat: "27K"
         }
       ]
     },
@@ -88,31 +89,31 @@ const baylor: ReportData = {
       icon: "eyes",
       title: "Largest Following at Year End",
       description: "The Baylor athlete with the most followers across platforms at the end of the year.",
-      athlete: "Isaac Williams IV",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765467032632-Isaac_Williams IV_68a7882ef8a45dd3fd302166_ProfilePicture.jpg",
-      statValue: "89.6K",
+      athlete: "Taz Williams",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761919120528-Taz_Williams_68f02236aa61b70ac379a92b_ProfilePicture.jpg",
+      statValue: "833.8K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Tounde Yessoufou",
-          stat: "34.3K"
+          athlete: "Isaac Williams IV",
+          stat: "90.5K"
         },
         {
           rank: "03",
-          athlete: "Dan Skillings Jr.",
-          stat: "32.2K"
+          athlete: "Emily Bott",
+          stat: "86.4K"
         },
         {
           rank: "04",
-          athlete: "Taliah Scott",
-          stat: "14.2K"
+          athlete: "Camryn Milliken",
+          stat: "60.6K"
         },
         {
           rank: "05",
-          athlete: "Jana Van Gytenbeek",
-          stat: "13K"
+          athlete: "Gigi Lindsey",
+          stat: "38.4K"
         }
       ]
     }
@@ -167,6 +168,18 @@ const baylor: ReportData = {
   topContent: [
     {
       rank: "01",
+      title: "Gigi Lindsey",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18085726487587682",
+      platform: "Instagram Post",
+      likes: "96.9K",
+      comments: "N/A",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "gi_.x2",
+      verified: false
+    },
+    {
+      rank: "02",
       title: "Michael Trigg",
       thumb: "https://storage.googleapis.com/scraper-media-images/17862547236416616",
       platform: "Instagram Post",
@@ -178,51 +191,39 @@ const baylor: ReportData = {
       verified: false
     },
     {
-      rank: "02",
-      title: "Andre Iguodala II",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17871420936487996",
-      platform: "Instagram Post",
-      likes: "39.1K",
-      comments: "265",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "andre.iguodala.ii",
-      verified: false
-    },
-    {
       rank: "03",
-      title: "Connor Hawkins",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18052853501411428",
-      platform: "Instagram Post",
-      likes: "33.3K",
-      comments: "736",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "connor.hawkins",
+      title: "Taz Williams",
+      thumb: "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-i-photomode-tx/eb83c04148564113b9fb3db91694b617~tplv-photomode-image-cover:640:0:q70.webp?dr=12229&refresh_token=8aa48760&x-expires=1766876400&x-signature=NhJ5e6dSK9WekCY44hX0tFMAI%2Fo%3D&t=5897f7ec&ps=d5b8ac02&shp=d05b14bd&shcp=8aecc5ac&idc=useast5&s=TIKTOK_FOR_DEVELOPER&biz_tag=tt_photomode&sc=cover",
+      platform: "TikTok",
+      likes: "46K",
+      comments: "198",
+      third: "290.1K",
+      thirdLabel: "Views",
+      handle: "taz.williams",
       verified: false
     },
     {
       rank: "04",
-      title: "Isaac Williams IV",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17929149759082867",
-      platform: "Instagram Post",
-      likes: "32.4K",
-      comments: "156",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "isaac.williams.iv",
+      title: "Taz Williams",
+      thumb: "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/o0dMjXfzRIknIjHjuCmLnXOIIyGC3hAHdAeUif~tplv-tiktokx-cropcenter-q:300:400:q72.jpeg?dr=8596&refresh_token=d4598a0c&x-expires=1764198000&x-signature=ct5Rjzyqiz0%2F0qFSr%2FAb%2Bmb1X%2FE%3D&t=bacd0480&ps=933b5bde&shp=d05b14bd&shcp=8aecc5ac&idc=useast5&biz_tag=tt_video&s=TIKTOK_FOR_DEVELOPER&sc=cover",
+      platform: "TikTok",
+      likes: "41.5K",
+      comments: "127",
+      third: "298.6K",
+      thirdLabel: "Views",
+      handle: "taz.williams",
       verified: false
     },
     {
       rank: "05",
-      title: "Tounde Yessoufou",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17903726520143025",
-      platform: "Instagram Reels",
-      likes: "27.9K",
-      comments: "26",
+      title: "Andre Iguodala II",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17871420936487996",
+      platform: "Instagram Post",
+      likes: "39K",
+      comments: "264",
       third: "N/A",
-      thirdLabel: "Views",
-      handle: "tounde.yessoufou",
+      thirdLabel: "Shares",
+      handle: "andre.iggyy",
       verified: false
     }
   ]

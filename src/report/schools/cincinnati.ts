@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Cincinnati — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs cincinnati
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Cincinnati — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs cincinnati
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const cincinnati: ReportData = {
   program: {
@@ -20,31 +21,31 @@ const cincinnati: ReportData = {
       icon: "ribbon",
       title: "Most Sponsored Posts",
       description: "The athlete with the most brand partnerships and sponsored content this year.",
-      athlete: "Evan Tengesdahl",
-      sport: "Football",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761114196068-Evan_Tengesdahl_68f8774766c6eed501f52f7d.png",
-      statValue: "7",
+      athlete: "Emily Haugen",
+      sport: "Swimming And Diving",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761114189247-Emily_Haugen_68f8774766c6eed501f52fc3.png",
+      statValue: "18",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Oliver Mayer",
-          stat: "7"
+          athlete: "Janelle Green",
+          stat: "13"
         },
         {
           rank: "03",
-          athlete: "Janelle Green",
-          stat: "6"
+          athlete: "Evan Tengesdahl",
+          stat: "12"
         },
         {
           rank: "04",
-          athlete: "Robert Hart",
-          stat: "5"
+          athlete: "Gabrielle Guenther",
+          stat: "11"
         },
         {
           rank: "05",
-          athlete: "Paige Whitted",
-          stat: "4"
+          athlete: "Robert Hart",
+          stat: "10"
         }
       ]
     },
@@ -52,34 +53,34 @@ const cincinnati: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 6.0× the size of their actual following.",
-      athlete: "Shon Abaev",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1763069546282-jojo-removebg-preview.png",
-      statValue: "294.4K",
+      description: "Based on likes and comments, this athlete engages like an account 7.6× the size of their actual following.",
+      athlete: "Brendan Sorsby",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761114189815-Brendan_Sorsby_68f8774766c6eed501f52f3d.png",
+      statValue: "173.2K",
       statLabel: "Performs Like",
-      subValue: "49.2K",
+      subValue: "22.7K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Keyshuan Tillery",
-          stat: "29.7K"
+          athlete: "Shon Abaev",
+          stat: "144.7K"
         },
         {
           rank: "03",
-          athlete: "Day Day Thomas",
-          stat: "16K"
+          athlete: "Keyshuan Tillery",
+          stat: "66.6K"
         },
         {
           rank: "04",
-          athlete: "Mya Perry",
-          stat: "12.4K"
+          athlete: "Carly Glendinning",
+          stat: "11.1K"
         },
         {
           rank: "05",
-          athlete: "Tyler McKinley",
-          stat: "6.9K"
+          athlete: "Lily DiBernardo",
+          stat: "10.8K"
         }
       ]
     },
@@ -91,28 +92,28 @@ const cincinnati: ReportData = {
       athlete: "Shon Abaev",
       sport: "Men's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1763069546282-jojo-removebg-preview.png",
-      statValue: "49.2K",
+      statValue: "48.8K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Jalen Haynes",
-          stat: "34.4K"
+          athlete: "Kerr Kriisa",
+          stat: "29K"
         },
         {
           rank: "03",
-          athlete: "Kerr Kriisa",
-          stat: "29.5K"
+          athlete: "Chance Williams",
+          stat: "28.3K"
         },
         {
           rank: "04",
-          athlete: "Mya Perry",
-          stat: "10.5K"
+          athlete: "Omolola Kuponiyi",
+          stat: "23.7K"
         },
         {
           rank: "05",
-          athlete: "Destiny Thomas",
-          stat: "8.9K"
+          athlete: "Kayla Hostetler",
+          stat: "10.6K"
         }
       ]
     }
@@ -167,62 +168,62 @@ const cincinnati: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "Jeff Caldwell",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17967877574977123",
-      platform: "Instagram Reels",
-      likes: "5.8K",
-      comments: "93",
+      title: "Omolola Kuponiyi",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17864759283500529",
+      platform: "Instagram Post",
+      likes: "94.4K",
+      comments: "1K",
       third: "N/A",
-      thirdLabel: "Views",
-      handle: "jeff.caldwell",
+      thirdLabel: "Shares",
+      handle: "_lolachristine",
       verified: false
     },
     {
       rank: "02",
-      title: "Matthew McDoom",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18064912271523863",
-      platform: "Instagram Post",
-      likes: "5.1K",
-      comments: "78",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "matthew.mcdoom",
+      title: "Paige Whitted",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17863348371459639",
+      platform: "Instagram Reels",
+      likes: "72.1K",
+      comments: "60",
+      third: "859.6K",
+      thirdLabel: "Views",
+      handle: "paigewhitted44",
       verified: false
     },
     {
       rank: "03",
-      title: "Tayden Barnes",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18125698801497727",
-      platform: "Instagram Post",
-      likes: "3.2K",
-      comments: "18",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "tayden.barnes",
+      title: "Paige Whitted",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17917448838117883",
+      platform: "Instagram Reels",
+      likes: "27.5K",
+      comments: "20",
+      third: "250.1K",
+      thirdLabel: "Views",
+      handle: "paigewhitted44",
       verified: false
     },
     {
       rank: "04",
-      title: "Evan Pryor",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17901136653143314",
+      title: "Shon Abaev",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17866644930398797",
       platform: "Instagram Post",
-      likes: "2.8K",
-      comments: "46",
+      likes: "27.2K",
+      comments: "224",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "evan.pryor",
+      handle: "bucketboyshon",
       verified: false
     },
     {
       rank: "05",
-      title: "Kye Stokes",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18067846235583831",
+      title: "Brendan Sorsby",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18088675670008462",
       platform: "Instagram Post",
-      likes: "1K",
-      comments: "66",
+      likes: "26.6K",
+      comments: "816",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "kye.stokes",
+      handle: "brendansorsby2",
       verified: false
     }
   ]

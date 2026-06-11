@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Washington State — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs washington-state
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Washington State — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs washington-state
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const washington_state: ReportData = {
   program: {
@@ -23,27 +24,22 @@ const washington_state: ReportData = {
       athlete: "Lily Herman",
       sport: "Women's Track & Field",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760735165205-Lily_Herman_68f2ac424988214a6156fb11.png",
-      statValue: "8",
+      statValue: "12",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Jerone Morton",
-          stat: "2"
+          athlete: "Bela Alvarado",
+          stat: "1"
         },
         {
           rank: "03",
           athlete: "Jenna Studer",
-          stat: "2"
-        },
-        {
-          rank: "04",
-          athlete: "Ishmael Gibbs",
           stat: "1"
         },
         {
-          rank: "05",
-          athlete: "Dalton Anderson",
+          rank: "04",
+          athlete: "Maya McCabe",
           stat: "1"
         }
       ]
@@ -52,34 +48,34 @@ const washington_state: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 2.4× the size of their actual following.",
-      athlete: "Ace Glass",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760735187199-Ace_Glass_68f2ac424988214a6156fa10.png",
-      statValue: "11.8K",
+      description: "Based on likes and comments, this athlete engages like an account 15.1× the size of their actual following.",
+      athlete: "Kenny Worthy III",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760735190834-Kenny_Worthy III_68f2ac424988214a6156fa55.png",
+      statValue: "39.9K",
       statLabel: "Performs Like",
-      subValue: "5K",
+      subValue: "2.6K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Eemeli Yalaho",
-          stat: "8.9K"
+          athlete: "Kayo Patu",
+          stat: "25.4K"
         },
         {
           rank: "03",
-          athlete: "Simon Hildebrandt",
-          stat: "8.4K"
+          athlete: "Sullivan Schlimgen",
+          stat: "14.1K"
         },
         {
           rank: "04",
-          athlete: "Jerone Morton",
-          stat: "4.8K"
+          athlete: "Bela Alvarado",
+          stat: "2.6K"
         },
         {
           rank: "05",
-          athlete: "Parker Gerrits",
-          stat: "3.3K"
+          athlete: "Brooke Lyons",
+          stat: "1.9K"
         }
       ]
     },
@@ -88,31 +84,31 @@ const washington_state: ReportData = {
       icon: "eyes",
       title: "Largest Following at Year End",
       description: "The Washington State athlete with the most followers across platforms at the end of the year.",
-      athlete: "Ace Glass",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760735187199-Ace_Glass_68f2ac424988214a6156fa10.png",
-      statValue: "5K",
+      athlete: "Mike Sandjo",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760735170066-Mike_Sandjo_68f2ac424988214a6156fa4c.png",
+      statValue: "9K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "ND Okafor",
-          stat: "4.7K"
+          athlete: "Kayo Patu",
+          stat: "7.6K"
         },
         {
           rank: "03",
-          athlete: "Kase Wynott",
-          stat: "4.7K"
+          athlete: "Jerone Morton",
+          stat: "6K"
         },
         {
           rank: "04",
-          athlete: "Simon Hildebrandt",
-          stat: "4.7K"
+          athlete: "Micaela De Mello",
+          stat: "4.5K"
         },
         {
           rank: "05",
-          athlete: "Emmanuel Ugbo",
-          stat: "4K"
+          athlete: "Jenna Studer",
+          stat: "2.7K"
         }
       ]
     }
@@ -167,62 +163,62 @@ const washington_state: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "Ace Glass",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18099706849817568",
-      platform: "Instagram Post",
-      likes: "27.7K",
-      comments: "131",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "ace.glass",
+      title: "Lily Herman",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18082863722224212",
+      platform: "Instagram Reels",
+      likes: "5.5K",
+      comments: "42",
+      third: "129.5K",
+      thirdLabel: "Views",
+      handle: "lillianah10",
       verified: false
     },
     {
       rank: "02",
-      title: "Julian Dugger",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17867812689538795",
+      title: "Kayo Patu",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18406171381199130",
       platform: "Instagram Post",
-      likes: "2.1K",
-      comments: "45",
+      likes: "3.8K",
+      comments: "51",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "julian.dugger",
+      handle: "kayo_patu",
       verified: false
     },
     {
       rank: "03",
-      title: "Tyrone Cotton III",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18554653024039626",
+      title: "Isaiah Hung",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17845175724543179",
       platform: "Instagram Post",
-      likes: "2.1K",
-      comments: "127",
+      likes: "3K",
+      comments: "42",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "tyrone.cotton.iii",
+      handle: "isaiah.hung",
       verified: false
     },
     {
       rank: "04",
-      title: "Ace Glass",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18074492045598863",
-      platform: "Instagram Post",
-      likes: "1.8K",
-      comments: "52",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "ace.glass",
+      title: "Lily Herman",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18150241174472318",
+      platform: "Instagram Reels",
+      likes: "3K",
+      comments: "16",
+      third: "127.2K",
+      thirdLabel: "Views",
+      handle: "lillianah10",
       verified: false
     },
     {
       rank: "05",
-      title: "Dylan Paine",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17878175043378340",
-      platform: "Instagram Post",
-      likes: "1.3K",
-      comments: "86",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "dylan.paine",
+      title: "Julian Dugger",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18078882718905900",
+      platform: "Instagram Reels",
+      likes: "2.7K",
+      comments: "95",
+      third: "102.7K",
+      thirdLabel: "Views",
+      handle: "wsucougarfb",
       verified: false
     }
   ]

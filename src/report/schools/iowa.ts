@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Iowa — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs iowa
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Iowa — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs iowa
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const iowa: ReportData = {
   program: {
@@ -20,30 +21,30 @@ const iowa: ReportData = {
       icon: "ribbon",
       title: "Most Sponsored Posts",
       description: "The athlete with the most brand partnerships and sponsored content this year.",
-      athlete: "Taylor Stremlow",
-      sport: "Women's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761852552194-Taylor_Stremlow_6903bbdb66d702c4eb1729f3.png",
-      statValue: "8",
+      athlete: "Xavier Nwankpa",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761852550494-Xavier_Nwankpa_6903bbdb66d702c4eb17295a.png",
+      statValue: "3",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Hank Brown",
-          stat: "4"
+          athlete: "Jada Gyamfi",
+          stat: "3"
         },
         {
           rank: "03",
-          athlete: "Chazadi 'Chit-Chat' Wright",
-          stat: "4"
+          athlete: "Callie Levin",
+          stat: "3"
         },
         {
           rank: "04",
-          athlete: "Hannah Stuelke",
-          stat: "4"
+          athlete: "Haley Tyson",
+          stat: "3"
         },
         {
           rank: "05",
-          athlete: "Bodey McCaslin",
+          athlete: "Kellen Strohmeyer",
           stat: "2"
         }
       ]
@@ -52,34 +53,34 @@ const iowa: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 4.5× the size of their actual following.",
-      athlete: "Bennett Stirtz",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761852553646-Bennett_Stirtz_6903bbdb66d702c4eb1729d0.png",
-      statValue: "61.2K",
+      description: "Based on likes and comments, this athlete engages like an account 10.4× the size of their actual following.",
+      athlete: "Aaron Graves",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761852549276-Aaron_Graves_6903bbdb66d702c4eb17297b.png",
+      statValue: "84K",
       statLabel: "Performs Like",
-      subValue: "13.5K",
+      subValue: "8.1K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Alvaro Folgueiras",
-          stat: "28.1K"
+          athlete: "Addie Deal",
+          stat: "63.3K"
         },
         {
           rank: "03",
-          athlete: "Addie Deal",
-          stat: "22.3K"
+          athlete: "Taylor McCabe",
+          stat: "52.7K"
         },
         {
           rank: "04",
-          athlete: "Trey Thompson",
-          stat: "21.8K"
+          athlete: "Kaden Wetjen",
+          stat: "40.4K"
         },
         {
           rank: "05",
-          athlete: "Kennise Johnson",
-          stat: "13.6K"
+          athlete: "Taylor Stremlow",
+          stat: "23.9K"
         }
       ]
     },
@@ -106,13 +107,13 @@ const iowa: ReportData = {
         },
         {
           rank: "04",
-          athlete: "Bennett Stirtz",
-          stat: "13.5K"
+          athlete: "Xavier Nwankpa",
+          stat: "34.4K"
         },
         {
           rank: "05",
-          athlete: "Brendan Hausen",
-          stat: "11.4K"
+          athlete: "Mark Gronowski",
+          stat: "22.2K"
         }
       ]
     }
@@ -167,42 +168,30 @@ const iowa: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "Kaden Wetjen",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18423129046099909",
+      title: "Jada Gyamfi",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17849462166546402",
       platform: "Instagram Post",
-      likes: "69.7K",
-      comments: "436",
+      likes: "16.1K",
+      comments: "66",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "kaden.wetjen",
+      handle: "jadagyamfi",
       verified: false
     },
     {
       rank: "02",
-      title: "Xavier Nwankpa",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17933878979983197",
+      title: "Kylie Feuerbach",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18075676382109636",
       platform: "Instagram Post",
-      likes: "36.8K",
-      comments: "12",
+      likes: "14.6K",
+      comments: "235",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "xavier.nwankpa",
+      handle: "kyliefeuerbach",
       verified: false
     },
     {
       rank: "03",
-      title: "Kylie Feuerbach",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18075676382109636",
-      platform: "Instagram Post",
-      likes: "14.5K",
-      comments: "234",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "kylie.feuerbach",
-      verified: false
-    },
-    {
-      rank: "04",
       title: "Kylie Feuerbach",
       thumb: "https://storage.googleapis.com/scraper-media-images/18104638999563827",
       platform: "Instagram Post",
@@ -210,19 +199,31 @@ const iowa: ReportData = {
       comments: "42",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "kylie.feuerbach",
+      handle: "kyliefeuerbach",
+      verified: false
+    },
+    {
+      rank: "04",
+      title: "Taylor McCabe",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18008739128675320",
+      platform: "Instagram Post",
+      likes: "13.9K",
+      comments: "341",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "taylormccabe_",
       verified: false
     },
     {
       rank: "05",
-      title: "Kaden Wetjen",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18139569487427152",
+      title: "Mark Gronowski",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18123654127535032",
       platform: "Instagram Post",
-      likes: "13K",
-      comments: "71",
+      likes: "12.7K",
+      comments: "126",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "kaden.wetjen",
+      handle: "mgronowski11",
       verified: false
     }
   ]

@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Texas — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs texas
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Texas — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs texas
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const texas: ReportData = {
   program: {
@@ -23,28 +24,28 @@ const texas: ReportData = {
       athlete: "Rori Harmon",
       sport: "Women's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759795672930-Rori_Harmon_68dc53740e6e3ec3fe759ff2_ProfilePicture.jpg",
-      statValue: "19",
+      statValue: "26",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
           athlete: "Emma Halter",
-          stat: "11"
+          stat: "20"
         },
         {
           rank: "03",
-          athlete: "Whitney Lauenstein",
-          stat: "10"
+          athlete: "Madison Booker",
+          stat: "20"
         },
         {
           rank: "04",
-          athlete: "Michael Taaffe",
-          stat: "9"
+          athlete: "Colin Simmons",
+          stat: "12"
         },
         {
           rank: "05",
           athlete: "Logan Popelka",
-          stat: "9"
+          stat: "11"
         }
       ]
     },
@@ -52,34 +53,34 @@ const texas: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 3.4× the size of their actual following.",
-      athlete: "Simeon Wilcher",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759795592133-Simeon_Wilcher_68dc53710e6e3ec3fe759fc0_ProfilePicture.jpg",
-      statValue: "121.6K",
+      description: "Based on likes and comments, this athlete engages like an account 2.2× the size of their actual following.",
+      athlete: "Arch Manning",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759795203711-Arch_Manning_689644765ca13f6f45fa5a17_ProfilePicture.jpg",
+      statValue: "1.4M",
       statLabel: "Performs Like",
-      subValue: "35.6K",
+      subValue: "620.1K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Dailyn Swain",
-          stat: "99K"
+          athlete: "Jaime Ffrench",
+          stat: "467.9K"
         },
         {
           rank: "03",
-          athlete: "Aaliyah Crump",
-          stat: "66.4K"
+          athlete: "Parker Livingstone",
+          stat: "279.5K"
         },
         {
           rank: "04",
-          athlete: "Camden Heide",
-          stat: "52.2K"
+          athlete: "MaTaia Lawson",
+          stat: "268.7K"
         },
         {
           rank: "05",
           athlete: "Sarah Graves",
-          stat: "40.6K"
+          stat: "228.3K"
         }
       ]
     },
@@ -88,31 +89,31 @@ const texas: ReportData = {
       icon: "eyes",
       title: "Largest Following at Year End",
       description: "The Texas athlete with the most followers across platforms at the end of the year.",
-      athlete: "Rori Harmon",
-      sport: "Women's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759795672930-Rori_Harmon_68dc53740e6e3ec3fe759ff2_ProfilePicture.jpg",
-      statValue: "42.5K",
+      athlete: "Arch Manning",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759795203711-Arch_Manning_689644765ca13f6f45fa5a17_ProfilePicture.jpg",
+      statValue: "620.1K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Jordan Pope",
-          stat: "38.3K"
+          athlete: "Colin Simmons",
+          stat: "92.5K"
         },
         {
           rank: "03",
-          athlete: "Simeon Wilcher",
-          stat: "35.6K"
+          athlete: "Michael Taaffe",
+          stat: "80.6K"
         },
         {
           rank: "04",
-          athlete: "Breya Cunningham",
-          stat: "30.1K"
+          athlete: "Rori Harmon",
+          stat: "71.7K"
         },
         {
           rank: "05",
-          athlete: "Aaliyah Crump",
-          stat: "27.4K"
+          athlete: "Teagan Kavan",
+          stat: "68.5K"
         }
       ]
     }
@@ -167,62 +168,62 @@ const texas: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "Colin Simmons",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18116925979541585",
-      platform: "Instagram Post",
-      likes: "104.3K",
-      comments: "281",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "colin.simmons",
+      title: "Tabea Eitel",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18014167004842585",
+      platform: "Instagram Reels",
+      likes: "359.2K",
+      comments: "638",
+      third: "9.7M",
+      thirdLabel: "Views",
+      handle: "tabeaeitel",
       verified: false
     },
     {
       rank: "02",
-      title: "Ramsey Gary",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18390830296126100",
+      title: "Will Stone",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18053607176614393",
       platform: "Instagram Reels",
-      likes: "97.5K",
-      comments: "102",
-      third: "N/A",
+      likes: "181.3K",
+      comments: "1.5K",
+      third: "4.2M",
       thirdLabel: "Views",
-      handle: "ramsey.gary",
+      handle: "w_stone1",
       verified: false
     },
     {
       rank: "03",
       title: "Arch Manning",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18089734309780802",
-      platform: "Instagram Reels",
-      likes: "80.2K",
-      comments: "778",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18021117374796288",
+      platform: "Instagram Post",
+      likes: "104.4K",
+      comments: "295",
       third: "N/A",
-      thirdLabel: "Views",
-      handle: "arch.manning",
+      thirdLabel: "Shares",
+      handle: "archmanning",
       verified: false
     },
     {
       rank: "04",
-      title: "Michael Taaffe",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18113948095581938",
+      title: "Arch Manning",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18075373388608216",
       platform: "Instagram Post",
-      likes: "76K",
-      comments: "811",
+      likes: "87.1K",
+      comments: "457",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "michael.taaffe",
+      handle: "archmanning",
       verified: false
     },
     {
       rank: "05",
-      title: "Marshall Landwehr",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18059976743066207",
+      title: "Colin Simmons",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18108997630816532",
       platform: "Instagram Reels",
-      likes: "75.6K",
-      comments: "532",
-      third: "N/A",
+      likes: "84K",
+      comments: "113",
+      third: "2.5M",
       thirdLabel: "Views",
-      handle: "marshall.landwehr",
+      handle: "co1insimmons",
       verified: false
     }
   ]

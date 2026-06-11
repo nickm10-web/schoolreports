@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Georgia — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs georgia
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Georgia — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs georgia
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const georgia: ReportData = {
   program: {
@@ -20,31 +21,31 @@ const georgia: ReportData = {
       icon: "ribbon",
       title: "Most Sponsored Posts",
       description: "The athlete with the most brand partnerships and sponsored content this year.",
-      athlete: "Gunner Stockton",
-      sport: "Football",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759781808495-Gunner_Stockton_689647b6289e7803603e0cb6_ProfilePicture.jpg",
-      statValue: "14",
+      athlete: "Keirstin Roose",
+      sport: "Softball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1763651029255-Keirstin_Roose_68e41bf9d4e63a397cc43828_ProfilePicture.jpg",
+      statValue: "23",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Nate Frazier",
-          stat: "11"
+          athlete: "Gunner Stockton",
+          stat: "17"
         },
         {
           rank: "03",
-          athlete: "Oscar Delp",
-          stat: "9"
+          athlete: "Kelise Woolford",
+          stat: "14"
         },
         {
           rank: "04",
           athlete: "Hailey Gordon",
-          stat: "6"
+          stat: "12"
         },
         {
           rank: "05",
-          athlete: "Brooke Gleichowski",
-          stat: "5"
+          athlete: "Nate Frazier",
+          stat: "11"
         }
       ]
     },
@@ -52,34 +53,34 @@ const georgia: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 10.5× the size of their actual following.",
-      athlete: "Kanon Catchings",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759781907521-Kanon_Catchings_68e41bf8d4e63a397cc4381c_ProfilePicture.jpg",
-      statValue: "239.5K",
+      description: "Based on likes and comments, this athlete engages like an account 8.7× the size of their actual following.",
+      athlete: "Zachariah Branch",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759782213484-Zachariah_Branch_689647b6289e7803603e0ce7_ProfilePicture.jpg",
+      statValue: "2M",
       statLabel: "Performs Like",
-      subValue: "22.8K",
+      subValue: "228K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Jake Wilkins",
-          stat: "140.8K"
+          athlete: "Colbie Young",
+          stat: "605K"
         },
         {
           rank: "03",
-          athlete: "Marcus \"Smurf\" Millender",
-          stat: "21.8K"
+          athlete: "Dillon Bell",
+          stat: "461.2K"
         },
         {
           rank: "04",
-          athlete: "Trinity Turner",
-          stat: "15.9K"
+          athlete: "Victoria Saah",
+          stat: "34.2K"
         },
         {
           rank: "05",
-          athlete: "Aubrey Beckham",
-          stat: "5.9K"
+          athlete: "Summer Denigan",
+          stat: "23.5K"
         }
       ]
     },
@@ -88,31 +89,31 @@ const georgia: ReportData = {
       icon: "eyes",
       title: "Largest Following at Year End",
       description: "The Georgia athlete with the most followers across platforms at the end of the year.",
-      athlete: "Somtochukwu \"Somto\" Cyril",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759782899856-52.png",
-      statValue: "167.1K",
+      athlete: "Zachariah Branch",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759782213484-Zachariah_Branch_689647b6289e7803603e0ce7_ProfilePicture.jpg",
+      statValue: "228K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Jake Wilkins",
-          stat: "56.3K"
+          athlete: "Somtochukwu \"Somto\" Cyril",
+          stat: "167.4K"
         },
         {
           rank: "03",
-          athlete: "Aicha Ndour",
-          stat: "24.1K"
+          athlete: "Gunner Stockton",
+          stat: "112.1K"
         },
         {
           rank: "04",
-          athlete: "Kanon Catchings",
-          stat: "22.8K"
+          athlete: "Eryn Williams",
+          stat: "46.3K"
         },
         {
           rank: "05",
-          athlete: "Trinity Turner",
-          stat: "8.3K"
+          athlete: "Keirstin Roose",
+          stat: "46K"
         }
       ]
     }
@@ -167,6 +168,18 @@ const georgia: ReportData = {
   topContent: [
     {
       rank: "01",
+      title: "Keirstin Roose",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17983263299738258",
+      platform: "Instagram Reels",
+      likes: "161.1K",
+      comments: "979",
+      third: "5.1M",
+      thirdLabel: "Views",
+      handle: "keirstin.roose",
+      verified: false
+    },
+    {
+      rank: "02",
       title: "Zachariah Branch",
       thumb: "https://storage.googleapis.com/scraper-media-images/18109255207649578",
       platform: "Instagram Post",
@@ -178,51 +191,39 @@ const georgia: ReportData = {
       verified: false
     },
     {
-      rank: "02",
-      title: "Zachariah Branch",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17870559381394970",
-      platform: "Instagram Post",
-      likes: "61.8K",
-      comments: "496",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "zachariah.branch",
-      verified: false
-    },
-    {
       rank: "03",
-      title: "Zachariah Branch",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17848084458587765",
-      platform: "Instagram Post",
-      likes: "60K",
-      comments: "804",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "zachariah.branch",
+      title: "Kenny Ishikawa",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17997508187936868",
+      platform: "Instagram Reels",
+      likes: "75.7K",
+      comments: "342",
+      third: "1.6M",
+      thirdLabel: "Views",
+      handle: "kenny_ishikawa",
       verified: false
     },
     {
       rank: "04",
-      title: "Gunner Stockton",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18035671649512624",
+      title: "Kaila Jackson",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17915933358360784",
       platform: "Instagram Post",
-      likes: "50.5K",
-      comments: "300",
+      likes: "68.4K",
+      comments: "363",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "gunner.stockton",
+      handle: "kaila.jackson1",
       verified: false
     },
     {
       rank: "05",
-      title: "Zachariah Branch",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17899932036315624",
-      platform: "Instagram Post",
-      likes: "44.5K",
-      comments: "289",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "zachariah.branch",
+      title: "Kenny Ishikawa",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17996594600874347",
+      platform: "Instagram Reels",
+      likes: "65.2K",
+      comments: "205",
+      third: "3.1M",
+      thirdLabel: "Views",
+      handle: "kenny_ishikawa",
       verified: false
     }
   ]

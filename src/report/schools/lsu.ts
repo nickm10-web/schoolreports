@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// LSU — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs lsu
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// LSU — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs lsu
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const lsu: ReportData = {
   program: {
@@ -23,28 +24,28 @@ const lsu: ReportData = {
       athlete: "Flau'Jae Johnson",
       sport: "Women's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760520709488-Flau'Jae_Johnson_68ef667a66de6124cd10cc90.png",
-      statValue: "18",
+      statValue: "38",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Princeton Malbrue",
-          stat: "16"
+          athlete: "Amaya Messier",
+          stat: "31"
         },
         {
           rank: "03",
-          athlete: "Amaya Messier",
-          stat: "11"
+          athlete: "Princeton Malbrue",
+          stat: "23"
         },
         {
           rank: "04",
-          athlete: "Whit Weeks",
-          stat: "5"
+          athlete: "MiLaysia Fulwiley",
+          stat: "11"
         },
         {
           rank: "05",
-          athlete: "Trey'Dez Green",
-          stat: "5"
+          athlete: "Whit Weeks",
+          stat: "7"
         }
       ]
     },
@@ -52,34 +53,34 @@ const lsu: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 7.8× the size of their actual following.",
-      athlete: "MiLaysia Fulwiley",
-      sport: "Women's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761928037715-Milay (1).png",
-      statValue: "1.9M",
+      description: "Based on likes and comments, this athlete engages like an account 8.5× the size of their actual following.",
+      athlete: "Trey'Dez Green",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1756249595399-Trey'Dez_Green_68ae3dcbc46ee67ea74fc95e_ProfilePicture.jpg",
+      statValue: "491.4K",
       statLabel: "Performs Like",
-      subValue: "239.1K",
+      subValue: "58K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Bella Hines",
-          stat: "132.1K"
+          athlete: "Tamarcus Cooley",
+          stat: "441.8K"
         },
         {
           rank: "03",
-          athlete: "Kailyn Gilbert",
-          stat: "131.8K"
+          athlete: "West Weeks",
+          stat: "356.4K"
         },
         {
           rank: "04",
-          athlete: "Mazi Mosley",
-          stat: "26.4K"
+          athlete: "MiLaysia Fulwiley",
+          stat: "258K"
         },
         {
           rank: "05",
-          athlete: "Matt Gilhool",
-          stat: "24.6K"
+          athlete: "Bella Hines",
+          stat: "173.1K"
         }
       ]
     },
@@ -97,22 +98,22 @@ const lsu: ReportData = {
         {
           rank: "02",
           athlete: "MiLaysia Fulwiley",
-          stat: "239.1K"
+          stat: "237.4K"
         },
         {
           rank: "03",
-          athlete: "Mikaylah Williams",
-          stat: "75.8K"
+          athlete: "Princeton Malbrue",
+          stat: "126.8K"
         },
         {
           rank: "04",
-          athlete: "Jalen Reece",
-          stat: "16.3K"
+          athlete: "Whit Weeks",
+          stat: "103.4K"
         },
         {
           rank: "05",
-          athlete: "Mazi Mosley",
-          stat: "8.9K"
+          athlete: "Harold Perkins Jr.",
+          stat: "101.3K"
         }
       ]
     }
@@ -167,62 +168,62 @@ const lsu: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "CJ Jimcoily",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17966173316951372",
+      title: "Princeton Malbrue",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17982932507887763",
       platform: "Instagram Reels",
-      likes: "82.1K",
-      comments: "131",
-      third: "N/A",
+      likes: "608.8K",
+      comments: "231",
+      third: "4.8M",
       thirdLabel: "Views",
-      handle: "cj.jimcoily",
+      handle: "princemalbrue",
       verified: false
     },
     {
       rank: "02",
-      title: "Whit Weeks",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18115036642576587",
-      platform: "Instagram Post",
-      likes: "66.1K",
-      comments: "238",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "whit.weeks",
+      title: "Princeton Malbrue",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17867441928515973",
+      platform: "Instagram Reels",
+      likes: "188.6K",
+      comments: "185",
+      third: "2.3M",
+      thirdLabel: "Views",
+      handle: "princemalbrue",
       verified: false
     },
     {
       rank: "03",
-      title: "Zavion Thomas",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17970329504942937",
-      platform: "Instagram Post",
-      likes: "59.9K",
-      comments: "417",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "zavion.thomas",
+      title: "Damian Ramos",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17893988337321711",
+      platform: "Instagram Reels",
+      likes: "186.3K",
+      comments: "534",
+      third: "2.7M",
+      thirdLabel: "Views",
+      handle: "damian.ramos14",
       verified: false
     },
     {
       rank: "04",
-      title: "Kaleb Jackson",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18104288647678917",
-      platform: "Instagram Post",
-      likes: "53.5K",
-      comments: "868",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "kaleb.jackson",
+      title: "Flau'Jae Johnson",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18069487295241996",
+      platform: "Instagram Reels",
+      likes: "171.7K",
+      comments: "9.3K",
+      third: "2.1M",
+      thirdLabel: "Views",
+      handle: "flaujae",
       verified: false
     },
     {
       rank: "05",
-      title: "Kylan Billiot",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18112016497618433",
-      platform: "Instagram Post",
-      likes: "51.9K",
-      comments: "332",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "kylan.billiot",
+      title: "Princeton Malbrue",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18075237044480887",
+      platform: "Instagram Reels",
+      likes: "164.1K",
+      comments: "423",
+      third: "5.4M",
+      thirdLabel: "Views",
+      handle: "princemalbrue",
       verified: false
     }
   ]

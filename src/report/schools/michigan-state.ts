@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Michigan State — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs michigan-state
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Michigan State — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs michigan-state
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const michigan_state: ReportData = {
   program: {
@@ -20,21 +21,21 @@ const michigan_state: ReportData = {
       icon: "ribbon",
       title: "Most Sponsored Posts",
       description: "The athlete with the most brand partnerships and sponsored content this year.",
-      athlete: "Malayah Long",
-      sport: "Women's Volleyball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761382100506-Malayah_Long_68fc8e14aaa755171a3e5f56.png",
-      statValue: "6",
+      athlete: "Natalia Kenyatta",
+      sport: "Softball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761382108388-Natalia_Kenyatta_68fc8e14aaa755171a3e5f2b.png",
+      statValue: "19",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Jalen Thompson",
-          stat: "5"
+          athlete: "Payton Conroy",
+          stat: "8"
         },
         {
           rank: "03",
-          athlete: "Ru'Quan Buckley",
-          stat: "5"
+          athlete: "Carsyn Cassady",
+          stat: "8"
         },
         {
           rank: "04",
@@ -43,7 +44,7 @@ const michigan_state: ReportData = {
         },
         {
           rank: "05",
-          athlete: "Payton Conroy",
+          athlete: "Ru'Quan Buckley",
           stat: "5"
         }
       ]
@@ -52,34 +53,34 @@ const michigan_state: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 8.6× the size of their actual following.",
-      athlete: "Cam Ward",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761382098633-Cam_Ward_68fc8e14aaa755171a3e5f0a.png",
-      statValue: "171.8K",
+      description: "Based on likes and comments, this athlete engages like an account 9.1× the size of their actual following.",
+      athlete: "Nick Marsh",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761382107200-Nick_Marsh_68fc8e14aaa755171a3e5e9e.png",
+      statValue: "264.1K",
       statLabel: "Performs Like",
-      subValue: "20K",
+      subValue: "29.2K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Divine Ugochukwu",
-          stat: "61.6K"
+          stat: "180.1K"
         },
         {
           rank: "03",
-          athlete: "Kur Teng",
-          stat: "24.6K"
+          athlete: "Aydan West",
+          stat: "107K"
         },
         {
           rank: "04",
-          athlete: "Jalyn Brown",
-          stat: "20.3K"
+          athlete: "Evie Doezema",
+          stat: "11.2K"
         },
         {
           rank: "05",
           athlete: "Jordan Ode",
-          stat: "9.3K"
+          stat: "8.2K"
         }
       ]
     },
@@ -88,31 +89,31 @@ const michigan_state: ReportData = {
       icon: "eyes",
       title: "Largest Following at Year End",
       description: "The Michigan State athlete with the most followers across platforms at the end of the year.",
-      athlete: "Jaxon Kohler",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761382106536-Jaxon_Kohler_68fc8e14aaa755171a3e5f07.png",
-      statValue: "22K",
+      athlete: "Nick Marsh",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761382107200-Nick_Marsh_68fc8e14aaa755171a3e5e9e.png",
+      statValue: "29.2K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Cam Ward",
-          stat: "20K"
+          athlete: "Armorion Smith",
+          stat: "28.8K"
         },
         {
           rank: "03",
-          athlete: "Jalyn Brown",
-          stat: "17.9K"
+          athlete: "Aidan Chiles",
+          stat: "24.9K"
         },
         {
           rank: "04",
-          athlete: "Jordan Scott",
-          stat: "13.2K"
+          athlete: "Jalyn Brown",
+          stat: "23.5K"
         },
         {
           rank: "05",
-          athlete: "Grace VanSlooten",
-          stat: "10.1K"
+          athlete: "Nikki Smith",
+          stat: "13.6K"
         }
       ]
     }
@@ -167,62 +168,62 @@ const michigan_state: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "Jeremy Fears Jr.",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17842923210627432",
+      title: "Nick Marsh",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17972543240825226",
       platform: "Instagram Post",
-      likes: "53.5K",
-      comments: "205",
+      likes: "29.1K",
+      comments: "782",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "jeremy.fears.jr.",
+      handle: "nickmarsh_11",
       verified: false
     },
     {
       rank: "02",
-      title: "Jeremy Fears Jr.",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18125671504546403",
+      title: "Brandon Tullis",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18391261597189107",
       platform: "Instagram Post",
-      likes: "36.7K",
-      comments: "218",
+      likes: "21.8K",
+      comments: "180",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "jeremy.fears.jr.",
+      handle: "brandon.tullis",
       verified: false
     },
     {
       rank: "03",
-      title: "Cam Ward",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17984907995917088",
-      platform: "Instagram Post",
-      likes: "33.7K",
-      comments: "276",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "cam.ward",
+      title: "Shawn Foster",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18064466387285992",
+      platform: "Instagram Reels",
+      likes: "16.8K",
+      comments: "219",
+      third: "212.7K",
+      thirdLabel: "Views",
+      handle: "foster.13_",
       verified: false
     },
     {
       rank: "04",
-      title: "Jeremy Fears Jr.",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18377818267145700",
+      title: "Aydan West",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18047220350401387",
       platform: "Instagram Post",
-      likes: "27.9K",
-      comments: "84",
+      likes: "15.4K",
+      comments: "182",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "jeremy.fears.jr.",
+      handle: "_aydanwest_",
       verified: false
     },
     {
       rank: "05",
-      title: "Malayah Long",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18028510151764294",
-      platform: "Instagram Reels",
-      likes: "25.4K",
-      comments: "17",
+      title: "Nick Marsh",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18159103510443708",
+      platform: "Instagram Post",
+      likes: "12.2K",
+      comments: "198",
       third: "N/A",
-      thirdLabel: "Views",
-      handle: "malayah.long",
+      thirdLabel: "Shares",
+      handle: "nickmarsh_11",
       verified: false
     }
   ]

@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Alabama — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs alabama
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Alabama — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs alabama
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const alabama: ReportData = {
   program: {
@@ -20,31 +21,31 @@ const alabama: ReportData = {
       icon: "ribbon",
       title: "Most Sponsored Posts",
       description: "The athlete with the most brand partnerships and sponsored content this year.",
-      athlete: "Ty Simpson",
-      sport: "Football",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1756828129440-Ty_Simpson_68b711996310d2d95fd52e6a_ProfilePicture.jpg",
-      statValue: "11",
+      athlete: "Houston Mallette",
+      sport: "Men's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1756828524366-Houston_Mallette_68b71352217c594b26890192_ProfilePicture.jpg",
+      statValue: "25",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
           athlete: "Chloe LaCoursiere",
-          stat: "11"
+          stat: "17"
         },
         {
           rank: "03",
-          athlete: "Waiata Jennings",
-          stat: "10"
+          athlete: "Ace Austin",
+          stat: "14"
         },
         {
           rank: "04",
-          athlete: "Ace Austin",
-          stat: "8"
+          athlete: "Ty Simpson",
+          stat: "13"
         },
         {
           rank: "05",
-          athlete: "Houston Mallette",
-          stat: "7"
+          athlete: "Labaron Philon Jr.",
+          stat: "12"
         }
       ]
     },
@@ -52,34 +53,34 @@ const alabama: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 2.4× the size of their actual following.",
-      athlete: "Jalil Bethea",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768594921530-jalil bethea.png",
-      statValue: "532K",
+      description: "Based on likes and comments, this athlete engages like an account 2.1× the size of their actual following.",
+      athlete: "Ryan Williams",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768594888890-Ryan Williams.png",
+      statValue: "1.6M",
       statLabel: "Performs Like",
-      subValue: "218.7K",
+      subValue: "739.8K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Labaron Philon Jr.",
-          stat: "237K"
+          athlete: "Kadyn Proctor",
+          stat: "928.7K"
         },
         {
           rank: "03",
-          athlete: "Aden Holloway",
-          stat: "217.3K"
+          athlete: "Jalil Bethea",
+          stat: "912.5K"
         },
         {
           rank: "04",
-          athlete: "Eris Lester",
-          stat: "18.5K"
+          athlete: "Ana Roman",
+          stat: "25.7K"
         },
         {
           rank: "05",
-          athlete: "Reychel Douglas",
-          stat: "11.9K"
+          athlete: "Joy Egbuna",
+          stat: "14.3K"
         }
       ]
     },
@@ -88,31 +89,31 @@ const alabama: ReportData = {
       icon: "eyes",
       title: "Largest Following at Year End",
       description: "The Alabama athlete with the most followers across platforms at the end of the year.",
-      athlete: "Jalil Bethea",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768594921530-jalil bethea.png",
-      statValue: "218.7K",
+      athlete: "Ryan Williams",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768594888890-Ryan Williams.png",
+      statValue: "739.8K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Waiata Jennings",
-          stat: "126.3K"
+          athlete: "Jalil Bethea",
+          stat: "218.8K"
         },
         {
           rank: "03",
-          athlete: "Aden Holloway",
-          stat: "110K"
+          athlete: "Ty Simpson",
+          stat: "142.9K"
         },
         {
           rank: "04",
-          athlete: "Labaron Philon Jr.",
-          stat: "104.1K"
+          athlete: "Waiata Jennings",
+          stat: "124.3K"
         },
         {
           rank: "05",
-          athlete: "Jessica Timmons",
-          stat: "11.3K"
+          athlete: "Lauren Johnson",
+          stat: "23.5K"
         }
       ]
     }
@@ -167,62 +168,62 @@ const alabama: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "Kadyn Proctor",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18064378274584260",
-      platform: "Instagram Post",
-      likes: "167.5K",
-      comments: "1.6K",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "kadyn.proctor",
+      title: "Waiata Jennings",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17855010258568350",
+      platform: "Instagram Reels",
+      likes: "273.2K",
+      comments: "1.2K",
+      third: "3.9M",
+      thirdLabel: "Views",
+      handle: "waiatajennings",
       verified: false
     },
     {
       rank: "02",
-      title: "Ryan Williams",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17947333452014569",
-      platform: "Instagram Post",
-      likes: "126.6K",
-      comments: "545",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "ryan.williams",
+      title: "Waiata Jennings",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18285829582278217",
+      platform: "Instagram Reels",
+      likes: "160.4K",
+      comments: "152",
+      third: "1.5M",
+      thirdLabel: "Views",
+      handle: "waiatajennings",
       verified: false
     },
     {
       rank: "03",
-      title: "Wilkin Formby",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18146291731409138",
-      platform: "Instagram Post",
-      likes: "104K",
-      comments: "6",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "wilkin.formby",
+      title: "David Thid",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18073303307236408",
+      platform: "Instagram Reels",
+      likes: "128.9K",
+      comments: "62",
+      third: "5.3M",
+      thirdLabel: "Views",
+      handle: "davidthid",
       verified: false
     },
     {
       rank: "04",
-      title: "Zabien Brown",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18054483926294369",
+      title: "Ryan Williams",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17947333452014569",
       platform: "Instagram Post",
-      likes: "99.7K",
-      comments: "525",
+      likes: "127.4K",
+      comments: "542",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "zabien.brown",
+      handle: "ryanwms1",
       verified: false
     },
     {
       rank: "05",
       title: "Ryan Williams",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17860628532518153",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17936326209192450",
       platform: "Instagram Post",
-      likes: "98.6K",
-      comments: "475",
+      likes: "112.6K",
+      comments: "397",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "ryan.williams",
+      handle: "ryanwms1",
       verified: false
     }
   ]

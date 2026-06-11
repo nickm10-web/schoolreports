@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// SMU — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs smu
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// SMU — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs smu
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const smu: ReportData = {
   program: {
@@ -28,18 +29,18 @@ const smu: ReportData = {
       runnersUp: [
         {
           rank: "02",
-          athlete: "Natalia Newsome",
-          stat: "5"
-        },
-        {
-          rank: "03",
           athlete: "Maggie Croft",
           stat: "5"
         },
         {
-          rank: "04",
+          rank: "03",
           athlete: "Tyler Van Dyke",
-          stat: "3"
+          stat: "4"
+        },
+        {
+          rank: "04",
+          athlete: "Natalia Newsome",
+          stat: "4"
         },
         {
           rank: "05",
@@ -52,34 +53,34 @@ const smu: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 1.9× the size of their actual following.",
-      athlete: "Jaron Pierre Jr.",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761381853105-Jaron_Pierre Jr._68fc8bd377927c1df356cdfc.png",
-      statValue: "34K",
+      description: "Based on likes and comments, this athlete engages like an account 8.5× the size of their actual following.",
+      athlete: "Zadian Gentry",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761381843929-Zadian_Gentry_68fc8bd377927c1df356cd8e.png",
+      statValue: "71.2K",
       statLabel: "Performs Like",
-      subValue: "17.5K",
+      subValue: "8.4K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Sam Walters",
-          stat: "20.7K"
+          athlete: "Ty Hawkins",
+          stat: "50.9K"
         },
         {
           rank: "03",
-          athlete: "Billy White III",
-          stat: "13.7K"
+          athlete: "Ahmaad Moses",
+          stat: "43.3K"
         },
         {
           rank: "04",
-          athlete: "Kyla Deck",
-          stat: "6.5K"
+          athlete: "Malaya Jones",
+          stat: "12.5K"
         },
         {
           rank: "05",
-          athlete: "Mailien Rolf",
-          stat: "3.6K"
+          athlete: "Maggie Croft",
+          stat: "9.7K"
         }
       ]
     },
@@ -101,18 +102,18 @@ const smu: ReportData = {
         },
         {
           rank: "03",
+          athlete: "Jeffrey M'ba",
+          stat: "31.6K"
+        },
+        {
+          rank: "04",
           athlete: "Jermaine O'Neal Jr.",
           stat: "20.4K"
         },
         {
-          rank: "04",
-          athlete: "B.J. Edwards",
-          stat: "17.9K"
-        },
-        {
           rank: "05",
-          athlete: "Jzaniya Harriel",
-          stat: "8.6K"
+          athlete: "Averi Carlson",
+          stat: "18.9K"
         }
       ]
     }
@@ -167,30 +168,6 @@ const smu: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "Boopie Miller",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17844781041671041",
-      platform: "Instagram Reels",
-      likes: "97.9K",
-      comments: "947",
-      third: "N/A",
-      thirdLabel: "Views",
-      handle: "boopie.miller",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "Boopie Miller",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17897600058222784",
-      platform: "Instagram Reels",
-      likes: "59.9K",
-      comments: "713",
-      third: "N/A",
-      thirdLabel: "Views",
-      handle: "boopie.miller",
-      verified: false
-    },
-    {
-      rank: "03",
       title: "Chris Johnson Jr.",
       thumb: "https://storage.googleapis.com/scraper-media-images/18125069293479893",
       platform: "Instagram Reels",
@@ -198,11 +175,11 @@ const smu: ReportData = {
       comments: "1.2K",
       third: "N/A",
       thirdLabel: "Views",
-      handle: "chris.johnson.jr.",
+      handle: "smufb",
       verified: false
     },
     {
-      rank: "04",
+      rank: "02",
       title: "Natalia Newsome",
       thumb: "https://storage.googleapis.com/scraper-media-images/18066548123360485",
       platform: "Instagram Post",
@@ -214,7 +191,7 @@ const smu: ReportData = {
       verified: false
     },
     {
-      rank: "05",
+      rank: "03",
       title: "Stone Eby",
       thumb: "https://storage.googleapis.com/scraper-media-images/18100668436738720",
       platform: "Instagram Post",
@@ -222,7 +199,31 @@ const smu: ReportData = {
       comments: "52",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "stone.eby",
+      handle: "smufb",
+      verified: false
+    },
+    {
+      rank: "04",
+      title: "Chris Johnson Jr.",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18078466976086832",
+      platform: "Instagram Reels",
+      likes: "19K",
+      comments: "82",
+      third: "N/A",
+      thirdLabel: "Views",
+      handle: "smufb",
+      verified: false
+    },
+    {
+      rank: "05",
+      title: "Corey Washington",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18412678804184035",
+      platform: "Instagram Post",
+      likes: "12.6K",
+      comments: "123",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "byeduce",
       verified: false
     }
   ]

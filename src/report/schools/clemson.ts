@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Clemson — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs clemson
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Clemson — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs clemson
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const clemson: ReportData = {
   program: {
@@ -20,31 +21,31 @@ const clemson: ReportData = {
       icon: "ribbon",
       title: "Most Sponsored Posts",
       description: "The athlete with the most brand partnerships and sponsored content this year.",
-      athlete: "Cade Klubnik",
-      sport: "Football",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761201585276-Cade_Klubnik_68f9ccc3e3da270d8f2601be.png",
-      statValue: "11",
+      athlete: "Macey Cintron",
+      sport: "Softball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761201585386-Macey_Cintron_68f9ccc3e3da270d8f260254.png",
+      statValue: "13",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
           athlete: "Adam Randall",
-          stat: "8"
+          stat: "12"
         },
         {
           rank: "03",
-          athlete: "Lilly Lippeatt",
-          stat: "8"
+          athlete: "Trinity Webb",
+          stat: "10"
         },
         {
           rank: "04",
-          athlete: "Antonio Williams",
-          stat: "6"
+          athlete: "Lilly Lippeatt",
+          stat: "9"
         },
         {
           rank: "05",
-          athlete: "Holland Harris",
-          stat: "6"
+          athlete: "Jestin Porter",
+          stat: "9"
         }
       ]
     },
@@ -52,34 +53,34 @@ const clemson: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 74.8× the size of their actual following.",
-      athlete: "RJ Godfrey",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761201587752-RJ_Godfrey_68f9ccc3e3da270d8f260246.png",
-      statValue: "1.1M",
+      description: "Based on likes and comments, this athlete engages like an account 17.6× the size of their actual following.",
+      athlete: "Avieon Terrell",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761201591058-Avieon_Terrell_68f9ccc3e3da270d8f2601b4.png",
+      statValue: "1M",
       statLabel: "Performs Like",
-      subValue: "15.3K",
+      subValue: "57.3K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Zac Foster",
-          stat: "29.8K"
+          athlete: "Chris Denson",
+          stat: "188.7K"
         },
         {
           rank: "03",
-          athlete: "Chase Thompson",
-          stat: "26.5K"
+          athlete: "Tristan Smith",
+          stat: "171.6K"
         },
         {
           rank: "04",
-          athlete: "Rachael Rose",
-          stat: "6.1K"
+          athlete: "Ella Cesario",
+          stat: "8.6K"
         },
         {
           rank: "05",
-          athlete: "Ja'Kerra Butler",
-          stat: "4.6K"
+          athlete: "Bianca Martinez",
+          stat: "8K"
         }
       ]
     },
@@ -88,31 +89,31 @@ const clemson: ReportData = {
       icon: "eyes",
       title: "Largest Following at Year End",
       description: "The Clemson athlete with the most followers across platforms at the end of the year.",
-      athlete: "Hannah Kohn",
-      sport: "Women's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761201596599-Hannah_Kohn_68f9ccc3e3da270d8f260273.png",
-      statValue: "39.5K",
+      athlete: "Cade Klubnik",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761201585276-Cade_Klubnik_68f9ccc3e3da270d8f2601be.png",
+      statValue: "134.4K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Dillon Hunter",
-          stat: "15.8K"
+          athlete: "Emma Malewski",
+          stat: "98.9K"
         },
         {
           rank: "03",
-          athlete: "Jestin Porter",
-          stat: "15.6K"
+          athlete: "Avieon Terrell",
+          stat: "57.3K"
         },
         {
           rank: "04",
-          athlete: "RJ Godfrey",
-          stat: "15.3K"
+          athlete: "Sammy Brown",
+          stat: "47.7K"
         },
         {
           rank: "05",
-          athlete: "Rusne Augustinaite",
-          stat: "3.2K"
+          athlete: "Hannah Kohn",
+          stat: "39K"
         }
       ]
     }
@@ -167,38 +168,38 @@ const clemson: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "RJ Godfrey",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18537499066060237",
+      title: "Emma Malewski",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18074919616797176",
       platform: "Instagram Reels",
-      likes: "462.3K",
-      comments: "6.7K",
-      third: "N/A",
+      likes: "79.7K",
+      comments: "316",
+      third: "2.8M",
       thirdLabel: "Views",
-      handle: "rj.godfrey",
+      handle: "emma_malewski",
       verified: false
     },
     {
       rank: "02",
-      title: "Tryston McCladdie",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18392029906125990",
-      platform: "Instagram Post",
-      likes: "153.5K",
-      comments: "1.4K",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "tryston.mccladdie",
+      title: "Trinity Webb",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18106737640603861",
+      platform: "Instagram Reels",
+      likes: "76.1K",
+      comments: "21",
+      third: "729.3K",
+      thirdLabel: "Views",
+      handle: "trin.webb",
       verified: false
     },
     {
       rank: "03",
-      title: "Jack Crighton",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17967760994991842",
+      title: "Molly Arnold",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18092898989475066",
       platform: "Instagram Reels",
-      likes: "92.5K",
-      comments: "403",
-      third: "N/A",
+      likes: "59.1K",
+      comments: "71",
+      third: "680.7K",
       thirdLabel: "Views",
-      handle: "jack.crighton",
+      handle: "mollyarnold11",
       verified: false
     },
     {
@@ -206,23 +207,23 @@ const clemson: ReportData = {
       title: "Tristan Smith",
       thumb: "https://storage.googleapis.com/scraper-media-images/18084564092472812",
       platform: "Instagram Post",
-      likes: "46.5K",
-      comments: "195",
+      likes: "46.2K",
+      comments: "200",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "tristan.smith",
+      handle: "7r1stan___",
       verified: false
     },
     {
       rank: "05",
       title: "Cade Klubnik",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18058446698251141",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18102187276755201",
       platform: "Instagram Post",
-      likes: "28.6K",
-      comments: "203",
+      likes: "40.1K",
+      comments: "493",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "cade.klubnik",
+      handle: "cadeklubnik",
       verified: false
     }
   ]

@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Arizona — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs arizona
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Arizona — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs arizona
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const arizona: ReportData = {
   program: {
@@ -23,28 +24,28 @@ const arizona: ReportData = {
       athlete: "Cooper Quigley",
       sport: "Mens Cross Country",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760465143858-Cooper_Quigley_68ee6de1b74090998754770e.png",
-      statValue: "18",
+      statValue: "32",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Mickayla Perdue",
-          stat: "5"
+          athlete: "Paris Mikinski",
+          stat: "12"
         },
         {
           rank: "03",
-          athlete: "Noelani Cornfield",
-          stat: "5"
+          athlete: "Ava Simms",
+          stat: "11"
         },
         {
           rank: "04",
-          athlete: "Ava Simms",
-          stat: "5"
+          athlete: "Emily Psarras",
+          stat: "10"
         },
         {
           rank: "05",
-          athlete: "Genesis Smith",
-          stat: "3"
+          athlete: "Koa Peat",
+          stat: "10"
         }
       ]
     },
@@ -52,34 +53,34 @@ const arizona: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 10.2× the size of their actual following.",
-      athlete: "Bryce James",
+      description: "Based on likes and comments, this athlete engages like an account 6.2× the size of their actual following.",
+      athlete: "Brayden Burries",
       sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760465143819-Bryce_James_68ee6de1b740909987547673.png",
-      statValue: "20.2M",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760465123937-Brayden_Burries_68ee6de1b74090998754767b.png",
+      statValue: "367.6K",
       statLabel: "Performs Like",
-      subValue: "2M",
+      subValue: "59.2K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Brayden Burries",
-          stat: "261.9K"
+          athlete: "Koa Peat",
+          stat: "268.2K"
         },
         {
           rank: "03",
-          athlete: "Koa Peat",
-          stat: "197.1K"
+          athlete: "Jordan Wilson",
+          stat: "108.7K"
         },
         {
           rank: "04",
-          athlete: "Molly Ladwig",
-          stat: "9.6K"
+          athlete: "Tobe Awaka",
+          stat: "104.9K"
         },
         {
           rank: "05",
-          athlete: "Kamryn Kitchen",
-          stat: "4.7K"
+          athlete: "Shea Davis",
+          stat: "33.1K"
         }
       ]
     },
@@ -97,22 +98,22 @@ const arizona: ReportData = {
         {
           rank: "02",
           athlete: "Koa Peat",
-          stat: "83.9K"
+          stat: "93.7K"
         },
         {
           rank: "03",
-          athlete: "Brayden Burries",
-          stat: "48K"
+          athlete: "Emily Psarras",
+          stat: "76.6K"
         },
         {
           rank: "04",
-          athlete: "Sumayah Sugapong",
-          stat: "8.3K"
+          athlete: "Paris Mikinski",
+          stat: "71.1K"
         },
         {
           rank: "05",
-          athlete: "Mickayla Perdue",
-          stat: "8K"
+          athlete: "Antonia Sanchez Nunez",
+          stat: "62K"
         }
       ]
     }
@@ -167,62 +168,62 @@ const arizona: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "Jaden Bradley",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18079534825828252",
+      title: "Jackson Cook",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18405384205177787",
       platform: "Instagram Reels",
-      likes: "61.1K",
-      comments: "542",
-      third: "N/A",
+      likes: "41.4K",
+      comments: "227",
+      third: "1M",
       thirdLabel: "Views",
-      handle: "jaden.bradley",
+      handle: "jacksonn.cook",
       verified: false
     },
     {
       rank: "02",
-      title: "Bryce James",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18302158825264474",
+      title: "Kaleb Kimaita",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17895145722339702",
       platform: "Instagram Reels",
-      likes: "22.4K",
-      comments: "278",
-      third: "N/A",
+      likes: "40.1K",
+      comments: "45",
+      third: "436.2K",
       thirdLabel: "Views",
-      handle: "bryce.james",
+      handle: "kalebkimaita",
       verified: false
     },
     {
       rank: "03",
-      title: "Treydan Stukes",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18111563944520608",
+      title: "Koa Peat",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17869698675589388",
       platform: "Instagram Reels",
-      likes: "19.6K",
-      comments: "156",
-      third: "N/A",
+      likes: "39.4K",
+      comments: "41",
+      third: "2.9M",
       thirdLabel: "Views",
-      handle: "treydan.stukes",
+      handle: "koapeat",
       verified: false
     },
     {
       rank: "04",
-      title: "Regan Shockey",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17973412961951553",
+      title: "Koa Peat",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18520142515076954",
       platform: "Instagram Post",
-      likes: "18.8K",
-      comments: "30",
+      likes: "36.9K",
+      comments: "270",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "regan.shockey",
+      handle: "koapeat",
       verified: false
     },
     {
       rank: "05",
-      title: "Koa Peat",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17995797701699570",
+      title: "Bryce James",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17859681372606810",
       platform: "Instagram Post",
-      likes: "18.1K",
-      comments: "270",
+      likes: "35.4K",
+      comments: "336",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "koa.peat",
+      handle: "_justbryce",
       verified: false
     }
   ]

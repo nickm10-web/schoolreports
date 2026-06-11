@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// UCLA — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs ucla
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// UCLA — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs ucla
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const ucla: ReportData = {
   program: {
@@ -20,31 +21,31 @@ const ucla: ReportData = {
       icon: "ribbon",
       title: "Most Sponsored Posts",
       description: "The athlete with the most brand partnerships and sponsored content this year.",
-      athlete: "Sophia Hartwell",
-      sport: "Women's Track & Field",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765897044092-Sophia_Hartwell_68f878d77fcc92b86eee7ea7_ProfilePicture.jpg",
-      statValue: "9",
+      athlete: "Jordan Chiles",
+      sport: "Women's Gymnastics",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765897229904-Jordan_Chiles_68f878d77fcc92b86eee7f0e_ProfilePicture.jpg",
+      statValue: "35",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Jordan Chiles",
-          stat: "9"
+          athlete: "Sophia Hartwell",
+          stat: "23"
         },
         {
           rank: "03",
-          athlete: "Tamaal Myers",
-          stat: "8"
+          athlete: "Gabriela Jaquez",
+          stat: "17"
         },
         {
           rank: "04",
-          athlete: "Sienna Betts",
-          stat: "6"
+          athlete: "Tamaal Myers",
+          stat: "16"
         },
         {
           rank: "05",
-          athlete: "Cash Peterman",
-          stat: "5"
+          athlete: "Eric Dailey Jr.",
+          stat: "8"
         }
       ]
     },
@@ -52,34 +53,34 @@ const ucla: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 1.3× the size of their actual following.",
-      athlete: "Kiki Rice",
+      description: "Based on likes and comments, this athlete engages like an account 3.1× the size of their actual following.",
+      athlete: "Gabriela Jaquez",
       sport: "Women's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765897154917-Kiki_Rice_68f878d77fcc92b86eee7ee2_ProfilePicture.jpg",
-      statValue: "135.5K",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765897162248-Gabriela_Jaquez_68f878d77fcc92b86eee7ee7_ProfilePicture.jpg",
+      statValue: "546.8K",
       statLabel: "Performs Like",
-      subValue: "101.6K",
+      subValue: "178.2K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Xavier Booker",
-          stat: "64.6K"
+          athlete: "Roch Cholowsky",
+          stat: "216.1K"
         },
         {
           rank: "03",
-          athlete: "Trent Perry",
-          stat: "27K"
+          athlete: "Hazel Alevok",
+          stat: "150K"
         },
         {
           rank: "04",
-          athlete: "Brandon Williams",
-          stat: "24.2K"
+          athlete: "Kwazi Gilmer",
+          stat: "133.4K"
         },
         {
           rank: "05",
-          athlete: "Gianna Kneepkens",
-          stat: "10.3K"
+          athlete: "Jewelous \"JuJu\" Walls",
+          stat: "60.7K"
         }
       ]
     },
@@ -88,31 +89,31 @@ const ucla: ReportData = {
       icon: "eyes",
       title: "Largest Following at Year End",
       description: "The UCLA athlete with the most followers across platforms at the end of the year.",
-      athlete: "Skyy Clark",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765896852052-Skyy_Clark_68f878d77fcc92b86eee7e2b_ProfilePicture.jpg",
-      statValue: "183.7K",
+      athlete: "Jordan Chiles",
+      sport: "Women's Gymnastics",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765897229904-Jordan_Chiles_68f878d77fcc92b86eee7f0e_ProfilePicture.jpg",
+      statValue: "1.7M",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Kiki Rice",
-          stat: "101.6K"
+          athlete: "Nico Iamaleava",
+          stat: "182.5K"
         },
         {
           rank: "03",
-          athlete: "Lauren Betts",
-          stat: "62K"
+          athlete: "Skyy Clark",
+          stat: "178.7K"
         },
         {
           rank: "04",
           athlete: "Gabriela Jaquez",
-          stat: "48.6K"
+          stat: "178.2K"
         },
         {
           rank: "05",
-          athlete: "Donovan Dent",
-          stat: "34.7K"
+          athlete: "Lauren Betts",
+          stat: "147K"
         }
       ]
     }
@@ -170,8 +171,8 @@ const ucla: ReportData = {
       title: "Hannah Slover",
       thumb: "https://storage.googleapis.com/scraper-media-images/18105996724714950",
       platform: "Instagram Post",
-      likes: "326.9K",
-      comments: "3.8K",
+      likes: "324.5K",
+      comments: "3.7K",
       third: "N/A",
       thirdLabel: "Shares",
       handle: "hannah.slover",
@@ -182,11 +183,11 @@ const ucla: ReportData = {
       title: "Jordan Chiles",
       thumb: "https://storage.googleapis.com/scraper-media-images/18076127492186031",
       platform: "Instagram Post",
-      likes: "304.6K",
-      comments: "721",
+      likes: "306K",
+      comments: "723",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "jordan.chiles",
+      handle: "jordanchiles",
       verified: false
     },
     {
@@ -194,35 +195,35 @@ const ucla: ReportData = {
       title: "Jordan Chiles",
       thumb: "https://storage.googleapis.com/scraper-media-images/18144982903437204",
       platform: "Instagram Post",
-      likes: "235.8K",
-      comments: "691",
+      likes: "236.7K",
+      comments: "688",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "jordan.chiles",
+      handle: "jordanchiles",
       verified: false
     },
     {
       rank: "04",
       title: "Jordan Chiles",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18247950673289204",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18074552351077090",
       platform: "Instagram Post",
-      likes: "179.6K",
-      comments: "2.8K",
+      likes: "216.1K",
+      comments: "1.4K",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "jordan.chiles",
+      handle: "jordanchiles",
       verified: false
     },
     {
       rank: "05",
-      title: "Cash Peterman",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17936675658134922",
-      platform: "Instagram Post",
-      likes: "161.8K",
-      comments: "108",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "cash.peterman",
+      title: "Paige Anastasi",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17921479302035296",
+      platform: "Instagram Reels",
+      likes: "198.1K",
+      comments: "119",
+      third: "3.8M",
+      thirdLabel: "Views",
+      handle: "paige_anastasi",
       verified: false
     }
   ]

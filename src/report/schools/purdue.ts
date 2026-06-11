@@ -1,8 +1,9 @@
 import type { ReportData } from '../types';
 
-// Purdue — End of Year Report (AUTO-GENERATED draft).
-// node scripts/year-end/gen-school-report.mjs purdue
-// Highlights + content trace to real data; brands are shared aspirational reach-outs (curate per school).
+// Purdue — End of Year Report (AUTO-GENERATED from live MongoDB).
+// node scripts/year-end/gen-school-report-live.mjs purdue
+// Frozen 2025-26 roster + live metrics (own-post filtered, deduped, full-year window).
+// Brands are shared aspirational reach-outs (curate per school).
 
 const purdue: ReportData = {
   program: {
@@ -23,28 +24,28 @@ const purdue: ReportData = {
       athlete: "Braden Smith",
       sport: "Men's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1764957902296-Braden_Smith_68f6c2b98f845316214c4132_ProfilePicture.jpg",
-      statValue: "8",
+      statValue: "22",
       statLabel: "Posts",
       runnersUp: [
         {
           rank: "02",
           athlete: "Trey Kaufman-Renn",
-          stat: "7"
+          stat: "14"
         },
         {
           rank: "03",
-          athlete: "Taylor Feldman",
-          stat: "4"
+          athlete: "Sterling Smith",
+          stat: "7"
         },
         {
           rank: "04",
-          athlete: "Jimmy Johnsen",
-          stat: "3"
+          athlete: "Nya Smith",
+          stat: "6"
         },
         {
           rank: "05",
-          athlete: "Nya Smith",
-          stat: "3"
+          athlete: "Taylor Feldman",
+          stat: "6"
         }
       ]
     },
@@ -52,34 +53,34 @@ const purdue: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 9.4× the size of their actual following.",
+      description: "Based on likes and comments, this athlete engages like an account 17.0× the size of their actual following.",
       athlete: "Omer Mayer",
       sport: "Men's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1764957905461-Omer_Mayer_68f6c2ba8f845316214c413a_ProfilePicture.jpg",
-      statValue: "296.6K",
+      statValue: "566.9K",
       statLabel: "Performs Like",
-      subValue: "31.6K",
+      subValue: "33.4K",
       subLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Daniel Jacobsen",
-          stat: "44.7K"
+          athlete: "Fletcher Loyer",
+          stat: "115K"
         },
         {
           rank: "03",
-          athlete: "C.J. Cox",
-          stat: "32.8K"
+          athlete: "Braden Smith",
+          stat: "91.9K"
         },
         {
           rank: "04",
-          athlete: "Nya Smith",
-          stat: "3K"
+          athlete: "Bianca Hanisch",
+          stat: "37.5K"
         },
         {
           rank: "05",
-          athlete: "Carley Barrett",
-          stat: "2.3K"
+          athlete: "Akasha Anderson",
+          stat: "15K"
         }
       ]
     },
@@ -91,28 +92,28 @@ const purdue: ReportData = {
       athlete: "Braden Smith",
       sport: "Men's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1764957902296-Braden_Smith_68f6c2b98f845316214c4132_ProfilePicture.jpg",
-      statValue: "59.6K",
+      statValue: "63.7K",
       statLabel: "Followers",
       runnersUp: [
         {
           rank: "02",
           athlete: "Fletcher Loyer",
-          stat: "37.3K"
+          stat: "38.9K"
         },
         {
           rank: "03",
           athlete: "Omer Mayer",
-          stat: "31.6K"
+          stat: "33.4K"
         },
         {
           rank: "04",
-          athlete: "Tara Daye",
-          stat: "4.5K"
+          athlete: "Chiara Singarella",
+          stat: "14.1K"
         },
         {
           rank: "05",
-          athlete: "Madison Layden-Zay",
-          stat: "3.8K"
+          athlete: "Gabriela Angulo",
+          stat: "10.5K"
         }
       ]
     }
@@ -167,62 +168,62 @@ const purdue: ReportData = {
   topContent: [
     {
       rank: "01",
-      title: "Micah Huckaby",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17988615236881145",
-      platform: "Instagram Post",
-      likes: "98.6K",
-      comments: "119",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "micah.huckaby",
+      title: "Kamryn Harry",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18093644320695788",
+      platform: "Instagram Reels",
+      likes: "3.3M",
+      comments: "8.3K",
+      third: "40.4M",
+      thirdLabel: "Views",
+      handle: "kkamp000",
       verified: false
     },
     {
       rank: "02",
-      title: "Omer Mayer",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18058163492326807",
-      platform: "Instagram Post",
-      likes: "31K",
-      comments: "250",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "omer.mayer",
+      title: "Nolan Macklin",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18024689921602125",
+      platform: "Instagram Reels",
+      likes: "977.1K",
+      comments: "3.6K",
+      third: "6.6M",
+      thirdLabel: "Views",
+      handle: "nolanmacklin_",
       verified: false
     },
     {
       rank: "03",
-      title: "Braden Smith",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18096494203838810",
-      platform: "Instagram Post",
-      likes: "26.6K",
-      comments: "181",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "braden.smith",
+      title: "Triston Miller",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17890393020445002",
+      platform: "Instagram Reels",
+      likes: "306.7K",
+      comments: "350",
+      third: "2.6M",
+      thirdLabel: "Views",
+      handle: "tmoneyhurdles",
       verified: false
     },
     {
       rank: "04",
-      title: "Nitro Tuggle",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18093405025942704",
+      title: "Micah Huckaby",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17988615236881145",
       platform: "Instagram Post",
-      likes: "24.8K",
-      comments: "223",
+      likes: "98.5K",
+      comments: "121",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "nitro.tuggle",
+      handle: "micahhuckabyy",
       verified: false
     },
     {
       rank: "05",
       title: "Braden Smith",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17848581480568253",
+      thumb: "https://storage.googleapis.com/scraper-media-images/18066505589411890",
       platform: "Instagram Post",
-      likes: "24.8K",
-      comments: "196",
+      likes: "50.3K",
+      comments: "1.1K",
       third: "N/A",
       thirdLabel: "Shares",
-      handle: "braden.smith",
+      handle: "sm1thb",
       verified: false
     }
   ]

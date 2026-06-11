@@ -838,7 +838,7 @@ const CSS = `
 .eoy-sec-title{margin:18px 0 0;line-height:.86;}
 .eoy-sec-title>span{font-family:var(--display);text-transform:uppercase;
   font-size:clamp(2.5rem,6vw,4.4rem);letter-spacing:.03em;color:#fff;display:inline-block;
-  text-shadow:1px 1px 0 #d4e600,2px 2px 0 #c7d900,3px 3px 0 #b9ca00,4px 4px 0 #aaba00,5px 5px 0 #9aa800,6px 6px 0 #8a9600,7px 14px 16px rgba(0,0,0,.5);}
+  text-shadow:3px 3px 0 #E2F500,4px 12px 16px rgba(0,0,0,.5);}
 
 /* reveal */
 .eoy-reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;}

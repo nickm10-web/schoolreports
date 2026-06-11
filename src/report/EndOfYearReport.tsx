@@ -838,7 +838,7 @@ const CSS = `
 .eoy-sec-title{margin:18px 0 0;line-height:.86;}
 .eoy-sec-title>span{font-family:var(--display);text-transform:uppercase;
   font-size:clamp(2.5rem,6vw,4.4rem);letter-spacing:.03em;color:#fff;display:inline-block;
-  text-shadow:3px 3px 0 #E2F500,4px 12px 16px rgba(0,0,0,.5);}
+  text-shadow:0 10px 24px rgba(0,0,0,.55);}
 
 /* reveal */
 .eoy-reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;}

@@ -106,7 +106,7 @@ w.__eoyRoot.render(<App />);
 
 const HUB_CSS = `
 .hub-root{min-height:100vh;background:#0D0B12;color:#fff;font-family:'Barlow',system-ui,sans-serif;
-  --volt:#E2F500;--card:#13111A;--line:rgba(255,255,255,.08);padding:0 0 80px;}
+  --volt:#DFFF00;--card:#13111A;--line:rgba(255,255,255,.08);padding:0 0 80px;}
 .hub-root *{box-sizing:border-box;}
 .hub-head{max-width:1180px;margin:0 auto;padding:48px 28px 28px;}
 .hub-bar{display:flex;align-items:center;gap:12px;margin-bottom:26px;}
@@ -120,7 +120,7 @@ const HUB_CSS = `
   grid-template-columns:repeat(auto-fill,minmax(210px,1fr));}
 .hub-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 20px;text-decoration:none;color:#fff;
   display:flex;flex-direction:column;align-items:center;text-align:center;transition:border-color .15s,transform .15s,box-shadow .15s;}
-.hub-card:hover{border-color:var(--volt);transform:translateY(-3px);box-shadow:0 10px 40px rgba(226,245,0,.08);}
+.hub-card:hover{border-color:var(--volt);transform:translateY(-3px);box-shadow:0 10px 40px rgba(223,255,0,.08);}
 .hub-logo{width:84px;height:84px;border-radius:14px;background:#fff;display:flex;align-items:center;justify-content:center;padding:12px;margin-bottom:16px;}
 .hub-logo img{max-width:100%;max-height:100%;object-fit:contain;}
 .hub-logo span{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#0D0B12;}

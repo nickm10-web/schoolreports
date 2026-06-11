@@ -6,7 +6,7 @@
 // To make a new school, generate a new ReportData - this file never changes.
 //
 // Styling is self-contained, scoped under `.eoy-root`, so the report is portable
-// and never collides with app styles. Accent is fixed JABA volt (#E2F500): this
+// and never collides with app styles. Accent is fixed JABA volt (#DFFF00): this
 // is a JABA-branded value piece; the school shows up via logo/name/roster, not
 // by recoloring.
 
@@ -189,7 +189,7 @@ function VerifiedBadge() {
   return (
     <svg width="14" height="14" viewBox="0 0 24 24" aria-label="verified">
       <path
-        fill="#E2F500"
+        fill="#DFFF00"
         d="m12 1 2.6 1.9 3.2-.3 1 3 2.6 1.9-1 3 1 3-2.6 1.9-1 3-3.2-.3L12 23l-2.6-1.9-3.2.3-1-3L2.6 14.5l1-3-1-3 2.6-1.9 1-3 3.2.3L12 1Z"
       />
       <path
@@ -451,8 +451,8 @@ function Sparkline({ values }: { values: number[] }) {
   const [ex, ey] = pts[pts.length - 1];
   return (
     <svg className="eoy-spark" viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none" aria-hidden>
-      <polyline points={d} fill="none" stroke="#E2F500" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" />
-      <circle cx={ex} cy={ey} r="3.5" fill="#E2F500" />
+      <polyline points={d} fill="none" stroke="#DFFF00" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" />
+      <circle cx={ex} cy={ey} r="3.5" fill="#DFFF00" />
     </svg>
   );
 }
@@ -779,7 +779,7 @@ export default EndOfYearReport;
 const CSS = `
 .eoy-root{
   --ink:#0D0B12; --card:#13111A; --line:rgba(255,255,255,.08);
-  --volt:#E2F500; --pos:#4ADE80; --neg:#EF4444;
+  --volt:#DFFF00; --pos:#4ADE80; --neg:#EF4444;
   --t1:#fff; --t2:rgba(255,255,255,.62); --t3:rgba(255,255,255,.40);
   --display:'Bebas Neue',Impact,sans-serif; --cond:'Barlow Semi Condensed',sans-serif;
   --body:'Barlow',system-ui,sans-serif;
@@ -824,7 +824,7 @@ const CSS = `
   font-size:clamp(15px,1.8vw,18px);color:#fff;line-height:1.05;}
 .eoy-hero-copy{margin:0;}
 .eoy-hero-title{display:block;width:clamp(340px,58vw,820px);height:auto;margin:0 auto;
-  filter:drop-shadow(0 0 16px rgba(226,245,0,.55)) drop-shadow(0 0 44px rgba(226,245,0,.35))
+  filter:drop-shadow(0 0 16px rgba(223,255,0,.55)) drop-shadow(0 0 44px rgba(223,255,0,.35))
          drop-shadow(0 18px 30px rgba(0,0,0,.6)) drop-shadow(0 5px 12px rgba(0,0,0,.45));}
 
 /* sections */
@@ -835,7 +835,7 @@ const CSS = `
 .eoy-sechead{margin-bottom:40px;}
 .eoy-sec-tag{display:inline-block;background:var(--volt);color:#16140f;font-family:var(--cond);font-weight:800;
   text-transform:uppercase;letter-spacing:.1em;font-size:13px;line-height:1;padding:6px 14px 7px;transform:skewX(-10deg);
-  box-shadow:0 7px 20px rgba(226,245,0,.22);}
+  box-shadow:0 7px 20px rgba(223,255,0,.22);}
 .eoy-sec-tag>span{display:inline-block;transform:skewX(10deg);}
 .eoy-sec-tag i{font-style:normal;opacity:.5;margin:0 2px;}
 .eoy-sec-title{margin:18px 0 0;line-height:.86;}
@@ -860,7 +860,7 @@ const CSS = `
 .eoy-cat{display:flex;align-items:center;gap:9px;color:var(--volt);font-family:var(--cond);font-weight:800;
   text-transform:uppercase;letter-spacing:.13em;font-size:14px;line-height:1;margin-bottom:14px;}
 .eoy-cat-ic{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:999px;
-  background:rgba(226,245,0,.12);color:var(--volt);flex:none;}
+  background:rgba(223,255,0,.12);color:var(--volt);flex:none;}
 .eoy-cat-ic svg{width:15px;height:15px;}
 .eoy-cat-sm{font-size:12px;letter-spacing:.1em;margin-bottom:11px;gap:7px;}
 .eoy-cat-sm .eoy-cat-ic{width:22px;height:22px;}
@@ -900,7 +900,7 @@ const CSS = `
 .eoy-substat-lbl{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--t2);}
 .eoy-statline-arrow{font-family:var(--display);font-size:1.7rem;color:var(--volt);line-height:1;}
 .eoy-statline .eoy-plate{margin-top:0;}
-.eoy-plate{align-self:flex-start;margin-top:14px;background:var(--volt);color:var(--ink);transform:skewX(-11deg);padding:9px 20px;display:inline-flex;align-items:baseline;gap:9px;border-radius:3px;box-shadow:0 8px 26px rgba(226,245,0,.16);}
+.eoy-plate{align-self:flex-start;margin-top:14px;background:var(--volt);color:var(--ink);transform:skewX(-11deg);padding:9px 20px;display:inline-flex;align-items:baseline;gap:9px;border-radius:3px;box-shadow:0 8px 26px rgba(223,255,0,.16);}
 .eoy-plate>*{transform:skewX(11deg);}
 .eoy-plate-num{font-family:var(--display);font-size:2.5rem;line-height:.85;}
 .eoy-plate-unit{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:13px;}
@@ -966,8 +966,8 @@ const CSS = `
 .eoy-footer-wordmark{font-family:var(--display);text-transform:uppercase;letter-spacing:.05em;line-height:1;font-size:clamp(1.9rem,3.6vw,2.6rem);}
 .eoy-footer-sub{color:var(--t2);font-size:13.5px;line-height:1.55;margin:11px 0 0;max-width:44ch;}
 .eoy-footer-actions{display:flex;flex-direction:column;align-items:flex-end;gap:16px;}
-.eoy-footer-cta{display:inline-flex;align-items:center;gap:9px;background:var(--volt);color:#16140f;font-family:var(--cond);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:15px;padding:13px 24px;border-radius:11px;text-decoration:none;box-shadow:0 12px 34px rgba(226,245,0,.2);transition:transform .15s ease,box-shadow .15s ease;white-space:nowrap;}
-.eoy-footer-cta:hover{transform:translateY(-2px);box-shadow:0 16px 44px rgba(226,245,0,.3);}
+.eoy-footer-cta{display:inline-flex;align-items:center;gap:9px;background:var(--volt);color:#16140f;font-family:var(--cond);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:15px;padding:13px 24px;border-radius:11px;text-decoration:none;box-shadow:0 12px 34px rgba(223,255,0,.2);transition:transform .15s ease,box-shadow .15s ease;white-space:nowrap;}
+.eoy-footer-cta:hover{transform:translateY(-2px);box-shadow:0 16px 44px rgba(223,255,0,.3);}
 .eoy-footer-social{display:flex;gap:10px;}
 .eoy-footer-social a{width:38px;height:38px;border-radius:999px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--t2);transition:color .15s,background .15s,border-color .15s;}
 .eoy-footer-social a:hover{color:var(--ink);background:var(--volt);border-color:var(--volt);}
@@ -995,7 +995,7 @@ const CSS = `
 .eoy-grow-name{font-family:var(--display);font-style:italic;font-size:1.45rem;line-height:1.05;letter-spacing:.01em;}
 .eoy-grow-sport{margin-top:5px;font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.09em;font-size:12px;color:var(--volt);}
 .eoy-grow-curve{min-width:0;}
-.eoy-spark{display:block;width:100%;height:54px;filter:drop-shadow(0 0 6px rgba(226,245,0,.35));}
+.eoy-spark{display:block;width:100%;height:54px;filter:drop-shadow(0 0 6px rgba(223,255,0,.35));}
 .eoy-grow-nums{display:flex;flex-direction:column;align-items:flex-end;gap:7px;}
 .eoy-grow-path{font-family:var(--cond);font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:1.05rem;color:var(--t2);white-space:nowrap;}
 .eoy-grow-pct{font-family:var(--display);font-size:1.5rem;line-height:1;background:var(--volt);color:var(--ink);transform:skewX(-11deg);padding:5px 12px;border-radius:3px;}

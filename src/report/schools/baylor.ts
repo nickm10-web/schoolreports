@@ -309,30 +309,6 @@ const baylor: ReportData = {
     },
     {
       rank: "03",
-      title: "Taz Williams",
-      thumb: "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-i-photomode-tx/eb83c04148564113b9fb3db91694b617~tplv-photomode-image-cover:640:0:q70.webp?dr=12229&refresh_token=8aa48760&x-expires=1766876400&x-signature=NhJ5e6dSK9WekCY44hX0tFMAI%2Fo%3D&t=5897f7ec&ps=d5b8ac02&shp=d05b14bd&shcp=8aecc5ac&idc=useast5&s=TIKTOK_FOR_DEVELOPER&biz_tag=tt_photomode&sc=cover",
-      platform: "TikTok",
-      likes: "46K",
-      comments: "198",
-      third: "290.1K",
-      thirdLabel: "Views",
-      handle: "taz.williams",
-      verified: false
-    },
-    {
-      rank: "04",
-      title: "Taz Williams",
-      thumb: "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/o0dMjXfzRIknIjHjuCmLnXOIIyGC3hAHdAeUif~tplv-tiktokx-cropcenter-q:300:400:q72.jpeg?dr=8596&refresh_token=d4598a0c&x-expires=1764198000&x-signature=ct5Rjzyqiz0%2F0qFSr%2FAb%2Bmb1X%2FE%3D&t=bacd0480&ps=933b5bde&shp=d05b14bd&shcp=8aecc5ac&idc=useast5&biz_tag=tt_video&s=TIKTOK_FOR_DEVELOPER&sc=cover",
-      platform: "TikTok",
-      likes: "41.5K",
-      comments: "127",
-      third: "298.6K",
-      thirdLabel: "Views",
-      handle: "taz.williams",
-      verified: false
-    },
-    {
-      rank: "05",
       title: "Andre Iguodala II",
       thumb: "https://storage.googleapis.com/scraper-media-images/17871420936487996",
       platform: "Instagram Post",
@@ -341,6 +317,30 @@ const baylor: ReportData = {
       third: "N/A",
       thirdLabel: "Shares",
       handle: "andre.iggyy",
+      verified: false
+    },
+    {
+      rank: "04",
+      title: "Taz Williams",
+      thumb: "https://storage.googleapis.com/scraper-media-images/7627283640220781838",
+      platform: "TikTok",
+      likes: "37.5K",
+      comments: "199",
+      third: "248.9K",
+      thirdLabel: "Views",
+      handle: "liltazvert",
+      verified: false
+    },
+    {
+      rank: "05",
+      title: "Isaac Williams IV",
+      thumb: "https://storage.googleapis.com/scraper-media-images/17929149759082867",
+      platform: "Instagram Post",
+      likes: "32.3K",
+      comments: "158",
+      third: "N/A",
+      thirdLabel: "Shares",
+      handle: "isaacwilliams.iv",
       verified: false
     }
   ],

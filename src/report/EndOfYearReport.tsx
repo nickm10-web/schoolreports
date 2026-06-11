@@ -511,7 +511,7 @@ function EarnedCard({ c, i }: { c: ContentPiece; i: number }) {
         <div className="eoy-poster-metrics">
           <span className="eoy-poster-likes">{c.likes}</span>
           <span className="eoy-poster-likes-lbl">likes</span>
-          <span className="eoy-poster-rest">{c.comments} comments</span>
+          {c.comments !== 'N/A' && <span className="eoy-poster-rest">{c.comments} comments</span>}
         </div>
       </div>
     </Reveal>
@@ -553,7 +553,7 @@ function PartnerValue({ data, index }: { data: ReportData; index: string }) {
               <p className="eoy-partner-lede">
                 Every time a {school} athlete posts in gear, the brand on the jersey gets
                 seen. JABA&apos;s vision AI scanned this year&apos;s posts and counted every
-                appearance, numbers to bring to your next {p.brand} conversation.
+                appearance. Bring these numbers to your next {p.brand} conversation.
               </p>
               <div className="eoy-plate eoy-plate-xl">
                 <span className="eoy-plate-num">{p.posts}</span>
@@ -687,7 +687,7 @@ function PosterCard({ c, i }: { c: ContentPiece; i: number }) {
         <div className="eoy-poster-metrics">
           <span className="eoy-poster-likes">{c.likes}</span>
           <span className="eoy-poster-likes-lbl">likes</span>
-          <span className="eoy-poster-rest">{c.comments} comments</span>
+          {c.comments !== 'N/A' && <span className="eoy-poster-rest">{c.comments} comments</span>}
         </div>
       </div>
     </Reveal>

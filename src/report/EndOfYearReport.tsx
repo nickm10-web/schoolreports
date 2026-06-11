@@ -778,8 +778,8 @@ const CSS = `
   --ink:#0D0B12; --card:#13111A; --line:rgba(255,255,255,.08);
   --volt:#E2F500; --pos:#4ADE80; --neg:#EF4444;
   --t1:#fff; --t2:rgba(255,255,255,.62); --t3:rgba(255,255,255,.40);
-  --display:'Anton',Impact,sans-serif; --cond:'Saira Semi Condensed','Saira Extra Condensed',sans-serif;
-  --body:'DM Sans',system-ui,sans-serif;
+  --display:'Bebas Neue',Impact,sans-serif; --cond:'Barlow Semi Condensed',sans-serif;
+  --body:'Barlow',system-ui,sans-serif;
   background:var(--ink); color:var(--t1); font-family:var(--body);
   line-height:1.55; -webkit-font-smoothing:antialiased; min-height:100vh;
 }

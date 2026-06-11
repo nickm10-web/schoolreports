@@ -19,7 +19,7 @@ const fill: React.CSSProperties = {
   justifyContent: 'center',
   background: '#0D0B12',
   color: 'rgba(255,255,255,.6)',
-  fontFamily: "'DM Sans', system-ui, sans-serif",
+  fontFamily: "'Barlow', system-ui, sans-serif",
 };
 
 type Item = { slug: string; name: string; logo: string };
@@ -51,7 +51,7 @@ function Hub() {
       <header className="hub-head">
         <div className="hub-bar">
           <span className="hub-bear">
-            <img src="/jaba-head.png" alt="JABA" />
+            <img src="/JABA%20head%20trimmed.png" alt="JABA" />
           </span>
           <span className="hub-eyebrow">JABA · End of Year Reports</span>
         </div>
@@ -105,15 +105,15 @@ w.__eoyRoot ??= createRoot(document.getElementById('root')!);
 w.__eoyRoot.render(<App />);
 
 const HUB_CSS = `
-.hub-root{min-height:100vh;background:#0D0B12;color:#fff;font-family:'DM Sans',system-ui,sans-serif;
+.hub-root{min-height:100vh;background:#0D0B12;color:#fff;font-family:'Barlow',system-ui,sans-serif;
   --volt:#E2F500;--card:#13111A;--line:rgba(255,255,255,.08);padding:0 0 80px;}
 .hub-root *{box-sizing:border-box;}
 .hub-head{max-width:1180px;margin:0 auto;padding:48px 28px 28px;}
 .hub-bar{display:flex;align-items:center;gap:12px;margin-bottom:26px;}
 .hub-bear{width:40px;height:40px;border-radius:999px;background:var(--volt);display:inline-flex;align-items:center;justify-content:center;flex:none;}
 .hub-bear img{width:80%;height:80%;object-fit:contain;}
-.hub-eyebrow{font-family:'Saira Extra Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.28em;font-size:14px;color:var(--volt);}
-.hub-title{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:clamp(2.6rem,7vw,5rem);line-height:.9;letter-spacing:-.01em;margin:0;}
+.hub-eyebrow{font-family:'Barlow Semi Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.28em;font-size:14px;color:var(--volt);}
+.hub-title{font-family:'Bebas Neue',sans-serif;text-transform:uppercase;font-size:clamp(2.6rem,7vw,5rem);line-height:.9;letter-spacing:-.01em;margin:0;}
 .hub-title .v{color:var(--volt);}
 .hub-sub{color:rgba(255,255,255,.55);margin-top:14px;font-size:16px;}
 .hub-grid{max-width:1180px;margin:8px auto 0;padding:0 28px;display:grid;gap:16px;
@@ -123,8 +123,8 @@ const HUB_CSS = `
 .hub-card:hover{border-color:var(--volt);transform:translateY(-3px);box-shadow:0 10px 40px rgba(226,245,0,.08);}
 .hub-logo{width:84px;height:84px;border-radius:14px;background:#fff;display:flex;align-items:center;justify-content:center;padding:12px;margin-bottom:16px;}
 .hub-logo img{max-width:100%;max-height:100%;object-fit:contain;}
-.hub-logo span{font-family:'Anton',sans-serif;font-size:2rem;color:#0D0B12;}
-.hub-name{font-family:'Saira Extra Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:1.5rem;line-height:1;letter-spacing:.01em;}
-.hub-cta{margin-top:12px;font-family:'Saira Extra Condensed',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.1em;font-size:12.5px;color:var(--volt);opacity:0;transition:opacity .15s;}
+.hub-logo span{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#0D0B12;}
+.hub-name{font-family:'Barlow Semi Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:1.5rem;line-height:1;letter-spacing:.01em;}
+.hub-cta{margin-top:12px;font-family:'Barlow Semi Condensed',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.1em;font-size:12.5px;color:var(--volt);opacity:0;transition:opacity .15s;}
 .hub-card:hover .hub-cta{opacity:1;}
 `;

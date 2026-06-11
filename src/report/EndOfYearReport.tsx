@@ -410,10 +410,12 @@ function BrandLogo({ src, name }: { src?: string; name: string }) {
   return <img className="eoy-fancard-logo" src={src} alt={name} onError={() => setOk(false)} />;
 }
 
-/** Fanned hand-of-cards layout. Tone cycles volt -> cream -> dark like a dealt hand. */
+/** Fanned hand-of-cards layout. Tone cycles volt -> cream -> dark like a dealt hand.
+ *  Rotation/overlap kept shallow: contacts are always visible and there is no hover
+ *  in email, so no card may cover another card's text. */
 const FAN_TONES = ['volt', 'cream', 'dark', 'cream', 'dark'] as const;
-const FAN_ROT = [-10, -5, 0, 4, 8];
-const FAN_LIFT = [26, 6, 0, 6, 22];
+const FAN_ROT = [-6, -2.5, 0, 2.5, 5];
+const FAN_LIFT = [22, 6, 0, 6, 18];
 
 /** "https://www.drinkspyre.com" -> "drinkspyre.com" for the visible link. */
 function siteLabel(url: string): string {
@@ -705,7 +707,7 @@ const CSS = `
 
 /* brands — fanned card hand */
 .eoy-fan{display:flex;justify-content:center;align-items:flex-start;padding:34px 0 26px;}
-.eoy-fancard{width:232px;flex:none;border-radius:20px;padding:13px 17px 18px;margin-left:-36px;text-decoration:none;display:block;
+.eoy-fancard{width:222px;flex:none;border-radius:20px;padding:13px 17px 18px;margin-left:-10px;text-decoration:none;display:block;
   transform:rotate(var(--rot)) translateY(var(--lift));transform-origin:50% 90%;position:relative;
   box-shadow:0 18px 44px rgba(0,0,0,.5);transition:transform .28s cubic-bezier(.2,.8,.25,1),box-shadow .28s;
   font-family:Georgia,'Times New Roman',serif;}
@@ -782,7 +784,10 @@ const CSS = `
   .eoy-hero{flex-direction:column;}
   .eoy-hero-badge{position:relative;top:auto;left:auto;align-self:flex-start;margin:16px 0 4px 16px;max-width:calc(100vw - 32px);}
   .eoy-posters{grid-template-columns:1fr;}
-  .eoy-mini{grid-template-columns:96px 1fr;}
+  /* stack the mini cards: a 96px side sliver crops faces out of the headshots */
+  .eoy-mini{grid-template-columns:1fr;}
+  .eoy-mini-photo{clip-path:none;min-height:0;height:280px;}
+  .eoy-mini-img{object-position:50% 10%;}
   .eoy-footer-main{flex-direction:column;align-items:flex-start;gap:24px;}
   .eoy-footer-actions{align-items:flex-start;width:100%;}
   .eoy-footer-base{flex-direction:column;align-items:flex-start;gap:6px;}

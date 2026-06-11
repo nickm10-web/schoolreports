@@ -704,15 +704,23 @@ function TopContent({ data, index }: { data: ReportData; index: string }) {
             <PosterCard key={c.rank} c={c} i={i} />
           ))}
         </div>
-        <div className="eoy-divider">
-          {data.program.logoSrc ? (
-            <img className="eoy-divider-logo" src={data.program.logoSrc} alt={data.program.name} />
-          ) : (
-            <span className="eoy-mono-mark eoy-mono-mark-sm">{data.program.monogram}</span>
-          )}
-        </div>
       </div>
     </section>
+  );
+}
+
+/** School-logo divider: closes the last content section before the footer. */
+function SchoolDivider({ data }: { data: ReportData }) {
+  return (
+    <div className="eoy-wrap">
+      <div className="eoy-divider">
+        {data.program.logoSrc ? (
+          <img className="eoy-divider-logo" src={data.program.logoSrc} alt={data.program.name} />
+        ) : (
+          <span className="eoy-mono-mark eoy-mono-mark-sm">{data.program.monogram}</span>
+        )}
+      </div>
+    </div>
   );
 }
 
@@ -767,6 +775,7 @@ export function EndOfYearReport({ data }: { data: ReportData }) {
       <TopBrands data={data} index={idx('brands')} />
       <TopContent data={data} index={idx('content')} />
       {data.earned?.length ? <EarnedMedia data={data} index={idx('earned')} /> : null}
+      <SchoolDivider data={data} />
       <FooterBanner />
     </div>
   );
@@ -954,7 +963,8 @@ const CSS = `
 .eoy-poster-handle{display:flex;align-items:center;gap:5px;margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,.14);font-weight:600;font-size:12px;color:var(--t2);}
 
 /* divider */
-.eoy-divider{display:flex;align-items:center;justify-content:center;margin-top:40px;}
+/* sits between the last section (60px bottom padding) and the footer wedge */
+.eoy-divider{display:flex;align-items:center;justify-content:center;margin:0 0 70px;}
 .eoy-divider:before,.eoy-divider:after{content:"";height:1px;flex:1;background:var(--line);}
 .eoy-divider .eoy-mono-mark{margin:0 18px;}
 .eoy-divider-logo{height:40px;width:auto;margin:0 18px;display:block;}

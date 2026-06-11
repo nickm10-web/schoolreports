@@ -411,19 +411,20 @@ function YearInReview({ data }: { data: ReportData }) {
 /** "The Year in Numbers" band: program totals right under the period strip. */
 function NumbersBand({ n }: { n: YearNumbers }) {
   const items = [
-    { v: n.posts, l: 'Posts tracked' },
-    { v: n.athletes, l: 'Athletes posting' },
-    { v: n.likes, l: 'Total likes' },
-    ...(n.views ? [{ v: n.views, l: 'Video views' }] : []),
-    ...(n.bestDay ? [{ v: n.bestDay, l: 'Best day to post' }] : []),
+    { v: n.posts, l: 'Posts tracked', volt: false },
+    { v: n.athletes, l: 'Athletes posting', volt: false },
+    { v: n.likes, l: 'Total likes', volt: false },
+    ...(n.views ? [{ v: n.views, l: 'Video views', volt: false }] : []),
+    // the one actionable insight in the row gets the volt pop
+    ...(n.bestDay ? [{ v: n.bestDay, l: 'Best day to post', volt: true }] : []),
   ];
   return (
     <div className="eoy-numbers">
       <div className="eoy-wrap eoy-numbers-row">
-        <span className="eoy-numbers-kicker">The year<br />in numbers</span>
+        <span className="eoy-numbers-kicker">The Year<br />in Numbers</span>
         {items.map((it) => (
           <span key={it.l} className="eoy-numbers-item">
-            <span className="eoy-numbers-val">{it.v}</span>
+            <span className={`eoy-numbers-val${it.volt ? ' eoy-numbers-val-volt' : ''}`}>{it.v}</span>
             <span className="eoy-numbers-lbl">{it.l}</span>
           </span>
         ))}
@@ -971,12 +972,14 @@ const CSS = `
 .eoy-footer-base{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 28px;border-top:1px solid var(--line);font-family:var(--cond);font-weight:600;text-transform:uppercase;letter-spacing:.13em;font-size:11.5px;color:var(--t3);}
 .eoy-footer-base-mid{color:var(--volt);}
 
-/* the year in numbers — slim full-width tally band */
+/* the year in numbers — scoreboard band: volt tag, big numerals, dividers */
 .eoy-numbers{background:#0f0d15;border-bottom:1px solid var(--line);}
-.eoy-numbers-row{display:flex;flex-wrap:wrap;align-items:center;gap:18px 44px;padding-top:22px;padding-bottom:22px;}
-.eoy-numbers-kicker{font-family:var(--cond);font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:12.5px;line-height:1.35;color:var(--volt);border-right:1px solid var(--line);padding-right:34px;}
-.eoy-numbers-item{display:flex;flex-direction:column;gap:3px;}
-.eoy-numbers-val{font-family:var(--display);font-size:1.9rem;line-height:1;color:var(--ink-on-dark,#fff);}
+.eoy-numbers-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px 28px;padding-top:22px;padding-bottom:22px;}
+.eoy-numbers-kicker{font-family:var(--display);text-transform:uppercase;font-size:1.5rem;line-height:.92;letter-spacing:.04em;color:var(--ink);background:var(--volt);transform:skewX(-11deg);padding:8px 16px;border-radius:3px;}
+.eoy-numbers-item{display:flex;flex-direction:column;gap:4px;}
+.eoy-numbers-item+.eoy-numbers-item{border-left:1px solid rgba(255,255,255,.08);padding-left:30px;}
+.eoy-numbers-val{font-family:var(--display);font-size:2.6rem;line-height:1;color:#fff;}
+.eoy-numbers-val-volt{color:var(--volt);}
 .eoy-numbers-lbl{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.09em;font-size:11.5px;color:var(--t3);}
 
 /* who blew up — ranked growth rows with sparklines */
@@ -1045,6 +1048,9 @@ const CSS = `
   .eoy-mini{grid-template-columns:1fr;}
   .eoy-mini-photo{clip-path:none;min-height:0;height:280px;}
   .eoy-mini-img{object-position:50% 10%;}
+  /* numbers band: items wrap on phones, so dividers turn into stray edges */
+  .eoy-numbers-item+.eoy-numbers-item{border-left:none;padding-left:0;}
+  .eoy-numbers-val{font-size:2.2rem;}
   /* keep the partner plate and stat rows inside a narrow card */
   .eoy-partner-main .eoy-plate-num{font-size:2rem;}
   .eoy-partner-main .eoy-plate-unit{max-width:150px;font-size:12px;}

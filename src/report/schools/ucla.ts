@@ -53,43 +53,43 @@ const ucla: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 3.1× the size of their actual following.",
-      athlete: "Gabriela Jaquez",
-      sport: "Women's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765897162248-Gabriela_Jaquez_68f878d77fcc92b86eee7ee7_ProfilePicture.jpg",
-      statValue: "546.8K",
+      description: "Based on likes and comments, this athlete engages like an account 16.4× the size of their actual following.",
+      athlete: "Jewelous \"JuJu\" Walls",
+      sport: "Football",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765896761235-Jewelous__JuJu_ Walls_68f878d77fcc92b86eee7def_ProfilePicture.jpg",
+      statValue: "60.7K",
       statLabel: "Followers",
-      mult: "3.1×",
-      subValue: "178.2K",
+      mult: "16.4×",
+      subValue: "3.7K",
       subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Roch Cholowsky",
-          stat: "216.1K",
-          sub: "48.3K",
-          mult: "4.5×"
+          athlete: "Donavyn Pellot",
+          stat: "16.1K",
+          sub: "1.8K",
+          mult: "9.0×"
         },
         {
           rank: "03",
-          athlete: "Hazel Alevok",
-          stat: "150K",
-          sub: "46.4K",
-          mult: "3.2×"
+          athlete: "Sergi Solans Ormo",
+          stat: "31.4K",
+          sub: "3.9K",
+          mult: "8.0×"
         },
         {
           rank: "04",
-          athlete: "Kwazi Gilmer",
-          stat: "133.4K",
-          sub: "34.6K",
-          mult: "3.9×"
+          athlete: "Daphne Nakfoor",
+          stat: "8.4K",
+          sub: "1.1K",
+          mult: "7.5×"
         },
         {
           rank: "05",
-          athlete: "Jewelous \"JuJu\" Walls",
-          stat: "60.7K",
-          sub: "3.7K",
-          mult: "16.4×"
+          athlete: "Emma Lineback",
+          stat: "18K",
+          sub: "2.9K",
+          mult: "6.2×"
         }
       ]
     },

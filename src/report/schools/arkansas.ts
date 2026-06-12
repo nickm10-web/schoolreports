@@ -53,22 +53,22 @@ const arkansas: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 4.0× the size of their actual following.",
-      athlete: "Jordan Anthony",
-      sport: "Men's Track & Field",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1767975239079-Jordan_Anthony_68e9b017a0cca3ee1d3e9855_ProfilePicture.jpg",
-      statValue: "399.6K",
+      description: "Based on likes and comments, this athlete engages like an account 12.9× the size of their actual following.",
+      athlete: "Analisse Batista",
+      sport: "Women's Track & Field",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1767975868576-Analisse_Batista_68e9b029a0cca3ee1d3e990a_ProfilePicture.jpg",
+      statValue: "88.9K",
       statLabel: "Followers",
-      mult: "4.0×",
-      subValue: "101K",
+      mult: "12.9×",
+      subValue: "6.9K",
       subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Darius Acuff Jr.",
-          stat: "257.9K",
-          sub: "149K",
-          mult: "1.7×"
+          athlete: "Ian Geffrard",
+          stat: "20.3K",
+          sub: "3.3K",
+          mult: "6.2×"
         },
         {
           rank: "03",
@@ -79,17 +79,17 @@ const arkansas: ReportData = {
         },
         {
           rank: "04",
-          athlete: "Natalie Wagner",
-          stat: "119.3K",
-          sub: "52.6K",
-          mult: "2.3×"
+          athlete: "Tevijon Williams",
+          stat: "6.5K",
+          sub: "1.2K",
+          mult: "5.4×"
         },
         {
           rank: "05",
-          athlete: "Analisse Batista",
-          stat: "88.9K",
-          sub: "6.9K",
-          mult: "12.9×"
+          athlete: "Parker Duncan",
+          stat: "20.7K",
+          sub: "3.9K",
+          mult: "5.3×"
         }
       ]
     },

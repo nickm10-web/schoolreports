@@ -53,14 +53,14 @@ const lsu: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 8.5× the size of their actual following.",
-      athlete: "Trey'Dez Green",
+      description: "Based on likes and comments, this athlete engages like an account 18.8× the size of their actual following.",
+      athlete: "Brandon Brown",
       sport: "Football",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1756249595399-Trey'Dez_Green_68ae3dcbc46ee67ea74fc95e_ProfilePicture.jpg",
-      statValue: "491.4K",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1756249753580-Brandon_Brown_68ae3dcbc46ee67ea74fc9b0_ProfilePicture.jpg",
+      statValue: "78.6K",
       statLabel: "Followers",
-      mult: "8.5×",
-      subValue: "58K",
+      mult: "18.8×",
+      subValue: "4.2K",
       subLabel: "Actual Followers",
       runnersUp: [
         {
@@ -72,24 +72,24 @@ const lsu: ReportData = {
         },
         {
           rank: "03",
-          athlete: "West Weeks",
-          stat: "356.4K",
-          sub: "49.3K",
-          mult: "7.2×"
+          athlete: "PJ Woodland",
+          stat: "285.4K",
+          sub: "19.5K",
+          mult: "14.7×"
         },
         {
           rank: "04",
-          athlete: "MiLaysia Fulwiley",
-          stat: "258K",
-          sub: "237.4K",
-          mult: "1.1×"
+          athlete: "Sydney Cheesman",
+          stat: "47.1K",
+          sub: "6K",
+          mult: "7.9×"
         },
         {
           rank: "05",
-          athlete: "Bella Hines",
-          stat: "173.1K",
-          sub: "41.9K",
-          mult: "4.1×"
+          athlete: "Gradie Appling",
+          stat: "25.7K",
+          sub: "4.1K",
+          mult: "6.2×"
         }
       ]
     },

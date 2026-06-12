@@ -53,43 +53,43 @@ const arizona: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 6.2× the size of their actual following.",
-      athlete: "Brayden Burries",
+      description: "Based on likes and comments, this athlete engages like an account 8.4× the size of their actual following.",
+      athlete: "Tobe Awaka",
       sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760465123937-Brayden_Burries_68ee6de1b74090998754767b.png",
-      statValue: "367.6K",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760465128329-Tobe_Awaka_68ee6de1b74090998754768d.png",
+      statValue: "104.9K",
       statLabel: "Followers",
-      mult: "6.2×",
-      subValue: "59.2K",
+      mult: "8.4×",
+      subValue: "12.5K",
       subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Koa Peat",
-          stat: "268.2K",
-          sub: "93.7K",
-          mult: "2.9×"
+          athlete: "Stacy Bey",
+          stat: "25.1K",
+          sub: "3.7K",
+          mult: "6.7×"
         },
         {
           rank: "03",
+          athlete: "Brayden Burries",
+          stat: "367.6K",
+          sub: "59.2K",
+          mult: "6.2×"
+        },
+        {
+          rank: "04",
+          athlete: "Jillian Silvers",
+          stat: "8.9K",
+          sub: "1.8K",
+          mult: "4.9×"
+        },
+        {
+          rank: "05",
           athlete: "Jordan Wilson",
           stat: "108.7K",
           sub: "24.3K",
           mult: "4.5×"
-        },
-        {
-          rank: "04",
-          athlete: "Tobe Awaka",
-          stat: "104.9K",
-          sub: "12.5K",
-          mult: "8.4×"
-        },
-        {
-          rank: "05",
-          athlete: "Shea Davis",
-          stat: "33.1K",
-          sub: "13.1K",
-          mult: "2.5×"
         }
       ]
     },

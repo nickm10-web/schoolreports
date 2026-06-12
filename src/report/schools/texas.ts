@@ -53,43 +53,43 @@ const texas: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 2.2× the size of their actual following.",
-      athlete: "Arch Manning",
-      sport: "Football",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759795203711-Arch_Manning_689644765ca13f6f45fa5a17_ProfilePicture.jpg",
-      statValue: "1.4M",
+      description: "Based on likes and comments, this athlete engages like an account 13.8× the size of their actual following.",
+      athlete: "Devin Kahahawai",
+      sport: "Women's Volleyball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759795565004-Devin_Kahahawai_68dc53700e6e3ec3fe759faf_ProfilePicture.jpg",
+      statValue: "112.3K",
       statLabel: "Followers",
-      mult: "2.2×",
-      subValue: "620.1K",
+      mult: "13.8×",
+      subValue: "8.1K",
       subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
+          athlete: "Haley McDonald",
+          stat: "29.8K",
+          sub: "2.3K",
+          mult: "12.8×"
+        },
+        {
+          rank: "03",
+          athlete: "Matthew Caldwell",
+          stat: "99.5K",
+          sub: "8.9K",
+          mult: "11.2×"
+        },
+        {
+          rank: "04",
           athlete: "Jaime Ffrench",
           stat: "467.9K",
           sub: "42K",
           mult: "11.1×"
         },
         {
-          rank: "03",
-          athlete: "Parker Livingstone",
-          stat: "279.5K",
-          sub: "34.5K",
-          mult: "8.1×"
-        },
-        {
-          rank: "04",
-          athlete: "MaTaia Lawson",
-          stat: "268.7K",
-          sub: "39K",
-          mult: "6.9×"
-        },
-        {
           rank: "05",
-          athlete: "Sarah Graves",
-          stat: "228.3K",
-          sub: "30.7K",
-          mult: "7.4×"
+          athlete: "Trey Moore",
+          stat: "148.5K",
+          sub: "14.3K",
+          mult: "10.4×"
         }
       ]
     },

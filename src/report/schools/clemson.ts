@@ -72,24 +72,24 @@ const clemson: ReportData = {
         },
         {
           rank: "03",
-          athlete: "Tristan Smith",
-          stat: "171.6K",
-          sub: "26.1K",
-          mult: "6.6×"
+          athlete: "Ashton Hampton",
+          stat: "133.8K",
+          sub: "12.2K",
+          mult: "11.0×"
         },
         {
           rank: "04",
-          athlete: "Ella Cesario",
-          stat: "8.6K",
-          sub: "8.2K",
-          mult: "1.1×"
-        },
-        {
-          rank: "05",
           athlete: "Bianca Martinez",
           stat: "8K",
           sub: "2.2K",
           mult: "3.7×"
+        },
+        {
+          rank: "05",
+          athlete: "Sarah Rocheleau",
+          stat: "6.6K",
+          sub: "2.1K",
+          mult: "3.1×"
         }
       ]
     },

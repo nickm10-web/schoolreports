@@ -53,22 +53,22 @@ const georgia: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 8.7× the size of their actual following.",
-      athlete: "Zachariah Branch",
+      description: "Based on likes and comments, this athlete engages like an account 22.8× the size of their actual following.",
+      athlete: "Colbie Young",
       sport: "Football",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759782213484-Zachariah_Branch_689647b6289e7803603e0ce7_ProfilePicture.jpg",
-      statValue: "2M",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759781692808-Colbie_Young_689647b6289e7803603e0ca1_ProfilePicture.jpg",
+      statValue: "605K",
       statLabel: "Followers",
-      mult: "8.7×",
-      subValue: "228K",
+      mult: "22.8×",
+      subValue: "26.6K",
       subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Colbie Young",
-          stat: "605K",
-          sub: "26.6K",
-          mult: "22.8×"
+          athlete: "Victoria Saah",
+          stat: "34.2K",
+          sub: "1.9K",
+          mult: "18.2×"
         },
         {
           rank: "03",
@@ -79,17 +79,17 @@ const georgia: ReportData = {
         },
         {
           rank: "04",
-          athlete: "Victoria Saah",
-          stat: "34.2K",
-          sub: "1.9K",
-          mult: "18.2×"
+          athlete: "Zachariah Branch",
+          stat: "2M",
+          sub: "228K",
+          mult: "8.7×"
         },
         {
           rank: "05",
-          athlete: "Summer Denigan",
-          stat: "23.5K",
-          sub: "3.8K",
-          mult: "6.2×"
+          athlete: "Kelsie Murrell-Ross",
+          stat: "13.2K",
+          sub: "1.5K",
+          mult: "8.6×"
         }
       ]
     },

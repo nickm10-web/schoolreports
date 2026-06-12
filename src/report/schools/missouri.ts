@@ -65,17 +65,17 @@ const missouri: ReportData = {
       runnersUp: [
         {
           rank: "02",
-          athlete: "Mark Mitchell",
-          stat: "95.1K",
-          sub: "34.9K",
-          mult: "2.7×"
+          athlete: "Avery Porter",
+          stat: "7.5K",
+          sub: "1K",
+          mult: "7.3×"
         },
         {
           rank: "03",
-          athlete: "Matt Zollers",
-          stat: "73.2K",
-          sub: "16.4K",
-          mult: "4.5×"
+          athlete: "Logan Muckey",
+          stat: "36.9K",
+          sub: "6.7K",
+          mult: "5.5×"
         },
         {
           rank: "04",
@@ -86,10 +86,10 @@ const missouri: ReportData = {
         },
         {
           rank: "05",
-          athlete: "Marina Crownover",
-          stat: "13.5K",
-          sub: "4.9K",
-          mult: "2.8×"
+          athlete: "Matt Zollers",
+          stat: "73.2K",
+          sub: "16.4K",
+          mult: "4.5×"
         }
       ]
     },

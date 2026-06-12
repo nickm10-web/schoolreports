@@ -65,17 +65,17 @@ const depaul: ReportData = {
       runnersUp: [
         {
           rank: "02",
-          athlete: "Shakara McCline",
-          stat: "13.2K",
-          sub: "5.2K",
-          mult: "2.5×"
-        },
-        {
-          rank: "03",
           athlete: "Gina Davorija",
           stat: "12.7K",
           sub: "1.8K",
           mult: "7.0×"
+        },
+        {
+          rank: "03",
+          athlete: "Meghan Scholz",
+          stat: "4.1K",
+          sub: "1.2K",
+          mult: "3.4×"
         },
         {
           rank: "04",

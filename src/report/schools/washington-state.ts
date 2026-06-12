@@ -60,17 +60,17 @@ const washington_state: ReportData = {
       runnersUp: [
         {
           rank: "02",
-          athlete: "Kayo Patu",
-          stat: "25.4K",
-          sub: "7.6K",
-          mult: "3.4×"
-        },
-        {
-          rank: "03",
           athlete: "Sullivan Schlimgen",
           stat: "14.1K",
           sub: "2K",
           mult: "7.2×"
+        },
+        {
+          rank: "03",
+          athlete: "Carsten Reynolds",
+          stat: "7.2K",
+          sub: "1.5K",
+          mult: "4.9×"
         },
         {
           rank: "04",

@@ -65,31 +65,31 @@ const iowa: ReportData = {
       runnersUp: [
         {
           rank: "02",
+          athlete: "Sam Phillips",
+          stat: "21.9K",
+          sub: "3K",
+          mult: "7.2×"
+        },
+        {
+          rank: "03",
+          athlete: "Beau Leisure",
+          stat: "7.4K",
+          sub: "1.3K",
+          mult: "5.7×"
+        },
+        {
+          rank: "04",
           athlete: "Addie Deal",
           stat: "63.3K",
           sub: "18K",
           mult: "3.5×"
         },
         {
-          rank: "03",
-          athlete: "Taylor McCabe",
-          stat: "52.7K",
-          sub: "28.2K",
-          mult: "1.9×"
-        },
-        {
-          rank: "04",
-          athlete: "Kaden Wetjen",
-          stat: "40.4K",
-          sub: "8.6K",
-          mult: "4.7×"
-        },
-        {
           rank: "05",
-          athlete: "Taylor Stremlow",
-          stat: "23.9K",
-          sub: "13.9K",
-          mult: "1.7×"
+          athlete: "Tory Bennett",
+          stat: "4K",
+          sub: "1.8K",
+          mult: "2.2×"
         }
       ]
     },

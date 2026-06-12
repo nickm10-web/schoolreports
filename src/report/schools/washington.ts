@@ -65,17 +65,17 @@ const washington: ReportData = {
       runnersUp: [
         {
           rank: "02",
-          athlete: "Demond Williams Jr.",
-          stat: "75.1K",
-          sub: "29.7K",
-          mult: "2.5×"
+          athlete: "Rahshawn Clark",
+          stat: "27.6K",
+          sub: "5K",
+          mult: "5.5×"
         },
         {
           rank: "03",
-          athlete: "Bryson Tucker",
-          stat: "60.2K",
-          sub: "22.8K",
-          mult: "2.6×"
+          athlete: "John Mills",
+          stat: "23.6K",
+          sub: "4.4K",
+          mult: "5.4×"
         },
         {
           rank: "04",

@@ -53,43 +53,43 @@ const arizona_state: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 20.7× the size of their actual following.",
-      athlete: "Sam Leavitt",
-      sport: "Football",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768413572945-Sam_Leavitt_68b6f8e1d37bda451b1cd479_ProfilePicture.jpg",
-      statValue: "1.3M",
+      description: "Based on likes and comments, this athlete engages like an account 24.7× the size of their actual following.",
+      athlete: "Maurice Odum",
+      sport: "Men's Basketball",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768413766155-Maurice_Odum_68e963eaaadc702bdcaa46b3_ProfilePicture.jpg",
+      statValue: "157.1K",
       statLabel: "Followers",
-      mult: "20.7×",
-      subValue: "61.3K",
+      mult: "24.7×",
+      subValue: "6.4K",
       subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Jordyn Tyson",
-          stat: "159.1K",
-          sub: "105.8K",
-          mult: "1.5×"
+          athlete: "Sam Leavitt",
+          stat: "1.3M",
+          sub: "61.3K",
+          mult: "20.7×"
         },
         {
           rank: "03",
-          athlete: "Maurice Odum",
-          stat: "157.1K",
-          sub: "6.4K",
-          mult: "24.7×"
+          athlete: "Michael \"Butter\" Tollefson",
+          stat: "57.7K",
+          sub: "5.4K",
+          mult: "10.7×"
         },
         {
           rank: "04",
-          athlete: "Aliyah Adams",
-          stat: "38K",
-          sub: "22.3K",
-          mult: "1.7×"
+          athlete: "Adele Ossi",
+          stat: "5.6K",
+          sub: "1.6K",
+          mult: "3.5×"
         },
         {
           rank: "05",
-          athlete: "Faith Frame",
-          stat: "15.1K",
-          sub: "12.5K",
-          mult: "1.2×"
+          athlete: "Tiare Ho-Ching",
+          stat: "6.5K",
+          sub: "2.1K",
+          mult: "3.1×"
         }
       ]
     },

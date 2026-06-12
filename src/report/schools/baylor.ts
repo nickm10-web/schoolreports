@@ -53,43 +53,43 @@ const baylor: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 3.9× the size of their actual following.",
-      athlete: "Tounde Yessoufou",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765467390892-Tounde_Yessoufou_68a78830f8a45dd3fd302172_ProfilePicture.jpg",
-      statValue: "140.5K",
+      description: "Based on likes and comments, this athlete engages like an account 8.1× the size of their actual following.",
+      athlete: "Aaryona Kinchen",
+      sport: "Women's Track & Field",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765467684867-Aaryona_Kinchen_68c11b855278f5f29c92ce7d_ProfilePicture.jpg",
+      statValue: "11K",
       statLabel: "Followers",
-      mult: "3.9×",
-      subValue: "36.4K",
+      mult: "8.1×",
+      subValue: "1.4K",
       subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Keaton Thomas",
-          stat: "137.7K",
-          sub: "35.8K",
-          mult: "3.8×"
-        },
-        {
-          rank: "03",
-          athlete: "Isaac Williams IV",
-          stat: "131.9K",
-          sub: "90.5K",
-          mult: "1.5×"
-        },
-        {
-          rank: "04",
           athlete: "Sima Lucero",
           stat: "52.8K",
           sub: "7.8K",
           mult: "6.8×"
         },
         {
+          rank: "03",
+          athlete: "Caden Jenkins",
+          stat: "110K",
+          sub: "17.6K",
+          mult: "6.3×"
+        },
+        {
+          rank: "04",
+          athlete: "Malik Franklin",
+          stat: "14.5K",
+          sub: "2.8K",
+          mult: "5.2×"
+        },
+        {
           rank: "05",
-          athlete: "Gabby Kaminski",
-          stat: "27K",
-          sub: "7.5K",
-          mult: "3.6×"
+          athlete: "Harley Kreck",
+          stat: "11.8K",
+          sub: "2.7K",
+          mult: "4.3×"
         }
       ]
     },
@@ -328,7 +328,7 @@ const baylor: ReportData = {
       platform: "TikTok",
       likes: "37.5K",
       comments: "199",
-      third: "248.9K",
+      third: "249.1K",
       thirdLabel: "Views",
       handle: "liltazvert",
       verified: false

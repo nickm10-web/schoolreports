@@ -53,29 +53,29 @@ const alabama: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 2.1× the size of their actual following.",
-      athlete: "Ryan Williams",
+      description: "Based on likes and comments, this athlete engages like an account 24.8× the size of their actual following.",
+      athlete: "Jordan Renaud",
       sport: "Football",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1768594888890-Ryan Williams.png",
-      statValue: "1.6M",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1756828113582-Jordan_Renaud_68b711996310d2d95fd52e62_ProfilePicture.jpg",
+      statValue: "95K",
       statLabel: "Followers",
-      mult: "2.1×",
-      subValue: "739.8K",
+      mult: "24.8×",
+      subValue: "3.8K",
       subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Kadyn Proctor",
-          stat: "928.7K",
-          sub: "105.6K",
-          mult: "8.8×"
+          athlete: "Lotzeir Brooks",
+          stat: "613.2K",
+          sub: "30.7K",
+          mult: "20.0×"
         },
         {
           rank: "03",
-          athlete: "Jalil Bethea",
-          stat: "912.5K",
-          sub: "218.8K",
-          mult: "4.2×"
+          athlete: "John Gazzaniga",
+          stat: "134K",
+          sub: "9.1K",
+          mult: "14.7×"
         },
         {
           rank: "04",

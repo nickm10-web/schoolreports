@@ -53,43 +53,43 @@ const nc_state: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 8.9× the size of their actual following.",
-      athlete: "CJ Bailey",
+      description: "Based on likes and comments, this athlete engages like an account 9.9× the size of their actual following.",
+      athlete: "Teddy Hoffmann",
       sport: "Football",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1762551544688-CJ_Bailey_690e66255b615b70780c02d4_ProfilePicture.jpg",
-      statValue: "424.8K",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1762551594882-Teddy_Hoffmann_690e66285b615b70780c02f6_ProfilePicture.jpg",
+      statValue: "87.4K",
       statLabel: "Followers",
-      mult: "8.9×",
-      subValue: "47.8K",
+      mult: "9.9×",
+      subValue: "8.8K",
       subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Terrell Anderson",
-          stat: "155.5K",
-          sub: "61.1K",
-          mult: "2.5×"
+          athlete: "CJ Bailey",
+          stat: "424.8K",
+          sub: "47.8K",
+          mult: "8.9×"
         },
         {
           rank: "03",
-          athlete: "Tre Holloman",
-          stat: "123.9K",
-          sub: "29.1K",
-          mult: "4.3×"
+          athlete: "Devon Marshall",
+          stat: "17.6K",
+          sub: "2.7K",
+          mult: "6.6×"
         },
         {
           rank: "04",
-          athlete: "Qadence Samuels",
-          stat: "20.8K",
-          sub: "18.6K",
-          mult: "1.1×"
+          athlete: "Morgen Talley",
+          stat: "5.3K",
+          sub: "1.1K",
+          mult: "4.7×"
         },
         {
           rank: "05",
-          athlete: "Adelaide Jernigan",
-          stat: "15.8K",
-          sub: "4.7K",
-          mult: "3.4×"
+          athlete: "MaKayla Marbury",
+          stat: "11.2K",
+          sub: "2.5K",
+          mult: "4.5×"
         }
       ]
     },

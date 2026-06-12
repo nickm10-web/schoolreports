@@ -53,43 +53,43 @@ const purdue: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 17.0× the size of their actual following.",
-      athlete: "Omer Mayer",
-      sport: "Men's Basketball",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1764957905461-Omer_Mayer_68f6c2ba8f845316214c413a_ProfilePicture.jpg",
-      statValue: "566.9K",
+      description: "Based on likes and comments, this athlete engages like an account 25.0× the size of their actual following.",
+      athlete: "Bianca Hanisch",
+      sport: "Women's Soccer",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1764958025103-Bianca_Hanisch_68f6c2c08f845316214c417d_ProfilePicture.jpg",
+      statValue: "37.5K",
       statLabel: "Followers",
-      mult: "17.0×",
-      subValue: "33.4K",
+      mult: "25.0×",
+      subValue: "1.5K",
       subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Fletcher Loyer",
-          stat: "115K",
-          sub: "38.9K",
-          mult: "3.0×"
+          athlete: "Omer Mayer",
+          stat: "566.9K",
+          sub: "33.4K",
+          mult: "17.0×"
         },
         {
           rank: "03",
-          athlete: "Braden Smith",
-          stat: "91.9K",
-          sub: "63.7K",
-          mult: "1.4×"
+          athlete: "Triston Miller",
+          stat: "38.6K",
+          sub: "5.6K",
+          mult: "6.9×"
         },
         {
           rank: "04",
-          athlete: "Bianca Hanisch",
-          stat: "37.5K",
-          sub: "1.5K",
-          mult: "25.0×"
+          athlete: "Aaron Fine",
+          stat: "33.2K",
+          sub: "5.2K",
+          mult: "6.4×"
         },
         {
           rank: "05",
-          athlete: "Akasha Anderson",
-          stat: "15K",
-          sub: "5.1K",
-          mult: "3.0×"
+          athlete: "Addy Tindall",
+          stat: "6.8K",
+          sub: "1.6K",
+          mult: "4.3×"
         }
       ]
     },

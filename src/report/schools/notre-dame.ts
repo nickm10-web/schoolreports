@@ -53,43 +53,43 @@ const notre_dame: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 8.1× the size of their actual following.",
-      athlete: "Jeremiyah Love",
+      description: "Based on likes and comments, this athlete engages like an account 13.4× the size of their actual following.",
+      athlete: "Madden Faraimo",
       sport: "Football",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761383771831-Jeremiyah_Love_68fc94d55ecd65a8818e9757.png",
-      statValue: "2M",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761383759245-Madden_Faraimo_68fc94d55ecd65a8818e9711.png",
+      statValue: "89.9K",
       statLabel: "Followers",
-      mult: "8.1×",
-      subValue: "244.7K",
+      mult: "13.4×",
+      subValue: "6.7K",
       subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Jadarian Price",
-          stat: "336.3K",
-          sub: "60.1K",
-          mult: "5.6×"
+          athlete: "Ryder Frost",
+          stat: "115.1K",
+          sub: "8.9K",
+          mult: "12.9×"
         },
         {
           rank: "03",
-          athlete: "Hannah Hidalgo",
-          stat: "273.8K",
-          sub: "133K",
-          mult: "2.1×"
+          athlete: "Cam Williams",
+          stat: "140.2K",
+          sub: "14.9K",
+          mult: "9.4×"
         },
         {
           rank: "04",
-          athlete: "CJ Carr",
-          stat: "206.2K",
-          sub: "49.9K",
-          mult: "4.1×"
-        },
-        {
-          rank: "05",
           athlete: "Vanessa de Jesus",
           stat: "96.8K",
           sub: "15.5K",
           mult: "6.2×"
+        },
+        {
+          rank: "05",
+          athlete: "Cassandre Prosper",
+          stat: "44.1K",
+          sub: "14.7K",
+          mult: "3.0×"
         }
       ]
     },

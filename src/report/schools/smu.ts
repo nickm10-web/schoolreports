@@ -53,43 +53,43 @@ const smu: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 8.5× the size of their actual following.",
-      athlete: "Zadian Gentry",
+      description: "Based on likes and comments, this athlete engages like an account 17.8× the size of their actual following.",
+      athlete: "Stone Eby",
       sport: "Football",
-      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761381843929-Zadian_Gentry_68fc8bd377927c1df356cd8e.png",
-      statValue: "71.2K",
+      photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761381853299-Stone_Eby_68fc8bd377927c1df356cdca.png",
+      statValue: "34.3K",
       statLabel: "Followers",
-      mult: "8.5×",
-      subValue: "8.4K",
+      mult: "17.8×",
+      subValue: "1.9K",
       subLabel: "Actual Followers",
       runnersUp: [
         {
           rank: "02",
-          athlete: "Ty Hawkins",
-          stat: "50.9K",
-          sub: "15.1K",
-          mult: "3.4×"
-        },
-        {
-          rank: "03",
           athlete: "Ahmaad Moses",
           stat: "43.3K",
           sub: "3.6K",
           mult: "12.1×"
         },
         {
-          rank: "04",
-          athlete: "Malaya Jones",
-          stat: "12.5K",
-          sub: "7.5K",
-          mult: "1.7×"
+          rank: "03",
+          athlete: "Zadian Gentry",
+          stat: "71.2K",
+          sub: "8.4K",
+          mult: "8.5×"
         },
         {
-          rank: "05",
+          rank: "04",
           athlete: "Maggie Croft",
           stat: "9.7K",
           sub: "4.1K",
           mult: "2.4×"
+        },
+        {
+          rank: "05",
+          athlete: "Christa Wilburn",
+          stat: "5.6K",
+          sub: "2.6K",
+          mult: "2.2×"
         }
       ]
     },

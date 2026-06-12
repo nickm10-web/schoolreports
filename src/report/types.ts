@@ -14,6 +14,10 @@ export interface RunnerUp {
   athlete: string;
   /** Same unit as the category leader, e.g. "11" · "+2.4X" · "310K". */
   stat: string;
+  /** Overperformer rows only: actual followers, e.g. "36.2K". */
+  sub?: string;
+  /** Overperformer rows only: lift multiple chip, e.g. "3.8×". */
+  mult?: string;
 }
 
 export type Platform =

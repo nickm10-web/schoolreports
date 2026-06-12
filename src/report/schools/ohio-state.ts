@@ -66,22 +66,30 @@ const ohio_state: ReportData = {
         {
           rank: "02",
           athlete: "Jeremiah Smith",
-          stat: "2M · 2.5×"
+          stat: "2M",
+          sub: "791.8K",
+          mult: "2.5×"
         },
         {
           rank: "03",
           athlete: "Caleb Downs",
-          stat: "804.3K · 2.3×"
+          stat: "804.3K",
+          sub: "347.6K",
+          mult: "2.3×"
         },
         {
           rank: "04",
           athlete: "Maxine Cimoroni",
-          stat: "40.5K · 11.5×"
+          stat: "40.5K",
+          sub: "3.5K",
+          mult: "11.5×"
         },
         {
           rank: "05",
           athlete: "Ava Watson",
-          stat: "14.7K · 1.3×"
+          stat: "14.7K",
+          sub: "11.6K",
+          mult: "1.3×"
         }
       ]
     },

@@ -66,22 +66,30 @@ const notre_dame: ReportData = {
         {
           rank: "02",
           athlete: "Jadarian Price",
-          stat: "336.3K · 5.6×"
+          stat: "336.3K",
+          sub: "60.1K",
+          mult: "5.6×"
         },
         {
           rank: "03",
           athlete: "Hannah Hidalgo",
-          stat: "273.8K · 2.1×"
+          stat: "273.8K",
+          sub: "133K",
+          mult: "2.1×"
         },
         {
           rank: "04",
           athlete: "CJ Carr",
-          stat: "206.2K · 4.1×"
+          stat: "206.2K",
+          sub: "49.9K",
+          mult: "4.1×"
         },
         {
           rank: "05",
           athlete: "Vanessa de Jesus",
-          stat: "96.8K · 6.2×"
+          stat: "96.8K",
+          sub: "15.5K",
+          mult: "6.2×"
         }
       ]
     },

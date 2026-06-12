@@ -66,22 +66,30 @@ const unc: ReportData = {
         {
           rank: "02",
           athlete: "Derek Dixon",
-          stat: "379.9K · 19.3×"
+          stat: "379.9K",
+          sub: "19.7K",
+          mult: "19.3×"
         },
         {
           rank: "03",
           athlete: "Jarin Stevenson",
-          stat: "331.5K · 21.7×"
+          stat: "331.5K",
+          sub: "15.3K",
+          mult: "21.7×"
         },
         {
           rank: "04",
           athlete: "Zoe Behrendt",
-          stat: "16.2K · 2.2×"
+          stat: "16.2K",
+          sub: "7.5K",
+          mult: "2.2×"
         },
         {
           rank: "05",
           athlete: "Indya Nivar",
-          stat: "12.3K · 1.2×"
+          stat: "12.3K",
+          sub: "10.2K",
+          mult: "1.2×"
         }
       ]
     },

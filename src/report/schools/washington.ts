@@ -66,22 +66,30 @@ const washington: ReportData = {
         {
           rank: "02",
           athlete: "Demond Williams Jr.",
-          stat: "75.1K · 2.5×"
+          stat: "75.1K",
+          sub: "29.7K",
+          mult: "2.5×"
         },
         {
           rank: "03",
           athlete: "Bryson Tucker",
-          stat: "60.2K · 2.6×"
+          stat: "60.2K",
+          sub: "22.8K",
+          mult: "2.6×"
         },
         {
           rank: "04",
           athlete: "Charlotte Gray",
-          stat: "7.4K · 3.3×"
+          stat: "7.4K",
+          sub: "2.3K",
+          mult: "3.3×"
         },
         {
           rank: "05",
           athlete: "Chelsea Hallinan",
-          stat: "5.9K · 2.4×"
+          stat: "5.9K",
+          sub: "2.5K",
+          mult: "2.4×"
         }
       ]
     },

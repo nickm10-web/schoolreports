@@ -66,22 +66,30 @@ const nc_state: ReportData = {
         {
           rank: "02",
           athlete: "Terrell Anderson",
-          stat: "155.5K · 2.5×"
+          stat: "155.5K",
+          sub: "61.1K",
+          mult: "2.5×"
         },
         {
           rank: "03",
           athlete: "Tre Holloman",
-          stat: "123.9K · 4.3×"
+          stat: "123.9K",
+          sub: "29.1K",
+          mult: "4.3×"
         },
         {
           rank: "04",
           athlete: "Qadence Samuels",
-          stat: "20.8K · 1.1×"
+          stat: "20.8K",
+          sub: "18.6K",
+          mult: "1.1×"
         },
         {
           rank: "05",
           athlete: "Adelaide Jernigan",
-          stat: "15.8K · 3.4×"
+          stat: "15.8K",
+          sub: "4.7K",
+          mult: "3.4×"
         }
       ]
     },

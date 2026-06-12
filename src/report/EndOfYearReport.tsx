@@ -319,14 +319,25 @@ function CatLabel({ icon, title, sm }: { icon: HighlightIcon; title: string; sm?
 
 function RankList({ rows }: { rows: RunnerUp[] }) {
   if (!rows.length) return null;
+  // Overperformer rows carry the full story: actual -> performs-like + chip.
+  const pl = rows.some((r) => r.mult);
   return (
-    <ul className="eoy-ranklist">
+    <ul className={`eoy-ranklist${pl ? ' eoy-ranklist-pl' : ''}`}>
       {rows.map((r) => (
         <li key={r.rank} className="eoy-ranklist-row">
           <span className="eoy-ranklist-num">{r.rank}</span>
           <span className="eoy-ranklist-name">{shortName(r.athlete)}</span>
           <span className="eoy-ranklist-dots" aria-hidden />
-          <span className="eoy-ranklist-stat">{r.stat}</span>
+          {r.mult ? (
+            <>
+              <span className="eoy-plrow-path">
+                {r.sub} <span className="eoy-plrow-arrow" aria-hidden>→</span> <b>{r.stat}</b>
+              </span>
+              <span className="eoy-plrow-mult">{r.mult}</span>
+            </>
+          ) : (
+            <span className="eoy-ranklist-stat">{r.stat}</span>
+          )}
         </li>
       ))}
     </ul>
@@ -880,6 +891,13 @@ const CSS = `
 .eoy-ranklist-name{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:1rem;line-height:1;white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis;}
 .eoy-ranklist-dots{flex:1;border-bottom:1px dotted rgba(255,255,255,.2);transform:translateY(-3px);min-width:14px;}
 .eoy-ranklist-stat{font-family:var(--display);font-size:1rem;line-height:1;color:var(--volt);flex:none;}
+/* overperformer runners: actual -> performs-like + multiplier chip; the rows
+   run taller to fill the feature card */
+.eoy-ranklist-pl{gap:13px;padding-top:16px;}
+.eoy-plrow-path{font-family:var(--cond);font-weight:700;font-size:1rem;line-height:1;letter-spacing:.03em;color:var(--t2);white-space:nowrap;flex:none;}
+.eoy-plrow-path b{font-family:var(--display);font-weight:400;font-size:1.05rem;color:#fff;}
+.eoy-plrow-arrow{color:var(--volt);margin:0 1px;}
+.eoy-plrow-mult{font-family:var(--display);font-size:.92rem;line-height:1;background:var(--volt);color:var(--ink);transform:skewX(-11deg);padding:3px 8px 4px;border-radius:2px;flex:none;min-width:46px;text-align:center;}
 .eoy-mini .eoy-ranklist{margin-top:14px;padding-top:11px;gap:7px;}
 .eoy-mini .eoy-ranklist-name{font-size:.9rem;}
 .eoy-mini .eoy-ranklist-num,.eoy-mini .eoy-ranklist-stat{font-size:.85rem;}
@@ -1037,6 +1055,14 @@ const CSS = `
   .eoy-mini{grid-template-columns:1fr;}
   .eoy-mini-photo{clip-path:none;min-height:0;height:280px;}
   .eoy-mini-img{object-position:50% 10%;}
+  /* overperformer runners: two lines on phones, names never truncate */
+  .eoy-ranklist-pl{gap:15px;}
+  .eoy-ranklist-pl .eoy-ranklist-row{display:grid;grid-template-columns:24px 1fr auto;grid-template-areas:"num name mult" ". path path";row-gap:6px;align-items:center;}
+  .eoy-ranklist-pl .eoy-ranklist-num{grid-area:num;}
+  .eoy-ranklist-pl .eoy-ranklist-name{grid-area:name;}
+  .eoy-ranklist-pl .eoy-ranklist-dots{display:none;}
+  .eoy-plrow-mult{grid-area:mult;}
+  .eoy-plrow-path{grid-area:path;justify-self:start;}
   /* keep the partner plate and stat rows inside a narrow card */
   .eoy-partner-main .eoy-plate-num{font-size:2rem;}
   .eoy-partner-main .eoy-plate-unit{max-width:150px;font-size:12px;}

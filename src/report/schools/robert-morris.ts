@@ -66,22 +66,30 @@ const robert_morris: ReportData = {
         {
           rank: "02",
           athlete: "Mofe Adewole",
-          stat: "9.8K · 5.2×"
+          stat: "9.8K",
+          sub: "1.9K",
+          mult: "5.2×"
         },
         {
           rank: "03",
           athlete: "Noel Roach",
-          stat: "9.2K · 2.3×"
+          stat: "9.2K",
+          sub: "4K",
+          mult: "2.3×"
         },
         {
           rank: "04",
           athlete: "Molly Dunn",
-          stat: "4.6K · 2.6×"
+          stat: "4.6K",
+          sub: "1.8K",
+          mult: "2.6×"
         },
         {
           rank: "05",
           athlete: "Morgan Giannone",
-          stat: "4.6K · 2.5×"
+          stat: "4.6K",
+          sub: "1.9K",
+          mult: "2.5×"
         }
       ]
     },

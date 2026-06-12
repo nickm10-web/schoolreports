@@ -61,22 +61,30 @@ const washington_state: ReportData = {
         {
           rank: "02",
           athlete: "Kayo Patu",
-          stat: "25.4K · 3.4×"
+          stat: "25.4K",
+          sub: "7.6K",
+          mult: "3.4×"
         },
         {
           rank: "03",
           athlete: "Sullivan Schlimgen",
-          stat: "14.1K · 7.2×"
+          stat: "14.1K",
+          sub: "2K",
+          mult: "7.2×"
         },
         {
           rank: "04",
           athlete: "Bela Alvarado",
-          stat: "2.6K · 1.7×"
+          stat: "2.6K",
+          sub: "1.6K",
+          mult: "1.7×"
         },
         {
           rank: "05",
           athlete: "Brooke Lyons",
-          stat: "1.9K · 1.4×"
+          stat: "1.9K",
+          sub: "1.4K",
+          mult: "1.4×"
         }
       ]
     },

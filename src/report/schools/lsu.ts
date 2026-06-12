@@ -66,22 +66,30 @@ const lsu: ReportData = {
         {
           rank: "02",
           athlete: "Tamarcus Cooley",
-          stat: "441.8K · 18.1×"
+          stat: "441.8K",
+          sub: "24.3K",
+          mult: "18.1×"
         },
         {
           rank: "03",
           athlete: "West Weeks",
-          stat: "356.4K · 7.2×"
+          stat: "356.4K",
+          sub: "49.3K",
+          mult: "7.2×"
         },
         {
           rank: "04",
           athlete: "MiLaysia Fulwiley",
-          stat: "258K · 1.1×"
+          stat: "258K",
+          sub: "237.4K",
+          mult: "1.1×"
         },
         {
           rank: "05",
           athlete: "Bella Hines",
-          stat: "173.1K · 4.1×"
+          stat: "173.1K",
+          sub: "41.9K",
+          mult: "4.1×"
         }
       ]
     },

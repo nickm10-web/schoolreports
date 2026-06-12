@@ -66,22 +66,30 @@ const iowa: ReportData = {
         {
           rank: "02",
           athlete: "Addie Deal",
-          stat: "63.3K · 3.5×"
+          stat: "63.3K",
+          sub: "18K",
+          mult: "3.5×"
         },
         {
           rank: "03",
           athlete: "Taylor McCabe",
-          stat: "52.7K · 1.9×"
+          stat: "52.7K",
+          sub: "28.2K",
+          mult: "1.9×"
         },
         {
           rank: "04",
           athlete: "Kaden Wetjen",
-          stat: "40.4K · 4.7×"
+          stat: "40.4K",
+          sub: "8.6K",
+          mult: "4.7×"
         },
         {
           rank: "05",
           athlete: "Taylor Stremlow",
-          stat: "23.9K · 1.7×"
+          stat: "23.9K",
+          sub: "13.9K",
+          mult: "1.7×"
         }
       ]
     },

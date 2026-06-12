@@ -66,22 +66,30 @@ const cincinnati: ReportData = {
         {
           rank: "02",
           athlete: "Shon Abaev",
-          stat: "144.7K · 3.0×"
+          stat: "144.7K",
+          sub: "48.8K",
+          mult: "3.0×"
         },
         {
           rank: "03",
           athlete: "Keyshuan Tillery",
-          stat: "66.6K · 9.5×"
+          stat: "66.6K",
+          sub: "7K",
+          mult: "9.5×"
         },
         {
           rank: "04",
           athlete: "Carly Glendinning",
-          stat: "11.1K · 3.8×"
+          stat: "11.1K",
+          sub: "2.9K",
+          mult: "3.8×"
         },
         {
           rank: "05",
           athlete: "Lily DiBernardo",
-          stat: "10.8K · 2.5×"
+          stat: "10.8K",
+          sub: "4.4K",
+          mult: "2.5×"
         }
       ]
     },

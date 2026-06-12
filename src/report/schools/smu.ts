@@ -66,22 +66,30 @@ const smu: ReportData = {
         {
           rank: "02",
           athlete: "Ty Hawkins",
-          stat: "50.9K · 3.4×"
+          stat: "50.9K",
+          sub: "15.1K",
+          mult: "3.4×"
         },
         {
           rank: "03",
           athlete: "Ahmaad Moses",
-          stat: "43.3K · 12.1×"
+          stat: "43.3K",
+          sub: "3.6K",
+          mult: "12.1×"
         },
         {
           rank: "04",
           athlete: "Malaya Jones",
-          stat: "12.5K · 1.7×"
+          stat: "12.5K",
+          sub: "7.5K",
+          mult: "1.7×"
         },
         {
           rank: "05",
           athlete: "Maggie Croft",
-          stat: "9.7K · 2.4×"
+          stat: "9.7K",
+          sub: "4.1K",
+          mult: "2.4×"
         }
       ]
     },

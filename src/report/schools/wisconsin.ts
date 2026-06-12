@@ -66,22 +66,30 @@ const wisconsin: ReportData = {
         {
           rank: "02",
           athlete: "Laila Edwards",
-          stat: "119.6K · 1.5×"
+          stat: "119.6K",
+          sub: "79.3K",
+          mult: "1.5×"
         },
         {
           rank: "03",
           athlete: "Caroline Harvey",
-          stat: "115.4K · 1.4×"
+          stat: "115.4K",
+          sub: "79.7K",
+          mult: "1.4×"
         },
         {
           rank: "04",
           athlete: "Grace Bickett",
-          stat: "59.2K · 21.9×"
+          stat: "59.2K",
+          sub: "2.7K",
+          mult: "21.9×"
         },
         {
           rank: "05",
           athlete: "Omillio Agard",
-          stat: "56K · 3.6×"
+          stat: "56K",
+          sub: "15.6K",
+          mult: "3.6×"
         }
       ]
     },

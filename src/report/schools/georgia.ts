@@ -66,22 +66,30 @@ const georgia: ReportData = {
         {
           rank: "02",
           athlete: "Colbie Young",
-          stat: "605K · 22.8×"
+          stat: "605K",
+          sub: "26.6K",
+          mult: "22.8×"
         },
         {
           rank: "03",
           athlete: "Dillon Bell",
-          stat: "461.2K · 15.9×"
+          stat: "461.2K",
+          sub: "28.9K",
+          mult: "15.9×"
         },
         {
           rank: "04",
           athlete: "Victoria Saah",
-          stat: "34.2K · 18.2×"
+          stat: "34.2K",
+          sub: "1.9K",
+          mult: "18.2×"
         },
         {
           rank: "05",
           athlete: "Summer Denigan",
-          stat: "23.5K · 6.2×"
+          stat: "23.5K",
+          sub: "3.8K",
+          mult: "6.2×"
         }
       ]
     },

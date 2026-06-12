@@ -66,22 +66,30 @@ const alabama: ReportData = {
         {
           rank: "02",
           athlete: "Kadyn Proctor",
-          stat: "928.7K · 8.8×"
+          stat: "928.7K",
+          sub: "105.6K",
+          mult: "8.8×"
         },
         {
           rank: "03",
           athlete: "Jalil Bethea",
-          stat: "912.5K · 4.2×"
+          stat: "912.5K",
+          sub: "218.8K",
+          mult: "4.2×"
         },
         {
           rank: "04",
           athlete: "Ana Roman",
-          stat: "25.7K · 7.6×"
+          stat: "25.7K",
+          sub: "3.4K",
+          mult: "7.6×"
         },
         {
           rank: "05",
           athlete: "Joy Egbuna",
-          stat: "14.3K · 5.8×"
+          stat: "14.3K",
+          sub: "2.5K",
+          mult: "5.8×"
         }
       ]
     },

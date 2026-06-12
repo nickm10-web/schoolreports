@@ -66,22 +66,30 @@ const purdue: ReportData = {
         {
           rank: "02",
           athlete: "Fletcher Loyer",
-          stat: "115K · 3.0×"
+          stat: "115K",
+          sub: "38.9K",
+          mult: "3.0×"
         },
         {
           rank: "03",
           athlete: "Braden Smith",
-          stat: "91.9K · 1.4×"
+          stat: "91.9K",
+          sub: "63.7K",
+          mult: "1.4×"
         },
         {
           rank: "04",
           athlete: "Bianca Hanisch",
-          stat: "37.5K · 25.0×"
+          stat: "37.5K",
+          sub: "1.5K",
+          mult: "25.0×"
         },
         {
           rank: "05",
           athlete: "Akasha Anderson",
-          stat: "15K · 3.0×"
+          stat: "15K",
+          sub: "5.1K",
+          mult: "3.0×"
         }
       ]
     },

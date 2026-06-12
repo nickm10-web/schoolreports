@@ -66,22 +66,30 @@ const arizona: ReportData = {
         {
           rank: "02",
           athlete: "Koa Peat",
-          stat: "268.2K · 2.9×"
+          stat: "268.2K",
+          sub: "93.7K",
+          mult: "2.9×"
         },
         {
           rank: "03",
           athlete: "Jordan Wilson",
-          stat: "108.7K · 4.5×"
+          stat: "108.7K",
+          sub: "24.3K",
+          mult: "4.5×"
         },
         {
           rank: "04",
           athlete: "Tobe Awaka",
-          stat: "104.9K · 8.4×"
+          stat: "104.9K",
+          sub: "12.5K",
+          mult: "8.4×"
         },
         {
           rank: "05",
           athlete: "Shea Davis",
-          stat: "33.1K · 2.5×"
+          stat: "33.1K",
+          sub: "13.1K",
+          mult: "2.5×"
         }
       ]
     },

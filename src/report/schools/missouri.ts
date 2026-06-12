@@ -66,22 +66,30 @@ const missouri: ReportData = {
         {
           rank: "02",
           athlete: "Mark Mitchell",
-          stat: "95.1K · 2.7×"
+          stat: "95.1K",
+          sub: "34.9K",
+          mult: "2.7×"
         },
         {
           rank: "03",
           athlete: "Matt Zollers",
-          stat: "73.2K · 4.5×"
+          stat: "73.2K",
+          sub: "16.4K",
+          mult: "4.5×"
         },
         {
           rank: "04",
           athlete: "Kimarra Echols",
-          stat: "14.7K · 4.7×"
+          stat: "14.7K",
+          sub: "3.1K",
+          mult: "4.7×"
         },
         {
           rank: "05",
           athlete: "Marina Crownover",
-          stat: "13.5K · 2.8×"
+          stat: "13.5K",
+          sub: "4.9K",
+          mult: "2.8×"
         }
       ]
     },

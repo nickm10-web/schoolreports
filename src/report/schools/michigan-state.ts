@@ -66,22 +66,30 @@ const michigan_state: ReportData = {
         {
           rank: "02",
           athlete: "Divine Ugochukwu",
-          stat: "180.1K · 17.8×"
+          stat: "180.1K",
+          sub: "10.1K",
+          mult: "17.8×"
         },
         {
           rank: "03",
           athlete: "Aydan West",
-          stat: "107K · 9.9×"
+          stat: "107K",
+          sub: "10.9K",
+          mult: "9.9×"
         },
         {
           rank: "04",
           athlete: "Evie Doezema",
-          stat: "11.2K · 3.2×"
+          stat: "11.2K",
+          sub: "3.5K",
+          mult: "3.2×"
         },
         {
           rank: "05",
           athlete: "Jordan Ode",
-          stat: "8.2K · 2.5×"
+          stat: "8.2K",
+          sub: "3.3K",
+          mult: "2.5×"
         }
       ]
     },

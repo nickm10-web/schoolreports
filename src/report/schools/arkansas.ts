@@ -66,22 +66,30 @@ const arkansas: ReportData = {
         {
           rank: "02",
           athlete: "Darius Acuff Jr.",
-          stat: "257.9K · 1.7×"
+          stat: "257.9K",
+          sub: "149K",
+          mult: "1.7×"
         },
         {
           rank: "03",
           athlete: "Billy Richmond III",
-          stat: "191.1K · 5.9×"
+          stat: "191.1K",
+          sub: "32.5K",
+          mult: "5.9×"
         },
         {
           rank: "04",
           athlete: "Natalie Wagner",
-          stat: "119.3K · 2.3×"
+          stat: "119.3K",
+          sub: "52.6K",
+          mult: "2.3×"
         },
         {
           rank: "05",
           athlete: "Analisse Batista",
-          stat: "88.9K · 12.9×"
+          stat: "88.9K",
+          sub: "6.9K",
+          mult: "12.9×"
         }
       ]
     },

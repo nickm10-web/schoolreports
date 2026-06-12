@@ -66,22 +66,30 @@ const baylor: ReportData = {
         {
           rank: "02",
           athlete: "Keaton Thomas",
-          stat: "137.7K · 3.8×"
+          stat: "137.7K",
+          sub: "35.8K",
+          mult: "3.8×"
         },
         {
           rank: "03",
           athlete: "Isaac Williams IV",
-          stat: "131.9K · 1.5×"
+          stat: "131.9K",
+          sub: "90.5K",
+          mult: "1.5×"
         },
         {
           rank: "04",
           athlete: "Sima Lucero",
-          stat: "52.8K · 6.8×"
+          stat: "52.8K",
+          sub: "7.8K",
+          mult: "6.8×"
         },
         {
           rank: "05",
           athlete: "Gabby Kaminski",
-          stat: "27K · 3.6×"
+          stat: "27K",
+          sub: "7.5K",
+          mult: "3.6×"
         }
       ]
     },

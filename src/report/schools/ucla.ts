@@ -66,22 +66,30 @@ const ucla: ReportData = {
         {
           rank: "02",
           athlete: "Roch Cholowsky",
-          stat: "216.1K · 4.5×"
+          stat: "216.1K",
+          sub: "48.3K",
+          mult: "4.5×"
         },
         {
           rank: "03",
           athlete: "Hazel Alevok",
-          stat: "150K · 3.2×"
+          stat: "150K",
+          sub: "46.4K",
+          mult: "3.2×"
         },
         {
           rank: "04",
           athlete: "Kwazi Gilmer",
-          stat: "133.4K · 3.9×"
+          stat: "133.4K",
+          sub: "34.6K",
+          mult: "3.9×"
         },
         {
           rank: "05",
           athlete: "Jewelous \"JuJu\" Walls",
-          stat: "60.7K · 16.4×"
+          stat: "60.7K",
+          sub: "3.7K",
+          mult: "16.4×"
         }
       ]
     },

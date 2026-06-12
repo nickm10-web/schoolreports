@@ -66,22 +66,30 @@ const arizona_state: ReportData = {
         {
           rank: "02",
           athlete: "Jordyn Tyson",
-          stat: "159.1K · 1.5×"
+          stat: "159.1K",
+          sub: "105.8K",
+          mult: "1.5×"
         },
         {
           rank: "03",
           athlete: "Maurice Odum",
-          stat: "157.1K · 24.7×"
+          stat: "157.1K",
+          sub: "6.4K",
+          mult: "24.7×"
         },
         {
           rank: "04",
           athlete: "Aliyah Adams",
-          stat: "38K · 1.7×"
+          stat: "38K",
+          sub: "22.3K",
+          mult: "1.7×"
         },
         {
           rank: "05",
           athlete: "Faith Frame",
-          stat: "15.1K · 1.2×"
+          stat: "15.1K",
+          sub: "12.5K",
+          mult: "1.2×"
         }
       ]
     },

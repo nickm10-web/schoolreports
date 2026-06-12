@@ -66,22 +66,30 @@ const san_diego: ReportData = {
         {
           rank: "02",
           athlete: "Lauren Lynch",
-          stat: "8.6K · 2.3×"
+          stat: "8.6K",
+          sub: "3.8K",
+          mult: "2.3×"
         },
         {
           rank: "03",
           athlete: "Cade Martinez",
-          stat: "6.7K · 3.2×"
+          stat: "6.7K",
+          sub: "2.1K",
+          mult: "3.2×"
         },
         {
           rank: "04",
           athlete: "Sophia Pinedo",
-          stat: "5.9K · 2.8×"
+          stat: "5.9K",
+          sub: "2.1K",
+          mult: "2.8×"
         },
         {
           rank: "05",
           athlete: "Blake Chase",
-          stat: "5.3K · 3.3×"
+          stat: "5.3K",
+          sub: "1.6K",
+          mult: "3.3×"
         }
       ]
     },

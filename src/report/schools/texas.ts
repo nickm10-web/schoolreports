@@ -66,22 +66,30 @@ const texas: ReportData = {
         {
           rank: "02",
           athlete: "Jaime Ffrench",
-          stat: "467.9K · 11.1×"
+          stat: "467.9K",
+          sub: "42K",
+          mult: "11.1×"
         },
         {
           rank: "03",
           athlete: "Parker Livingstone",
-          stat: "279.5K · 8.1×"
+          stat: "279.5K",
+          sub: "34.5K",
+          mult: "8.1×"
         },
         {
           rank: "04",
           athlete: "MaTaia Lawson",
-          stat: "268.7K · 6.9×"
+          stat: "268.7K",
+          sub: "39K",
+          mult: "6.9×"
         },
         {
           rank: "05",
           athlete: "Sarah Graves",
-          stat: "228.3K · 7.4×"
+          stat: "228.3K",
+          sub: "30.7K",
+          mult: "7.4×"
         }
       ]
     },

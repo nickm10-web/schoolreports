@@ -53,7 +53,7 @@ const clemson: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 17.6× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Terrell's numbers match a typical 1M-follower account, 17.6× the audience they actually have.",
       athlete: "Avieon Terrell",
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761201591058-Avieon_Terrell_68f9ccc3e3da270d8f2601b4.png",

@@ -53,7 +53,7 @@ const ucla: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 16.4× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Walls's numbers match a typical 60.7K-follower account, 16.4× the audience they actually have.",
       athlete: "Jewelous \"JuJu\" Walls",
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765896761235-Jewelous__JuJu_ Walls_68f878d77fcc92b86eee7def_ProfilePicture.jpg",

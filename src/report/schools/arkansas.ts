@@ -53,7 +53,7 @@ const arkansas: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 12.9× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Batista's numbers match a typical 88.9K-follower account, 12.9× the audience they actually have.",
       athlete: "Analisse Batista",
       sport: "Women's Track & Field",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1767975868576-Analisse_Batista_68e9b029a0cca3ee1d3e990a_ProfilePicture.jpg",

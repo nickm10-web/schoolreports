@@ -53,7 +53,7 @@ const cincinnati: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 9.5× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Tillery's numbers match a typical 66.6K-follower account, 9.5× the audience they actually have.",
       athlete: "Keyshuan Tillery",
       sport: "Men's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761114184533-Keyshuan_Tillery_68f8774766c6eed501f52faa.png",

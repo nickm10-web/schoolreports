@@ -53,7 +53,7 @@ const texas: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 13.8× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Kahahawai's numbers match a typical 112.3K-follower account, 13.8× the audience they actually have.",
       athlete: "Devin Kahahawai",
       sport: "Women's Volleyball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759795565004-Devin_Kahahawai_68dc53700e6e3ec3fe759faf_ProfilePicture.jpg",

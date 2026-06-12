@@ -53,7 +53,7 @@ const michigan_state: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 17.8× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Ugochukwu's numbers match a typical 180.1K-follower account, 17.8× the audience they actually have.",
       athlete: "Divine Ugochukwu",
       sport: "Men's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761382096722-Divine_Ugochukwu_68fc8e14aaa755171a3e5f15.png",

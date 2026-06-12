@@ -53,7 +53,7 @@ const georgia: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 22.8× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Young's numbers match a typical 605K-follower account, 22.8× the audience they actually have.",
       athlete: "Colbie Young",
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1759781692808-Colbie_Young_689647b6289e7803603e0ca1_ProfilePicture.jpg",

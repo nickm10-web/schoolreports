@@ -53,7 +53,7 @@ const san_diego: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 5.3× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Seipler's numbers match a typical 15K-follower account, 5.3× the audience they actually have.",
       athlete: "Ysabella Von Seipler",
       sport: "Women's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1760992059954-Ysabella_Von Seipler_68cb5362783089f8529cf756_ProfilePicture.jpg",

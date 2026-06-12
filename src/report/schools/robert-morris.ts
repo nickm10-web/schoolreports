@@ -53,7 +53,7 @@ const robert_morris: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 5.2× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Adewole's numbers match a typical 9.8K-follower account, 5.2× the audience they actually have.",
       athlete: "Mofe Adewole",
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761111580488-Mofe_Adewole_68f86c2ae1c43ab456ffaa46.png",

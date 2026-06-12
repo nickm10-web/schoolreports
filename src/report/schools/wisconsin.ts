@@ -53,7 +53,7 @@ const wisconsin: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 21.9× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Bickett's numbers match a typical 59.2K-follower account, 21.9× the audience they actually have.",
       athlete: "Grace Bickett",
       sport: "Womens Hockey",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1764859980067-Grace_Bickett_68fca9239c85e8dfe8f9c1c3_ProfilePicture.jpg",

@@ -53,7 +53,7 @@ const baylor: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 8.1× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Kinchen's numbers match a typical 11K-follower account, 8.1× the audience they actually have.",
       athlete: "Aaryona Kinchen",
       sport: "Women's Track & Field",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1765467684867-Aaryona_Kinchen_68c11b855278f5f29c92ce7d_ProfilePicture.jpg",

@@ -53,7 +53,7 @@ const nc_state: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 9.9× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Hoffmann's numbers match a typical 87.4K-follower account, 9.9× the audience they actually have.",
       athlete: "Teddy Hoffmann",
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1762551594882-Teddy_Hoffmann_690e66285b615b70780c02f6_ProfilePicture.jpg",

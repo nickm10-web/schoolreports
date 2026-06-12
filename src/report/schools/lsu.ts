@@ -53,7 +53,7 @@ const lsu: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 18.8× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Brown's numbers match a typical 78.6K-follower account, 18.8× the audience they actually have.",
       athlete: "Brandon Brown",
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1756249753580-Brandon_Brown_68ae3dcbc46ee67ea74fc9b0_ProfilePicture.jpg",

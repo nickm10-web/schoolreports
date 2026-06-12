@@ -53,7 +53,7 @@ const purdue: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 25.0× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Hanisch's numbers match a typical 37.5K-follower account, 25.0× the audience they actually have.",
       athlete: "Bianca Hanisch",
       sport: "Women's Soccer",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1764958025103-Bianca_Hanisch_68f6c2c08f845316214c417d_ProfilePicture.jpg",

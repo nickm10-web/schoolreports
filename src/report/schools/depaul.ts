@@ -53,7 +53,7 @@ const depaul: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 8.4× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. West's numbers match a typical 14.9K-follower account, 8.4× the audience they actually have.",
       athlete: "Alayna West",
       sport: "Women's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761382522330-Alayna_West_68fc902d39f09904c5a95b3c.png",

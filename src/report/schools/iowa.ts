@@ -53,7 +53,7 @@ const iowa: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 10.4× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Graves's numbers match a typical 84K-follower account, 10.4× the audience they actually have.",
       athlete: "Aaron Graves",
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761852549276-Aaron_Graves_6903bbdb66d702c4eb17297b.png",

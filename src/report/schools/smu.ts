@@ -53,7 +53,7 @@ const smu: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 17.8× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Eby's numbers match a typical 34.3K-follower account, 17.8× the audience they actually have.",
       athlete: "Stone Eby",
       sport: "Football",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761381853299-Stone_Eby_68fc8bd377927c1df356cdca.png",

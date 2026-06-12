@@ -53,7 +53,7 @@ const unc: ReportData = {
       rank: "02",
       icon: "trend",
       title: "Top Overperformer",
-      description: "Based on likes and comments, this athlete engages like an account 21.7× the size of their actual following.",
+      description: "JABA benchmarks every athlete's likes and comments against engagement norms from 20,000+ college athletes. Stevenson's numbers match a typical 331.5K-follower account, 21.7× the audience they actually have.",
       athlete: "Jarin Stevenson",
       sport: "Men's Basketball",
       photo: "https://storage.googleapis.com/jaba-profile-pictures-bucket-prod/profile-pictures/1761202582311-Jarin_Stevenson_68f9d10bf54231af438356f2.png",

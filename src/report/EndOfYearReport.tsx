@@ -366,14 +366,17 @@ function FeatureCard({ h }: { h: Highlight }) {
             </>
           )}
           {h.mult ? (
-            /* overperformer: actual followers -> performs like N followers */
-            <div className="eoy-plate eoy-plate-xl eoy-plate-stack">
-              <span className="eoy-plate-kicker">Performs like</span>
-              <span className="eoy-plate-row">
-                <span className="eoy-plate-num">{h.statValue}</span>
-                <span className="eoy-plate-unit">Followers</span>
-              </span>
-            </div>
+            /* overperformer: actual -> performs like N followers, multiplier chip */
+            <>
+              <div className="eoy-plate eoy-plate-xl eoy-plate-stack">
+                <span className="eoy-plate-kicker">Performs like</span>
+                <span className="eoy-plate-row">
+                  <span className="eoy-plate-num">{h.statValue}</span>
+                  <span className="eoy-plate-unit">Followers</span>
+                </span>
+              </div>
+              <span className="eoy-plrow-mult eoy-plmult-hero">{h.mult}</span>
+            </>
           ) : (
             <div className="eoy-plate eoy-plate-xl">
               <span className="eoy-plate-num">{h.statValue}</span>
@@ -898,6 +901,7 @@ const CSS = `
 .eoy-plrow-path b{font-family:var(--display);font-weight:400;font-size:1.05rem;color:#fff;}
 .eoy-plrow-arrow{color:var(--volt);margin:0 1px;}
 .eoy-plrow-mult{font-family:var(--display);font-size:.92rem;line-height:1;background:var(--volt);color:var(--ink);transform:skewX(-11deg);padding:3px 8px 4px;border-radius:2px;flex:none;min-width:46px;text-align:center;}
+.eoy-plmult-hero{font-size:1.5rem;padding:8px 13px 9px;border-radius:3px;box-shadow:0 8px 26px rgba(223,255,0,.16);}
 .eoy-mini .eoy-ranklist{margin-top:14px;padding-top:11px;gap:7px;}
 .eoy-mini .eoy-ranklist-name{font-size:.9rem;}
 .eoy-mini .eoy-ranklist-num,.eoy-mini .eoy-ranklist-stat{font-size:.85rem;}

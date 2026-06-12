@@ -438,7 +438,7 @@ function NumbersBand({ n }: { n: YearNumbers }) {
   return (
     <div className="eoy-numbers">
       <div className="eoy-wrap eoy-numbers-row">
-        <span className="eoy-numbers-kicker">The Year<br />in Numbers</span>
+        <span className="eoy-sec-tag eoy-numbers-kicker"><span>The Year in Numbers</span></span>
         {items.map((it) => (
           <span key={it.l} className="eoy-numbers-item">
             <span className={`eoy-numbers-val${it.volt ? ' eoy-numbers-val-volt' : ''}`}>{it.v}</span>
@@ -1011,7 +1011,8 @@ const CSS = `
 /* the year in numbers — scoreboard band: volt tag, big numerals, dividers */
 .eoy-numbers{background:#0f0d15;border-bottom:1px solid var(--line);}
 .eoy-numbers-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px 28px;padding-top:22px;padding-bottom:22px;}
-.eoy-numbers-kicker{font-family:var(--display);text-transform:uppercase;font-size:1.5rem;line-height:.92;letter-spacing:.04em;color:var(--ink);background:var(--volt);transform:skewX(-11deg);padding:8px 16px;border-radius:3px;}
+/* reuses the section-tag chip so the band speaks the same language */
+.eoy-numbers-kicker{flex:none;}
 .eoy-numbers-item{display:flex;flex-direction:column;gap:4px;}
 .eoy-numbers-item+.eoy-numbers-item{border-left:1px solid rgba(255,255,255,.08);padding-left:30px;}
 .eoy-numbers-val{font-family:var(--display);font-size:2.6rem;line-height:1;color:#fff;}

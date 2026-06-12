@@ -1040,7 +1040,7 @@ const CSS = `
 /* apparel partner value — poster band with ghost wordmark */
 .eoy-partner{position:relative;display:grid;grid-template-columns:1.5fr 1fr;gap:44px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:40px 44px 44px;overflow:hidden;}
 .eoy-partner::after{content:attr(data-brand);position:absolute;right:-10px;bottom:-36px;font-family:var(--display);font-size:11rem;line-height:1;text-transform:uppercase;letter-spacing:.01em;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.055);pointer-events:none;white-space:nowrap;}
-.eoy-partner-mark{position:absolute;top:32px;right:36px;height:44px;width:44px;color:rgba(255,255,255,.92);z-index:1;}
+.eoy-partner-mark{position:absolute;top:36px;right:44px;height:130px;width:130px;color:rgba(255,255,255,.9);z-index:1;}
 .eoy-partner-main,.eoy-partner-side{min-width:0;}
 .eoy-partner-main{position:relative;z-index:1;display:flex;flex-direction:column;}
 .eoy-partner-lede{margin:0 0 22px;font-size:1.02rem;line-height:1.65;color:var(--t2);max-width:52ch;}
@@ -1065,8 +1065,8 @@ const CSS = `
   .eoy-posters{grid-template-columns:repeat(2,1fr);}
   .eoy-partner{grid-template-columns:1fr;gap:26px;padding:30px 26px 34px;}
   .eoy-partner::after{font-size:7rem;bottom:-24px;}
-  .eoy-partner-mark{top:24px;right:24px;height:34px;width:34px;}
-  .eoy-partner-lede{padding-right:46px;}
+  .eoy-partner-mark{top:24px;right:24px;height:52px;width:52px;}
+  .eoy-partner-lede{padding-right:68px;}
   .eoy-grow-row{grid-template-columns:54px 72px 1fr;grid-template-areas:"rank photo id" "curve curve curve" "nums nums nums";gap:14px 18px;}
   .eoy-grow-rank{grid-area:rank;}
   .eoy-grow-photo{grid-area:photo;}

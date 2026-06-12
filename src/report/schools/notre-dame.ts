@@ -119,13 +119,6 @@ const notre_dame: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "1,224",
-    likes: "3.7M",
-    views: "43.4M",
-    athletes: "189",
-    bestDay: "Sunday"
-  },
   growth: [
     {
       athlete: "Hannah Hidalgo",

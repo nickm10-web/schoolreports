@@ -119,13 +119,6 @@ const san_diego: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "1,253",
-    likes: "1.3M",
-    views: "17.4M",
-    athletes: "135",
-    bestDay: "Monday"
-  },
   growth: [
     {
       athlete: "Reese Bates",

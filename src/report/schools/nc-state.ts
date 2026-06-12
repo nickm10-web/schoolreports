@@ -119,13 +119,6 @@ const nc_state: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "930",
-    likes: "592.4K",
-    views: "1.7M",
-    athletes: "193",
-    bestDay: "Monday"
-  },
   partner: {
     brand: "Adidas",
     posts: "67",

@@ -119,13 +119,6 @@ const wisconsin: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "2,643",
-    likes: "2.7M",
-    views: "33.5M",
-    athletes: "427",
-    bestDay: "Tuesday"
-  },
   growth: [
     {
       athlete: "Laila Edwards",

@@ -119,13 +119,6 @@ const arizona_state: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "3,644",
-    likes: "3.8M",
-    views: "56.2M",
-    athletes: "436",
-    bestDay: "Sunday"
-  },
   growth: [
     {
       athlete: "Jordyn Tyson",

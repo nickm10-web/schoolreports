@@ -119,13 +119,6 @@ const michigan_state: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "1,104",
-    likes: "803.8K",
-    views: "2.3M",
-    athletes: "160",
-    bestDay: "Thursday"
-  },
   partner: {
     brand: "Nike",
     posts: "51",

@@ -119,13 +119,6 @@ const robert_morris: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "982",
-    likes: "174.2K",
-    views: "413.8K",
-    athletes: "210",
-    bestDay: "Sunday"
-  },
   partner: {
     brand: "Under Armour",
     posts: "62",

@@ -119,13 +119,6 @@ const purdue: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "2,369",
-    likes: "6M",
-    views: "65.5M",
-    athletes: "383",
-    bestDay: "Wednesday"
-  },
   growth: [
     {
       athlete: "Braden Smith",

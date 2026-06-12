@@ -119,13 +119,6 @@ const iowa: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "702",
-    likes: "750.4K",
-    views: "1.9M",
-    athletes: "178",
-    bestDay: "Thursday"
-  },
   brands: [
     {
       name: "SPYRE",

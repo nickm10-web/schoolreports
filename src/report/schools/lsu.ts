@@ -119,13 +119,6 @@ const lsu: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "2,790",
-    likes: "8.3M",
-    views: "102.2M",
-    athletes: "294",
-    bestDay: "Tuesday"
-  },
   growth: [
     {
       athlete: "Whit Weeks",

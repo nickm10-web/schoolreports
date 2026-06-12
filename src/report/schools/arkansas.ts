@@ -119,13 +119,6 @@ const arkansas: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "3,135",
-    likes: "4.1M",
-    views: "35.1M",
-    athletes: "366",
-    bestDay: "Wednesday"
-  },
   growth: [
     {
       athlete: "Darius Acuff Jr.",

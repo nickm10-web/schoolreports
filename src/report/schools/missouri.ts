@@ -119,13 +119,6 @@ const missouri: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "2,286",
-    likes: "1.5M",
-    views: "9.5M",
-    athletes: "375",
-    bestDay: "Saturday"
-  },
   growth: [
     {
       athlete: "Jayden Stone",

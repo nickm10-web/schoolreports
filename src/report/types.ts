@@ -66,20 +66,6 @@ export interface ApparelPartner {
   topCarriers: RunnerUp[];
 }
 
-/** "Year in Numbers" band: program-wide totals for the reporting window. */
-export interface YearNumbers {
-  /** Athlete posts tracked, e.g. "3,315". */
-  posts: string;
-  /** Total likes across those posts, e.g. "4.7M". */
-  likes: string;
-  /** Total video views. "" → hidden. */
-  views: string;
-  /** Distinct athletes who posted, e.g. "445". */
-  athletes: string;
-  /** Highest-avg-likes weekday, e.g. "Tuesday". "" → hidden. */
-  bestDay: string;
-}
-
 /** One "Who Blew Up" follower-growth story. */
 export interface Grower {
   athlete: string;
@@ -157,8 +143,6 @@ export interface ReportData {
   heroLineB: string;
   /** Exactly 3 highlight cards. */
   highlights: Highlight[];
-  /** "Year in Numbers" band under the hero. Omitted → hidden. */
-  numbers?: YearNumbers;
   /** "Who Blew Up" follower-growth stories (up to 3). Omitted → hidden. */
   growth?: Grower[];
   /** Apparel partner value section. Omitted → section hidden. */

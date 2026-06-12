@@ -119,13 +119,6 @@ const texas: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "3,384",
-    likes: "6.3M",
-    views: "58.3M",
-    athletes: "406",
-    bestDay: "Saturday"
-  },
   growth: [
     {
       athlete: "Arch Manning",

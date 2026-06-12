@@ -119,13 +119,6 @@ const cincinnati: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "2,195",
-    likes: "1M",
-    views: "8.2M",
-    athletes: "309",
-    bestDay: "Wednesday"
-  },
   growth: [
     {
       athlete: "Omolola Kuponiyi",

@@ -24,7 +24,6 @@ import type {
   RunnerUp,
   Platform,
   ReportData,
-  YearNumbers,
 } from './types';
 
 // ── helpers ──────────────────────────────────────────────────────────────
@@ -356,20 +355,14 @@ function FeatureCard({ h }: { h: Highlight }) {
             </>
           )}
           {h.mult ? (
-            /* overperformer: spell the story out. actual -> performs like N followers, xN */
-            <>
-              <div className="eoy-plate eoy-plate-xl eoy-plate-stack">
-                <span className="eoy-plate-kicker">Performs like</span>
-                <span className="eoy-plate-row">
-                  <span className="eoy-plate-num">{h.statValue}</span>
-                  <span className="eoy-plate-unit">Followers</span>
-                </span>
-              </div>
-              <span className="eoy-mult">
-                <span className="eoy-mult-num">{h.mult}</span>
-                <span className="eoy-mult-lbl">Multiplier</span>
+            /* overperformer: actual followers -> performs like N followers */
+            <div className="eoy-plate eoy-plate-xl eoy-plate-stack">
+              <span className="eoy-plate-kicker">Performs like</span>
+              <span className="eoy-plate-row">
+                <span className="eoy-plate-num">{h.statValue}</span>
+                <span className="eoy-plate-unit">Followers</span>
               </span>
-            </>
+            </div>
           ) : (
             <div className="eoy-plate eoy-plate-xl">
               <span className="eoy-plate-num">{h.statValue}</span>
@@ -422,33 +415,6 @@ function YearInReview({ data }: { data: ReportData }) {
         </div>
       </div>
     </section>
-  );
-}
-
-/** "The Year in Numbers" band: program totals right under the period strip. */
-function NumbersBand({ n }: { n: YearNumbers }) {
-  const items = [
-    { v: n.posts, l: 'Posts tracked', volt: false },
-    { v: n.athletes, l: 'Athletes posting', volt: false },
-    { v: n.likes, l: 'Total likes', volt: false },
-    ...(n.views ? [{ v: n.views, l: 'Video views', volt: false }] : []),
-    // the one actionable insight in the row gets the volt pop
-    ...(n.bestDay ? [{ v: n.bestDay, l: 'Best day to post', volt: true }] : []),
-  ];
-  return (
-    <div className="eoy-numbers">
-      <div className="eoy-wrap eoy-numbers-row">
-        <span className="eoy-sec-tag eoy-numbers-kicker"><span>The Year in Numbers</span></span>
-        {items.map((it) => (
-          <span key={it.l} className="eoy-numbers-item">
-            <span className={`eoy-numbers-val${it.volt ? ' eoy-numbers-val-volt' : ''}`}>{it.v}</span>
-            <span className="eoy-numbers-lbl">{it.l}</span>
-            {/* dotted leader, only visible in the stacked phone layout */}
-            <span className="eoy-numbers-dots" aria-hidden />
-          </span>
-        ))}
-      </div>
-    </div>
   );
 }
 
@@ -785,7 +751,6 @@ export function EndOfYearReport({ data }: { data: ReportData }) {
         <span className="eoy-period-sep" />
         <span className="eoy-period-range">August 2025 – May 2026</span>
       </div>
-      {data.numbers && <NumbersBand n={data.numbers} />}
       <YearInReview data={data} />
       {data.growth?.length ? <WhoBlewUp data={data} index={idx('growth')} /> : null}
       {data.partner && <PartnerValue data={data} index={idx('partner')} />}
@@ -925,9 +890,6 @@ const CSS = `
 .eoy-plate-stack{flex-direction:column;align-items:flex-start;gap:1px;padding:8px 20px 9px;}
 .eoy-plate-kicker{font-family:var(--cond);font-weight:800;text-transform:uppercase;letter-spacing:.13em;font-size:11px;}
 .eoy-plate-row{display:flex;align-items:baseline;gap:8px;}
-.eoy-mult{display:flex;flex-direction:column;gap:3px;}
-.eoy-mult-num{font-family:var(--display);font-size:2rem;line-height:.85;color:var(--volt);}
-.eoy-mult-lbl{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--t2);}
 .eoy-substat{display:flex;flex-direction:column;gap:3px;}
 .eoy-substat-num{font-family:var(--display);font-size:2rem;line-height:.85;color:var(--t1);}
 .eoy-substat-lbl{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--t2);}
@@ -1008,17 +970,6 @@ const CSS = `
 .eoy-footer-base{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 28px;border-top:1px solid var(--line);font-family:var(--cond);font-weight:600;text-transform:uppercase;letter-spacing:.13em;font-size:11.5px;color:var(--t3);}
 .eoy-footer-base-mid{color:var(--volt);}
 
-/* the year in numbers — scoreboard band: volt tag, big numerals, dividers */
-.eoy-numbers{background:#0f0d15;border-bottom:1px solid var(--line);}
-.eoy-numbers-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px 28px;padding-top:22px;padding-bottom:22px;}
-/* reuses the section-tag chip so the band speaks the same language */
-.eoy-numbers-kicker{flex:none;}
-.eoy-numbers-item{display:flex;flex-direction:column;gap:4px;}
-.eoy-numbers-item+.eoy-numbers-item{border-left:1px solid rgba(255,255,255,.08);padding-left:30px;}
-.eoy-numbers-val{font-family:var(--display);font-size:2.6rem;line-height:1;color:#fff;}
-.eoy-numbers-val-volt{color:var(--volt);}
-.eoy-numbers-lbl{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.09em;font-size:11.5px;color:var(--t3);}
-.eoy-numbers-dots{display:none;}
 
 /* who blew up — ranked growth rows with sparklines */
 .eoy-grow{display:flex;flex-direction:column;}
@@ -1086,15 +1037,6 @@ const CSS = `
   .eoy-mini{grid-template-columns:1fr;}
   .eoy-mini-photo{clip-path:none;min-height:0;height:280px;}
   .eoy-mini-img{object-position:50% 10%;}
-  /* numbers band on phones: dotted-leader rows (same language as ranklists),
-     not a ragged wrap of stacked stats */
-  .eoy-numbers-row{gap:13px;}
-  .eoy-numbers-kicker{margin-bottom:8px;}
-  .eoy-numbers-item{flex-direction:row;align-items:baseline;gap:10px;width:100%;}
-  .eoy-numbers-item+.eoy-numbers-item{border-left:none;padding-left:0;}
-  .eoy-numbers-lbl{order:1;font-size:12.5px;white-space:nowrap;}
-  .eoy-numbers-dots{display:block;order:2;flex:1;border-bottom:1px dotted rgba(255,255,255,.2);transform:translateY(-3px);}
-  .eoy-numbers-val{order:3;font-size:1.6rem;}
   /* keep the partner plate and stat rows inside a narrow card */
   .eoy-partner-main .eoy-plate-num{font-size:2rem;}
   .eoy-partner-main .eoy-plate-unit{max-width:150px;font-size:12px;}

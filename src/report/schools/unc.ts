@@ -119,13 +119,6 @@ const unc: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "1,454",
-    likes: "2.3M",
-    views: "50.2M",
-    athletes: "207",
-    bestDay: "Saturday"
-  },
   growth: [
     {
       athlete: "Caleb Wilson",

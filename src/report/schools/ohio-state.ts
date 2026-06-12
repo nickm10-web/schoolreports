@@ -119,13 +119,6 @@ const ohio_state: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "4,284",
-    likes: "7.6M",
-    views: "33.1M",
-    athletes: "639",
-    bestDay: "Monday"
-  },
   growth: [
     {
       athlete: "Jeremiah Smith",

@@ -119,13 +119,6 @@ const arizona: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "2,409",
-    likes: "1.8M",
-    views: "16.4M",
-    athletes: "296",
-    bestDay: "Sunday"
-  },
   growth: [
     {
       athlete: "Koa Peat",

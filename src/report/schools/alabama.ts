@@ -119,13 +119,6 @@ const alabama: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "3,170",
-    likes: "7.8M",
-    views: "91.1M",
-    athletes: "357",
-    bestDay: "Tuesday"
-  },
   growth: [
     {
       athlete: "Ty Simpson",

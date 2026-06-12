@@ -119,13 +119,6 @@ const clemson: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "1,379",
-    likes: "2.4M",
-    views: "25.2M",
-    athletes: "213",
-    bestDay: "Saturday"
-  },
   growth: [
     {
       athlete: "Avieon Terrell",

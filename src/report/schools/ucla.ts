@@ -119,13 +119,6 @@ const ucla: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "4,445",
-    likes: "8.8M",
-    views: "140.1M",
-    athletes: "465",
-    bestDay: "Tuesday"
-  },
   growth: [
     {
       athlete: "Gabriela Jaquez",

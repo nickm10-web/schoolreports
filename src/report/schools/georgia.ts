@@ -119,13 +119,6 @@ const georgia: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "2,885",
-    likes: "4.5M",
-    views: "64.1M",
-    athletes: "354",
-    bestDay: "Monday"
-  },
   growth: [
     {
       athlete: "Gunner Stockton",

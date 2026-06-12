@@ -119,13 +119,6 @@ const washington: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "1,076",
-    likes: "9.5M",
-    views: "90.7M",
-    athletes: "172",
-    bestDay: "Friday"
-  },
   partner: {
     brand: "Adidas",
     posts: "47",

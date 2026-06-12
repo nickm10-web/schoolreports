@@ -119,13 +119,6 @@ const smu: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "621",
-    likes: "584.7K",
-    views: "635.1K",
-    athletes: "135",
-    bestDay: "Saturday"
-  },
   brands: [
     {
       name: "SPYRE",

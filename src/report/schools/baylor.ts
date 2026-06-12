@@ -119,13 +119,6 @@ const baylor: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "3,315",
-    likes: "2M",
-    views: "12.4M",
-    athletes: "396",
-    bestDay: "Saturday"
-  },
   growth: [
     {
       athlete: "Gigi Lindsey",

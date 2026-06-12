@@ -114,13 +114,6 @@ const washington_state: ReportData = {
       ]
     }
   ],
-  numbers: {
-    posts: "378",
-    likes: "124.8K",
-    views: "805.5K",
-    athletes: "70",
-    bestDay: "Monday"
-  },
   growth: [
     {
       athlete: "Jerone Morton",

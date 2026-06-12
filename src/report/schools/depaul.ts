@@ -235,7 +235,38 @@ const depaul: ReportData = {
       handle: "laygogetit",
       verified: false
     }
-  ]
+  ],
+  conference: {
+    name: "Big East",
+    rows: [
+      {
+        rank: "01",
+        school: "Connecticut",
+        followers: "2.2M"
+      },
+      {
+        rank: "02",
+        school: "Creighton",
+        followers: "438K"
+      },
+      {
+        rank: "03",
+        school: "Providence College",
+        followers: "393.4K"
+      },
+      {
+        rank: "04",
+        school: "St. John's University (New York)",
+        followers: "202.9K"
+      },
+      {
+        rank: "05",
+        school: "DePaul",
+        followers: "120.1K",
+        self: true
+      }
+    ]
+  }
 };
 
 export default depaul;

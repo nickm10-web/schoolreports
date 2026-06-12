@@ -346,44 +346,92 @@ const cincinnati: ReportData = {
       verified: false
     }
   ],
-  earned: [
-    {
-      rank: "01",
-      title: "Cyrus Allen",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17912633253101946",
-      platform: "Instagram Reels",
-      likes: "141.3K",
-      comments: "455",
-      third: "2.1M",
-      thirdLabel: "Views",
-      handle: "big12studios",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "Shon Abaev",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18192888877318718",
-      platform: "Instagram Post",
-      likes: "41.3K",
-      comments: "340",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "tiptonedits",
-      verified: false
-    },
-    {
-      rank: "03",
-      title: "Moustapha Thiam",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18133591333480856",
-      platform: "Instagram Post",
-      likes: "15.9K",
-      comments: "223",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "recruitsnews",
-      verified: false
-    }
-  ]
+  conference: {
+    name: "Big 12",
+    rows: [
+      {
+        rank: "01",
+        school: "Arizona",
+        followers: "3.3M"
+      },
+      {
+        rank: "02",
+        school: "BYU",
+        followers: "2.8M"
+      },
+      {
+        rank: "03",
+        school: "Arizona State",
+        followers: "2.4M"
+      },
+      {
+        rank: "04",
+        school: "Baylor",
+        followers: "2.3M"
+      },
+      {
+        rank: "05",
+        school: "Colorado",
+        followers: "1.6M"
+      },
+      {
+        rank: "06",
+        school: "Utah",
+        followers: "1.4M"
+      },
+      {
+        rank: "07",
+        school: "Kansas",
+        followers: "1.4M"
+      },
+      {
+        rank: "08",
+        school: "Houston",
+        followers: "1.3M"
+      },
+      {
+        rank: "09",
+        school: "Iowa State",
+        followers: "1.2M"
+      },
+      {
+        rank: "10",
+        school: "UCF",
+        followers: "1.2M"
+      },
+      {
+        rank: "11",
+        school: "Cincinnati",
+        followers: "1.1M",
+        self: true
+      },
+      {
+        rank: "12",
+        school: "Oklahoma State",
+        followers: "1.1M"
+      },
+      {
+        rank: "13",
+        school: "West Virginia",
+        followers: "1M"
+      },
+      {
+        rank: "14",
+        school: "Texas Tech",
+        followers: "1M"
+      },
+      {
+        rank: "15",
+        school: "TCU",
+        followers: "764.1K"
+      },
+      {
+        rank: "16",
+        school: "Kansas State",
+        followers: "641.7K"
+      }
+    ]
+  }
 };
 
 export default cincinnati;

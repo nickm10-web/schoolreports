@@ -346,44 +346,87 @@ const arkansas: ReportData = {
       verified: false
     }
   ],
-  earned: [
-    {
-      rank: "01",
-      title: "Darius Acuff Jr.",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18196435684360556",
-      platform: "Instagram Post",
-      likes: "82.7K",
-      comments: "816",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "sportscenternext",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "Meleek Thomas",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17924321988067555",
-      platform: "Instagram Post",
-      likes: "44.5K",
-      comments: "357",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "br_hoops",
-      verified: false
-    },
-    {
-      rank: "03",
-      title: "Jordan Anthony",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18073730657407702",
-      platform: "Instagram Reels",
-      likes: "43.7K",
-      comments: "400",
-      third: "914.3K",
-      thirdLabel: "Views",
-      handle: "nbcolympics",
-      verified: false
-    }
-  ]
+  conference: {
+    name: "SEC",
+    rows: [
+      {
+        rank: "01",
+        school: "LSU",
+        followers: "8.3M"
+      },
+      {
+        rank: "02",
+        school: "Texas",
+        followers: "3.9M"
+      },
+      {
+        rank: "03",
+        school: "Arkansas",
+        followers: "3.2M",
+        self: true
+      },
+      {
+        rank: "04",
+        school: "Florida",
+        followers: "3.1M"
+      },
+      {
+        rank: "05",
+        school: "Alabama",
+        followers: "3M"
+      },
+      {
+        rank: "06",
+        school: "Georgia",
+        followers: "2.5M"
+      },
+      {
+        rank: "07",
+        school: "Auburn",
+        followers: "2.4M"
+      },
+      {
+        rank: "08",
+        school: "Mississippi State",
+        followers: "2.2M"
+      },
+      {
+        rank: "09",
+        school: "Ole Miss",
+        followers: "2.2M"
+      },
+      {
+        rank: "10",
+        school: "Texas A&M",
+        followers: "2.1M"
+      },
+      {
+        rank: "11",
+        school: "Tennessee",
+        followers: "1.9M"
+      },
+      {
+        rank: "12",
+        school: "Oklahoma",
+        followers: "1.6M"
+      },
+      {
+        rank: "13",
+        school: "Kentucky",
+        followers: "1.5M"
+      },
+      {
+        rank: "14",
+        school: "Missouri",
+        followers: "1.4M"
+      },
+      {
+        rank: "15",
+        school: "Vanderbilt",
+        followers: "1M"
+      }
+    ]
+  }
 };
 
 export default arkansas;

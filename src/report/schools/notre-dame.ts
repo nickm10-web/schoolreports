@@ -346,44 +346,97 @@ const notre_dame: ReportData = {
       verified: false
     }
   ],
-  earned: [
-    {
-      rank: "01",
-      title: "Clark Gilmore",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18111330718645878",
-      platform: "Instagram Reels",
-      likes: "614.5K",
-      comments: "4.1K",
-      third: "14.7M",
-      thirdLabel: "Views",
-      handle: "bananaball",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "Jeremiyah Love",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18059598053349585",
-      platform: "Instagram Reels",
-      likes: "94.2K",
-      comments: "839",
-      third: "1.8M",
-      thirdLabel: "Views",
-      handle: "nfl",
-      verified: false
-    },
-    {
-      rank: "03",
-      title: "Malachi Fields",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17982600401826016",
-      platform: "Instagram Reels",
-      likes: "48.2K",
-      comments: "610",
-      third: "675K",
-      thirdLabel: "Views",
-      handle: "nygiants",
-      verified: false
-    }
-  ]
+  conference: {
+    name: "ACC",
+    rows: [
+      {
+        rank: "01",
+        school: "California, Berkeley",
+        followers: "20.2M"
+      },
+      {
+        rank: "02",
+        school: "Miami",
+        followers: "2.8M"
+      },
+      {
+        rank: "03",
+        school: "North Carolina",
+        followers: "2.6M"
+      },
+      {
+        rank: "04",
+        school: "Virginia",
+        followers: "2.3M"
+      },
+      {
+        rank: "05",
+        school: "Notre Dame",
+        followers: "2.1M",
+        self: true
+      },
+      {
+        rank: "06",
+        school: "Clemson",
+        followers: "1.9M"
+      },
+      {
+        rank: "07",
+        school: "Duke",
+        followers: "1.5M"
+      },
+      {
+        rank: "08",
+        school: "NC State",
+        followers: "1.3M"
+      },
+      {
+        rank: "09",
+        school: "Florida State",
+        followers: "1.3M"
+      },
+      {
+        rank: "10",
+        school: "Georgia Tech",
+        followers: "1.1M"
+      },
+      {
+        rank: "11",
+        school: "SMU",
+        followers: "1M"
+      },
+      {
+        rank: "12",
+        school: "Pittsburgh",
+        followers: "763.2K"
+      },
+      {
+        rank: "13",
+        school: "Boston College",
+        followers: "673.3K"
+      },
+      {
+        rank: "14",
+        school: "Louisville",
+        followers: "237K"
+      },
+      {
+        rank: "15",
+        school: "Syracuse",
+        followers: "43.8K"
+      },
+      {
+        rank: "16",
+        school: "Stanford",
+        followers: "42.1K"
+      },
+      {
+        rank: "17",
+        school: "Wake Forest",
+        followers: "10.6K"
+      }
+    ]
+  }
 };
 
 export default notre_dame;

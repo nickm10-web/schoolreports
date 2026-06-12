@@ -346,44 +346,102 @@ const purdue: ReportData = {
       verified: false
     }
   ],
-  earned: [
-    {
-      rank: "01",
-      title: "Braden Smith",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18145485997482211",
-      platform: "Instagram Post",
-      likes: "47K",
-      comments: "80",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "bigtennetwork",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "Braden Smith",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18444240700119931",
-      platform: "Instagram Post",
-      likes: "40.7K",
-      comments: "370",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "br_hoops",
-      verified: false
-    },
-    {
-      rank: "03",
-      title: "Braden Smith",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17868055419592788",
-      platform: "Instagram Post",
-      likes: "33.2K",
-      comments: "217",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "marchmadnessmbb",
-      verified: false
-    }
-  ]
+  conference: {
+    name: "Big Ten",
+    rows: [
+      {
+        rank: "01",
+        school: "Ohio State",
+        followers: "4.9M"
+      },
+      {
+        rank: "02",
+        school: "Southern California (USC)",
+        followers: "4.6M"
+      },
+      {
+        rank: "03",
+        school: "Michigan",
+        followers: "4.5M"
+      },
+      {
+        rank: "04",
+        school: "UCLA",
+        followers: "4.2M"
+      },
+      {
+        rank: "05",
+        school: "Nebraska",
+        followers: "3.2M"
+      },
+      {
+        rank: "06",
+        school: "Penn State",
+        followers: "3.1M"
+      },
+      {
+        rank: "07",
+        school: "Oregon",
+        followers: "2M"
+      },
+      {
+        rank: "08",
+        school: "Wisconsin",
+        followers: "2M"
+      },
+      {
+        rank: "09",
+        school: "Indiana",
+        followers: "1.4M"
+      },
+      {
+        rank: "10",
+        school: "Washington",
+        followers: "1.3M"
+      },
+      {
+        rank: "11",
+        school: "Purdue",
+        followers: "1.3M",
+        self: true
+      },
+      {
+        rank: "12",
+        school: "Michigan State",
+        followers: "1.2M"
+      },
+      {
+        rank: "13",
+        school: "Iowa",
+        followers: "1.1M"
+      },
+      {
+        rank: "14",
+        school: "Illinois",
+        followers: "918.8K"
+      },
+      {
+        rank: "15",
+        school: "Maryland",
+        followers: "751.9K"
+      },
+      {
+        rank: "16",
+        school: "Rutgers",
+        followers: "702.8K"
+      },
+      {
+        rank: "17",
+        school: "Minnesota",
+        followers: "696.1K"
+      },
+      {
+        rank: "18",
+        school: "Northwestern",
+        followers: "34.9K"
+      }
+    ]
+  }
 };
 
 export default purdue;

@@ -346,44 +346,92 @@ const baylor: ReportData = {
       verified: false
     }
   ],
-  earned: [
-    {
-      rank: "01",
-      title: "Taliah Scott",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18120291091591725",
-      platform: "Instagram Reels",
-      likes: "186.8K",
-      comments: "6.1K",
-      third: "2.8M",
-      thirdLabel: "Views",
-      handle: "espnw",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "Cameron Carr",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18088848569355276",
-      platform: "Instagram Post",
-      likes: "55.8K",
-      comments: "535",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "br_hoops",
-      verified: false
-    },
-    {
-      rank: "03",
-      title: "Connor Hawkins",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18052853501411428",
-      platform: "Instagram Post",
-      likes: "50.5K",
-      comments: "873",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "hayesfawcett3",
-      verified: false
-    }
-  ]
+  conference: {
+    name: "Big 12",
+    rows: [
+      {
+        rank: "01",
+        school: "Arizona",
+        followers: "3.3M"
+      },
+      {
+        rank: "02",
+        school: "BYU",
+        followers: "2.8M"
+      },
+      {
+        rank: "03",
+        school: "Arizona State",
+        followers: "2.4M"
+      },
+      {
+        rank: "04",
+        school: "Baylor",
+        followers: "2.3M",
+        self: true
+      },
+      {
+        rank: "05",
+        school: "Colorado",
+        followers: "1.6M"
+      },
+      {
+        rank: "06",
+        school: "Utah",
+        followers: "1.4M"
+      },
+      {
+        rank: "07",
+        school: "Kansas",
+        followers: "1.4M"
+      },
+      {
+        rank: "08",
+        school: "Houston",
+        followers: "1.3M"
+      },
+      {
+        rank: "09",
+        school: "Iowa State",
+        followers: "1.2M"
+      },
+      {
+        rank: "10",
+        school: "UCF",
+        followers: "1.2M"
+      },
+      {
+        rank: "11",
+        school: "Cincinnati",
+        followers: "1.1M"
+      },
+      {
+        rank: "12",
+        school: "Oklahoma State",
+        followers: "1.1M"
+      },
+      {
+        rank: "13",
+        school: "West Virginia",
+        followers: "1M"
+      },
+      {
+        rank: "14",
+        school: "Texas Tech",
+        followers: "1M"
+      },
+      {
+        rank: "15",
+        school: "TCU",
+        followers: "764.1K"
+      },
+      {
+        rank: "16",
+        school: "Kansas State",
+        followers: "641.7K"
+      }
+    ]
+  }
 };
 
 export default baylor;

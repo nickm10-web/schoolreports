@@ -345,7 +345,33 @@ const san_diego: ReportData = {
       handle: "mattcolombo_",
       verified: false
     }
-  ]
+  ],
+  conference: {
+    name: "West Coast",
+    rows: [
+      {
+        rank: "01",
+        school: "San Diego",
+        followers: "477.9K",
+        self: true
+      },
+      {
+        rank: "02",
+        school: "Pepperdine",
+        followers: "197.7K"
+      },
+      {
+        rank: "03",
+        school: "Santa Clara",
+        followers: "105.9K"
+      },
+      {
+        rank: "04",
+        school: "Saint Mary's College of California",
+        followers: "70.5K"
+      }
+    ]
+  }
 };
 
 export default san_diego;

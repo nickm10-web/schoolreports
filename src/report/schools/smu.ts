@@ -236,44 +236,97 @@ const smu: ReportData = {
       verified: false
     }
   ],
-  earned: [
-    {
-      rank: "01",
-      title: "Ahmaad Moses",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18108991789645566",
-      platform: "Instagram Reels",
-      likes: "20K",
-      comments: "110",
-      third: "N/A",
-      thirdLabel: "Views",
-      handle: "cfbonfox",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "Chris Johnson Jr.",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17973212693825761",
-      platform: "Instagram Post",
-      likes: "13.8K",
-      comments: "334",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "hayesfawcett3",
-      verified: false
-    },
-    {
-      rank: "03",
-      title: "B.J. Edwards",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18111585025608360",
-      platform: "Instagram Post",
-      likes: "12.2K",
-      comments: "72",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "br_hoops",
-      verified: false
-    }
-  ]
+  conference: {
+    name: "ACC",
+    rows: [
+      {
+        rank: "01",
+        school: "California, Berkeley",
+        followers: "20.2M"
+      },
+      {
+        rank: "02",
+        school: "Miami",
+        followers: "2.8M"
+      },
+      {
+        rank: "03",
+        school: "North Carolina",
+        followers: "2.6M"
+      },
+      {
+        rank: "04",
+        school: "Virginia",
+        followers: "2.3M"
+      },
+      {
+        rank: "05",
+        school: "Notre Dame",
+        followers: "2.1M"
+      },
+      {
+        rank: "06",
+        school: "Clemson",
+        followers: "1.9M"
+      },
+      {
+        rank: "07",
+        school: "Duke",
+        followers: "1.5M"
+      },
+      {
+        rank: "08",
+        school: "NC State",
+        followers: "1.3M"
+      },
+      {
+        rank: "09",
+        school: "Florida State",
+        followers: "1.3M"
+      },
+      {
+        rank: "10",
+        school: "Georgia Tech",
+        followers: "1.1M"
+      },
+      {
+        rank: "11",
+        school: "SMU",
+        followers: "1M",
+        self: true
+      },
+      {
+        rank: "12",
+        school: "Pittsburgh",
+        followers: "763.2K"
+      },
+      {
+        rank: "13",
+        school: "Boston College",
+        followers: "673.3K"
+      },
+      {
+        rank: "14",
+        school: "Louisville",
+        followers: "237K"
+      },
+      {
+        rank: "15",
+        school: "Syracuse",
+        followers: "43.8K"
+      },
+      {
+        rank: "16",
+        school: "Stanford",
+        followers: "42.1K"
+      },
+      {
+        rank: "17",
+        school: "Wake Forest",
+        followers: "10.6K"
+      }
+    ]
+  }
 };
 
 export default smu;

@@ -346,44 +346,92 @@ const arizona: ReportData = {
       verified: false
     }
   ],
-  earned: [
-    {
-      rank: "01",
-      title: "Jaden Bradley",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18079534825828252",
-      platform: "Instagram Reels",
-      likes: "61.1K",
-      comments: "541",
-      third: "1.1M",
-      thirdLabel: "Views",
-      handle: "br_hoops",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "Michael Dansby",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18102320293771293",
-      platform: "Instagram Reels",
-      likes: "32.1K",
-      comments: "168",
-      third: "518.5K",
-      thirdLabel: "Views",
-      handle: "seahawks",
-      verified: false
-    },
-    {
-      rank: "03",
-      title: "Grace Jenkins",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17868636096584033",
-      platform: "Instagram Post",
-      likes: "31.3K",
-      comments: "190",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "ncaasoftball",
-      verified: false
-    }
-  ]
+  conference: {
+    name: "Big 12",
+    rows: [
+      {
+        rank: "01",
+        school: "Arizona",
+        followers: "3.3M",
+        self: true
+      },
+      {
+        rank: "02",
+        school: "BYU",
+        followers: "2.8M"
+      },
+      {
+        rank: "03",
+        school: "Arizona State",
+        followers: "2.4M"
+      },
+      {
+        rank: "04",
+        school: "Baylor",
+        followers: "2.3M"
+      },
+      {
+        rank: "05",
+        school: "Colorado",
+        followers: "1.6M"
+      },
+      {
+        rank: "06",
+        school: "Utah",
+        followers: "1.4M"
+      },
+      {
+        rank: "07",
+        school: "Kansas",
+        followers: "1.4M"
+      },
+      {
+        rank: "08",
+        school: "Houston",
+        followers: "1.3M"
+      },
+      {
+        rank: "09",
+        school: "Iowa State",
+        followers: "1.2M"
+      },
+      {
+        rank: "10",
+        school: "UCF",
+        followers: "1.2M"
+      },
+      {
+        rank: "11",
+        school: "Cincinnati",
+        followers: "1.1M"
+      },
+      {
+        rank: "12",
+        school: "Oklahoma State",
+        followers: "1.1M"
+      },
+      {
+        rank: "13",
+        school: "West Virginia",
+        followers: "1M"
+      },
+      {
+        rank: "14",
+        school: "Texas Tech",
+        followers: "1M"
+      },
+      {
+        rank: "15",
+        school: "TCU",
+        followers: "764.1K"
+      },
+      {
+        rank: "16",
+        school: "Kansas State",
+        followers: "641.7K"
+      }
+    ]
+  }
 };
 
 export default arizona;

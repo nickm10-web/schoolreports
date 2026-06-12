@@ -17,6 +17,7 @@ const jabaHead = '/jaba-head.png';
 import type {
   ApparelPartner,
   Brand,
+  ConferenceBoard,
   ContentPiece,
   Grower,
   Highlight,
@@ -492,43 +493,33 @@ function WhoBlewUp({ data, index }: { data: ReportData; index: string }) {
   );
 }
 
-/** "Earned Media": big accounts posting ABOUT the school's athletes. */
-function EarnedCard({ c, i }: { c: ContentPiece; i: number }) {
-  return (
-    <Reveal delay={i * 70} className="eoy-poster eoy-poster-earned">
-      <Img src={c.thumb} alt={c.title} className="eoy-poster-img" label="THUMBNAIL" />
-      <div className="eoy-poster-scrim" />
-      <span className="eoy-poster-rank" aria-hidden>{c.rank}</span>
-      <span className="eoy-poster-platform" title={c.platform}>
-        <PlatformIcon platform={c.platform} />
-      </span>
-      <div className="eoy-poster-bottom">
-        <div className="eoy-poster-title">{c.title}</div>
-        <div className="eoy-poster-by">posted by @{c.handle}</div>
-        <div className="eoy-poster-metrics">
-          <span className="eoy-poster-likes">{c.likes}</span>
-          <span className="eoy-poster-likes-lbl">likes</span>
-          {c.comments !== 'N/A' && <span className="eoy-poster-rest">{c.comments} comments</span>}
-        </div>
-      </div>
-    </Reveal>
-  );
-}
-
-function EarnedMedia({ data, index }: { data: ReportData; index: string }) {
+/** "Conference Board": the school ranked against its conference peers by the
+ *  total following of each program's tracked athletes. */
+function ConferenceBoardSection({ data, index }: { data: ReportData; index: string }) {
+  const c = data.conference as ConferenceBoard;
   return (
     <section className="eoy-section">
       <div className="eoy-wrap">
-        <SecHead index={index} kicker="The internet noticed" title="Earned Media" />
-        <p className="eoy-earned-lede">
-          Coverage your athletes did not have to post themselves: major accounts
-          putting {data.program.name} names in their feeds.
+        <SecHead index={index} kicker="Conference standings" title={`The ${c.name} Board`} />
+        <p className="eoy-conf-lede">
+          Every {c.name} program ranked by the total following of its athletes.
+          Where {data.program.name} stands going into next year.
         </p>
-        <div className="eoy-posters eoy-earned">
-          {(data.earned as ContentPiece[]).map((c, i) => (
-            <EarnedCard key={c.rank} c={c} i={i} />
-          ))}
-        </div>
+        <Reveal>
+          <ol className="eoy-confboard">
+            {c.rows.map((r) => (
+              <li key={r.rank} className={`eoy-conf-row${r.self ? ' eoy-conf-self' : ''}`}>
+                <span className="eoy-conf-rank">{r.rank}</span>
+                <span className="eoy-conf-school">{r.school}</span>
+                <span className="eoy-ranklist-dots" aria-hidden />
+                <span className="eoy-conf-stat">{r.followers}</span>
+              </li>
+            ))}
+          </ol>
+        </Reveal>
+        <p className="eoy-partner-note">
+          Total followers of each program&apos;s JABA-tracked athletes, June 2026.
+        </p>
       </div>
     </section>
   );
@@ -752,7 +743,7 @@ export function EndOfYearReport({ data }: { data: ReportData }) {
     data.partner ? 'partner' : '',
     'brands',
     'content',
-    data.earned?.length ? 'earned' : '',
+    data.conference ? 'conf' : '',
   ].filter(Boolean);
   const idx = (k: string) => String(present.indexOf(k) + 1).padStart(2, '0');
   return (
@@ -770,7 +761,7 @@ export function EndOfYearReport({ data }: { data: ReportData }) {
       {data.partner && <PartnerValue data={data} index={idx('partner')} />}
       <TopBrands data={data} index={idx('brands')} />
       <TopContent data={data} index={idx('content')} />
-      {data.earned?.length ? <EarnedMedia data={data} index={idx('earned')} /> : null}
+      {data.conference && <ConferenceBoardSection data={data} index={idx('conf')} />}
       <SchoolDivider data={data} />
       <FooterBanner />
     </div>
@@ -1008,10 +999,15 @@ const CSS = `
 .eoy-grow-path{font-family:var(--cond);font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:1.05rem;color:var(--t2);white-space:nowrap;}
 .eoy-grow-pct{font-family:var(--display);font-size:1.5rem;line-height:1;background:var(--volt);color:var(--ink);transform:skewX(-11deg);padding:5px 12px;border-radius:3px;}
 
-/* earned media — poster trio with author line */
-.eoy-earned{grid-template-columns:repeat(3,1fr);}
-.eoy-earned-lede{margin:-14px 0 26px;font-size:1rem;line-height:1.6;color:var(--t2);max-width:60ch;}
-.eoy-poster-by{margin-top:2px;font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:12px;color:var(--volt);}
+/* conference board — two-column ranked standings, self row in volt */
+.eoy-conf-lede{margin:-14px 0 26px;font-size:1rem;line-height:1.6;color:var(--t2);max-width:60ch;}
+.eoy-confboard{list-style:none;margin:0;padding:0;columns:2;column-gap:64px;}
+.eoy-conf-row{display:flex;align-items:baseline;gap:12px;padding:11px 10px;break-inside:avoid;border-top:1px solid var(--line);}
+.eoy-conf-rank{font-family:var(--display);font-style:italic;font-size:1.05rem;line-height:1;color:rgba(255,255,255,.45);flex:none;min-width:26px;}
+.eoy-conf-school{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:1.05rem;line-height:1;white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis;}
+.eoy-conf-stat{font-family:var(--display);font-size:1.1rem;line-height:1;color:#fff;flex:none;}
+.eoy-conf-self{background:rgba(223,255,0,.08);border-top-color:rgba(223,255,0,.4);border-radius:4px;}
+.eoy-conf-self .eoy-conf-rank,.eoy-conf-self .eoy-conf-school,.eoy-conf-self .eoy-conf-stat{color:var(--volt);}
 
 /* apparel partner value — poster band with ghost wordmark */
 .eoy-partner{position:relative;display:grid;grid-template-columns:1.5fr 1fr;gap:44px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:40px 44px 44px;overflow:hidden;}
@@ -1046,7 +1042,7 @@ const CSS = `
   .eoy-grow-id{grid-area:id;}
   .eoy-grow-curve{grid-area:curve;}
   .eoy-grow-nums{grid-area:nums;flex-direction:row;align-items:center;justify-content:space-between;}
-  .eoy-earned{grid-template-columns:1fr;}
+  .eoy-confboard{columns:1;}
   .eoy-fan{flex-wrap:wrap;gap:18px;}
   .eoy-fancard{margin-left:0;transform:none;}
   .eoy-fancard:hover{transform:translateY(-8px) scale(1.03);}

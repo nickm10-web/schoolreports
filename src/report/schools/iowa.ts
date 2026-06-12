@@ -236,44 +236,102 @@ const iowa: ReportData = {
       verified: false
     }
   ],
-  earned: [
-    {
-      rank: "01",
-      title: "Mark Gronowski",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18104846572811189",
-      platform: "Instagram Post",
-      likes: "17.8K",
-      comments: "86",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "shrinebowl",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "Mark Gronowski",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17897847978305397",
-      platform: "Instagram Post",
-      likes: "16.3K",
-      comments: "129",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "b1gfootball",
-      verified: false
-    },
-    {
-      rank: "03",
-      title: "Chazadi 'Chit-Chat' Wright",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17851850856584301",
-      platform: "Instagram Reels",
-      likes: "13.4K",
-      comments: "172",
-      third: "215.1K",
-      thirdLabel: "Views",
-      handle: "bigtennetwork",
-      verified: false
-    }
-  ]
+  conference: {
+    name: "Big Ten",
+    rows: [
+      {
+        rank: "01",
+        school: "Ohio State",
+        followers: "4.9M"
+      },
+      {
+        rank: "02",
+        school: "Southern California (USC)",
+        followers: "4.6M"
+      },
+      {
+        rank: "03",
+        school: "Michigan",
+        followers: "4.5M"
+      },
+      {
+        rank: "04",
+        school: "UCLA",
+        followers: "4.2M"
+      },
+      {
+        rank: "05",
+        school: "Nebraska",
+        followers: "3.2M"
+      },
+      {
+        rank: "06",
+        school: "Penn State",
+        followers: "3.1M"
+      },
+      {
+        rank: "07",
+        school: "Oregon",
+        followers: "2M"
+      },
+      {
+        rank: "08",
+        school: "Wisconsin",
+        followers: "2M"
+      },
+      {
+        rank: "09",
+        school: "Indiana",
+        followers: "1.4M"
+      },
+      {
+        rank: "10",
+        school: "Washington",
+        followers: "1.3M"
+      },
+      {
+        rank: "11",
+        school: "Purdue",
+        followers: "1.3M"
+      },
+      {
+        rank: "12",
+        school: "Michigan State",
+        followers: "1.2M"
+      },
+      {
+        rank: "13",
+        school: "Iowa",
+        followers: "1.1M",
+        self: true
+      },
+      {
+        rank: "14",
+        school: "Illinois",
+        followers: "918.8K"
+      },
+      {
+        rank: "15",
+        school: "Maryland",
+        followers: "751.9K"
+      },
+      {
+        rank: "16",
+        school: "Rutgers",
+        followers: "702.8K"
+      },
+      {
+        rank: "17",
+        school: "Minnesota",
+        followers: "696.1K"
+      },
+      {
+        rank: "18",
+        school: "Northwestern",
+        followers: "34.9K"
+      }
+    ]
+  }
 };
 
 export default iowa;

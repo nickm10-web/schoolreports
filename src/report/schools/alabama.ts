@@ -346,44 +346,87 @@ const alabama: ReportData = {
       verified: false
     }
   ],
-  earned: [
-    {
-      rank: "01",
-      title: "Justin Jefferson",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18433932166185681",
-      platform: "Instagram Post",
-      likes: "150.9K",
-      comments: "712",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "nfl",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "Cam Calhoun",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18169180318348818",
-      platform: "Instagram Post",
-      likes: "57.6K",
-      comments: "728",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "hayesfawcett3",
-      verified: false
-    },
-    {
-      rank: "03",
-      title: "Qua Russaw",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18116134984598289",
-      platform: "Instagram Post",
-      likes: "46K",
-      comments: "536",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "cbssportscfb",
-      verified: false
-    }
-  ]
+  conference: {
+    name: "SEC",
+    rows: [
+      {
+        rank: "01",
+        school: "LSU",
+        followers: "8.3M"
+      },
+      {
+        rank: "02",
+        school: "Texas",
+        followers: "3.9M"
+      },
+      {
+        rank: "03",
+        school: "Arkansas",
+        followers: "3.2M"
+      },
+      {
+        rank: "04",
+        school: "Florida",
+        followers: "3.1M"
+      },
+      {
+        rank: "05",
+        school: "Alabama",
+        followers: "3M",
+        self: true
+      },
+      {
+        rank: "06",
+        school: "Georgia",
+        followers: "2.5M"
+      },
+      {
+        rank: "07",
+        school: "Auburn",
+        followers: "2.4M"
+      },
+      {
+        rank: "08",
+        school: "Mississippi State",
+        followers: "2.2M"
+      },
+      {
+        rank: "09",
+        school: "Ole Miss",
+        followers: "2.2M"
+      },
+      {
+        rank: "10",
+        school: "Texas A&M",
+        followers: "2.1M"
+      },
+      {
+        rank: "11",
+        school: "Tennessee",
+        followers: "1.9M"
+      },
+      {
+        rank: "12",
+        school: "Oklahoma",
+        followers: "1.6M"
+      },
+      {
+        rank: "13",
+        school: "Kentucky",
+        followers: "1.5M"
+      },
+      {
+        rank: "14",
+        school: "Missouri",
+        followers: "1.4M"
+      },
+      {
+        rank: "15",
+        school: "Vanderbilt",
+        followers: "1M"
+      }
+    ]
+  }
 };
 
 export default alabama;

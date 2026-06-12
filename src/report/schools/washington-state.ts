@@ -312,44 +312,6 @@ const washington_state: ReportData = {
       handle: "wsucougarfb",
       verified: false
     }
-  ],
-  earned: [
-    {
-      rank: "01",
-      title: "Ace Glass",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18099706849817568",
-      platform: "Instagram Post",
-      likes: "27.7K",
-      comments: "131",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "thehoopspill",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "Jerone Morton",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17979512279842261",
-      platform: "Instagram Post",
-      likes: "13.1K",
-      comments: "357",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "tiptonedits",
-      verified: false
-    },
-    {
-      rank: "03",
-      title: "Jerone Morton",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18095218205327738",
-      platform: "Instagram Post",
-      likes: "6K",
-      comments: "110",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "uk_sportsnetwork",
-      verified: false
-    }
   ]
 };
 

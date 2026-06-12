@@ -346,44 +346,97 @@ const clemson: ReportData = {
       verified: false
     }
   ],
-  earned: [
-    {
-      rank: "01",
-      title: "RJ Godfrey",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18537499066060237",
-      platform: "Instagram Reels",
-      likes: "475K",
-      comments: "6.9K",
-      third: "5.1M",
-      thirdLabel: "Views",
-      handle: "foxcarolinanews",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "Avieon Terrell",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18089207975145215",
-      platform: "Instagram Reels",
-      likes: "48.3K",
-      comments: "565",
-      third: "1.3M",
-      thirdLabel: "Views",
-      handle: "nfl",
-      verified: false
-    },
-    {
-      rank: "03",
-      title: "Wade Woodaz",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18078924479400531",
-      platform: "Instagram Post",
-      likes: "41.3K",
-      comments: "100",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "houstontexans",
-      verified: false
-    }
-  ]
+  conference: {
+    name: "ACC",
+    rows: [
+      {
+        rank: "01",
+        school: "California, Berkeley",
+        followers: "20.2M"
+      },
+      {
+        rank: "02",
+        school: "Miami",
+        followers: "2.8M"
+      },
+      {
+        rank: "03",
+        school: "North Carolina",
+        followers: "2.6M"
+      },
+      {
+        rank: "04",
+        school: "Virginia",
+        followers: "2.3M"
+      },
+      {
+        rank: "05",
+        school: "Notre Dame",
+        followers: "2.1M"
+      },
+      {
+        rank: "06",
+        school: "Clemson",
+        followers: "1.9M",
+        self: true
+      },
+      {
+        rank: "07",
+        school: "Duke",
+        followers: "1.5M"
+      },
+      {
+        rank: "08",
+        school: "NC State",
+        followers: "1.3M"
+      },
+      {
+        rank: "09",
+        school: "Florida State",
+        followers: "1.3M"
+      },
+      {
+        rank: "10",
+        school: "Georgia Tech",
+        followers: "1.1M"
+      },
+      {
+        rank: "11",
+        school: "SMU",
+        followers: "1M"
+      },
+      {
+        rank: "12",
+        school: "Pittsburgh",
+        followers: "763.2K"
+      },
+      {
+        rank: "13",
+        school: "Boston College",
+        followers: "673.3K"
+      },
+      {
+        rank: "14",
+        school: "Louisville",
+        followers: "237K"
+      },
+      {
+        rank: "15",
+        school: "Syracuse",
+        followers: "43.8K"
+      },
+      {
+        rank: "16",
+        school: "Stanford",
+        followers: "42.1K"
+      },
+      {
+        rank: "17",
+        school: "Wake Forest",
+        followers: "10.6K"
+      }
+    ]
+  }
 };
 
 export default clemson;

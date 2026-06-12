@@ -346,44 +346,102 @@ const ohio_state: ReportData = {
       verified: false
     }
   ],
-  earned: [
-    {
-      rank: "01",
-      title: "Sonny Styles",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18087890899923704",
-      platform: "Instagram Post",
-      likes: "240.5K",
-      comments: "1.5K",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "bleacherreport",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "Carson Hinzman",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18131153239463410",
-      platform: "Instagram Reels",
-      likes: "205.6K",
-      comments: "337",
-      third: "1.8M",
-      thirdLabel: "Views",
-      handle: "accessthewalk",
-      verified: false
-    },
-    {
-      rank: "03",
-      title: "Jeremiah Smith",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18019059608604025",
-      platform: "Instagram Reels",
-      likes: "172.6K",
-      comments: "633",
-      third: "4M",
-      thirdLabel: "Views",
-      handle: "redbullusa",
-      verified: false
-    }
-  ]
+  conference: {
+    name: "Big Ten",
+    rows: [
+      {
+        rank: "01",
+        school: "Ohio State",
+        followers: "4.9M",
+        self: true
+      },
+      {
+        rank: "02",
+        school: "Southern California (USC)",
+        followers: "4.6M"
+      },
+      {
+        rank: "03",
+        school: "Michigan",
+        followers: "4.5M"
+      },
+      {
+        rank: "04",
+        school: "UCLA",
+        followers: "4.2M"
+      },
+      {
+        rank: "05",
+        school: "Nebraska",
+        followers: "3.2M"
+      },
+      {
+        rank: "06",
+        school: "Penn State",
+        followers: "3.1M"
+      },
+      {
+        rank: "07",
+        school: "Oregon",
+        followers: "2M"
+      },
+      {
+        rank: "08",
+        school: "Wisconsin",
+        followers: "2M"
+      },
+      {
+        rank: "09",
+        school: "Indiana",
+        followers: "1.4M"
+      },
+      {
+        rank: "10",
+        school: "Washington",
+        followers: "1.3M"
+      },
+      {
+        rank: "11",
+        school: "Purdue",
+        followers: "1.3M"
+      },
+      {
+        rank: "12",
+        school: "Michigan State",
+        followers: "1.2M"
+      },
+      {
+        rank: "13",
+        school: "Iowa",
+        followers: "1.1M"
+      },
+      {
+        rank: "14",
+        school: "Illinois",
+        followers: "918.8K"
+      },
+      {
+        rank: "15",
+        school: "Maryland",
+        followers: "751.9K"
+      },
+      {
+        rank: "16",
+        school: "Rutgers",
+        followers: "702.8K"
+      },
+      {
+        rank: "17",
+        school: "Minnesota",
+        followers: "696.1K"
+      },
+      {
+        rank: "18",
+        school: "Northwestern",
+        followers: "34.9K"
+      }
+    ]
+  }
 };
 
 export default ohio_state;

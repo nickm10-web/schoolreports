@@ -346,44 +346,102 @@ const ucla: ReportData = {
       verified: false
     }
   ],
-  earned: [
-    {
-      rank: "01",
-      title: "Kiki Rice",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17986974818987393",
-      platform: "Instagram Reels",
-      likes: "298.9K",
-      comments: "126",
-      third: "5.9M",
-      thirdLabel: "Views",
-      handle: "raisingcanes",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "Jordan Chiles",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18247950673289204",
-      platform: "Instagram Reels",
-      likes: "182.5K",
-      comments: "2.8K",
-      third: "3.5M",
-      thirdLabel: "Views",
-      handle: "dancingwiththestars",
-      verified: false
-    },
-    {
-      rank: "03",
-      title: "Jordan Chiles",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17941837856981233",
-      platform: "Instagram Reels",
-      likes: "92.8K",
-      comments: "1K",
-      third: "1.3M",
-      thirdLabel: "Views",
-      handle: "b1ggymnastics",
-      verified: false
-    }
-  ]
+  conference: {
+    name: "Big Ten",
+    rows: [
+      {
+        rank: "01",
+        school: "Ohio State",
+        followers: "4.9M"
+      },
+      {
+        rank: "02",
+        school: "Southern California (USC)",
+        followers: "4.6M"
+      },
+      {
+        rank: "03",
+        school: "Michigan",
+        followers: "4.5M"
+      },
+      {
+        rank: "04",
+        school: "UCLA",
+        followers: "4.2M",
+        self: true
+      },
+      {
+        rank: "05",
+        school: "Nebraska",
+        followers: "3.2M"
+      },
+      {
+        rank: "06",
+        school: "Penn State",
+        followers: "3.1M"
+      },
+      {
+        rank: "07",
+        school: "Oregon",
+        followers: "2M"
+      },
+      {
+        rank: "08",
+        school: "Wisconsin",
+        followers: "2M"
+      },
+      {
+        rank: "09",
+        school: "Indiana",
+        followers: "1.4M"
+      },
+      {
+        rank: "10",
+        school: "Washington",
+        followers: "1.3M"
+      },
+      {
+        rank: "11",
+        school: "Purdue",
+        followers: "1.3M"
+      },
+      {
+        rank: "12",
+        school: "Michigan State",
+        followers: "1.2M"
+      },
+      {
+        rank: "13",
+        school: "Iowa",
+        followers: "1.1M"
+      },
+      {
+        rank: "14",
+        school: "Illinois",
+        followers: "918.8K"
+      },
+      {
+        rank: "15",
+        school: "Maryland",
+        followers: "751.9K"
+      },
+      {
+        rank: "16",
+        school: "Rutgers",
+        followers: "702.8K"
+      },
+      {
+        rank: "17",
+        school: "Minnesota",
+        followers: "696.1K"
+      },
+      {
+        rank: "18",
+        school: "Northwestern",
+        followers: "34.9K"
+      }
+    ]
+  }
 };
 
 export default ucla;

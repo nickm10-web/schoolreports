@@ -260,44 +260,97 @@ const nc_state: ReportData = {
       verified: false
     }
   ],
-  earned: [
-    {
-      rank: "01",
-      title: "Maia Townsend",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18299578390302814",
-      platform: "Instagram Post",
-      likes: "24.7K",
-      comments: "97",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "ncaasoftball",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "CJ Bailey",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17940203876983747",
-      platform: "Instagram Post",
-      likes: "20.2K",
-      comments: "315",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "hayesfawcett3",
-      verified: false
-    },
-    {
-      rank: "03",
-      title: "Quadir Copeland",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18381974131144309",
-      platform: "Instagram Post",
-      likes: "17.4K",
-      comments: "384",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "pdtmedia_",
-      verified: false
-    }
-  ]
+  conference: {
+    name: "ACC",
+    rows: [
+      {
+        rank: "01",
+        school: "California, Berkeley",
+        followers: "20.2M"
+      },
+      {
+        rank: "02",
+        school: "Miami",
+        followers: "2.8M"
+      },
+      {
+        rank: "03",
+        school: "North Carolina",
+        followers: "2.6M"
+      },
+      {
+        rank: "04",
+        school: "Virginia",
+        followers: "2.3M"
+      },
+      {
+        rank: "05",
+        school: "Notre Dame",
+        followers: "2.1M"
+      },
+      {
+        rank: "06",
+        school: "Clemson",
+        followers: "1.9M"
+      },
+      {
+        rank: "07",
+        school: "Duke",
+        followers: "1.5M"
+      },
+      {
+        rank: "08",
+        school: "NC State",
+        followers: "1.3M",
+        self: true
+      },
+      {
+        rank: "09",
+        school: "Florida State",
+        followers: "1.3M"
+      },
+      {
+        rank: "10",
+        school: "Georgia Tech",
+        followers: "1.1M"
+      },
+      {
+        rank: "11",
+        school: "SMU",
+        followers: "1M"
+      },
+      {
+        rank: "12",
+        school: "Pittsburgh",
+        followers: "763.2K"
+      },
+      {
+        rank: "13",
+        school: "Boston College",
+        followers: "673.3K"
+      },
+      {
+        rank: "14",
+        school: "Louisville",
+        followers: "237K"
+      },
+      {
+        rank: "15",
+        school: "Syracuse",
+        followers: "43.8K"
+      },
+      {
+        rank: "16",
+        school: "Stanford",
+        followers: "42.1K"
+      },
+      {
+        rank: "17",
+        school: "Wake Forest",
+        followers: "10.6K"
+      }
+    ]
+  }
 };
 
 export default nc_state;

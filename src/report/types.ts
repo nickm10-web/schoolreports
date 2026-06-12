@@ -155,7 +155,24 @@ export interface ReportData {
   brands: Brand[];
   /** Exactly 5 top-content cards. */
   topContent: ContentPiece[];
-  /** "Earned Media" cards: big accounts posting ABOUT the school's athletes
-   *  (up to 3). title = who it was about, handle = who posted it. */
-  earned?: ContentPiece[];
+  /** "Conference Board": the school ranked against conference peers by total
+   *  athlete following. Omitted → section hidden. */
+  conference?: ConferenceBoard;
+}
+
+export interface ConferenceRow {
+  /** "01".."18" */
+  rank: string;
+  school: string;
+  /** Total following of the program's tracked athletes, e.g. "2.3M". */
+  followers: string;
+  /** True on the report's own school: the row gets the volt highlight. */
+  self?: boolean;
+}
+
+export interface ConferenceBoard {
+  /** Display name, e.g. "Big 12" · "ACC" · "Big Ten". */
+  name: string;
+  /** Every tracked program in the conference, ranked by total following. */
+  rows: ConferenceRow[];
 }

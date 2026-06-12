@@ -346,44 +346,102 @@ const wisconsin: ReportData = {
       verified: false
     }
   ],
-  earned: [
-    {
-      rank: "01",
-      title: "Laila Edwards",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18115972621505953",
-      platform: "Instagram Reels",
-      likes: "1.6M",
-      comments: "3.3K",
-      third: "23.2M",
-      thirdLabel: "Views",
-      handle: "redbullusa",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "Cade Yacamelli",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18095677549619446",
-      platform: "Instagram Reels",
-      likes: "83.6K",
-      comments: "220",
-      third: "1.9M",
-      thirdLabel: "Views",
-      handle: "evan_flood",
-      verified: false
-    },
-    {
-      rank: "03",
-      title: "Laila Edwards",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17988797216865775",
-      platform: "Instagram Reels",
-      likes: "71.7K",
-      comments: "752",
-      third: "4.8M",
-      thirdLabel: "Views",
-      handle: "onherturf",
-      verified: false
-    }
-  ]
+  conference: {
+    name: "Big Ten",
+    rows: [
+      {
+        rank: "01",
+        school: "Ohio State",
+        followers: "4.9M"
+      },
+      {
+        rank: "02",
+        school: "Southern California (USC)",
+        followers: "4.6M"
+      },
+      {
+        rank: "03",
+        school: "Michigan",
+        followers: "4.5M"
+      },
+      {
+        rank: "04",
+        school: "UCLA",
+        followers: "4.2M"
+      },
+      {
+        rank: "05",
+        school: "Nebraska",
+        followers: "3.2M"
+      },
+      {
+        rank: "06",
+        school: "Penn State",
+        followers: "3.1M"
+      },
+      {
+        rank: "07",
+        school: "Oregon",
+        followers: "2M"
+      },
+      {
+        rank: "08",
+        school: "Wisconsin",
+        followers: "2M",
+        self: true
+      },
+      {
+        rank: "09",
+        school: "Indiana",
+        followers: "1.4M"
+      },
+      {
+        rank: "10",
+        school: "Washington",
+        followers: "1.3M"
+      },
+      {
+        rank: "11",
+        school: "Purdue",
+        followers: "1.3M"
+      },
+      {
+        rank: "12",
+        school: "Michigan State",
+        followers: "1.2M"
+      },
+      {
+        rank: "13",
+        school: "Iowa",
+        followers: "1.1M"
+      },
+      {
+        rank: "14",
+        school: "Illinois",
+        followers: "918.8K"
+      },
+      {
+        rank: "15",
+        school: "Maryland",
+        followers: "751.9K"
+      },
+      {
+        rank: "16",
+        school: "Rutgers",
+        followers: "702.8K"
+      },
+      {
+        rank: "17",
+        school: "Minnesota",
+        followers: "696.1K"
+      },
+      {
+        rank: "18",
+        school: "Northwestern",
+        followers: "34.9K"
+      }
+    ]
+  }
 };
 
 export default wisconsin;

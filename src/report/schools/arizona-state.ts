@@ -346,44 +346,92 @@ const arizona_state: ReportData = {
       verified: false
     }
   ],
-  earned: [
-    {
-      rank: "01",
-      title: "Marley Washenitz",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18074676803249685",
-      platform: "Instagram Reels",
-      likes: "104.4K",
-      comments: "603",
-      third: "2M",
-      thirdLabel: "Views",
-      handle: "overtime",
-      verified: false
-    },
-    {
-      rank: "02",
-      title: "Jordyn Tyson",
-      thumb: "https://storage.googleapis.com/scraper-media-images/17872637535540346",
-      platform: "Instagram Post",
-      likes: "63.5K",
-      comments: "438",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "nfl",
-      verified: false
-    },
-    {
-      rank: "03",
-      title: "Jordyn Tyson",
-      thumb: "https://storage.googleapis.com/scraper-media-images/18206685424327221",
-      platform: "Instagram Post",
-      likes: "52.3K",
-      comments: "1.7K",
-      third: "N/A",
-      thirdLabel: "Shares",
-      handle: "saints",
-      verified: false
-    }
-  ]
+  conference: {
+    name: "Big 12",
+    rows: [
+      {
+        rank: "01",
+        school: "Arizona",
+        followers: "3.3M"
+      },
+      {
+        rank: "02",
+        school: "BYU",
+        followers: "2.8M"
+      },
+      {
+        rank: "03",
+        school: "Arizona State",
+        followers: "2.4M",
+        self: true
+      },
+      {
+        rank: "04",
+        school: "Baylor",
+        followers: "2.3M"
+      },
+      {
+        rank: "05",
+        school: "Colorado",
+        followers: "1.6M"
+      },
+      {
+        rank: "06",
+        school: "Utah",
+        followers: "1.4M"
+      },
+      {
+        rank: "07",
+        school: "Kansas",
+        followers: "1.4M"
+      },
+      {
+        rank: "08",
+        school: "Houston",
+        followers: "1.3M"
+      },
+      {
+        rank: "09",
+        school: "Iowa State",
+        followers: "1.2M"
+      },
+      {
+        rank: "10",
+        school: "UCF",
+        followers: "1.2M"
+      },
+      {
+        rank: "11",
+        school: "Cincinnati",
+        followers: "1.1M"
+      },
+      {
+        rank: "12",
+        school: "Oklahoma State",
+        followers: "1.1M"
+      },
+      {
+        rank: "13",
+        school: "West Virginia",
+        followers: "1M"
+      },
+      {
+        rank: "14",
+        school: "Texas Tech",
+        followers: "1M"
+      },
+      {
+        rank: "15",
+        school: "TCU",
+        followers: "764.1K"
+      },
+      {
+        rank: "16",
+        school: "Kansas State",
+        followers: "641.7K"
+      }
+    ]
+  }
 };
 
 export default arizona_state;

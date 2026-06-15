@@ -257,7 +257,7 @@ function Hero() {
   return (
     <header className="pfip-hero">
       <div className="pfip-hero-ph" />
-      <img className="pfip-hero-img" src="/images/for-agencies/world-hero-stadium.jpg" alt="" />
+      <img className="pfip-hero-img" src="/playfly-hero.jpg" alt="" />
       <div className="pfip-hero-scrim" />
       <div className="pfip-wrap pfip-hero-copy">
         <h1 className="pfip-hero-h1">

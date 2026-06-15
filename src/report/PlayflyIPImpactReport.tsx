@@ -261,7 +261,7 @@ function Hero() {
       <div className="pfip-hero-scrim" />
       <div className="pfip-wrap pfip-hero-copy">
         <h1 className="pfip-hero-h1">
-          <img className="pfip-hero-wordmark" src="/playflyip.png" alt="PlayFly IP Effect" />
+          <img className="pfip-hero-wordmark" src="/playflyipimpact.png" alt="PlayFly IP Impact" />
         </h1>
       </div>
     </header>

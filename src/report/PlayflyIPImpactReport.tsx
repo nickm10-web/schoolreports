@@ -296,8 +296,9 @@ function Setup({ cfg }: { cfg: Cfg }) {
         <div className="pfip-flag-row">
           {d.flags.map((f) => (
             <div key={f.key} className="pfip-flag-chip">
+              <span className="pfip-flag-count">{f.count.toLocaleString()}</span>
               <span className="pfip-flag-label">{f.label}</span>
-              <span className="pfip-flag-meta">{f.count.toLocaleString()} posts · {f.pct}%</span>
+              <span className="pfip-flag-meta">{f.pct}% of posts</span>
             </div>
           ))}
         </div>
@@ -578,12 +579,14 @@ const CSS = `
 .pfip-setup-num{font-family:var(--display);font-size:3rem;line-height:.9;color:var(--volt);}
 .pfip-setup-lbl{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:15px;margin-top:12px;}
 .pfip-setup-sub{color:var(--t3);font-size:12.5px;margin-top:4px;}
-.pfip-flag-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px;}
-.pfip-flag-chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:10px 18px;display:flex;flex-direction:column;}
-.pfip-flag-label{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:13px;}
-.pfip-flag-meta{color:var(--t3);font-size:11.5px;margin-top:2px;}
+.pfip-flag-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:14px;}
+.pfip-flag-chip{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 22px 22px;display:flex;flex-direction:column;gap:7px;position:relative;overflow:hidden;}
+.pfip-flag-chip:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--volt);}
+.pfip-flag-count{font-family:var(--display);font-size:2.5rem;line-height:.9;color:var(--volt);}
+.pfip-flag-label{font-family:var(--cond);font-weight:800;text-transform:uppercase;letter-spacing:.03em;font-size:1.2rem;line-height:1.05;}
+.pfip-flag-meta{color:var(--t3);font-size:13px;}
 .pfip-lead{max-width:760px;color:var(--t2);font-size:15.5px;margin:16px 0 0;}
-.pfip-flag-title{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--t3);font-size:12px;margin:24px 0 12px;}
+.pfip-flag-title{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--volt);font-size:15px;margin:32px 0 6px;}
 
 /* kpi plates */
 .pfip-kpi-grid{margin-top:32px;}
@@ -706,6 +709,7 @@ const CSS = `
 @media(max-width:620px){
   .pfip-grid-4{grid-template-columns:1fr;}
   .pfip-setup-grid{grid-template-columns:1fr;}
+  .pfip-flag-row{grid-template-columns:1fr;}
   .pfip-dollars{height:auto;grid-template-columns:repeat(2,1fr);}
   .pfip-dollar-bar{min-height:60px;}
   .pfip-ladder-row{grid-template-columns:1fr;gap:6px;}

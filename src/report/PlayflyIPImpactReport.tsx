@@ -270,26 +270,34 @@ function Hero() {
 
 function Setup({ cfg }: { cfg: Cfg }) {
   const d = cfg.dataset;
+  const noPct = Math.round((d.baselinePosts / d.totalPosts) * 100);
+  const ipPct = 100 - noPct;
+  const maxFlag = Math.max(...d.flags.map((f) => f.pct));
   return (
     <section className="pfip-section">
       <div className="pfip-wrap">
         <h2 className="pfip-h2">What We Measured</h2>
         <p className="pfip-lead">{cfg.lead}</p>
-        <div className="pfip-setup-grid">
-          <div className="pfip-setup-stat">
-            <span className="pfip-setup-num">{d.totalPosts.toLocaleString()}</span>
-            <span className="pfip-setup-lbl">{d.totalLabel}</span>
-            <span className="pfip-setup-sub">{d.scopeNote}</span>
+        <div className="pfip-split">
+          <div className="pfip-split-head">
+            <span className="pfip-split-total">{d.totalPosts.toLocaleString()}</span>
+            <span className="pfip-split-total-lbl">{d.totalLabel}<em>{d.scopeNote}</em></span>
           </div>
-          <div className="pfip-setup-stat">
-            <span className="pfip-setup-num">{d.baselinePosts.toLocaleString()}</span>
-            <span className="pfip-setup-lbl">Use no school IP</span>
-            <span className="pfip-setup-sub">Our comparison baseline</span>
+          <div className="pfip-split-bar">
+            <div className="pfip-split-seg pfip-split-no" style={{ width: `${noPct}%` }} />
+            <div className="pfip-split-seg pfip-split-ip" style={{ width: `${ipPct}%` }} />
           </div>
-          <div className="pfip-setup-stat">
-            <span className="pfip-setup-num">{d.anySignalPosts.toLocaleString()}</span>
-            <span className="pfip-setup-lbl">Use school IP</span>
-            <span className="pfip-setup-sub">Logo, mention, or collaboration</span>
+          <div className="pfip-split-legend">
+            <div className="pfip-split-key pfip-key-no">
+              <span className="pfip-split-dot" />
+              <span className="pfip-split-num">{d.baselinePosts.toLocaleString()}</span>
+              <span className="pfip-split-key-lbl">Use no school IP<em>{noPct}% · comparison baseline</em></span>
+            </div>
+            <div className="pfip-split-key pfip-key-ip">
+              <span className="pfip-split-dot" />
+              <span className="pfip-split-num">{d.anySignalPosts.toLocaleString()}</span>
+              <span className="pfip-split-key-lbl">Use school IP<em>{ipPct}% · logo, mention, or collaboration</em></span>
+            </div>
           </div>
         </div>
         <div className="pfip-flag-title">The three ways school IP shows up</div>
@@ -298,6 +306,7 @@ function Setup({ cfg }: { cfg: Cfg }) {
             <div key={f.key} className="pfip-flag-chip">
               <span className="pfip-flag-count">{f.count.toLocaleString()}</span>
               <span className="pfip-flag-label">{f.label}</span>
+              <div className="pfip-flag-track"><div className="pfip-flag-fill" style={{ width: `${Math.max((f.pct / maxFlag) * 100, 6)}%` }} /></div>
               <span className="pfip-flag-meta">{f.pct}% of posts</span>
             </div>
           ))}
@@ -580,13 +589,36 @@ const CSS = `
 .pfip-setup-lbl{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:15px;margin-top:12px;}
 .pfip-setup-sub{color:var(--t3);font-size:12.5px;margin-top:4px;}
 .pfip-flag-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:14px;}
-.pfip-flag-chip{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 22px 22px;display:flex;flex-direction:column;gap:7px;position:relative;overflow:hidden;}
+.pfip-flag-chip{background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:22px 22px 20px;display:flex;flex-direction:column;gap:9px;position:relative;overflow:hidden;transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease;}
+.pfip-flag-chip:hover{transform:translateY(-2px);border-color:rgba(226,245,0,.4);box-shadow:0 12px 30px rgba(0,0,0,.35);}
 .pfip-flag-chip:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--volt);}
 .pfip-flag-count{font-family:var(--display);font-size:2.5rem;line-height:.9;color:var(--volt);}
 .pfip-flag-label{font-family:var(--cond);font-weight:800;text-transform:uppercase;letter-spacing:.03em;font-size:1.2rem;line-height:1.05;}
-.pfip-flag-meta{color:var(--t3);font-size:13px;}
+.pfip-flag-track{height:6px;border-radius:999px;background:rgba(255,255,255,.07);overflow:hidden;margin-top:3px;}
+.pfip-flag-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,rgba(226,245,0,.55),var(--volt));}
+.pfip-flag-meta{color:var(--t3);font-size:12.5px;}
 .pfip-lead{max-width:760px;color:var(--t2);font-size:15.5px;margin:16px 0 0;}
-.pfip-flag-title{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--volt);font-size:15px;margin:32px 0 6px;}
+.pfip-flag-title{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--volt);font-size:15px;margin:34px 0 8px;}
+/* split panel */
+.pfip-split{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:30px 30px 26px;margin-top:26px;}
+.pfip-split-head{display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
+.pfip-split-total{font-family:var(--display);font-size:clamp(2.8rem,5.5vw,4rem);line-height:.85;color:var(--volt);}
+.pfip-split-total-lbl{display:flex;flex-direction:column;font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:16px;color:var(--t1);}
+.pfip-split-total-lbl em{font-style:normal;font-family:var(--body);font-weight:400;text-transform:none;letter-spacing:0;font-size:12.5px;color:var(--t3);margin-top:3px;}
+.pfip-split-bar{display:flex;gap:4px;height:16px;margin-top:24px;}
+.pfip-split-seg{height:100%;border-radius:999px;}
+.pfip-split-no{background:rgba(255,255,255,.22);}
+.pfip-split-ip{background:var(--volt);box-shadow:0 0 20px rgba(226,245,0,.4);}
+.pfip-split-legend{display:flex;gap:40px;margin-top:20px;flex-wrap:wrap;}
+.pfip-split-key{display:flex;align-items:baseline;gap:10px;}
+.pfip-split-dot{width:10px;height:10px;border-radius:999px;align-self:center;flex:none;}
+.pfip-key-no .pfip-split-dot{background:rgba(255,255,255,.35);}
+.pfip-key-ip .pfip-split-dot{background:var(--volt);}
+.pfip-split-num{font-family:var(--display);font-size:1.8rem;line-height:1;color:var(--t1);}
+.pfip-key-ip .pfip-split-num{color:var(--volt);}
+.pfip-split-key-lbl{display:flex;flex-direction:column;font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13.5px;color:var(--t2);}
+.pfip-split-key-lbl em{font-style:normal;font-family:var(--body);font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;color:var(--t3);margin-top:2px;}
+@media(max-width:620px){ .pfip-split-legend{gap:18px;flex-direction:column;} }
 
 /* kpi plates */
 .pfip-kpi-grid{margin-top:32px;}

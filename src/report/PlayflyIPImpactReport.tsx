@@ -17,9 +17,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
-
-// JABA mascot mark lives in /public (referenced by URL, not imported).
-const jabaHead = '/jaba-head-trimmed.png';
+// eslint-disable-next-line import/no-unresolved -- repo-root asset, same one the year-end reports use
+import jabaHead from '../../../JABA head trimmed.png';
 
 // ── data (verbatim from the two analysis runs) ──
 //   sponsored  → playfly_dashboard_summary.json (4,864 sponsored posts)
@@ -257,7 +256,7 @@ function Hero() {
   return (
     <header className="pfip-hero">
       <div className="pfip-hero-ph" />
-      <img className="pfip-hero-img" src="/playfly-hero.jpg" alt="" />
+      <img className="pfip-hero-img" src="/images/for-agencies/world-hero-stadium.jpg" alt="" />
       <div className="pfip-hero-scrim" />
       <div className="pfip-wrap pfip-hero-copy">
         <h1 className="pfip-hero-h1">
@@ -265,6 +264,36 @@ function Hero() {
         </h1>
       </div>
     </header>
+  );
+}
+
+const PLAYFLY_MAX_SCHOOLS = [
+  { name: 'Auburn', conf: 'SEC' },
+  { name: 'Baylor', conf: 'Big 12' },
+  { name: 'LSU', conf: 'SEC' },
+  { name: 'Michigan State', conf: 'Big Ten' },
+  { name: 'Penn State', conf: 'Big Ten' },
+  { name: 'Texas A&M', conf: 'SEC' },
+  { name: 'Virginia', conf: 'ACC' },
+  { name: 'UTSA', conf: 'AAC' },
+  { name: 'Washington State', conf: 'Pac-12' },
+];
+
+function SchoolsStrip() {
+  return (
+    <div className="pfip-schools-strip">
+      <div className="pfip-wrap pfip-schools-inner">
+        <span className="pfip-schools-label">PlayFly Max Schools</span>
+        <div className="pfip-schools-row">
+          {PLAYFLY_MAX_SCHOOLS.map((s) => (
+            <span key={s.name} className="pfip-school-chip">
+              <span className="pfip-school-name">{s.name}</span>
+              <span className="pfip-school-conf">{s.conf}</span>
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -492,6 +521,7 @@ export function PlayflyIPImpactReport() {
       <style>{CSS}</style>
       <TopBar />
       <Hero />
+      <SchoolsStrip />
       <ModeToggle mode={mode} setMode={setMode} />
       <Setup cfg={cfg} />
       <Headline cfg={cfg} />
@@ -507,7 +537,6 @@ export default PlayflyIPImpactReport;
 // ── scoped styles ────────────────────────────────────────────────────────
 
 const CSS = `
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700&family=Saira+Extra+Condensed:wght@600;700;800&display=swap');
 .pfip-root{
   --ink:#0D0B12; --card:#13111A; --line:rgba(255,255,255,.08);
   --volt:#E2F500; --pos:#4ADE80; --neg:#EF4444;
@@ -551,6 +580,15 @@ const CSS = `
 .pfip-hero-a{font-size:clamp(3.4rem,12vw,9rem);color:#fff;letter-spacing:-.02em;text-shadow:0 4px 34px rgba(0,0,0,.6);}
 .pfip-hero-b{font-size:clamp(3.4rem,12vw,9rem);color:var(--volt);letter-spacing:-.02em;text-shadow:0 0 46px rgba(226,245,0,.3);}
 .pfip-hero-lede{max-width:560px;color:var(--t2);font-size:16px;margin:20px auto 0;}
+
+/* schools strip */
+.pfip-schools-strip{background:var(--card);border-bottom:1px solid var(--line);padding:14px 0;}
+.pfip-schools-inner{display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.pfip-schools-label{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--t3);white-space:nowrap;flex:none;}
+.pfip-schools-row{display:flex;flex-wrap:wrap;gap:8px;}
+.pfip-school-chip{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:5px 12px;cursor:default;}
+.pfip-school-name{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:12.5px;color:var(--t1);}
+.pfip-school-conf{font-family:var(--body);font-size:10.5px;color:var(--volt);background:rgba(226,245,0,.1);border-radius:999px;padding:1px 6px;}
 
 /* mode toggle */
 .pfip-toggle-wrap{display:flex;justify-content:center;padding:22px 28px;border-bottom:1px solid var(--line);background:var(--ink);position:sticky;top:60px;z-index:40;}

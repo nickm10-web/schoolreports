@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/playfly", "destination": "/index.html" }
+  ]
+}

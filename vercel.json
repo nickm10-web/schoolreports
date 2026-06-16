@@ -1,6 +1,7 @@
 {
   "rewrites": [
     { "source": "/playfly", "destination": "/index.html" },
+    { "source": "/playflyip", "destination": "/index.html" },
     { "source": "/playflyipreview", "destination": "/index.html" }
   ]
 }

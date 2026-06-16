@@ -98,7 +98,7 @@ function ReportView({ slug }: { slug: string }) {
 
 function App() {
   const path = window.location.pathname.replace(/\/+$/, '');
-  if (path === '/playfly') return <PlayflyIPImpactReport />;
+  if (path === '/playfly' || path === '/playflyip') return <PlayflyIPImpactReport />;
   if (path === '/playflyipreview') return <PlayflyIPReviewPosts />;
   const slug = new URLSearchParams(window.location.search).get('school');
   return slug ? <ReportView slug={slug} /> : <Hub />;

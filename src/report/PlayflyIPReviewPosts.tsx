@@ -197,7 +197,7 @@ function Card({ p, d, setD }: { p: ReviewPost; d?: Decision; setD: (l: string, v
 export default PlayflyIPReviewPosts;
 
 const CSS = `
-.pfir-root{--ink:#0D0B12;--card:#13111A;--line:rgba(255,255,255,.08);--volt:#E2F500;--keep:#4ADE80;--cut:#EF4444;
+.pfir-root{--ink:#0D0B12;--card:#13111A;--line:rgba(255,255,255,.08);--volt:#DFFF00;--keep:#4ADE80;--cut:#EF4444;
   --t1:#fff;--t2:rgba(255,255,255,.62);--t3:rgba(255,255,255,.4);
   background:var(--ink);color:var(--t1);min-height:100vh;font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased;}
 .pfir-root *{box-sizing:border-box;}
@@ -232,7 +232,7 @@ const CSS = `
 .pfir-av{width:30px;height:30px;border-radius:50%;object-fit:cover;background:#222;flex:none;}
 .pfir-ath{font-weight:700;font-size:13.5px;line-height:1.1;}
 .pfir-bnd{color:var(--volt);font-size:11.5px;}
-.pfir-school{font-size:11.5px;color:var(--t2);background:rgba(226,245,0,.08);border:1px solid rgba(226,245,0,.3);border-radius:7px;padding:5px 9px;}
+.pfir-school{font-size:11.5px;color:var(--t2);background:rgba(223,255,0,.08);border:1px solid rgba(223,255,0,.3);border-radius:7px;padding:5px 9px;}
 .pfir-school b{color:var(--volt);font-weight:800;}
 .pfir-cap{color:var(--t2);font-size:12.5px;line-height:1.45;max-height:74px;overflow:hidden;}
 .pfir-ev{font-size:11.5px;line-height:1.4;border-radius:8px;padding:8px 10px;background:rgba(245,158,11,.07);border:1px solid rgba(245,158,11,.45);}

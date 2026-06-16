@@ -7,12 +7,13 @@
 // sponsored Instagram content (see README_lift_analysis.md / the two summary
 // JSON files this data was lifted from verbatim).
 //
-// Methodology honored in the framing:
-//  - All numbers come from the supplied analysis. We do not recompute anything.
-//  - Median is the headline statistic (likes / views are heavily
-//    right-skewed; the mean is shown only as honest context).
-//  - Collaboration is the one signal that clears the FDR-significance bar; logo
-//    alone is presented as the honest "watch-out", not a win.
+// Methodology:
+//  - Numbers are recomputed on the VERIFIED sponsored set (2026-06-16): brand-cleaned,
+//    roster-anchored to each athlete's actual PlayFly school, and the ambiguous
+//    logo posts manually reviewed (Jordon/Nick). 156 contaminated/false-positive
+//    IP posts were removed; verified school-IP n=943, baseline n=2,060.
+//  - Median is the headline statistic (likes / views are heavily right-skewed).
+//  - Only the Sponsored mode is shown; the "all content" set is not yet verified.
 //  - Every figure is an observational association, not proof of causation.
 
 import { useEffect, useRef, useState } from 'react';
@@ -514,7 +515,9 @@ function ModeToggle({ mode, setMode }: { mode: Mode; setMode: (m: Mode) => void 
 // ── root ─────────────────────────────────────────────────────────────────
 
 export function PlayflyIPImpactReport() {
-  const [mode, setMode] = useState<Mode>('sponsored');
+  // Sponsored-only: the "all content" set is not yet brand-cleaned / roster-anchored
+  // / reviewed, so the mode toggle is hidden until that data is verified.
+  const mode: Mode = 'sponsored';
   const cfg = CONFIGS[mode];
   return (
     <div className="pfip-root">
@@ -522,7 +525,6 @@ export function PlayflyIPImpactReport() {
       <TopBar />
       <Hero />
       <SchoolsStrip />
-      <ModeToggle mode={mode} setMode={setMode} />
       <Setup cfg={cfg} />
       <Headline cfg={cfg} />
       <Signals cfg={cfg} />
@@ -539,7 +541,7 @@ export default PlayflyIPImpactReport;
 const CSS = `
 .pfip-root{
   --ink:#0D0B12; --card:#13111A; --line:rgba(255,255,255,.08);
-  --volt:#E2F500; --pos:#4ADE80; --neg:#EF4444;
+  --volt:#DFFF00; --pos:#4ADE80; --neg:#EF4444;
   --t1:#fff; --t2:rgba(255,255,255,.62); --t3:rgba(255,255,255,.40);
   --display:'Anton',Impact,sans-serif; --cond:'Saira Extra Condensed',sans-serif;
   --body:'DM Sans',system-ui,sans-serif;
@@ -564,7 +566,7 @@ const CSS = `
   background:radial-gradient(120% 120% at 80% 0%, #1d1a2c 0%, #0D0B12 55%, #100d18 100%);}
 .pfip-hero-ph{position:absolute;inset:0;
   background:
-    radial-gradient(60% 80% at 88% 12%, rgba(226,245,0,.16) 0%, transparent 60%),
+    radial-gradient(60% 80% at 88% 12%, rgba(223,255,0,.16) 0%, transparent 60%),
     repeating-linear-gradient(125deg,rgba(255,255,255,.035) 0 1px,transparent 1px 30px);}
 .pfip-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
 .pfip-hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,11,18,.1) 0%,transparent 30%,rgba(13,11,18,.78) 100%),linear-gradient(90deg,rgba(13,11,18,.62) 0%,transparent 60%);}
@@ -573,12 +575,12 @@ const CSS = `
 .pfip-hero-h1{font-family:var(--display);line-height:.8;text-transform:uppercase;margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;}
 .pfip-hero-wordmark{position:relative;z-index:1;display:block;width:min(840px,94%);height:auto;margin:0 auto;
   filter:
-    drop-shadow(0 0 3px rgba(226,245,0,.65))
-    drop-shadow(0 0 12px rgba(226,245,0,.5))
-    drop-shadow(0 0 30px rgba(226,245,0,.32))
+    drop-shadow(0 0 3px rgba(223,255,0,.65))
+    drop-shadow(0 0 12px rgba(223,255,0,.5))
+    drop-shadow(0 0 30px rgba(223,255,0,.32))
     drop-shadow(0 10px 26px rgba(0,0,0,.5));}
 .pfip-hero-a{font-size:clamp(3.4rem,12vw,9rem);color:#fff;letter-spacing:-.02em;text-shadow:0 4px 34px rgba(0,0,0,.6);}
-.pfip-hero-b{font-size:clamp(3.4rem,12vw,9rem);color:var(--volt);letter-spacing:-.02em;text-shadow:0 0 46px rgba(226,245,0,.3);}
+.pfip-hero-b{font-size:clamp(3.4rem,12vw,9rem);color:var(--volt);letter-spacing:-.02em;text-shadow:0 0 46px rgba(223,255,0,.3);}
 .pfip-hero-lede{max-width:560px;color:var(--t2);font-size:16px;margin:20px auto 0;}
 
 /* schools strip */
@@ -587,7 +589,7 @@ const CSS = `
 .pfip-schools-label{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--t3);white-space:nowrap;flex:none;}
 .pfip-schools-row{display:flex;flex-wrap:wrap;gap:8px;}
 .pfip-school-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:5px 13px 5px 7px;cursor:default;transition:border-color .18s ease,background .18s ease;}
-.pfip-school-chip:hover{border-color:rgba(226,245,0,.4);background:rgba(255,255,255,.08);}
+.pfip-school-chip:hover{border-color:rgba(223,255,0,.4);background:rgba(255,255,255,.08);}
 .pfip-school-logo{width:24px;height:24px;object-fit:contain;flex:none;}
 .pfip-school-name{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:12.5px;color:var(--t1);}
 
@@ -629,12 +631,12 @@ const CSS = `
 .pfip-setup-sub{color:var(--t3);font-size:12.5px;margin-top:4px;}
 .pfip-flag-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:14px;}
 .pfip-flag-chip{background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:22px 22px 20px;display:flex;flex-direction:column;gap:9px;position:relative;overflow:hidden;transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease;}
-.pfip-flag-chip:hover{transform:translateY(-2px);border-color:rgba(226,245,0,.4);box-shadow:0 12px 30px rgba(0,0,0,.35);}
+.pfip-flag-chip:hover{transform:translateY(-2px);border-color:rgba(223,255,0,.4);box-shadow:0 12px 30px rgba(0,0,0,.35);}
 .pfip-flag-chip:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--volt);}
 .pfip-flag-count{font-family:var(--display);font-size:2.5rem;line-height:.9;color:var(--volt);}
 .pfip-flag-label{font-family:var(--cond);font-weight:800;text-transform:uppercase;letter-spacing:.03em;font-size:1.2rem;line-height:1.05;}
 .pfip-flag-track{height:6px;border-radius:999px;background:rgba(255,255,255,.07);overflow:hidden;margin-top:3px;}
-.pfip-flag-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,rgba(226,245,0,.55),var(--volt));}
+.pfip-flag-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,rgba(223,255,0,.55),var(--volt));}
 .pfip-flag-meta{color:var(--t3);font-size:12.5px;}
 .pfip-lead{max-width:760px;color:var(--t2);font-size:15.5px;margin:16px 0 0;}
 .pfip-flag-title{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--volt);font-size:15px;margin:34px 0 8px;}
@@ -647,7 +649,7 @@ const CSS = `
 .pfip-split-bar{display:flex;gap:4px;height:16px;margin-top:24px;}
 .pfip-split-seg{height:100%;border-radius:999px;}
 .pfip-split-no{background:rgba(255,255,255,.22);}
-.pfip-split-ip{background:var(--volt);box-shadow:0 0 20px rgba(226,245,0,.4);}
+.pfip-split-ip{background:var(--volt);box-shadow:0 0 20px rgba(223,255,0,.4);}
 .pfip-split-legend{display:flex;gap:40px;margin-top:20px;flex-wrap:wrap;}
 .pfip-split-key{display:flex;align-items:baseline;gap:10px;}
 .pfip-split-dot{width:10px;height:10px;border-radius:999px;align-self:center;flex:none;}
@@ -671,7 +673,7 @@ const CSS = `
 /* signal cards */
 .pfip-signal-grid{margin-top:30px;}
 .pfip-signal-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;}
-.pfip-signal-hot{border-color:rgba(226,245,0,.5);box-shadow:0 0 0 1px rgba(226,245,0,.25),0 0 40px rgba(226,245,0,.08);}
+.pfip-signal-hot{border-color:rgba(223,255,0,.5);box-shadow:0 0 0 1px rgba(223,255,0,.25),0 0 40px rgba(223,255,0,.08);}
 .pfip-signal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;}
 .pfip-signal-name{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:1.5rem;line-height:1;margin:0;}
 .pfip-signal-sub{color:var(--t3);font-size:12.5px;margin-top:4px;}
@@ -693,7 +695,7 @@ const CSS = `
 .pfip-low{font-family:var(--body);font-weight:600;text-transform:none;letter-spacing:0;font-size:10.5px;color:var(--t3);}
 .pfip-ladder-track{background:rgba(255,255,255,.04);border-radius:6px;height:38px;overflow:hidden;}
 .pfip-ladder-bar{height:100%;background:rgba(255,255,255,.16);border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:12px;min-width:54px;transition:width .8s cubic-bezier(.2,.7,.2,1);}
-.pfip-bar-hot{background:linear-gradient(90deg,rgba(226,245,0,.55),var(--volt));}
+.pfip-bar-hot{background:linear-gradient(90deg,rgba(223,255,0,.55),var(--volt));}
 .pfip-ladder-val{font-family:var(--display);font-size:1.15rem;color:var(--ink);}
 .pfip-ladder-bar:not(.pfip-bar-hot) .pfip-ladder-val{color:var(--t1);}
 .pfip-ladder-emv{font-family:var(--display);font-size:1.5rem;color:var(--volt);text-align:right;display:flex;flex-direction:column;line-height:1;}
@@ -704,13 +706,13 @@ const CSS = `
 .pfip-wvw-tabs-sm{margin-top:10px;}
 .pfip-chip{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.11em;font-size:13.5px;color:var(--t2);background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:999px;padding:11px 24px;cursor:pointer;outline:none;transition:color .18s ease,background .18s ease,border-color .18s ease,box-shadow .18s ease,transform .18s ease;}
 .pfip-chip:hover{color:var(--t1);background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.22);transform:translateY(-1px);}
-.pfip-chip:focus-visible{box-shadow:0 0 0 2px rgba(226,245,0,.55);}
-.pfip-chip-on,.pfip-chip-on:hover{background:var(--volt);color:var(--ink);border-color:var(--volt);box-shadow:0 6px 20px rgba(226,245,0,.28);}
+.pfip-chip:focus-visible{box-shadow:0 0 0 2px rgba(223,255,0,.55);}
+.pfip-chip-on,.pfip-chip-on:hover{background:var(--volt);color:var(--ink);border-color:var(--volt);box-shadow:0 6px 20px rgba(223,255,0,.28);}
 .pfip-chip-sm{font-size:12px;padding:9px 18px;letter-spacing:.09em;}
-.pfip-chip-sm.pfip-chip-on,.pfip-chip-sm.pfip-chip-on:hover{box-shadow:0 4px 14px rgba(226,245,0,.25);}
+.pfip-chip-sm.pfip-chip-on,.pfip-chip-sm.pfip-chip-on:hover{box-shadow:0 4px 14px rgba(223,255,0,.25);}
 .pfip-wvw-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px;}
 .pfip-wvw-card{border:1px solid var(--line);border-radius:16px;padding:30px 24px;text-align:center;background:var(--card);}
-.pfip-wvw-with{border-color:rgba(226,245,0,.5);box-shadow:0 0 0 1px rgba(226,245,0,.25),0 0 40px rgba(226,245,0,.08);}
+.pfip-wvw-with{border-color:rgba(223,255,0,.5);box-shadow:0 0 0 1px rgba(223,255,0,.25),0 0 40px rgba(223,255,0,.08);}
 .pfip-wvw-card-lbl{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.2em;font-size:13px;color:var(--t3);}
 .pfip-wvw-with .pfip-wvw-card-lbl{color:var(--volt);}
 .pfip-wvw-card-val{font-family:var(--display);font-size:clamp(2.6rem,6vw,4rem);line-height:1;margin-top:12px;color:var(--t2);}
@@ -721,7 +723,7 @@ const CSS = `
 .pfip-wvw-bar-track{background:rgba(255,255,255,.04);border-radius:8px;height:40px;overflow:hidden;}
 .pfip-wvw-bar{height:100%;border-radius:8px;display:flex;align-items:center;justify-content:flex-end;padding-right:14px;min-width:50px;transition:width .5s cubic-bezier(.2,.7,.2,1);}
 .pfip-wvw-bar span{font-family:var(--display);font-size:1.05rem;}
-.pfip-wvw-bar-on{background:linear-gradient(90deg,rgba(226,245,0,.55),var(--volt));color:var(--ink);}
+.pfip-wvw-bar-on{background:linear-gradient(90deg,rgba(223,255,0,.55),var(--volt));color:var(--ink);}
 .pfip-wvw-bar-off{background:rgba(255,255,255,.16);color:var(--t1);}
 .pfip-wvw-lift{margin-top:16px;border:1px solid var(--line);border-radius:16px;padding:34px 24px;text-align:center;}
 .pfip-wvw-lift-lbl{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.22em;font-size:13px;color:var(--t3);}
@@ -740,8 +742,8 @@ const CSS = `
 .pfip-dollar-bar{width:72%;max-width:120px;border-radius:8px 8px 0 0;transition:height .9s cubic-bezier(.2,.7,.2,1);}
 .pfip-dollar-base{background:rgba(255,255,255,.14);}
 .pfip-dollar-mid{background:rgba(255,255,255,.26);}
-.pfip-dollar-hi{background:linear-gradient(180deg,rgba(226,245,0,.5),rgba(226,245,0,.78));}
-.pfip-dollar-peak{background:linear-gradient(180deg,rgba(226,245,0,.85),var(--volt));}
+.pfip-dollar-hi{background:linear-gradient(180deg,rgba(223,255,0,.5),rgba(223,255,0,.78));}
+.pfip-dollar-peak{background:linear-gradient(180deg,rgba(223,255,0,.85),var(--volt));}
 .pfip-dollar-lbl{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13px;margin-top:14px;color:var(--t2);text-align:center;}
 
 /* takeaways */

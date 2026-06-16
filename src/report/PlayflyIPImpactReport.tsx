@@ -11,8 +11,9 @@
 //  - Numbers are recomputed on the VERIFIED sponsored set (2026-06-16): brand-cleaned,
 //    roster-anchored to each athlete's actual PlayFly school, and the ambiguous
 //    logo posts manually reviewed (Jordon/Nick). 156 contaminated/false-positive
-//    IP posts were removed, plus 51 transfer-era baseline posts that rep a previous
-//    school; verified school-IP n=943, baseline n=2,009.
+//    IP posts were removed, plus 51 transfer-era baseline posts; duplicate scrapes
+//    deduped and ER>100% viral/follower-snapshot artifacts excluded from rate
+//    medians. Verified school-IP n=941, baseline n=2,006.
 //  - Median is the headline statistic (likes / views are heavily right-skewed).
 //  - Only the Sponsored mode is shown; the "all content" set is not yet verified.
 //  - Every figure is an observational association, not proof of causation.
@@ -55,35 +56,35 @@ const CONFIGS: Record<Mode, {
       'school, and posts that don’t. "School IP" means the post uses the school’s logo, mentions or ' +
       'tags the school in the caption, or is an official collaboration. Then we compared how the two groups perform.',
     dataset: {
-      totalPosts: 2952, totalLabel: 'Sponsored posts analyzed', scopeNote: '100% Instagram',
-      baselinePosts: 2009, anySignalPosts: 943,
+      totalPosts: 2947, totalLabel: 'Sponsored posts analyzed', scopeNote: '100% Instagram',
+      baselinePosts: 2006, anySignalPosts: 941,
       flags: [
         { key: 'caption', label: 'School mentioned in caption', count: 564, pct: 19.1 },
-        { key: 'logo', label: 'School logo in the post', count: 711, pct: 24.1 },
+        { key: 'logo', label: 'School logo in the post', count: 709, pct: 24.1 },
         { key: 'collab', label: 'Official school collaboration', count: 69, pct: 2.3 },
       ],
     },
     anySignal: [
-      { metric: 'Likes', medianLift: 27 },
+      { metric: 'Likes', medianLift: 26 },
       { metric: 'Video Views', medianLift: 26 },
-      { metric: 'Engagement Rate', medianLift: 79 },
+      { metric: 'Engagement Rate', medianLift: 75 },
     ],
     signals: [
       {
         key: 'collab', name: 'Collaboration', sub: 'A formal tie to the school',
-        likesMedianLift: 318, erMedianLift: 303, n: 69, verdict: 'The powerhouse',
+        likesMedianLift: 319, erMedianLift: 210, n: 69, verdict: 'The powerhouse',
         note: 'By far the biggest lift of the three, and the most consistent in the data.',
         significant: true,
       },
       {
         key: 'logo', name: 'Logo', sub: 'The mark visible in the media',
-        likesMedianLift: 22, erMedianLift: 86, n: 711, verdict: 'Solid lift',
+        likesMedianLift: 21, erMedianLift: 89, n: 709, verdict: 'Solid lift',
         note: 'A clear lift on its own, though well behind collaboration.',
         significant: false,
       },
       {
         key: 'caption', name: 'Caption mention', sub: 'The school named or tagged',
-        likesMedianLift: 29, erMedianLift: 60, n: 564, verdict: 'Mildly positive',
+        likesMedianLift: 29, erMedianLift: 53, n: 564, verdict: 'Mildly positive',
         note: 'A small but consistent lift on the typical post.',
         significant: false,
       },
@@ -97,23 +98,23 @@ const CONFIGS: Record<Mode, {
       ],
       data: {
         collab: {
-          engagement: { with: 25.3, without: 6.3, lift: 303 },
-          likes: { with: 1458, without: 348, lift: 318 },
+          engagement: { with: 18.9, without: 6.1, lift: 210 },
+          likes: { with: 1458, without: 348, lift: 319 },
           comments: { with: 8, without: 9, lift: -11 },
         },
         logo: {
-          engagement: { with: 10.2, without: 5.5, lift: 86 },
-          likes: { with: 418, without: 342, lift: 22 },
+          engagement: { with: 10.0, without: 5.3, lift: 89 },
+          likes: { with: 416, without: 342, lift: 21 },
           comments: { with: 8, without: 9, lift: -11 },
         },
         mention: {
-          engagement: { with: 9.4, without: 5.9, lift: 60 },
+          engagement: { with: 8.8, without: 5.7, lift: 53 },
           likes: { with: 445, without: 346, lift: 29 },
           comments: { with: 8, without: 10, lift: -20 },
         },
         any: {
-          engagement: { with: 9.5, without: 5.3, lift: 79 },
-          likes: { with: 419, without: 330, lift: 27 },
+          engagement: { with: 9.0, without: 5.2, lift: 75 },
+          likes: { with: 416, without: 330, lift: 26 },
           comments: { with: 8, without: 10, lift: -20 },
         },
       },
@@ -366,8 +367,8 @@ function Headline({ cfg }: { cfg: Cfg }) {
         </div>
         <p className="pfip-note">
           Each figure is the typical (median) post, so a handful of viral hits don't skew the picture.
-          Engagement rate is likes plus comments per follower; rates of 10–25% are normal for college
-          athletes, whose smaller audiences drive higher per-post engagement than large influencer accounts.
+          Engagement rate is likes plus comments per follower; college athletes' smaller audiences drive
+          much higher per-post engagement than the 1–3% typical of large influencer accounts.
         </p>
       </div>
     </section>

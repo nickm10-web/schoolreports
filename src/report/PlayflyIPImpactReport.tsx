@@ -17,8 +17,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
-// eslint-disable-next-line import/no-unresolved -- repo-root asset, same one the year-end reports use
-import jabaHead from '../../../JABA head trimmed.png';
+// served from schoolreports public/ (the year-end reports use the same asset)
+const jabaHead = '/jaba-head-trimmed.png';
 
 // ── data (verbatim from the two analysis runs) ──
 //   sponsored  → playfly_dashboard_summary.json (4,864 sponsored posts)
@@ -268,15 +268,15 @@ function Hero() {
 }
 
 const PLAYFLY_MAX_SCHOOLS = [
-  { name: 'Auburn', conf: 'SEC' },
-  { name: 'Baylor', conf: 'Big 12' },
-  { name: 'LSU', conf: 'SEC' },
-  { name: 'Michigan State', conf: 'Big Ten' },
-  { name: 'Penn State', conf: 'Big Ten' },
-  { name: 'Texas A&M', conf: 'SEC' },
-  { name: 'Virginia', conf: 'ACC' },
-  { name: 'UTSA', conf: 'AAC' },
-  { name: 'Washington State', conf: 'Pac-12' },
+  { name: 'Auburn', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/2.png' },
+  { name: 'Baylor', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/239.png' },
+  { name: 'LSU', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/99.png' },
+  { name: 'Michigan State', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/127.png' },
+  { name: 'Penn State', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/213.png' },
+  { name: 'Texas A&M', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/245.png' },
+  { name: 'Virginia', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/258.png' },
+  { name: 'UTSA', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/2636.png' },
+  { name: 'Washington State', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/265.png' },
 ];
 
 function SchoolsStrip() {
@@ -286,9 +286,9 @@ function SchoolsStrip() {
         <span className="pfip-schools-label">PlayFly Max Schools</span>
         <div className="pfip-schools-row">
           {PLAYFLY_MAX_SCHOOLS.map((s) => (
-            <span key={s.name} className="pfip-school-chip">
+            <span key={s.name} className="pfip-school-chip" title={s.name}>
+              <img className="pfip-school-logo" src={s.logo} alt={s.name} loading="lazy" />
               <span className="pfip-school-name">{s.name}</span>
-              <span className="pfip-school-conf">{s.conf}</span>
             </span>
           ))}
         </div>
@@ -586,9 +586,10 @@ const CSS = `
 .pfip-schools-inner{display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
 .pfip-schools-label{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--t3);white-space:nowrap;flex:none;}
 .pfip-schools-row{display:flex;flex-wrap:wrap;gap:8px;}
-.pfip-school-chip{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:5px 12px;cursor:default;}
+.pfip-school-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:5px 13px 5px 7px;cursor:default;transition:border-color .18s ease,background .18s ease;}
+.pfip-school-chip:hover{border-color:rgba(226,245,0,.4);background:rgba(255,255,255,.08);}
+.pfip-school-logo{width:24px;height:24px;object-fit:contain;flex:none;}
 .pfip-school-name{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:12.5px;color:var(--t1);}
-.pfip-school-conf{font-family:var(--body);font-size:10.5px;color:var(--volt);background:rgba(226,245,0,.1);border-radius:999px;padding:1px 6px;}
 
 /* mode toggle */
 .pfip-toggle-wrap{display:flex;justify-content:center;padding:22px 28px;border-bottom:1px solid var(--line);background:var(--ink);position:sticky;top:60px;z-index:40;}

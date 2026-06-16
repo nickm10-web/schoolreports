@@ -76,10 +76,10 @@ export function PlayflyIPReviewPosts() {
 
   const downloadCsv = () => {
     const name = REVIEWERS.find((r) => r.id === reviewer)!.name;
-    const rows: string[][] = [['reviewer', 'athlete', 'brand', 'signals', 'decision', 'ig_link', 'caption']];
+    const rows: string[][] = [['reviewer', 'athlete', 'school', 'brand', 'signals', 'decision', 'ig_link', 'caption']];
     mine.forEach((p) =>
       rows.push([
-        name, p.ath, p.brand,
+        name, p.ath, p.school, p.brand,
         [p.logo && 'logo', p.ment && 'mention'].filter(Boolean).join('+'),
         dec[p.link] || 'undecided', p.link, (p.cap || '').replace(/\s+/g, ' '),
       ]),
@@ -104,11 +104,12 @@ export function PlayflyIPReviewPosts() {
       <header className="pfir-head">
         <div className="pfir-title">PLAYFLY · <b>SCHOOL-IP REVIEW</b></div>
         <div className="pfir-sub">
-          436 sponsored posts flagged as using school IP but with no school reference auto-detected,
-          split in half. Pick your tab and review your set: does each post actually show or name the
-          school (logo on a jersey, helmet, shirt, or in the caption)? Mark <b>Keep</b> if real,
-          <b> Cut</b> if not. Use “View on IG” when the thumbnail isn’t clear. Picks save automatically;
-          hit <b>Download decisions</b> when done.
+          396 sponsored posts where a school logo was detected but no school could be read from the
+          caption, split in half. Each card shows the athlete's <b>actual PlayFly school</b>. Your job:
+          look at the image and decide — is the logo/jersey <b>their</b> school? Mark <b>Keep</b> if it's
+          their school, <b>Cut</b> if it's a <b>different or previous school</b> (e.g. a transfer's old
+          team). Use “View on IG” when the thumbnail isn't clear. Picks save automatically; hit
+          <b> Download decisions</b> when done.
         </div>
 
         <div className="pfir-tabs">
@@ -168,9 +169,10 @@ function Card({ p, d, setD }: { p: ReviewPost; d?: Decision; setD: (l: string, v
             <div className="pfir-bnd">{p.brand}</div>
           </div>
         </div>
+        <div className="pfir-school">Their school: <b>{p.school}</b></div>
         <div className="pfir-cap">{p.cap || 'no caption'}</div>
         <div className="pfir-ev">
-          <span className="pfir-ev-h">⚠ {sig} flagged · confirm the school</span>
+          <span className="pfir-ev-h">⚠ {sig} detected · is it {p.school}?</span>
           {p.desc ? `Vision: ${p.desc}` : 'No vision description — check the image.'}
           {p.ocr && <div className="pfir-ocr">OCR: {p.ocr}</div>}
         </div>
@@ -230,6 +232,8 @@ const CSS = `
 .pfir-av{width:30px;height:30px;border-radius:50%;object-fit:cover;background:#222;flex:none;}
 .pfir-ath{font-weight:700;font-size:13.5px;line-height:1.1;}
 .pfir-bnd{color:var(--volt);font-size:11.5px;}
+.pfir-school{font-size:11.5px;color:var(--t2);background:rgba(226,245,0,.08);border:1px solid rgba(226,245,0,.3);border-radius:7px;padding:5px 9px;}
+.pfir-school b{color:var(--volt);font-weight:800;}
 .pfir-cap{color:var(--t2);font-size:12.5px;line-height:1.45;max-height:74px;overflow:hidden;}
 .pfir-ev{font-size:11.5px;line-height:1.4;border-radius:8px;padding:8px 10px;background:rgba(245,158,11,.07);border:1px solid rgba(245,158,11,.45);}
 .pfir-ev-h{font-weight:800;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#f59e0b;display:block;margin-bottom:3px;}

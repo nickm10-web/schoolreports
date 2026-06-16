@@ -365,6 +365,8 @@ function Headline({ cfg }: { cfg: Cfg }) {
         </div>
         <p className="pfip-note">
           Each figure is the typical (median) post, so a handful of viral hits don't skew the picture.
+          Engagement rate is likes plus comments per follower; rates of 10–25% are normal for college
+          athletes, whose smaller audiences drive higher per-post engagement than large influencer accounts.
         </p>
       </div>
     </section>
@@ -468,6 +470,13 @@ function WithVsWithout({ cfg }: { cfg: Cfg }) {
           <div className={`pfip-wvw-lift-val ${pos ? '' : 'pfip-neg'}`}>{pos ? '+' : ''}{d.lift}%</div>
           <div className="pfip-wvw-lift-sub">{m.label} with {sigObj.label} vs without</div>
         </div>
+        {sig === 'any' && (
+          <p className="pfip-note">
+            "Any IP" is the combined pool of all three signals and is about three-quarters logo posts, so it
+            tracks close to the Logo number rather than sitting above all three. Each named signal can read
+            higher because it leaves out lower-performing posts the combined pool still includes.
+          </p>
+        )}
       </div>
     </section>
   );

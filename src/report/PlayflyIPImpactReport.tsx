@@ -53,35 +53,35 @@ const CONFIGS: Record<Mode, {
       'school, and posts that don’t. "School IP" means the post uses the school’s logo, mentions or ' +
       'tags the school in the caption, or is an official collaboration. Then we compared how the two groups perform.',
     dataset: {
-      totalPosts: 4036, totalLabel: 'Sponsored posts analyzed', scopeNote: '100% Instagram',
-      baselinePosts: 2579, anySignalPosts: 1457,
+      totalPosts: 3820, totalLabel: 'Sponsored posts analyzed', scopeNote: '100% Instagram',
+      baselinePosts: 2506, anySignalPosts: 1314,
       flags: [
-        { key: 'caption', label: 'School mentioned in caption', count: 808, pct: 20.0 },
-        { key: 'logo', label: 'School logo in the post', count: 1123, pct: 27.8 },
-        { key: 'collab', label: 'Official school collaboration', count: 116, pct: 2.9 },
+        { key: 'caption', label: 'School mentioned in caption', count: 741, pct: 19.4 },
+        { key: 'logo', label: 'School logo in the post', count: 992, pct: 26.0 },
+        { key: 'collab', label: 'Official school collaboration', count: 109, pct: 2.9 },
       ],
     },
     anySignal: [
       { metric: 'Likes', medianLift: 37 },
-      { metric: 'Video Views', medianLift: 38 },
+      { metric: 'Video Views', medianLift: 35 },
       { metric: 'Engagement Rate', medianLift: 69 },
     ],
     signals: [
       {
         key: 'collab', name: 'Collaboration', sub: 'A formal tie to the school',
-        likesMedianLift: 240, erMedianLift: 195, n: 116, verdict: 'The powerhouse',
+        likesMedianLift: 256, erMedianLift: 198, n: 109, verdict: 'The powerhouse',
         note: 'By far the biggest lift of the three, and the most consistent in the data.',
         significant: true,
       },
       {
         key: 'logo', name: 'Logo', sub: 'The mark visible in the media',
-        likesMedianLift: 35, erMedianLift: 77, n: 1123, verdict: 'Solid lift',
+        likesMedianLift: 35, erMedianLift: 77, n: 992, verdict: 'Solid lift',
         note: 'A clear lift on its own, though well behind collaboration.',
         significant: false,
       },
       {
         key: 'caption', name: 'Caption mention', sub: 'The school named or tagged',
-        likesMedianLift: 30, erMedianLift: 44, n: 808, verdict: 'Mildly positive',
+        likesMedianLift: 32, erMedianLift: 47, n: 741, verdict: 'Mildly positive',
         note: 'A small but consistent lift on the typical post.',
         significant: false,
       },
@@ -95,24 +95,24 @@ const CONFIGS: Record<Mode, {
       ],
       data: {
         collab: {
-          engagement: { with: 19.1, without: 6.5, lift: 195 },
-          likes: { with: 1184, without: 348, lift: 240 },
+          engagement: { with: 19.1, without: 6.4, lift: 198 },
+          likes: { with: 1238, without: 348, lift: 256 },
           comments: { with: 8, without: 9, lift: -11 },
         },
         logo: {
           engagement: { with: 10.0, without: 5.7, lift: 77 },
-          likes: { with: 444, without: 328, lift: 35 },
-          comments: { with: 9, without: 9, lift: 0 },
+          likes: { with: 445, without: 329, lift: 35 },
+          comments: { with: 9, without: 10, lift: -10 },
         },
         mention: {
-          engagement: { with: 8.9, without: 6.2, lift: 44 },
-          likes: { with: 445, without: 343, lift: 30 },
+          engagement: { with: 9.0, without: 6.1, lift: 47 },
+          likes: { with: 452, without: 344, lift: 32 },
           comments: { with: 8, without: 10, lift: -20 },
         },
         any: {
           engagement: { with: 9.3, without: 5.5, lift: 69 },
-          likes: { with: 434, without: 316, lift: 37 },
-          comments: { with: 8, without: 10, lift: -20 },
+          likes: { with: 435, without: 318, lift: 37 },
+          comments: { with: 9, without: 10, lift: -10 },
         },
       },
     },

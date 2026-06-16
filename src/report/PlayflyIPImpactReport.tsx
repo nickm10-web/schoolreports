@@ -11,7 +11,8 @@
 //  - Numbers are recomputed on the VERIFIED sponsored set (2026-06-16): brand-cleaned,
 //    roster-anchored to each athlete's actual PlayFly school, and the ambiguous
 //    logo posts manually reviewed (Jordon/Nick). 156 contaminated/false-positive
-//    IP posts were removed; verified school-IP n=943, baseline n=2,060.
+//    IP posts were removed, plus 51 transfer-era baseline posts that rep a previous
+//    school; verified school-IP n=943, baseline n=2,009.
 //  - Median is the headline statistic (likes / views are heavily right-skewed).
 //  - Only the Sponsored mode is shown; the "all content" set is not yet verified.
 //  - Every figure is an observational association, not proof of causation.
@@ -54,35 +55,35 @@ const CONFIGS: Record<Mode, {
       'school, and posts that don’t. "School IP" means the post uses the school’s logo, mentions or ' +
       'tags the school in the caption, or is an official collaboration. Then we compared how the two groups perform.',
     dataset: {
-      totalPosts: 3003, totalLabel: 'Sponsored posts analyzed', scopeNote: '100% Instagram',
-      baselinePosts: 2060, anySignalPosts: 943,
+      totalPosts: 2952, totalLabel: 'Sponsored posts analyzed', scopeNote: '100% Instagram',
+      baselinePosts: 2009, anySignalPosts: 943,
       flags: [
-        { key: 'caption', label: 'School mentioned in caption', count: 564, pct: 18.8 },
-        { key: 'logo', label: 'School logo in the post', count: 711, pct: 23.7 },
+        { key: 'caption', label: 'School mentioned in caption', count: 564, pct: 19.1 },
+        { key: 'logo', label: 'School logo in the post', count: 711, pct: 24.1 },
         { key: 'collab', label: 'Official school collaboration', count: 69, pct: 2.3 },
       ],
     },
     anySignal: [
-      { metric: 'Likes', medianLift: 25 },
-      { metric: 'Video Views', medianLift: 24 },
-      { metric: 'Engagement Rate', medianLift: 78 },
+      { metric: 'Likes', medianLift: 27 },
+      { metric: 'Video Views', medianLift: 26 },
+      { metric: 'Engagement Rate', medianLift: 79 },
     ],
     signals: [
       {
         key: 'collab', name: 'Collaboration', sub: 'A formal tie to the school',
-        likesMedianLift: 317, erMedianLift: 306, n: 69, verdict: 'The powerhouse',
+        likesMedianLift: 318, erMedianLift: 303, n: 69, verdict: 'The powerhouse',
         note: 'By far the biggest lift of the three, and the most consistent in the data.',
         significant: true,
       },
       {
         key: 'logo', name: 'Logo', sub: 'The mark visible in the media',
-        likesMedianLift: 21, erMedianLift: 86, n: 711, verdict: 'Solid lift',
+        likesMedianLift: 22, erMedianLift: 86, n: 711, verdict: 'Solid lift',
         note: 'A clear lift on its own, though well behind collaboration.',
         significant: false,
       },
       {
         key: 'caption', name: 'Caption mention', sub: 'The school named or tagged',
-        likesMedianLift: 28, erMedianLift: 60, n: 564, verdict: 'Mildly positive',
+        likesMedianLift: 29, erMedianLift: 60, n: 564, verdict: 'Mildly positive',
         note: 'A small but consistent lift on the typical post.',
         significant: false,
       },
@@ -96,23 +97,23 @@ const CONFIGS: Record<Mode, {
       ],
       data: {
         collab: {
-          engagement: { with: 25.3, without: 6.2, lift: 306 },
-          likes: { with: 1458, without: 350, lift: 317 },
+          engagement: { with: 25.3, without: 6.3, lift: 303 },
+          likes: { with: 1458, without: 348, lift: 318 },
           comments: { with: 8, without: 9, lift: -11 },
         },
         logo: {
           engagement: { with: 10.2, without: 5.5, lift: 86 },
-          likes: { with: 418, without: 345, lift: 21 },
+          likes: { with: 418, without: 342, lift: 22 },
           comments: { with: 8, without: 9, lift: -11 },
         },
         mention: {
           engagement: { with: 9.4, without: 5.9, lift: 60 },
-          likes: { with: 445, without: 348, lift: 28 },
+          likes: { with: 445, without: 346, lift: 29 },
           comments: { with: 8, without: 10, lift: -20 },
         },
         any: {
-          engagement: { with: 9.5, without: 5.3, lift: 78 },
-          likes: { with: 419, without: 336, lift: 25 },
+          engagement: { with: 9.5, without: 5.3, lift: 79 },
+          likes: { with: 419, without: 330, lift: 27 },
           comments: { with: 8, without: 10, lift: -20 },
         },
       },

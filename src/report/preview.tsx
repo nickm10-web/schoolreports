@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { EndOfYearReport } from './EndOfYearReport';
 import { PlayflyIPImpactReport } from './PlayflyIPImpactReport';
+import { PlayflyIPReviewPosts } from './PlayflyIPReviewPosts';
 import { loadSchoolReport, listSchoolSlugs } from './schools';
 import type { ReportData } from './types';
 
@@ -98,6 +99,7 @@ function ReportView({ slug }: { slug: string }) {
 function App() {
   const path = window.location.pathname.replace(/\/+$/, '');
   if (path === '/playfly') return <PlayflyIPImpactReport />;
+  if (path === '/playflyipreview') return <PlayflyIPReviewPosts />;
   const slug = new URLSearchParams(window.location.search).get('school');
   return slug ? <ReportView slug={slug} /> : <Hub />;
 }

@@ -1,5 +1,6 @@
 {
   "rewrites": [
-    { "source": "/playfly", "destination": "/index.html" }
+    { "source": "/playfly", "destination": "/index.html" },
+    { "source": "/playflyipreview", "destination": "/index.html" }
   ]
 }
